@@ -167,6 +167,7 @@ def make_maze(size=8, difficulty="easy"):
 
 
 MOVES = np.array([[0, 1], [0, -1], [1, 0], [-1, 0]])  # right, left, down, up
+MOVE_NAMES = ("Right", "Left", "Down", "Up")
 
 
 def verify_solvable(maze):
@@ -193,6 +194,95 @@ def bfs_distance_map(maze):
                 dist_map[nr, nc] = dist_map[r, c] + 1
                 queue.append((nr, nc))
     return dist_map
+
+
+def choose_bfs_move(x, y, maze, dist_map):
+    """Choose the valid neighbor with smallest BFS distance to the goal."""
+    best_move = None
+    best_dist = None
+    for idx, (dx, dy) in enumerate(MOVES):
+        nx, ny = x + dx, y + dy
+        if 0 <= nx < maze.shape[0] and 0 <= ny < maze.shape[1] and maze[nx, ny] == 0:
+            cand_dist = dist_map[nx, ny]
+            if cand_dist < 0:
+                continue
+            if best_dist is None or cand_dist < best_dist:
+                best_dist = cand_dist
+                best_move = (idx, nx, ny)
+    return best_move
+
+
+def run_shortest_path_baseline(maze, dist_map):
+    """Deterministic shortest-path baseline using the full maze map."""
+    size = maze.shape[0]
+    goal = (size - 1, size - 1)
+    x, y = 0, 0
+    positions = [(x, y)]
+    max_steps = size * size * 4
+
+    for _ in range(max_steps):
+        if (x, y) == goal:
+            break
+        best_move = choose_bfs_move(x, y, maze, dist_map)
+        if best_move is None:
+            break
+        _, x, y = best_move
+        positions.append((x, y))
+
+    reached_goal = (x, y) == goal
+    final_dist = dist_map[x, y]
+    return final_dist, len(positions) - 1, reached_goal, positions
+
+
+def run_wall_follower(maze, n_steps, hand="right"):
+    """Classical local heuristic baseline with no global map."""
+    size = maze.shape[0]
+    goal = (size - 1, size - 1)
+    x, y = 0, 0
+    # Start facing right.
+    heading = 0
+    positions = [(x, y)]
+    hand_delta = 1 if hand == "right" else -1
+
+    for _ in range(n_steps):
+        if (x, y) == goal:
+            break
+
+        candidate_order = [
+            (heading + hand_delta) % 4,      # turn toward the wall hand
+            heading,                         # go straight
+            (heading - hand_delta) % 4,      # turn away from the wall hand
+            (heading + 2) % 4,               # turn around
+        ]
+        moved = False
+        for idx in candidate_order:
+            nx, ny = x + MOVES[idx, 0], y + MOVES[idx, 1]
+            if 0 <= nx < size and 0 <= ny < size and maze[nx, ny] == 0:
+                x, y = nx, ny
+                heading = idx
+                positions.append((x, y))
+                moved = True
+                break
+        if not moved:
+            break
+
+    reached_goal = (x, y) == goal
+    return abs(x - goal[0]) + abs(y - goal[1]), len(positions) - 1, reached_goal, positions
+
+
+def summarize_trials(trials):
+    dists = [trial[0] for trial in trials]
+    path_lengths = [trial[1] for trial in trials if trial[2]]
+    goals_reached = sum(1 for trial in trials if trial[2])
+    return {
+        'mean_dist': float(np.mean(dists)),
+        'std': float(np.std(dists)),
+        'goal_rate': goals_reached / len(trials),
+        'min_dist': int(np.min(dists)),
+        'mean_path': float(np.mean(path_lengths)) if path_lengths else float('inf'),
+        'min_path': int(min(path_lengths)) if path_lengths else float('inf'),
+        'n_trials': len(trials),
+    }
 
 
 # ── Precompute P_S gradient w.r.t. extended state ─────────────────────────
@@ -248,7 +338,8 @@ def run_maze(rng, maze, n_steps, ps0, grad, delta_S, delta_T,
             break
 
         # Extended state for P_S computation
-        state = np.concatenate([theta, [x / size, y / size]])
+        pos_scale = max(size - 1, 1)
+        state = np.concatenate([theta, [x / pos_scale, y / pos_scale]])
 
         # Radical pair event
         if use_quantum:
@@ -275,21 +366,26 @@ def run_maze(rng, maze, n_steps, ps0, grad, delta_S, delta_T,
             nx, ny = x + MOVES[idx, 0], y + MOVES[idx, 1]
             if 0 <= nx < size and 0 <= ny < size and maze[nx, ny] == 0:
                 x, y = nx, ny
+                if (x, y) == goal:
+                    reached_goal = True
                 break
 
         positions.append((x, y))
+        if reached_goal:
+            break
 
     # Use BFS distance if available, otherwise Manhattan
     if dist_map is not None:
         final_dist = dist_map[x, y]
     else:
         final_dist = abs(x - goal[0]) + abs(y - goal[1])
-    return final_dist, len(positions), reached_goal, positions
+    return final_dist, len(positions) - 1, reached_goal, positions
 
 
 # ── GA fitness ────────────────────────────────────────────────────────────
 
-def fitness_fn(params, ops, B, a_base, J_base, maze, n_steps, n_seeds, base_seed, dist_map):
+def fitness_fn(params, ops, B, a_base, J_base, maze, n_steps, n_seeds, base_seed,
+               dist_map, use_adaptive=True, use_quantum=True):
     """Evaluate: mean BFS distance to goal."""
     delta_S = params[:6]
     delta_T = params[6:12]
@@ -304,10 +400,51 @@ def fitness_fn(params, ops, B, a_base, J_base, maze, n_steps, n_seeds, base_seed
     for s in range(n_seeds):
         rng = np.random.default_rng(base_seed + s)
         dist, _, _, _ = run_maze(rng, maze, n_steps, ps0, grad,
-                                  delta_S, delta_T, move_weights, True, True,
+                                  delta_S, delta_T, move_weights, use_adaptive,
+                                  use_quantum,
                                   dist_map)
         total_dist += dist
     return total_dist / n_seeds
+
+
+def evaluate_agent_condition(config, maze, n_steps, n_runs, dist_map, base_seed=2000):
+    """Evaluate a learned/tuned controller across multiple seeds."""
+    dS, dT, p0, g, mw, adaptive, quantum = config
+    trials = []
+    for s in range(n_runs):
+        rng = np.random.default_rng(base_seed + s)
+        trials.append(
+            run_maze(rng, maze, n_steps, p0, g, dS, dT, mw, adaptive, quantum, dist_map)
+        )
+    return summarize_trials(trials)
+
+
+def evolve_controller(label, bounds, ops, B, a_base, J_base, maze, n_steps, n_seeds_ga,
+                      dist_map, maxiter, use_adaptive, use_quantum):
+    """Independently optimize a controller for a specific dynamical regime."""
+    print(f"\n  Re-optimizing {label} baseline ({'adaptive' if use_adaptive else 'fixed'} / "
+          f"{'quantum' if use_quantum else 'classical'})")
+    t0 = time.time()
+    result = differential_evolution(
+        fitness_fn,
+        bounds=bounds,
+        args=(ops, B, a_base, J_base, maze, n_steps, n_seeds_ga, 1500,
+              dist_map, use_adaptive, use_quantum),
+        maxiter=maxiter,
+        popsize=10,
+        seed=84 if use_quantum else 126,
+        tol=1e-6,
+        polish=False,
+    )
+    print(f"    done in {time.time() - t0:.1f}s | best mean dist = {result.fun:.2f}/{dist_map[0, 0]}")
+
+    best = result.x
+    delta_S = best[:6]
+    delta_T = best[6:12]
+    alpha, beta, gamma_mod = best[12], best[13], best[14]
+    move_weights = best[15:47].reshape(4, 8)
+    ps0, grad = compute_gradient(ops, B, a_base, J_base, alpha, beta, gamma_mod)
+    return delta_S, delta_T, ps0, grad, move_weights, use_adaptive, use_quantum
 
 
 # ── Main ──────────────────────────────────────────────────────────────────
@@ -329,6 +466,9 @@ def main():
     parser.add_argument("--difficulty", choices=["easy", "hard", "multipath", "fourway", "serpentine"], default="hard")
     parser.add_argument("--steps", type=int, default=500)
     parser.add_argument("--ga-maxiter", type=int, default=40)
+    parser.add_argument("--control-ga-maxiter", type=int, default=20)
+    parser.add_argument("--optimize-controls", action="store_true",
+                        help="Independently optimize fixed-basis and classical controls.")
     args = parser.parse_args()
 
     n_steps = args.steps
@@ -375,14 +515,15 @@ def main():
 
     def callback(xk, convergence=0):
         gen[0] += 1
-        d = fitness_fn(xk, ops, B, a_base, J_base, maze, n_steps, n_seeds_ga, 500, dist_map)
+        d = fitness_fn(xk, ops, B, a_base, J_base, maze, n_steps, n_seeds_ga, 500,
+                       dist_map, True, True)
         print(f"  Gen {gen[0]:3d} | mean_dist = {d:.2f}/{shortest} | "
               f"elapsed = {time.time() - t0:.1f}s", flush=True)
 
     result = differential_evolution(
         fitness_fn,
         bounds=bounds,
-        args=(ops, B, a_base, J_base, maze, n_steps, n_seeds_ga, 500, dist_map),
+        args=(ops, B, a_base, J_base, maze, n_steps, n_seeds_ga, 500, dist_map, True, True),
         maxiter=args.ga_maxiter,
         popsize=10,
         seed=42,
@@ -418,41 +559,42 @@ def main():
 
     conditions = {
         "Quantum+Evolved": (delta_S, delta_T, ps0, grad, move_weights, True, True),
-        "FixedBasis+Evolved": (delta_S, delta_T, ps0, grad, move_weights, False, True),
-        "Classical+Evolved": (delta_S, delta_T, ps0, grad, move_weights, True, False),
+        "FixedBasis+QuantumTuned": (delta_S, delta_T, ps0, grad, move_weights, False, True),
+        "Classical+QuantumTuned": (delta_S, delta_T, ps0, grad, move_weights, True, False),
         "Quantum+Random": (delta_S_r, delta_T_r, ps0_r, grad_r, mw_r, True, True),
     }
 
-    results = {}
-    for name, (dS, dT, p0, g, mw, adaptive, quantum) in conditions.items():
-        dists = []
-        path_lengths = []
-        goals_reached = 0
-        for s in range(n_runs):
-            rng = np.random.default_rng(2000 + s)
-            dist, steps, reached, _ = run_maze(rng, maze, n_steps, p0, g,
-                                                dS, dT, mw, adaptive, quantum,
-                                                dist_map)
-            dists.append(dist)
-            if reached:
-                goals_reached += 1
-                path_lengths.append(steps)
-        results[name] = {
-            'mean_dist': np.mean(dists),
-            'std': np.std(dists),
-            'goal_rate': goals_reached / n_runs,
-            'min_dist': np.min(dists),
-            'mean_path': np.mean(path_lengths) if path_lengths else float('inf'),
-            'min_path': min(path_lengths) if path_lengths else float('inf'),
-        }
+    if args.optimize_controls:
+        conditions["FixedBasis+Reoptimized"] = evolve_controller(
+            "FixedBasis", bounds, ops, B, a_base, J_base, maze, n_steps,
+            n_seeds_ga, dist_map, args.control_ga_maxiter, False, True
+        )
+        conditions["Classical+Reoptimized"] = evolve_controller(
+            "Classical", bounds, ops, B, a_base, J_base, maze, n_steps,
+            n_seeds_ga, dist_map, args.control_ga_maxiter, True, False
+        )
 
-    print(f"\n  {'Condition':<25} {'Mean dist':>10} {'Goal rate':>10} "
+    results = {}
+    for name, config in conditions.items():
+        results[name] = evaluate_agent_condition(config, maze, n_steps, n_runs, dist_map)
+
+    results["ShortestPathPlanner"] = summarize_trials(
+        [run_shortest_path_baseline(maze, dist_map)]
+    )
+    results["RightWallFollower"] = summarize_trials(
+        [run_wall_follower(maze, n_steps, hand="right")]
+    )
+    results["LeftWallFollower"] = summarize_trials(
+        [run_wall_follower(maze, n_steps, hand="left")]
+    )
+
+    print(f"\n  {'Condition':<28} {'Mean dist':>10} {'Goal rate':>10} "
           f"{'Avg path':>10} {'Best path':>10}")
-    print(f"  {'-' * 65}")
+    print(f"  {'-' * 70}")
     for name, r in results.items():
         avg_p = f"{r['mean_path']:.1f}" if r['goal_rate'] > 0 else "—"
         best_p = f"{r['min_path']}" if r['goal_rate'] > 0 else "—"
-        print(f"  {name:<25} {r['mean_dist']:10.2f} {r['goal_rate']:10.1%} "
+        print(f"  {name:<28} {r['mean_dist']:10.2f} {r['goal_rate']:10.1%} "
               f"{avg_p:>10} {best_p:>10}")
     print(f"\n  BFS optimal path length: {shortest}")
 
@@ -484,42 +626,53 @@ def main():
 
     # ── Verdict ───────────────────────────────────────────────────────
     print("\n" + "=" * 72)
-    print("  VERDICT")
+    print("  INTERPRETATION")
     print("=" * 72)
 
     qe = results["Quantum+Evolved"]
-    fe = results["FixedBasis+Evolved"]
-    ce = results["Classical+Evolved"]
+    fe = results["FixedBasis+QuantumTuned"]
+    ce = results["Classical+QuantumTuned"]
     qr = results["Quantum+Random"]
+    sp = results["ShortestPathPlanner"]
+    rw = results["RightWallFollower"]
+    lw = results["LeftWallFollower"]
 
-    # Check both goal-reaching AND path efficiency
-    beats_dist = (qe['mean_dist'] < fe['mean_dist'] and
-                  qe['mean_dist'] < ce['mean_dist'] and
-                  qe['mean_dist'] < qr['mean_dist'])
-    beats_path = (qe['mean_path'] < ce['mean_path'] and
-                  qe['goal_rate'] > qr['goal_rate'])
+    print("\n  Baseline framing:")
+    print("    Quantum+Evolved is the learned NFT controller.")
+    print("    *+QuantumTuned controls reuse parameters optimized for the quantum controller.")
+    if args.optimize_controls:
+        print("    *+Reoptimized controls were evolved independently in their own regimes.")
+    print("    ShortestPathPlanner is a competent classical upper bound with full maze knowledge.")
+    print("    WallFollower baselines are local classical heuristics with no global map.")
 
-    if beats_dist or beats_path:
-        print(f"\n  QUANTUM MAZE NAVIGATION CONFIRMED")
-        print(f"  The 6D quantum agent navigates the 2D maze using physics alone.")
-        print(f"\n  Goal reaching:")
-        for name, r in results.items():
-            print(f"    {name:<25} {r['goal_rate']:6.0%}")
-        if qe['goal_rate'] > 0:
-            print(f"\n  Path efficiency (lower = better, BFS optimal = {shortest}):")
-            for name, r in results.items():
-                if r['goal_rate'] > 0:
-                    ratio = r['mean_path'] / shortest
-                    print(f"    {name:<25} {r['mean_path']:6.1f} steps ({ratio:.2f}x optimal)")
-            if ce['goal_rate'] > 0 and qe['mean_path'] < ce['mean_path']:
-                speedup = ce['mean_path'] / qe['mean_path']
-                print(f"\n  Quantum agent finds {speedup:.1f}x shorter paths than classical!")
+    print("\n  Takeaways:")
+    if qe['mean_dist'] < fe['mean_dist'] and qe['mean_dist'] < ce['mean_dist']:
+        print("    Quantum+Evolved beats the same-architecture controls that inherit quantum-tuned parameters.")
     else:
-        print(f"\n  MIXED RESULTS — see table above")
-        if qe['mean_dist'] >= fe['mean_dist']:
-            print(f"  Fixed basis matches or beats adaptive")
-        if qe['mean_dist'] >= ce['mean_dist']:
-            print(f"  Classical matches or beats quantum")
+        print("    Quantum+Evolved does not cleanly beat the same-architecture inherited controls.")
+
+    if args.optimize_controls:
+        cre = results["Classical+Reoptimized"]
+        fre = results["FixedBasis+Reoptimized"]
+        if qe['mean_dist'] < cre['mean_dist'] and qe['mean_dist'] < fre['mean_dist']:
+            print("    Quantum+Evolved also beats independently re-optimized learned controls.")
+        else:
+            print("    Independently re-optimized learned controls narrow or erase the quantum gap.")
+
+    if sp['goal_rate'] >= qe['goal_rate'] and sp['mean_dist'] <= qe['mean_dist']:
+        print("    A competent classical planner solves this benchmark at least as well as the quantum controller.")
+    else:
+        print("    The quantum controller remains competitive even against the shortest-path planner.")
+
+    if qe['goal_rate'] > max(rw['goal_rate'], lw['goal_rate']):
+        print("    Quantum+Evolved beats simple map-free classical heuristics on this maze.")
+    else:
+        print("    Simple map-free classical heuristics match or beat the quantum controller here.")
+
+    print("\n  Honest reading:")
+    print("    This benchmark is best read as a proof-of-principle for the learned quantum feedback")
+    print("    controller, not as a general claim that quantum navigation beats the best classical")
+    print("    algorithms on maze solving.")
 
     print("\n" + "=" * 72)
 
