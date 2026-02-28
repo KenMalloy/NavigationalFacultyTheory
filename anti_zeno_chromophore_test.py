@@ -3,8 +3,10 @@
 Stage-1 anti-Zeno test for a small tryptophan chromophore network.
 
 What this script does:
-1. Builds a small nearest-neighbor chromophore Hamiltonian with optional static
-   disorder.
+1. Builds a small chromophore Hamiltonian with optional static disorder.
+   Available network models:
+   - chain: nearest-neighbor couplings only
+   - helix: geometry-informed dipole couplings on a cylindrical helix
 2. Defines a bath spectral density (Drude-Lorentz or Ohmic).
 3. Derives a local dephasing rate kappa from the spectral density at a
    characteristic excitonic gap.
@@ -45,16 +47,48 @@ class SweepRow:
     local_regime: str
 
 
+@dataclass
+class HamiltonianModel:
+    hamiltonian: np.ndarray
+    label: str
+    nearest_neighbor_median_cm: float
+    all_pair_median_cm: float
+    all_pair_max_cm: float
+
+
 def cm_to_rad_ps(value_cm: float) -> float:
     return value_cm * CM_TO_RAD_PER_PS
 
 
-def build_hamiltonian(
+def rad_ps_to_cm(value_rad_ps: float) -> float:
+    return value_rad_ps / CM_TO_RAD_PER_PS
+
+
+def unit_vector(vector: np.ndarray) -> np.ndarray:
+    norm = np.linalg.norm(vector)
+    if norm < EPS:
+        raise ValueError("Cannot normalize a zero vector.")
+    return vector / norm
+
+
+def summarize_couplings(h: np.ndarray) -> tuple[float, float, float]:
+    couplings_cm = np.abs(rad_ps_to_cm(h))
+    sites = h.shape[0]
+    nearest_neighbor = [couplings_cm[i, i + 1] for i in range(sites - 1)]
+    all_pairs = [couplings_cm[i, j] for i in range(sites) for j in range(i + 1, sites)]
+    return (
+        float(np.median(nearest_neighbor)),
+        float(np.median(all_pairs)),
+        float(np.max(all_pairs)),
+    )
+
+
+def build_chain_model(
     sites: int,
     coupling_cm: float,
     disorder_cm: float,
     seed: int,
-) -> np.ndarray:
+) -> HamiltonianModel:
     rng = np.random.default_rng(seed)
     h = np.zeros((sites, sites), dtype=np.complex128)
 
@@ -66,7 +100,119 @@ def build_hamiltonian(
     for i in range(sites - 1):
         h[i, i + 1] = coupling
         h[i + 1, i] = coupling
-    return h
+    nn_median_cm, all_pair_median_cm, all_pair_max_cm = summarize_couplings(h)
+    return HamiltonianModel(
+        hamiltonian=h,
+        label="nearest-neighbor chain",
+        nearest_neighbor_median_cm=nn_median_cm,
+        all_pair_median_cm=all_pair_median_cm,
+        all_pair_max_cm=all_pair_max_cm,
+    )
+
+
+def build_helix_model(
+    sites: int,
+    coupling_cm: float,
+    disorder_cm: float,
+    seed: int,
+    helix_radius_nm: float,
+    helix_rise_nm: float,
+    helix_twist_deg: float,
+    dipole_tilt_deg: float,
+) -> HamiltonianModel:
+    rng = np.random.default_rng(seed)
+    h = np.zeros((sites, sites), dtype=np.complex128)
+
+    if disorder_cm:
+        disorder = rng.normal(0.0, disorder_cm, size=sites)
+        np.fill_diagonal(h, cm_to_rad_ps(disorder))
+
+    positions: list[np.ndarray] = []
+    dipoles: list[np.ndarray] = []
+    twist_rad = np.deg2rad(helix_twist_deg)
+    tilt_rad = np.deg2rad(dipole_tilt_deg)
+
+    for index in range(sites):
+        angle = index * twist_rad
+        positions.append(
+            np.array(
+                [
+                    helix_radius_nm * np.cos(angle),
+                    helix_radius_nm * np.sin(angle),
+                    index * helix_rise_nm,
+                ],
+                dtype=float,
+            )
+        )
+        tangent = np.array([-np.sin(angle), np.cos(angle), 0.0], dtype=float)
+        axial = np.array([0.0, 0.0, 1.0], dtype=float)
+        dipole = np.cos(tilt_rad) * tangent + np.sin(tilt_rad) * axial
+        dipoles.append(unit_vector(dipole))
+
+    raw_couplings = np.zeros((sites, sites), dtype=float)
+    for i in range(sites):
+        for j in range(i + 1, sites):
+            displacement = positions[j] - positions[i]
+            distance = np.linalg.norm(displacement)
+            direction = displacement / distance
+            orientation = np.dot(dipoles[i], dipoles[j]) - 3.0 * np.dot(
+                dipoles[i], direction
+            ) * np.dot(dipoles[j], direction)
+            raw_value = orientation / (distance**3)
+            raw_couplings[i, j] = raw_value
+            raw_couplings[j, i] = raw_value
+
+    nearest_neighbor_raw = np.abs(
+        np.array([raw_couplings[i, i + 1] for i in range(sites - 1)], dtype=float)
+    )
+    raw_scale = coupling_cm / max(float(np.median(nearest_neighbor_raw)), EPS)
+    coupling_matrix_cm = raw_scale * raw_couplings
+    h += cm_to_rad_ps(coupling_matrix_cm)
+
+    nn_median_cm, all_pair_median_cm, all_pair_max_cm = summarize_couplings(h)
+    return HamiltonianModel(
+        hamiltonian=h,
+        label=(
+            "geometry-informed helix "
+            f"(radius={helix_radius_nm} nm, rise={helix_rise_nm} nm, "
+            f"twist={helix_twist_deg} deg, tilt={dipole_tilt_deg} deg)"
+        ),
+        nearest_neighbor_median_cm=nn_median_cm,
+        all_pair_median_cm=all_pair_median_cm,
+        all_pair_max_cm=all_pair_max_cm,
+    )
+
+
+def build_hamiltonian(
+    network_model: str,
+    sites: int,
+    coupling_cm: float,
+    disorder_cm: float,
+    seed: int,
+    helix_radius_nm: float,
+    helix_rise_nm: float,
+    helix_twist_deg: float,
+    dipole_tilt_deg: float,
+) -> HamiltonianModel:
+    if network_model == "chain":
+        return build_chain_model(
+            sites=sites,
+            coupling_cm=coupling_cm,
+            disorder_cm=disorder_cm,
+            seed=seed,
+        )
+    if network_model == "helix":
+        return build_helix_model(
+            sites=sites,
+            coupling_cm=coupling_cm,
+            disorder_cm=disorder_cm,
+            seed=seed,
+            helix_radius_nm=helix_radius_nm,
+            helix_rise_nm=helix_rise_nm,
+            helix_twist_deg=helix_twist_deg,
+            dipole_tilt_deg=dipole_tilt_deg,
+        )
+    raise ValueError(f"Unsupported network model: {network_model}")
 
 
 def reference_gap_ps_inv(h: np.ndarray) -> float:
@@ -250,14 +396,32 @@ def write_csv(path: Path, rows: list[SweepRow]) -> None:
             )
 
 
+def write_hamiltonian_csv(path: Path, h: np.ndarray) -> None:
+    matrix_cm = rad_ps_to_cm(h.real)
+    with path.open("w", newline="") as handle:
+        writer = csv.writer(handle)
+        writer.writerow(["site"] + [str(index) for index in range(h.shape[0])])
+        for index, row in enumerate(matrix_cm):
+            writer.writerow([index] + [f"{value:.12g}" for value in row])
+
+
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(
         description="Repeatable Lindblad anti-Zeno test for a small chromophore network."
+    )
+    parser.add_argument(
+        "--network-model",
+        choices=("chain", "helix"),
+        default="helix",
     )
     parser.add_argument("--sites", type=int, default=8)
     parser.add_argument("--coupling-cm", type=float, default=60.0)
     parser.add_argument("--disorder-cm", type=float, default=25.0)
     parser.add_argument("--seed", type=int, default=7)
+    parser.add_argument("--helix-radius-nm", type=float, default=2.0)
+    parser.add_argument("--helix-rise-nm", type=float, default=0.8)
+    parser.add_argument("--helix-twist-deg", type=float, default=27.7)
+    parser.add_argument("--dipole-tilt-deg", type=float, default=20.0)
     parser.add_argument(
         "--spectral-density",
         choices=("drude", "ohmic"),
@@ -289,18 +453,25 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--tau-max-ps", type=float, default=5.0)
     parser.add_argument("--tau-count", type=int, default=18)
     parser.add_argument("--csv-out", type=Path, default=None)
+    parser.add_argument("--matrix-out", type=Path, default=None)
     return parser.parse_args()
 
 
 def main() -> None:
     args = parse_args()
 
-    h = build_hamiltonian(
+    model = build_hamiltonian(
+        network_model=args.network_model,
         sites=args.sites,
         coupling_cm=args.coupling_cm,
         disorder_cm=args.disorder_cm,
         seed=args.seed,
+        helix_radius_nm=args.helix_radius_nm,
+        helix_rise_nm=args.helix_rise_nm,
+        helix_twist_deg=args.helix_twist_deg,
+        dipole_tilt_deg=args.dipole_tilt_deg,
     )
+    h = model.hamiltonian
     omega_ref = reference_gap_ps_inv(h)
 
     j_value, derived_kappa = kappa_from_spectral_density(
@@ -328,10 +499,15 @@ def main() -> None:
 
     print("Small open-quantum-system anti-Zeno test")
     print("----------------------------------------")
+    print(f"network_model             : {args.network_model}")
+    print(f"model_label               : {model.label}")
     print(f"sites                     : {args.sites}")
     print(f"coupling_cm               : {args.coupling_cm}")
     print(f"disorder_cm               : {args.disorder_cm}")
     print(f"seed                      : {args.seed}")
+    print(f"nn_coupling_median_cm     : {model.nearest_neighbor_median_cm:.6f}")
+    print(f"all_pair_median_cm        : {model.all_pair_median_cm:.6f}")
+    print(f"all_pair_max_cm           : {model.all_pair_max_cm:.6f}")
     print(f"spectral_density          : {args.spectral_density}")
     print(f"bath_strength_cm          : {args.bath_strength_cm}")
     print(f"cutoff_cm                 : {args.cutoff_cm}")
@@ -368,6 +544,10 @@ def main() -> None:
         write_csv(args.csv_out, rows)
         print()
         print(f"wrote_csv                 : {args.csv_out}")
+
+    if args.matrix_out is not None:
+        write_hamiltonian_csv(args.matrix_out, h)
+        print(f"wrote_matrix_csv          : {args.matrix_out}")
 
 
 if __name__ == "__main__":

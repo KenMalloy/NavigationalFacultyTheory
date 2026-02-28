@@ -1,145 +1,129 @@
 """
 Step 3: Compute classical and topological metrics per epoch.
 
-CLASSICAL METRICS (what existing analyses already do):
-  - Band power (delta, theta, alpha, beta, gamma)
-  - Spectral edge frequency (SEF95)
-  - Signal amplitude (RMS)
-  - Lempel-Ziv complexity
-  - Functional connectivity (wPLI in alpha/gamma bands)
-
-TOPOLOGICAL METRICS (the NFT-specific analysis):
-  - Persistent homology of channel correlation matrices
-  - Betti numbers β_0 through β_3 (or higher if feasible)
-  - Persistence entropy
-  - Total persistence (sum of lifetimes)
-  - Persistence landscapes (for statistical testing)
-
-The key prediction: topological metrics should diverge from classical
-metrics during TRANSITIONS — topology drops first on induction,
-recovers last on emergence.
+This stage preserves recording-level metadata so the temporal analysis can order
+epochs by actual acquisition time rather than by guessed state labels.
 """
-import numpy as np
-from scipy import signal
-from scipy.spatial.distance import squareform
-from gtda.homology import VietorisRipsPersistence
-from gtda.diagrams import (
-    PersistenceEntropy,
-    Amplitude,
-    NumberOfPoints,
-    BettiCurve,
-)
-from joblib import Parallel, delayed
+from __future__ import annotations
+
 from pathlib import Path
+
+from joblib import Parallel, delayed
+import numpy as np
 import pandas as pd
+from scipy import signal
+from scipy.signal import butter, hilbert, sosfilt
+from gtda.homology import VietorisRipsPersistence
 
 from config import (
-    PROCESSED_DIR, RESULTS_DIR,
-    SFREQ_TARGET, FREQ_BANDS,
-    HOMOLOGY_DIMENSIONS, FILTRATION_MAX, FILTRATION_STEPS,
+    PROCESSED_DIR,
+    RESULTS_DIR,
+    SFREQ_TARGET,
+    FREQ_BANDS,
+    HOMOLOGY_DIMENSIONS,
+    FILTRATION_MAX,
+    FILTRATION_STEPS,
+    WORKSPACE_DIR,
 )
 
 
 # ========== CLASSICAL METRICS ==========
 
 def band_power(epoch: np.ndarray, sfreq: float) -> dict:
-    """Relative power in each frequency band, averaged across channels."""
-    freqs, psd = signal.welch(epoch, fs=sfreq, nperseg=sfreq * 2)
-    total_power = np.trapz(psd, freqs, axis=-1).mean()
+    """Relative and absolute power per band, averaged across channels."""
+    nperseg = min(epoch.shape[-1], int(sfreq * 2))
+    freqs, psd = signal.welch(epoch, fs=sfreq, nperseg=nperseg, axis=-1)
+    total_power_channels = np.trapz(psd, freqs, axis=-1)
+    total_power = float(np.mean(total_power_channels))
 
-    result = {}
+    result: dict[str, float] = {}
     for band_name, (fmin, fmax) in FREQ_BANDS.items():
         mask = (freqs >= fmin) & (freqs <= fmax)
-        bp = np.trapz(psd[:, mask], freqs[mask], axis=-1).mean()
-        result[f"power_{band_name}_rel"] = bp / total_power
-        result[f"power_{band_name}_abs"] = bp
+        if not np.any(mask):
+            band_abs = 0.0
+        else:
+            band_abs = float(np.mean(np.trapz(psd[:, mask], freqs[mask], axis=-1)))
+        result[f"power_{band_name}_abs"] = band_abs
+        result[f"power_{band_name}_rel"] = band_abs / total_power if total_power > 0 else 0.0
+
     result["power_total"] = total_power
     return result
 
 
-def spectral_edge_frequency(epoch: np.ndarray, sfreq: float,
-                             pct: float = 0.95) -> float:
-    """Frequency below which pct% of total power lies."""
-    freqs, psd = signal.welch(epoch, fs=sfreq, nperseg=sfreq * 2)
-    psd_mean = psd.mean(axis=0)
-    cumpower = np.cumsum(psd_mean)
-    cumpower /= cumpower[-1]
-    idx = np.searchsorted(cumpower, pct)
-    return freqs[min(idx, len(freqs) - 1)]
+def spectral_edge_frequency(epoch: np.ndarray, sfreq: float, pct: float = 0.95) -> float:
+    """Frequency below which pct of total power lies."""
+    nperseg = min(epoch.shape[-1], int(sfreq * 2))
+    freqs, psd = signal.welch(epoch, fs=sfreq, nperseg=nperseg, axis=-1)
+    psd_mean = np.mean(psd, axis=0)
+    total = np.sum(psd_mean)
+    if total <= 0:
+        return 0.0
+    cumulative = np.cumsum(psd_mean) / total
+    idx = int(np.searchsorted(cumulative, pct))
+    return float(freqs[min(idx, len(freqs) - 1)])
 
 
 def rms_amplitude(epoch: np.ndarray) -> float:
-    """Root mean square amplitude, averaged across channels."""
-    return np.sqrt(np.mean(epoch ** 2))
+    """Root mean square amplitude across the full epoch."""
+    return float(np.sqrt(np.mean(epoch ** 2)))
 
 
 def lempel_ziv_complexity(epoch: np.ndarray) -> float:
     """
-    Lempel-Ziv complexity of binarized multichannel signal.
-    Binarize by median split per channel, concatenate, compute LZ76.
-    """
-    # Binarize each channel by its median
-    binary = (epoch > np.median(epoch, axis=1, keepdims=True)).astype(int)
-    # Concatenate channels into single binary string
-    s = binary.flatten()
+    Lempel-Ziv complexity of a median-binarized multichannel epoch.
 
-    # LZ76 complexity
-    n = len(s)
+    This is a simple LZ76-style proxy suitable for relative comparisons, not a
+    full compression-theoretic treatment.
+    """
+    binary = (epoch > np.median(epoch, axis=1, keepdims=True)).astype(np.uint8)
+    sequence = binary.ravel()
+    n = int(sequence.size)
     if n == 0:
         return 0.0
-    i, k, l = 0, 1, 1
-    c = 1
-    while k < n:
-        if s[k] != s[k - l]:
-            i += 1
-            if i == k:
-                c += 1
-                k += 1
-                i = 0
-                l = k
-            else:
-                l = k - i
-        else:
-            k += 1
-    c += 1
-    # Normalize
-    return c * np.log2(n) / n if n > 0 else 0.0
+
+    i = 0
+    complexity = 1
+    while i < n - 1:
+        match_len = 1
+        while i + match_len < n and np.array_equal(
+            sequence[i : i + match_len],
+            sequence[i + 1 : i + 1 + match_len],
+        ):
+            match_len += 1
+        complexity += 1
+        i += match_len
+
+    return float(complexity * np.log2(n) / n)
 
 
-def functional_connectivity(epoch: np.ndarray, sfreq: float,
-                             band: tuple = (8, 13)) -> float:
-    """
-    Weighted Phase Lag Index in a given frequency band.
-    Returns mean connectivity strength.
-    """
-    from scipy.signal import hilbert, butter, sosfilt
-
+def functional_connectivity(epoch: np.ndarray, sfreq: float, band: tuple[float, float]) -> float:
+    """Mean weighted phase lag index across channel pairs."""
     fmin, fmax = band
     sos = butter(4, [fmin, fmax], btype="band", fs=sfreq, output="sos")
     filtered = sosfilt(sos, epoch, axis=1)
     analytic = hilbert(filtered, axis=1)
-    phase = np.angle(analytic)
 
-    n_ch = phase.shape[0]
-    wpli_vals = []
-    for i in range(n_ch):
-        for j in range(i + 1, n_ch):
-            dphi = phase[i] - phase[j]
-            imag_cross = np.sin(dphi)
-            wpli = np.abs(np.mean(imag_cross)) / np.mean(np.abs(imag_cross) + 1e-10)
-            wpli_vals.append(wpli)
-    return np.mean(wpli_vals)
+    n_channels = analytic.shape[0]
+    values: list[float] = []
+    for i in range(n_channels):
+        for j in range(i + 1, n_channels):
+            imag_cross = np.imag(analytic[i] * np.conj(analytic[j]))
+            denominator = np.mean(np.abs(imag_cross))
+            if denominator <= 1e-10:
+                values.append(0.0)
+                continue
+            values.append(float(np.abs(np.mean(imag_cross)) / denominator))
+    return float(np.mean(values)) if values else 0.0
 
 
 def compute_classical(epoch: np.ndarray, sfreq: float) -> dict:
-    """All classical metrics for one epoch."""
-    result = {}
+    result: dict[str, float] = {}
     result.update(band_power(epoch, sfreq))
     result["sef95"] = spectral_edge_frequency(epoch, sfreq)
     result["rms"] = rms_amplitude(epoch)
     result["lempel_ziv"] = lempel_ziv_complexity(epoch)
-    result["wpli_alpha"] = functional_connectivity(epoch, sfreq, (8, 13))
-    result["wpli_gamma"] = functional_connectivity(epoch, sfreq, (30, 45))
+    result["wpli_alpha"] = functional_connectivity(epoch, sfreq, (8.0, 13.0))
+    result["wpli_gamma"] = functional_connectivity(epoch, sfreq, (30.0, 45.0))
     return result
 
 
@@ -147,85 +131,76 @@ def compute_classical(epoch: np.ndarray, sfreq: float) -> dict:
 
 def correlation_distance_matrix(epoch: np.ndarray) -> np.ndarray:
     """
-    Compute channel-by-channel correlation distance matrix.
+    Compute a channel correlation distance matrix.
+
     distance_ij = 1 - |corr(ch_i, ch_j)|
-    Returns (n_channels, n_channels) distance matrix.
     """
-    corr = np.corrcoef(epoch)  # (n_ch, n_ch)
+    corr = np.corrcoef(epoch)
+    corr = np.nan_to_num(corr, nan=0.0, posinf=0.0, neginf=0.0)
     np.fill_diagonal(corr, 1.0)
     dist = 1.0 - np.abs(corr)
     np.fill_diagonal(dist, 0.0)
-    # Ensure symmetry and non-negativity
-    dist = (dist + dist.T) / 2
-    dist = np.maximum(dist, 0.0)
-    return dist
+    dist = (dist + dist.T) / 2.0
+    return np.clip(dist, 0.0, FILTRATION_MAX)
 
 
 def compute_persistent_homology(distance_matrix: np.ndarray) -> np.ndarray:
-    """
-    Compute persistent homology from a distance matrix.
-    Returns persistence diagrams as array of (birth, death, dimension).
-    """
-    # giotto-tda expects (n_samples, n_points, n_points) for precomputed
-    dm = distance_matrix[np.newaxis, :, :]  # add batch dim
-
+    """Run Vietoris-Rips persistence on a single distance matrix."""
     vr = VietorisRipsPersistence(
         metric="precomputed",
         homology_dimensions=HOMOLOGY_DIMENSIONS,
         max_edge_length=FILTRATION_MAX,
         n_jobs=1,
     )
-    diagrams = vr.fit_transform(dm)
-    return diagrams  # shape (1, n_features, 3)
+    return vr.fit_transform(distance_matrix[np.newaxis, :, :])
+
+
+def _betti_curve(points: np.ndarray) -> np.ndarray:
+    grid = np.linspace(0.0, FILTRATION_MAX, FILTRATION_STEPS)
+    if points.size == 0:
+        return np.zeros_like(grid)
+    births = points[:, 0][:, np.newaxis]
+    deaths = points[:, 1][:, np.newaxis]
+    alive = (births <= grid) & (grid < deaths)
+    return alive.sum(axis=0).astype(float)
 
 
 def extract_topological_features(diagrams: np.ndarray) -> dict:
-    """
-    Extract summary statistics from persistence diagrams.
-    """
-    result = {}
+    """Summarize persistence diagrams into scalar features."""
+    result: dict[str, float] = {}
+    diagram = diagrams[0]
+    topo_complexity = 0.0
 
-    # --- Betti numbers at multiple filtration thresholds ---
-    betti_curve = BettiCurve(n_bins=FILTRATION_STEPS)
-    curves = betti_curve.fit_transform(diagrams)  # (1, n_dims * n_bins)
+    for dim in HOMOLOGY_DIMENSIONS:
+        points = diagram[diagram[:, 2] == dim][:, :2]
+        if points.size == 0:
+            points = np.empty((0, 2))
+        finite = np.isfinite(points).all(axis=1)
+        points = points[finite]
+        lifetimes = np.clip(points[:, 1] - points[:, 0], 0.0, None) if len(points) else np.array([])
+        curve = _betti_curve(points)
 
-    # Store max Betti number per dimension
-    n_bins = FILTRATION_STEPS
-    for i, dim in enumerate(HOMOLOGY_DIMENSIONS):
-        curve_dim = curves[0, i * n_bins:(i + 1) * n_bins]
-        result[f"betti_{dim}_max"] = float(np.max(curve_dim))
-        result[f"betti_{dim}_mean"] = float(np.mean(curve_dim))
-        result[f"betti_{dim}_auc"] = float(np.sum(curve_dim))
+        result[f"betti_{dim}_max"] = float(np.max(curve)) if curve.size else 0.0
+        result[f"betti_{dim}_mean"] = float(np.mean(curve)) if curve.size else 0.0
+        result[f"betti_{dim}_auc"] = float(np.trapz(curve, dx=FILTRATION_MAX / max(FILTRATION_STEPS - 1, 1)))
+        result[f"n_features_{dim}"] = float(len(lifetimes))
+        result[f"total_persistence_{dim}"] = float(np.sum(lifetimes))
 
-    # --- Persistence entropy (topological complexity summary) ---
-    pe = PersistenceEntropy()
-    entropies = pe.fit_transform(diagrams)
-    for i, dim in enumerate(HOMOLOGY_DIMENSIONS):
-        result[f"persistence_entropy_{dim}"] = float(entropies[0, i])
+        if len(lifetimes) and np.sum(lifetimes) > 0:
+            probs = lifetimes / np.sum(lifetimes)
+            entropy = float(-(probs * np.log(probs + 1e-12)).sum())
+        else:
+            entropy = 0.0
+        result[f"persistence_entropy_{dim}"] = entropy
 
-    # --- Total persistence (sum of bar lifetimes) ---
-    amp = Amplitude(metric="persistence")
-    amplitudes = amp.fit_transform(diagrams)
-    for i, dim in enumerate(HOMOLOGY_DIMENSIONS):
-        result[f"total_persistence_{dim}"] = float(amplitudes[0, i])
+        if dim > 0:
+            topo_complexity += entropy + result[f"total_persistence_{dim}"]
 
-    # --- Number of topological features per dimension ---
-    nop = NumberOfPoints()
-    counts = nop.fit_transform(diagrams)
-    for i, dim in enumerate(HOMOLOGY_DIMENSIONS):
-        result[f"n_features_{dim}"] = float(counts[0, i])
-
-    # --- Composite topological complexity score ---
-    # Sum of persistence entropies across dimensions (single scalar)
-    result["topo_complexity"] = sum(
-        result[f"persistence_entropy_{d}"] for d in HOMOLOGY_DIMENSIONS
-    )
-
+    result["topo_complexity"] = float(topo_complexity)
     return result
 
 
 def compute_topological(epoch: np.ndarray) -> dict:
-    """All topological metrics for one epoch."""
     dist = correlation_distance_matrix(epoch)
     diagrams = compute_persistent_homology(dist)
     return extract_topological_features(diagrams)
@@ -234,67 +209,105 @@ def compute_topological(epoch: np.ndarray) -> dict:
 # ========== MAIN LOOP ==========
 
 def process_epoch(epoch: np.ndarray, sfreq: float, idx: int) -> dict:
-    """Compute all metrics for a single epoch."""
     row = {"epoch_idx": idx}
     row.update(compute_classical(epoch, sfreq))
     row.update(compute_topological(epoch))
     return row
 
 
-def process_subject(subject_dir: Path) -> pd.DataFrame:
-    """Process all epochs for one subject."""
-    all_rows = []
-    sfreq = SFREQ_TARGET
+def process_recording(recording: pd.Series) -> pd.DataFrame:
+    """Compute all epoch-level metrics for one preprocessed recording."""
+    epoch_file = Path(recording["epoch_file"])
+    if not epoch_file.is_absolute():
+        epoch_file = (WORKSPACE_DIR / epoch_file).resolve()
+    data = np.load(epoch_file)
+    sfreq = float(recording.get("sfreq", SFREQ_TARGET))
+    bids_stem = recording.get("bids_stem", recording.get("stem"))
 
-    for npy_file in sorted(subject_dir.glob("*_epochs.npy")):
-        condition = npy_file.stem.replace("_epochs", "")
-        data = np.load(npy_file)  # (n_epochs, n_channels, n_samples)
-        print(f"  {condition}: {data.shape[0]} epochs, "
-              f"{data.shape[1]} ch, {data.shape[2]} samples")
+    print(
+        f"  {bids_stem}: {data.shape[0]} epochs, "
+        f"{data.shape[1]} ch, {data.shape[2]} samples"
+    )
 
-        rows = Parallel(n_jobs=-1, verbose=0)(
-            delayed(process_epoch)(data[i], sfreq, i)
-            for i in range(data.shape[0])
-        )
+    rows = Parallel(n_jobs=-1, verbose=0)(
+        delayed(process_epoch)(data[i], sfreq, i)
+        for i in range(data.shape[0])
+    )
+    df = pd.DataFrame(rows)
 
-        for row in rows:
-            row["condition"] = condition
-        all_rows.extend(rows)
+    for key in (
+        "subject",
+        "task",
+        "acquisition",
+        "run",
+        "acq_time",
+        "source_file",
+        "epoch_file",
+    ):
+        df[key] = recording[key]
+    df["bids_stem"] = bids_stem
 
-    return pd.DataFrame(all_rows)
+    return df
 
 
 def main():
-    subject_dirs = sorted(PROCESSED_DIR.glob("sub-*"))
-
-    if not subject_dirs:
-        print("No processed data found. Run 02_preprocess.py first.")
+    manifest_path = PROCESSED_DIR / "recordings_manifest.csv"
+    if not manifest_path.exists():
+        print("No recordings manifest found. Run 02_preprocess.py first.")
         return
 
-    print(f"Found {len(subject_dirs)} subjects.\n")
-    all_dfs = []
+    manifest = pd.read_csv(manifest_path)
+    if manifest.empty:
+        print("The manifest is empty. Check preprocessing output.")
+        return
 
-    for sdir in subject_dirs:
-        subject_id = sdir.name
-        print(f"\nProcessing {subject_id}...")
+    print(f"Found {len(manifest)} recordings in the manifest.\n")
+    all_dfs: list[pd.DataFrame] = []
 
-        df = process_subject(sdir)
-        df["subject"] = subject_id
+    for recording in manifest.sort_values(["subject", "acq_time", "task", "run"]).itertuples(index=False):
+        row = pd.Series(recording._asdict())
+        bids_stem = row.get("bids_stem", row.get("stem"))
+        print(f"\nProcessing {row['subject']} / {bids_stem}...")
+        df = process_recording(row)
         all_dfs.append(df)
 
-        # Save per-subject
-        out_path = RESULTS_DIR / f"{subject_id}_metrics.csv"
+        out_path = RESULTS_DIR / f"{bids_stem}_metrics.csv"
         df.to_csv(out_path, index=False)
         print(f"  Saved {out_path}")
 
-    # Combine all subjects
     combined = pd.concat(all_dfs, ignore_index=True)
     combined_path = RESULTS_DIR / "all_subjects_metrics.csv"
     combined.to_csv(combined_path, index=False)
-    print(f"\nCombined results: {combined_path}")
+
+    metric_columns = [
+        c
+        for c in combined.columns
+        if c
+        not in {
+            "subject",
+            "task",
+            "acquisition",
+            "run",
+            "bids_stem",
+            "acq_time",
+            "source_file",
+            "epoch_file",
+            "epoch_idx",
+        }
+    ]
+    summary = (
+        combined.groupby(["subject", "task", "acquisition", "run", "bids_stem", "acq_time"], dropna=False)[metric_columns]
+        .median()
+        .reset_index()
+        .sort_values(["subject", "acq_time", "task", "run"], na_position="last")
+    )
+    summary_path = RESULTS_DIR / "recording_summary_metrics.csv"
+    summary.to_csv(summary_path, index=False)
+
+    print(f"\nCombined epoch-level results: {combined_path}")
+    print(f"Recording-level summary: {summary_path}")
     print(f"Total epochs: {len(combined)}")
-    print(f"Columns: {list(combined.columns)}")
-    print("\nNext: run 04_temporal_ordering.py")
+    print("Next: run 04_temporal_ordering.py")
 
 
 if __name__ == "__main__":

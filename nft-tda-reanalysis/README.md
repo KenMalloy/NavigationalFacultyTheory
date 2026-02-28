@@ -18,18 +18,67 @@ or simultaneous reduction. This temporal ordering is a discriminative prediction
 ## Pipeline
 
 ```
+run_pipeline.py      → Convenience runner for the steps below
 01_download.py       → Fetch OpenNeuro DS005620 (propofol sedation, 21 subjects)
 02_preprocess.py     → Filter, downsample, ICA, epoch
 03_compute_metrics.py → Classical metrics + persistent homology per epoch
 04_temporal_ordering.py → The actual test: does topology drop first?
 ```
 
+## Folder structure
+
+This subproject is intended to be self-contained:
+
+```
+nft-tda-reanalysis/
+├── 01_download.py
+├── 02_preprocess.py
+├── 03_compute_metrics.py
+├── 04_temporal_ordering.py
+├── run_pipeline.py
+├── config.py
+├── requirements.txt
+├── README.md
+├── data/
+│   ├── raw/
+│   └── processed/
+└── outputs/
+    ├── results/
+    └── figures/
+```
+
+`data/` and `outputs/` are created locally under this folder so the reanalysis
+does not spill downloaded data and generated artifacts into the repo root.
+
 ## Setup
 
 ```bash
-python -m venv venv
-source venv/bin/activate
+python3.11 -m venv .venv311
+source .venv311/bin/activate
 pip install -r requirements.txt
+```
+
+`giotto-tda` did not resolve under Python 3.14 on this machine, so Python 3.11
+is the safer default for now.
+
+## Running
+
+Run the full pipeline:
+
+```bash
+python run_pipeline.py
+```
+
+Run from a later step:
+
+```bash
+python run_pipeline.py --from-step preprocess
+```
+
+Run a single step:
+
+```bash
+python run_pipeline.py --only ordering
 ```
 
 ## Key metrics
@@ -54,6 +103,11 @@ During induction (awake → sedated): topological metrics show statistically
 significant decline 2+ epochs before classical metrics do. Bootstrap CI on
 the onset difference is entirely positive.
 
+For DS005620 specifically, this is an acquisition-ordered proxy analysis:
+awake EC baseline epochs are compared against later `sed` / `sed2` rest runs
+ordered by `sub-*/sub-*_scans.tsv`. The dataset does not expose true induction
+markers inside the rest recordings.
+
 ## What a negative result looks like
 
 Topological and classical metrics decline simultaneously, or classical metrics
@@ -68,8 +122,9 @@ prediction — report it honestly.
 - The dataset may not have fine-grained temporal resolution during the
   induction transition. If propofol was administered as a bolus, the
   transition window may be too fast to resolve ordering.
-- Event markers need to be inspected and mapped to the STATES config
-  before results are interpretable.
+- The rest recordings contain start markers but not induction onsets, so this
+  repo currently implements an acquisition-ordered proxy rather than a true
+  within-transition changepoint analysis.
 - β₃ and higher are computationally expensive and may not be meaningful
   with ~32 EEG channels (you need more points than dimensions).
 
