@@ -1,141 +1,116 @@
-# Navigational Faculty Theory (NFT)
+# The Navigational Faculty: A New Theory of Consciousness
 
-A research project exploring consciousness through the lens of quantum biology, information theory, and topological data analysis.
-
-## Acknowledgments
-
-This work stands on the shoulders of extraordinary researchers across many disciplines. We are deeply grateful for the foundational work that made this project possible.
-
-### Consciousness Studies & Philosophy of Mind
-
-- **Giulio Tononi** -- Integrated Information Theory (IIT) and the mathematical framework for measuring consciousness via integrated information
-- **Bernard Baars** -- Global Workspace Theory and consciousness as information broadcast
-- **Stanislas Dehaene & Jean-Pierre Changeux** -- Global Neuronal Workspace Theory and the neural architecture of conscious access
-- **David Chalmers** -- Articulating the hard problem of consciousness and consciousness-collapse formalism
-- **Kelvin McQueen** -- Consciousness-collapse models and the Zeno problem
-- **Stuart Hameroff & Roger Penrose** -- Orchestrated Objective Reduction (Orch OR) and the bold hypothesis of quantum processes in microtubules
-- **Joseph Levine** -- The explanatory gap between neural correlates and phenomenal experience
-- **Ned Block** -- The access vs. phenomenal consciousness distinction
-- **Robin Carhart-Harris** -- The entropic brain hypothesis and entropy as a marker of conscious states
-- **Erik Hoel & Max Kleiner** -- Structural constraints and self-referential limitations in consciousness theories
-- **Adrien Doerig, Arno Schurger & Michael Herzog** -- Hard criteria for evaluating consciousness theories
-- **Adam Safron** -- Integrated World Modeling Theory and the unification of IIT, GNWT, and Free Energy
-- **Donald Hoffman** -- Interface theory of perception and the fitness-beats-truth theorem
-- **Henry Stapp** -- Observer effects and mind-matter interaction in quantum mechanics
-- **Jonathan Edwards** -- N-Frame Networking Dynamics and QBism applied to consciousness
-
-### Quantum Biology
-
-- **Nathan S. Babcock et al.** -- Tryptophan superradiance in microtubule networks and collective quantum-optical effects
-- **Aarat P. Kalra et al.** -- Electronic energy migration and exciton diffusion in microtubules
-- **Travis J. A. Craddock et al.** -- Structure-based energy transfer in microtubules, anesthetic binding to tubulin, and terahertz oscillatory modes
-- **Saif Khan et al.** -- Microtubule-stabilizing drugs and anesthetic sensitivity, linking consciousness substrates to pharmacology
-- **Hadi Zadeh-Haghighi et al.** -- Experimental evidence for radical pair spin coherence in biological systems
-- **Timothy Oblinski et al.** -- Excitation energy transfer in biological protein systems
-
-### Quantum Physics & Foundations
-
-- **Max Tegmark** -- The decoherence challenge that sharpened arguments for quantum biology in warm systems
-- **Scott Hagan et al.** -- Rebuttals to decoherence objections with revised coherence timescale estimates
-- **Martin B. Plenio & Susana F. Huelga** -- Dephasing-assisted transport (ENAQT) and the insight that noise can enhance quantum efficiency
-- **Masoud Mohseni et al.** -- Environment-assisted quantum walks in photosynthetic energy transfer
-- **James D. Whitfield, Cesar A. Rodriguez-Rosario & Alan Aspuru-Guzik** -- Quantum stochastic walks bridging classical and quantum regimes
-- **B. Misra & E.C.G. Sudarshan** -- The quantum Zeno effect and foundational measurement theory
-- **A.G. Kofman & G. Kurizki** -- The anti-Zeno effect and measurement-accelerated quantum dynamics
-- **GianCarlo Ghirardi et al.** -- Objective collapse models (GRW)
-- **Nicolas Gisin** -- No-signaling constraints on nonlinear quantum mechanics
-- **Angelo Bassi et al.** -- Comprehensive review of collapse models and experimental tests
-- **Matteo Carlesso et al.** -- Modern collapse bounds from gravitational-wave detectors
-- **Andrea Vinante et al.** -- Ultracold sensor constraints on collapse model parameters
-- **Stephen Adler** -- Objective collapse parameters and alternative rate scales
-- **Wojciech Zurek** -- Quantum Darwinism and the emergence of classical reality
-- **Christopher Fuchs** -- QBism and agent-centered quantum interpretation
-- **Yakir Aharonov et al.** -- Weak measurement and quantum mechanical foundations
-
-### Information Theory & Complexity
-
-- **Andrey Kolmogorov** -- Algorithmic complexity and the foundations of information theory
-- **Gregory Chaitin** -- Algorithmic information theory and non-local grammar constraints
-- **Charles Bennett** -- Logical depth and the role of computation time in information
-- **Murray Gell-Mann & Seth Lloyd** -- Effective complexity and observer-relative information
-- **Hector Zenil** -- Algorithmic Information Dynamics and its applications to consciousness
-- **Constantino Tsallis** -- Non-extensive entropy and power-law scaling in complex systems
-- **Alfred Renyi** -- Generalized entropy measures
-- **Craig DeLancey** -- Kolmogorov complexity arguments for phenomenal incompressibility
-
-### Cognitive Science & Computational Neuroscience
-
-- **Karl Friston** -- The Free Energy Principle and active inference framework
-- **Thomas Parr, Giovanni Pezzulo & Karl Friston** -- Formal active inference and planning under uncertainty
-- **Jerome Busemeyer & Peter Bruza** -- Quantum probability models of cognition and decision
-- **Emmanuel Pothos & Jerome Busemeyer** -- Formal quantum cognition without requiring a quantum brain
-- **Douglas Hofstadter** -- Self-reference, strange loops, and consciousness
-- **Daniel Schacter et al.** -- The prospective brain and episodic future simulation
-- **Andrei Khrennikov** -- Quantum probability formalism and contextuality in cognition
-
-### Neuroscience & Empirical Consciousness Research
-
-- **Melanie Schartner et al.** -- EEG complexity under anesthesia and entropy-consciousness relationships
-- **Laura Melloni et al.** -- Neural synchronization as a marker of consciousness
-- **Andrea Casali et al.** -- Perturbational Complexity Index for consciousness measurement
-- **Andrea Luppi et al.** -- fMRI entropy and consciousness loss during anesthesia
-- **Laurent Naccache et al.** -- COGITATE adversarial collaboration on consciousness
-- **Andreas Engel et al.** -- Neural synchronization, gamma synchrony, and the binding problem
-- **Kevin Hengen et al.** -- Neural criticality and scaling laws
-- **Christopher Lynn et al.** -- Long-range correlations and power-law scaling in neural systems
-- **Satu Palva et al.** -- Neuronal avalanches and critical brain dynamics
-- **Woodrow Shew et al.** -- Self-organized criticality in the brain
-- **Rudiger Thul et al.** -- Permutation entropy in minimally conscious states
-- **Andres Canales-Johnson et al.** -- Information-theoretic consciousness measurement
-- **Fabian Frohlich et al.** -- Brain oscillations and expanded consciousness
-- **Elise Hodson, Rajesh Mehta & Andrew Smith** -- Systematic review of predictive coding and active inference
-- **Sean Motlagh et al.** -- Conscious vs. unconscious processing timing and recurrent processing
-
-### Topology & Structural Biology
-
-- **Michael Reimann et al.** -- Simplicial complex structures in neural circuits and topological binding (Blue Brain Project)
-- **Dominique Santoro et al.** -- Higher-order neural indicators and local vs. global topological signatures
-- **Mitsuhiro Kikkawa et al.** -- Microtubule seam visualization and B-lattice structure
-- **Eckhard Mandelkow et al.** -- Protofilament number and microtubule helix geometry
-
-### Evolutionary Biology & Non-Neural Cognition
-
-- **Taiko Fukasawa et al.** -- Mycelial networks showing spatial memory and navigation without neurons
-- **Nicholas Money** -- Fungal cognition and history-dependent behavior
-- **Tetsu Nakagaki et al.** -- Slime mold maze-solving and non-neural intelligence
-- **Atsushi Tero et al.** -- Biological transport network optimization in slime molds
-- **Shigeru Saigusa et al.** -- Stimulus anticipation and learning in Physarum
-- **Clara Boisseau, David Vogel & Audrey Dussutour** -- Habituation and learning without neurons
-- **Paco Calvo et al.** -- Plant cognition and microtubule-rich adaptive behavior
-
-### Philosophy, Mathematics & Theoretical Frameworks
-
-- **Kurt Godel** -- Incompleteness theorems and self-referential limits in formal systems
-- **Steven Phillips & Naotsugu Tsuchiya** -- Category theory formalization of consciousness axioms
-- **Robert Prentner** -- Adjoint functors and the subjective-objective gap
-- **Bernard Carr** -- Higher-dimensional psychophysical space and mental time
-- **Par Sjostedt-Hughes** -- Hyperdimensional Neutral Monism
-- **Paul Skokowski** -- Qualia as physical detector alteration
-- **Craig Callender** -- The hard problem of time and subjective temporal flow
-- **Meir Hemmo & Orly Shenker** -- Psychological arrow of time and thermodynamic asymmetry
-- **Dharshana Jha** -- Entropy-driven awareness
-- **Gualtiero Chen & Robert Sanders** -- Consciousness as Entropy Reduction (CER) model
-- **Mingyu Lu** -- Riemannian geometry framework for intelligence and consciousness
-
-### Quantum Computing & Algorithms
-
-- **Lov Grover** -- Quantum search algorithm and amplitude amplification
-- **Andrew Childs et al.** -- Exponential speedup via quantum walks on graphs
-- **Julia Kempe** -- Quantum random walk theory and applications
-
-### Thermodynamics & Self-Organization
-
-- **Ilya Prigogine** -- Dissipative structures and far-from-equilibrium self-organization
-- **Jeremy England** -- Driven systems, entropy dissipation, and spontaneous restructuring
-- **Lucas del Rio et al.** -- Thermodynamic work extraction from entangled systems
+**Kenneth Malloy** | Draft v2.1 — March 2026
 
 ---
 
-To every researcher listed here -- and the many collaborators, students, and teams behind each citation -- thank you. Your work across disciplines is what makes an integrative theory like NFT even conceivable. Science advances through the courage to ask hard questions, and each of you has expanded the boundaries of what we understand about mind, matter, and the space between.
+Every morning you wake up and something happens that no theory in science can explain. The lights come on. Not the lights in your room, the lights of experience. The world appears with texture and weight and presence, and there is a *you* doing the appearing-to. This book is about what that is.
 
-*-- Kenneth Malloy*
+Navigational Faculty Theory makes a single claim in three layers. The outermost layer says what consciousness *does*: it navigates. The middle layer says *how*: through a quantum mechanism in which living systems reshape the odds of their own futures. The innermost layer says what consciousness *navigates through*: a physically real possibility space. Each layer is independently testable. Each can fail without killing the others.
+
+This book contains two significant negative results reported in full: a simulation that ruled out the original proposed quantum mechanism, and an empirical reanalysis that failed to support one of the theory's predictions. The negative results make the theory stronger, because they show it is making contact with reality rather than insulating itself from it.
+
+---
+
+## Table of Contents
+
+### [Full Book](book_draft_v2.md) | Individual Chapters:
+
+| # | Chapter | Part |
+|---|---------|------|
+| — | [Preface & Glossary](book_v2/chapters/00_preface.md) | Front Matter |
+| 1 | [The Hard Problem](book_v2/chapters/01_hard_problem.md) | I: The Problem and the Method |
+| 2 | [Why It's Structurally Hard](book_v2/chapters/02_structurally_hard.md) | I |
+| 3 | [Testability as Method](book_v2/chapters/03_testability.md) | I |
+| 4 | [Consciousness as Navigation](book_v2/chapters/04_navigation.md) | II: Level A — Navigation as Function |
+| 5 | [The Entropic Current](book_v2/chapters/05_entropic_current.md) | II |
+| 6 | [The Evolutionary Case](book_v2/chapters/06_evolutionary_case.md) | II |
+| 7 | [The Categorical Difference](book_v2/chapters/07_categorical_difference.md) | III: Level B — Quantum Probability Sculpting |
+| 8 | [The Honest Path to the Mechanism](book_v2/chapters/08_honest_path.md) | III |
+| 9 | [How Sculpting Works](book_v2/chapters/09_how_sculpting_works.md) | III |
+| 10 | [The Navigation Benchmark](book_v2/chapters/10_navigation_proof.md) | III |
+| 11 | [Zeno, Anti-Zeno, and the Dynamics of Attention](book_v2/chapters/11_zeno.md) | IV: Level B — Deeper Consequences |
+| 12 | [Qualia as Measurement Back-Action](book_v2/chapters/12_qualia.md) | IV |
+| 13 | [Binding Through Topology](book_v2/chapters/13_binding_topology.md) | IV |
+| 14 | [What Possibility Space Is](book_v2/chapters/14_possibility_space.md) | V: Level C — The Ontology of Possibility |
+| 15 | [The Experimental Program](book_v2/chapters/15_experimental_program.md) | VI: Testing and Implications |
+| 16 | [Implications](book_v2/chapters/16_implications.md) | VI |
+| 17 | [The Formalization Horizon](book_v2/chapters/17_formalization.md) | VI |
+| — | [Epilogue: The Navigator](book_v2/chapters/18_epilogue.md) | — |
+| — | [Appendices](book_v2/chapters/19_appendices.md) | — |
+
+---
+
+## Repository Structure
+
+```
+enaqt_simulation/          Simulation code (all results reported in the book)
+├── core.py                    ENAQT framework (phenomenological + Bloch-Redfield)
+├── phase1_bias.py             Quantum bias measurement
+├── phase2_transport.py        Transport efficiency analysis
+├── phase2_bloch_redfield.py   Physically-derived quantum dynamics
+├── phase3_evolve.py           Evolutionary optimization over geometry
+├── quantum_vs_classical.py    Quantum vs classical comparison
+├── spin_coherence.py          Radical pair spin dynamics (the mechanism that worked)
+├── criticality_amplification.py   Criticality amplification (Ch. 9)
+├── measurement_basis_selection.py  Adaptive measurement basis selection
+├── directed_navigation.py     Directed navigation benchmark
+├── maze_navigator.py          3D maze navigation framework (Ch. 10)
+├── maze_scaling_sweep.py      90-maze scaling analysis (Ch. 10)
+├── transduction_chain.py      Full transduction chain calculation (Ch. 9)
+├── conformational_tunneling.py    Conformational tunneling (ruled out)
+└── trajectory_analysis.py     Trajectory divergence analysis
+
+nft-tda-reanalysis/        Topological Data Analysis pipeline (the negative result)
+├── 01_download.py             Dataset acquisition (OpenNeuro DS005620)
+├── 02_preprocess.py           EEG preprocessing
+├── 03_compute_metrics.py      Persistent homology + classical metrics
+├── 04_temporal_ordering.py    Temporal ordering analysis
+└── run_pipeline.py            Full pipeline runner
+
+simulations/               Anti-Zeno spectral analysis
+results/                   EEG metric outputs (21 subjects, propofol sedation)
+figures/                   TDA reanalysis figures
+research/                  Deep research reports (literature reviews)
+paper/                     Earlier drafts (v1 book draft, original paper draft)
+docs/plans/                Design documents and work plans
+```
+
+## Key Results
+
+| Claim | Result | Chapter |
+|-------|--------|---------|
+| Excitonic ENAQT in microtubules | **Ruled out.** +0.18% quantum advantage at 310K. | 8 |
+| Radical pair spin coherence | **Viable.** 12.7% yield difference, 1.48 μs coherence at 310K. | 8 |
+| Criticality amplifies quantum bias | **Confirmed.** 0.2% bias → 10.2% network effect at σ=1.0. | 9 |
+| Transduction chain viability | **Conditionally viable.** 10x below noise at baseline ROS, viable at elevated ROS. | 9 |
+| Quantum navigational advantage | **Modest but systematic.** +3.3% across 90 mazes, CI excludes zero. | 10 |
+| Topological disruption order | **Not supported.** Classical metrics declined first. | 13 |
+
+## Running the Simulations
+
+```bash
+# Create virtual environment
+python3 -m venv .venv
+source .venv/bin/activate
+pip install numpy scipy
+
+# Run any simulation (examples)
+python enaqt_simulation/criticality_amplification.py
+python enaqt_simulation/spin_coherence.py
+python enaqt_simulation/maze_scaling_sweep.py
+```
+
+The TDA reanalysis has its own environment and requirements. See [nft-tda-reanalysis/README.md](nft-tda-reanalysis/README.md).
+
+## License
+
+This work is shared for scrutiny, discussion, and scientific engagement. All code and research materials are open. Formal licensing TBD.
+
+## Contact
+
+Kenneth Malloy — [GitHub](https://github.com/KenMalloy)
+
+---
+
+*A theory that tells you how to kill it is doing science. A theory that cannot be killed is doing something else.*

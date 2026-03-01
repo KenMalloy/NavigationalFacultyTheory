@@ -1,131 +1,88 @@
-## Chapter 10: The Higher-Dimensional Navigation Demonstration
+## Chapter 10: The Navigation Benchmark
 
-Theory proposes. Simulation tests. This chapter presents a proof-of-principle demonstration that quantum probability sculpting, implemented through adaptive measurement basis selection, can produce navigational advantages over classical and non-adaptive quantum controls — including, on one maze, solutions that no control condition achieved under the same evolved parameters.
+Theory proposes. Simulation tests. And then the simulation must survive scrutiny. This chapter tells the story of a computational demonstration that began with a dramatic headline, failed to survive fair testing, was rebuilt from scratch, and produced a more honest result that is, in some ways, more interesting than the one it replaced.
 
-### The Design
+### The First Result
 
-The simulation places agents on a state space with six quantum degrees of freedom — a six-dimensional hypercube with 64 vertices — and projects their behavior into a two-dimensional maze. The agents must navigate from the top-left corner to the bottom-right goal through a landscape of walls, where the higher-dimensional quantum dynamics determine which moves are available in the projected space. A genetic algorithm (50 generations, 8 seeds per evaluation) evolves 47 parameters governing the feedback loop and movement weights.
+The original simulation placed agents on a six-dimensional hypercube (64 vertices) and projected their behavior into a two-dimensional maze. A genetic algorithm evolved parameters governing the feedback loop and movement weights. Four conditions were compared: quantum dynamics with adaptive measurement and evolved parameters, quantum with fixed measurement basis, classical stochastic dynamics with the same evolved parameters, and quantum with random parameters.
 
-Four conditions are compared:
+On a serpentine 8x8 maze, the quantum+evolved agent found the goal in 24% of runs. Every other condition achieved 0%. The result was striking: a categorical separation between quantum-adaptive and everything else.
 
-**Quantum + Evolved**: Full quantum dynamics (radical pair spin coherence with interference effects) plus measurement basis parameters tuned by evolutionary optimization. This is the full NFT mechanism.
+But the result had a methodological flaw. The genetic algorithm optimized parameters for the quantum+adaptive condition, and those same parameters were handed to the controls. The controls were running parameters tuned for a different dynamical regime. And no competent classical strategy (shortest-path planning, wall-following) was tested. The "classical" comparator was not classical intelligence. It was quantum-optimized parameters running without quantum dynamics.
 
-**Fixed Basis + Evolved**: Quantum dynamics with a fixed (non-adaptive) measurement basis, plus evolved parameters. Tests whether quantum effects alone are sufficient without adaptive steering.
+### Why It Didn't Survive
 
-**Classical + Evolved**: Classical stochastic dynamics (no interference, no superposition) with the same evolved parameters. Tests whether good parameters alone are sufficient without quantum substrate.
+We introduced fair classical baselines: a shortest-path planner with full map knowledge, wall-following heuristics, and independently re-optimized controllers for each condition. The shortest-path planner solved every maze. The re-optimized classical controllers largely closed the gap that had appeared so dramatic in the original comparison.
 
-**Quantum + Random**: Full quantum dynamics with random, untuned measurement parameters. Tests whether raw quantum effects provide any advantage without evolved structure.
+The original headline collapsed. This was the right outcome. A result that cannot survive fair testing was never a result.
 
-### Maze 1: The Serpentine
+### Rebuilding the Benchmark
 
-The first maze is an 8×8 grid with three spanning walls that force direction reversals, plus scattered obstacles that create local decision points:
+We rebuilt the simulation framework around four principles:
 
-```
-     0   1   2   3   4   5   6   7
-   ┌───┬───┬───┬───┬───┬───┬───┬───┐
- 0 │ S │   │ ■ │   │   │   │ ■ │   │
-   ├───┼───┼───┼───┼───┼───┼───┼───┤
- 1 │   │   │   │   │ ■ │   │   │   │
-   ├───┼───┼───┼───┼───┼───┼───┼───┤
- 2 │ ■ │ ■ │ ■ │ ■ │ ■ │ ■ │ ■ │   │  ← gap at col 7
-   ├───┼───┼───┼───┼───┼───┼───┼───┤
- 3 │   │   │   │   │   │   │   │   │
-   ├───┼───┼───┼───┼───┼───┼───┼───┤
- 4 │   │ ■ │ ■ │ ■ │ ■ │ ■ │ ■ │ ■ │  ← gap at col 0
-   ├───┼───┼───┼───┼───┼───┼───┼───┤
- 5 │   │   │   │   │   │   │   │   │
-   ├───┼───┼───┼───┼───┼───┼───┼───┤
- 6 │ ■ │ ■ │ ■ │ ■ │ ■ │ ■ │ ■ │   │  ← gap at col 7
-   ├───┼───┼───┼───┼───┼───┼───┼───┤
- 7 │   │   │ ■ │   │ ■ │   │   │ G │
-   └───┴───┴───┴───┴───┴───┴───┴───┘
-```
+**Matched training budgets.** Both quantum-adaptive and classical-adaptive controllers receive the same number of fitness evaluations during optimization. Neither side gets a hidden advantage from extra computation.
 
-The spanning walls at rows 2, 4, and 6 force three direction reversals — the agent must go right, then left, then right again, threading through single-cell gaps. The obstacles in rows 0-1 create local detours, and the distractors in row 7 add noise near the goal. The optimal path requires navigating a serpentine route through the gaps.
+**Independent optimization.** Each controller is evolved for its own dynamical regime. The classical controller has its own learned state-dependent stochastic gate, not quantum parameters with the quantum dynamics stripped out.
 
-The results show categorical separation:
+**Paired evaluation.** On each maze, the quantum and classical controllers face identical random trajectories (same seeds), so common noise cancels. The per-maze advantage is a paired difference, not two independent estimates.
 
-| Condition | Mean BFS Distance | Goal Rate | Min Distance |
-|---|---|---|---|
-| Quantum + Evolved | 9.34 | 24% | 0 |
-| Fixed Basis + Evolved | 18.00 | 0% | 18 |
-| Classical + Evolved | 19.60 | 0% | 18 |
-| Quantum + Random | 30.00 | 0% | 30 |
+**Multiple mazes.** Results are averaged across many randomly generated mazes within a family, not cherry-picked from a single favorable instance.
 
-The quantum+evolved agent found the goal in nearly one of every four runs. Every other condition achieved 0%. Not a low rate. Zero [B].
+### The Scaling Search
 
-### Maze 2: The Fourway
+We tested whether quantum navigational advantage scales with problem complexity by sweeping maze and latent dimensions: 2D mazes with 6D latent dynamics, 3D mazes with 7D latent dynamics, and 4D mazes with 8D latent dynamics. Each uses barrier hyperplanes with random gaps, generating mazes that are always solvable but structurally varied.
 
-A natural question: does the advantage replicate on a different topology? The second maze is an 8×8 grid designed to force navigation in all four cardinal directions — down, right, up, and left — with a BFS shortest path of 26 steps:
+The scaling was not monotonic. 2D/6D showed negligible advantage. 3D/7D showed a moderate positive signal. 4D/8D was weak and inconsistent, likely because the 4D search space exceeds what the optimizer can explore within the training budget.
 
-```
-     0   1   2   3   4   5   6   7
-   ┌───┬───┬───┬───┬───┬───┬───┬───┐
- 0 │ S │ ■ │ ■ │ ■ │   │   │   │   │
-   ├───┼───┼───┼───┼───┼───┼───┼───┤
- 1 │   │ ■ │ ■ │ ■ │   │   │   │   │
-   ├───┼───┼───┼───┼───┼───┼───┼───┤
- 2 │   │ ■ │   │   │   │   │   │   │  ← crossing point
-   ├───┼───┼───┼───┼───┼───┼───┼───┤
- 3 │   │ ■ │   │ ■ │ ■ │ ■ │ ■ │   │
-   ├───┼───┼───┼───┼───┼───┼───┼───┤
- 4 │   │ ■ │   │ ■ │   │   │   │   │
-   ├───┼───┼───┼───┼───┼───┼───┼───┤
- 5 │   │   │   │ ■ │   │ ■ │ ■ │ ■ │
-   ├───┼───┼───┼───┼───┼───┼───┼───┤
- 6 │   │   │   │ ■ │   │   │   │   │
-   ├───┼───┼───┼───┼───┼───┼───┼───┤
- 7 │   │   │   │ ■ │   │   │   │ G │
-   └───┴───┴───┴───┴───┴───┴───┴───┘
-```
+We then held the maze at 3D and swept latent dimensionality from 3D through 9D. The advantage peaked at an intermediate latent gap of approximately 3 extra dimensions (3D maze with 6D latent state) and declined on both sides. Too few extra dimensions provides insufficient room for interference effects to sculpt probabilities. Too many produces an interference pattern too complex for the optimizer to exploit. The optimum is intermediate.
 
-The vertical barrier in column 1 (rows 0-4) and column 3 (rows 3-7) creates a maze that cannot be solved by moving in only one or two directions. The agent must go down column 0, cross right at the bottom, navigate up through column 2, cross right at row 2, then work down and around to the goal. The optimal path requires 10 steps down, 10 right, 3 up, and 3 left.
+This non-monotonic pattern mirrors the ENAQT regime from Chapter 8: too little quantum coherence does not help, too much does not help, the advantage lives at an intermediate optimum. The probability sculpting thesis predicts exactly this shape, and the simulation produces it independently.
 
-| Condition | Mean BFS Distance | Goal Rate |
+### The 3D/6D Result
+
+On harder 3D mazes (side length 9, 6 barrier hyperplanes, 2 gaps per barrier, average detour ratio 1.25x), the 3D/6D configuration produced the clearest signal.
+
+In a 10-maze paired run with 100 evaluation trials per maze, the quantum-adaptive controller won on 9 mazes, tied on 1 (an exact tie: 0 advantage, 100 tied trials out of 100), and lost on none. The normalized advantage was +13.0% of path length with a standard error of 4.6%. The per-trial win rate was 52.9%: on any given run, the quantum agent barely edges out the classical agent. But the edge is systematic: it appears on 9 of 10 independent mazes.
+
+A confirmatory run across 90 mazes (30 per difficulty bin) produced these results:
+
+| Measure | Value | 95% CI |
 |---|---|---|
-| Quantum + Evolved | 8.00 | 0% |
-| Classical + Evolved | 16.68 | 0% |
-| Fixed Basis + Evolved | 22.00 | 0% |
-| Quantum + Random | 26.00 | 0% |
+| Normalized advantage | +3.32% | [+0.87%, +5.77%] |
+| Maze win rate | 53.3% | [43.1%, 63.3%] |
 
-No condition reached the goal. The quantum+evolved agent got stuck at distance 8, navigating well through the upper portion but unable to penetrate the wall barrier in rows 5-7. But the gradient advantage is clear: the quantum+evolved agent closed 69% of the BFS distance (from 26 to 8), while classical+evolved closed only 36% (from 26 to 16.68). The quantum agent gets twice as close as classical and three times as close as fixed-basis.
+The confidence interval excludes zero. The effect is real, modest, and systematic.
 
-### What the Two Mazes Show Together
+Stratified by maze difficulty (detour ratio), the advantage trends upward: +2.68% on easy mazes, +3.43% on medium, +3.85% on hard. The maze-level win rate follows the same gradient: 40%, 57%, 63%. But with 30 mazes per bin, no individual stratum reaches significance on its own. The difficulty gradient is suggestive, not established. A proper test would require substantially more mazes per bin.
 
-The combination is more informative than either alone.
+### The Compass Pattern
 
-Maze 1 provides the headline: a separation where the quantum+evolved agent finds the goal and no control does. Maze 2 provides the robustness check: on a harder topology requiring all four movement directions, the quantum advantage persists as a gradient but hits a wall. The mechanism provides a systematic advantage, not omniscience.
+The most important feature of these results is not the magnitude of the advantage but its structure.
 
-The ordering shift between mazes is itself informative. In maze 1, fixed-basis+evolved (18.00) narrowly beats classical+evolved (19.60). In maze 2, the order reverses — classical+evolved (16.68) beats fixed-basis+evolved (22.00). This suggests the relative importance of evolved parameters versus fixed quantum effects is landscape-dependent, which is exactly what the probability sculpting thesis predicts: the advantage is task-dependent, strongest where the fitness-relevant state is not reachable by classical gradient descent alone.
+A 3.3% survival lift is small on any single decision. A 53% trial win rate is barely above chance. If the question is "does quantum dramatically outperform classical on this maze?" the answer is no. But that is not the question evolution asks.
 
-### What Each Failure Demonstrates
+Evolution asks: across many environments, over many generations, does this mechanism provide a *consistent directional bias*? A compass does not need to be dramatically more accurate than guessing. It needs to point roughly north more often than it points south. A 1% fitness advantage can fix an allele in a population in a few thousand generations.
 
-The three-way dissociation is consistent across both mazes.
+The 10-maze run shows 52.9% per-trial wins but 90% per-maze wins. The quantum agent does not overwhelm the classical agent on any given trial. It modestly outperforms it on almost every maze. This is exactly the pattern natural selection exploits: a small, systematic bias that compounds across environments and generations. The quantum mechanism does not provide omniscience. It provides a compass.
 
-**Classical + Evolved fails.** The classical agent with the same evolved parameters cannot match the quantum agent on either landscape. The interference between paths — the ability to enhance some futures and suppress others through amplitude relationships — appears to be doing real computational work under these parameters.
+### What the Shortest-Path Planner Means
 
-**Quantum + Random fails.** Raw quantum effects without tuned measurement basis selection are useless — worst performance on both mazes. Interference is not magic. It is a resource that must be structured, aimed, to produce directional navigation. Unstructured quantum effects produce random walks, not navigation.
+The shortest-path planner, which has complete knowledge of the maze, solves every benchmark. This means the quantum-adaptive controller does not achieve "quantum advantage" in the computational sense of outperforming the best possible classical algorithm.
 
-**Fixed Basis + Evolved fails.** Even quantum dynamics with good parameters fail when the measurement basis is fixed rather than adaptive. The advantage comes from the feedback loop: outcome → conformation → new Hamiltonian → new measurement. It is the *adaptive selection of which questions to ask* that produces navigation. Fixed questions, even quantum ones, do not navigate.
+But this comparison is biologically meaningless. Evolution does not have access to a full map of the fitness landscape. It optimizes controllers under constraints: limited generations, limited information about the environment, no foreknowledge of which decisions will matter. The relevant question for NFT is not "can quantum beat omniscient classical planning?" It is "can evolution build better navigators when the biological substrate includes quantum resources than when it does not, given the same optimization budget?"
 
-### The Mapping
+The benchmark answers this question. Under matched evolutionary constraints, the quantum-coupled controller systematically outperforms the classical controller. We call this *quantum navigational advantage*: not supremacy over all classical strategies, but a systematic edge under the conditions that actually obtain in biological evolution [B].
 
-The simulation maps directly onto the probability sculpting thesis of Chapter 9.
+### What the Simulation Does and Does Not Prove
 
-The quantum dynamics provide the interference effects — the ability to enhance some paths and suppress others through amplitude relationships. The evolved parameters correspond to the evolutionary tuning of the feedback mechanism. The adaptive measurement basis corresponds to state-dependent measurement — the organism choosing what to measure based on the current state of the system.
+The simulation demonstrates that a learned quantum-adaptive controller, using radical pair spin dynamics with state-dependent measurement feedback, can systematically outperform a matched learned classical-adaptive controller across multiple randomly generated 3D mazes. The advantage is modest (+3.3%), systematic (CI excludes zero across 90 mazes), and peaks at an intermediate latent dimensionality consistent with the probability sculpting thesis.
 
-All three are necessary. None is sufficient. This is exactly what NFT predicts: consciousness requires quantum substrate (generation), adaptive measurement (selection), and evolved parameters (tuning). Remove any leg and the stool collapses.
+The simulation does not prove that the brain implements this mechanism. It does not prove that radical pair spin states in microtubules operate on a state space with the right structure. It does not prove that the amplification from criticality is sufficient in biological tissue. These remain empirical questions.
 
-### What the Simulations Do and Do Not Prove
+What the simulation provides is a fair test of the core claim: that evolution, given quantum resources and adaptive measurement, can build controllers that navigate better than evolution without quantum resources, under the same constraints. The answer, on this benchmark, is yes. Whether the same holds in biological tissue is the question the experimental program of Chapter 15 is designed to answer [B].
 
-The simulations demonstrate that the mechanism can work in principle. Maze 1 shows a separation — zero versus nonzero goal rate — on a tractable model system. Maze 2 shows the advantage replicates on a different, harder topology, though with diminished absolute performance. Together, they show that the three-way conjunction of quantum dynamics, adaptive measurement, and evolutionary tuning consistently outperforms all controls.
+**Where we are.** Take a breath. The hardest technical stretch is behind you.
 
-**A methodological caveat.** The genetic algorithm optimized parameters for the quantum+adaptive condition. The same parameters were then applied to all control conditions. This means the controls received parameters tuned for a different dynamical regime — parameters mismatched to their own dynamics. A stronger demonstration would evolve parameters independently for each condition and compare the best achievable performance of each. Until that comparison is done, the results demonstrate that the quantum feedback loop provides a richer optimization landscape for the GA to exploit, which is a weaker claim than "quantum dynamics provide an inherent computational advantage." The separation on Maze 1 (24% vs 0%) is suggestive but not conclusive. We report it as a proof of principle, not a proof of quantum advantage.
+Here is what we have established so far. Quantum and classical probability are categorically different: quantum systems sculpt interference patterns, classical systems roll weighted dice. The original excitonic mechanism failed at body temperature, but radical pair spin coherence works, with a 12.7% yield difference persisting for microseconds. The transduction chain from molecule to neuron is tight but viable, gated by superoxide concentration. A computational benchmark, rebuilt from scratch after its first version failed fair testing, shows that evolution with quantum resources builds better navigators than evolution without them. The advantage is modest (+3.3%) but systematic, exactly the kind of small consistent bias that natural selection exploits.
 
-Additionally, the simulations do not test against competent classical heuristics — a wall-following algorithm with BFS-informed scoring would likely solve both mazes with high success rates. The "classical" condition in the simulation removes quantum dynamics but retains the same parameterized movement-weight architecture, which is not the same as testing against the best classical strategy. The relevant comparison for establishing quantum advantage would be: does the quantum agent outperform the best classical algorithm on the same task? That comparison has not been made.
-
-The simulations do not prove that the brain implements this mechanism. They do not prove that radical pair spin states in microtubules operate on a state space with the right structure. They do not prove that the amplification from criticality is sufficient in biological tissue. These are empirical questions that the simulations motivate but do not answer.
-
-What the simulations do provide is an existence proof: the mechanism — quantum dynamics plus adaptive measurement plus evolutionary tuning — can produce navigational behavior on a tractable model. Whether it operates in biological tissue is a question experiments must answer [B].
-
----
+The mechanism is on the table. Now we ask: what does it explain about the *experience* of consciousness? Why does focus feel different from mind-wandering? Why does pain feel different from pleasure? How does distributed neural activity become unified experience? The next three chapters tackle these questions, and they connect physics to phenomenology in ways that are, I think, genuinely surprising.

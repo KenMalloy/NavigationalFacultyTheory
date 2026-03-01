@@ -1,9 +1,11 @@
+---
+
 # Appendices
 
 [Note: The following appendices would be developed from existing materials:]
 
 ## Appendix A: Simulation Code and Results
-*[6D navigation proof — full code, parameter specifications, and statistical analysis]*
+*[3D/6D navigation benchmark: full code, maze generation, scaling sweep methodology, paired evaluation protocol, and 90-maze confirmatory statistical analysis]*
 
 ## Appendix B: ENAQT Simulation — The Negative Result
 *[Full computational details of the excitonic transport simulation, including phenomenological QSW, Bloch-Redfield, and evolutionary optimization results]*
@@ -15,10 +17,10 @@
 *[Full pipeline description, dataset details, persistent homology computation, and temporal ordering statistics]*
 
 ## Appendix E: Non-Neural Evidence
-*[Fungi, slime molds, plants — evidence from cytoskeletal networks without synaptic connections]*
+*[Fungi, slime molds, plants: evidence from cytoskeletal networks without synaptic connections]*
 
 ## Appendix F: Entropy Taxonomy
-*[Signal entropy, trajectory entropy, Tsallis, Rényi, Shannon — distinguishing seven different entropy concepts]*
+*[Signal entropy, trajectory entropy, Tsallis, Rényi, Shannon: distinguishing seven different entropy concepts]*
 
 ## Appendix G: Extended Engagement with Competing Frameworks
 *[RPT, quantum cognition without quantum brain, hard criteria, GNWT post-COGITATE response]*
@@ -57,7 +59,7 @@
 
 3. **Chapter 8 tells the honest path.** The story of excitonic → failure → radical pair → success makes the theory's responsiveness to evidence a structural feature of the book.
 
-4. **6D navigation proof added.** Chapter 10 presents new computational results demonstrating categorical quantum advantage through adaptive measurement basis selection.
+4. **Navigation benchmark rebuilt.** Chapter 10 tells the full story: original 2D result, failure against fair baselines, rebuild with matched budgets and paired evaluation, 3D/6D sweet spot, 90-maze confirmation of modest but systematic quantum navigational advantage.
 
 5. **Structure reorganized by commitment level.** Chapters follow the A → B → C arc rather than the thematic grouping of v1.0, making the argument's separability performative rather than merely claimed.
 
@@ -67,6 +69,6 @@
 
 8. **Possibility space moved to Level C.** No longer front-loaded before the reader has reason to engage with it.
 
-9. **AI section restructured.** Four missing conditions cover quantum substrate, criticality, topological binding, and non-ergodicity — the conjunction, not any single condition.
+9. **AI section restructured.** Four missing conditions cover quantum substrate, criticality, topological binding, and non-ergodicity. It is the conjunction, not any single condition, that matters.
 
 10. **Preface includes reading guide** for casual readers and acknowledges negative results upfront.

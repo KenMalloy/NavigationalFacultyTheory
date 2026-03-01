@@ -53,6 +53,16 @@ Confirmatory unit of inference
 This script treats the maze as the unit of inference. Trial-level counts can
 be displayed if present, but the headline summaries are always aggregated over
 per-maze rows, never over paired trials.
+
+Derived survival metric
+-----------------------
+When controller mean distances are present, this helper derives:
+
+- `quantum_survival_pct = 100 * (1 - quantum_mean_dist / shortest_path)`
+- `classical_survival_pct = 100 * (1 - classical_mean_dist / shortest_path)`
+- `survival_lift_pct = quantum_survival_pct - classical_survival_pct`
+
+This treats "survival" as fraction of the shortest-path distance recovered.
 """
 
 from __future__ import annotations
@@ -130,6 +140,12 @@ OPTIONAL_NUMERIC = (
     "planner_mean_dist",
     "paired_quantum_win_rate",
 )
+
+
+def compute_survival_pct(shortest_path: float | None, mean_dist: float | None) -> float | None:
+    if shortest_path is None or mean_dist is None or shortest_path <= 0:
+        return None
+    return 100.0 * (1.0 - (mean_dist / shortest_path))
 
 
 def parse_args() -> argparse.Namespace:
@@ -277,6 +293,21 @@ def canonicalize_rows(rows: list[dict[str, str]], alias_map: dict[str, str]) -> 
             "paired_quantum_win_rate": get_float(row, alias_map, "paired_quantum_win_rate"),
             "_row_number": idx,
         }
+        canonical["quantum_survival_pct"] = compute_survival_pct(
+            canonical["shortest_path"], canonical["quantum_mean_dist"]
+        )
+        canonical["classical_survival_pct"] = compute_survival_pct(
+            canonical["shortest_path"], canonical["classical_mean_dist"]
+        )
+        if (
+            canonical["quantum_survival_pct"] is not None and
+            canonical["classical_survival_pct"] is not None
+        ):
+            canonical["survival_lift_pct"] = (
+                canonical["quantum_survival_pct"] - canonical["classical_survival_pct"]
+            )
+        else:
+            canonical["survival_lift_pct"] = None
         canonical_rows.append(canonical)
     return canonical_rows
 
@@ -410,6 +441,39 @@ def summarize_group(rows: list[dict[str, object]], group_cols: list[str], z_valu
             }
         )
 
+    if all(row.get("quantum_survival_pct") is not None for row in rows):
+        q_survival = mean_sem_ci([float(row["quantum_survival_pct"]) for row in rows], z_value)
+        summary.update(
+            {
+                "quantum_survival_pct_mean": q_survival["mean"],
+                "quantum_survival_pct_sem": q_survival["sem"],
+                "quantum_survival_pct_ci_low": q_survival["ci_low"],
+                "quantum_survival_pct_ci_high": q_survival["ci_high"],
+            }
+        )
+
+    if all(row.get("classical_survival_pct") is not None for row in rows):
+        c_survival = mean_sem_ci([float(row["classical_survival_pct"]) for row in rows], z_value)
+        summary.update(
+            {
+                "classical_survival_pct_mean": c_survival["mean"],
+                "classical_survival_pct_sem": c_survival["sem"],
+                "classical_survival_pct_ci_low": c_survival["ci_low"],
+                "classical_survival_pct_ci_high": c_survival["ci_high"],
+            }
+        )
+
+    if all(row.get("survival_lift_pct") is not None for row in rows):
+        lift_stats = mean_sem_ci([float(row["survival_lift_pct"]) for row in rows], z_value)
+        summary.update(
+            {
+                "survival_lift_pct_mean": lift_stats["mean"],
+                "survival_lift_pct_sem": lift_stats["sem"],
+                "survival_lift_pct_ci_low": lift_stats["ci_low"],
+                "survival_lift_pct_ci_high": lift_stats["ci_high"],
+            }
+        )
+
     for metric in OPTIONAL_NUMERIC:
         if metric in ("paired_raw_adv_mean",):
             continue
@@ -463,6 +527,9 @@ def markdown_table(rows: list[dict[str, object]], group_cols: list[str]) -> str:
         "normalized_adv_pct_mean",
         "normalized_adv_pct_ci_low",
         "normalized_adv_pct_ci_high",
+        "survival_lift_pct_mean",
+        "survival_lift_pct_ci_low",
+        "survival_lift_pct_ci_high",
         "maze_quantum_win_rate",
         "maze_quantum_win_ci_low",
         "maze_quantum_win_ci_high",
@@ -514,16 +581,22 @@ def print_console_summary(summaries: list[dict[str, object]], group_cols: list[s
     print("=" * 100)
     print("  MAZE SCALING CONFIRMATORY SUMMARY")
     print("=" * 100)
-    headers = group_cols + ["n_mazes", "norm_adv", "norm_ci", "win_rate", "detour", "open"]
+    headers = group_cols + ["n_mazes", "norm_adv", "survival", "win_rate", "detour", "open"]
     print("  " + " | ".join(f"{header:>12}" for header in headers))
     print("  " + "-" * 96)
     for row in summaries:
         values = [format_value(row.get(column, "")) for column in group_cols]
+        survival_value = "n/a"
+        if "survival_lift_pct_mean" in row:
+            survival_value = (
+                f"{row['survival_lift_pct_mean']:+.2f}% "
+                f"[{row['survival_lift_pct_ci_low']:+.2f}, {row['survival_lift_pct_ci_high']:+.2f}]"
+            )
         values.extend(
             [
                 format_value(row["n_mazes"]),
                 f"{row['normalized_adv_pct_mean']:+.2f}%",
-                f"[{row['normalized_adv_pct_ci_low']:+.2f}, {row['normalized_adv_pct_ci_high']:+.2f}]",
+                survival_value,
                 f"{row['maze_quantum_win_rate']:.1%}",
                 f"{row['detour_ratio_mean']:.2f}x",
                 f"{row['open_fraction_mean']:.2f}",
