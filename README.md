@@ -103,13 +103,31 @@ python enaqt_simulation/maze_scaling_sweep.py
 
 The TDA reanalysis has its own environment and requirements. See [nft-tda-reanalysis/README.md](nft-tda-reanalysis/README.md).
 
-## License
+## Acknowledgments
 
-This work is shared for scrutiny, discussion, and scientific engagement. All code and research materials are open. Formal licensing TBD.
+This work stands on the shoulders of extraordinary researchers across many disciplines.
 
-## Contact
+**Consciousness Studies & Philosophy of Mind:** Giulio Tononi (IIT), Bernard Baars (Global Workspace Theory), Stanislas Dehaene & Jean-Pierre Changeux (GNWT), David Chalmers (the hard problem), Stuart Hameroff & Roger Penrose (Orch OR), Robin Carhart-Harris (entropic brain hypothesis), Adam Safron (IWMT), Karl Friston (Free Energy Principle), Jonathan Edwards (N-Frame), Paul Skokowski (qualia as detector alteration), Donald Hoffman (interface theory), Henry Stapp (observer effects), Kelvin McQueen (consciousness-collapse), Erik Hoel & Max Kleiner (structural constraints), Adrien Doerig, Arno Schurger & Michael Herzog (hard criteria).
 
-Kenneth Malloy — [GitHub](https://github.com/KenMalloy)
+**Quantum Biology:** Nathan S. Babcock et al. (tryptophan superradiance), Aarat P. Kalra et al. (exciton diffusion in microtubules), Travis J. A. Craddock et al. (structure-based energy transfer, anesthetic binding), Saif Khan et al. (microtubule-stabilizing drugs), Hadi Zadeh-Haghighi et al. (radical pair spin coherence in biological systems), Timothy Oblinski et al. (excitation energy transfer).
+
+**Quantum Physics & Foundations:** Max Tegmark (decoherence challenge), Martin B. Plenio & Susana F. Huelga (ENAQT), Masoud Mohseni et al. (environment-assisted quantum walks), James D. Whitfield, Cesar A. Rodriguez-Rosario & Alan Aspuru-Guzik (quantum stochastic walks), B. Misra & E.C.G. Sudarshan (quantum Zeno effect), A.G. Kofman & G. Kurizki (anti-Zeno effect), Wojciech Zurek (quantum Darwinism), Christopher Fuchs (QBism), Yakir Aharonov et al. (weak measurement).
+
+**Information Theory & Complexity:** Andrey Kolmogorov, Gregory Chaitin, Charles Bennett, Constantino Tsallis (non-extensive entropy), Craig DeLancey (Kolmogorov complexity and phenomenal experience), Hector Zenil (Algorithmic Information Dynamics).
+
+**Cognitive Science:** Jerome Busemeyer & Peter Bruza (quantum cognition), Emmanuel Pothos & Jerome Busemeyer (quantum probability models), Douglas Hofstadter (strange loops), Andrei Khrennikov (contextuality in cognition).
+
+**Neuroscience:** Melanie Schartner et al. (EEG complexity), Andrea Casali et al. (PCI), Andrea Luppi et al. (fMRI entropy), Laurent Naccache et al. (COGITATE), Kevin Hengen et al. (neural criticality), Rudiger Thul et al. (permutation entropy), Andres Canales-Johnson et al. (information-theoretic consciousness measurement).
+
+**Topology & Structural Biology:** Michael Reimann et al. (Blue Brain Project, simplicial complexes), Dominique Santoro et al. (higher-order neural indicators), Steven Phillips & Naotsugu Tsuchiya (category theory and consciousness axioms).
+
+**Evolutionary Biology & Non-Neural Cognition:** Tetsu Nakagaki et al. (slime mold maze-solving), Atsushi Tero et al. (biological transport networks), Taiko Fukasawa et al. (mycelial spatial memory), Paco Calvo et al. (plant cognition).
+
+**Thermodynamics & Self-Organization:** Ilya Prigogine (dissipative structures), Jeremy England (driven systems and entropy dissipation), Gualtiero Chen & Robert Sanders (CER model), Dharshana Jha (entropy-driven awareness), Meir Hemmo & Orly Shenker (psychological arrow of time).
+
+To every researcher listed here, and the many collaborators, students, and teams behind each citation: thank you. Your work across disciplines is what makes an integrative theory like NFT even conceivable.
+
+*-- Kenneth Malloy*
 
 ---
 
