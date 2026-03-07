@@ -238,7 +238,7 @@ Consciousness is a faculty in the same sense. It evolved to navigate the landsca
 
 ### Not a Metaphor
 
-Not "navigate" as a metaphor for thinking. Navigate the way vision navigates the electromagnetic spectrum: as a biological process that transduces a domain of physical reality into actionable information. Vision doesn't merely correlate with photons; it *is* the transduction of photons. Consciousness doesn't merely correlate with neural complexity; it *is* the navigation of possibility space — the landscape of available futures.
+Not "navigate" as a metaphor for thinking. Navigate the way vision navigates the electromagnetic spectrum: as a biological process that transduces a domain of physical reality into actionable information. Vision *is* the transduction of photons. Consciousness *is* the navigation of possibility space — the landscape of available futures.
 
 This is distinct from Hoffman's interface theory, which treats consciousness as a "desktop," a simplified representation of reality that hides its true complexity. Hoffman's consciousness is passive and representational. The navigator is active and selective. It doesn't perceive a simplified version of what could be. It selects from it, steering the organism through branching points that determine which futures get realized.
 
@@ -492,9 +492,9 @@ The brain sits on a knife edge between order and chaos. At this edge, correlatio
 
 At the critical point, small perturbations produce large effects. A quantum bias that would be negligible in a subcritical system gets amplified at criticality because the system's susceptibility diverges.
 
-We tested this computationally. A 0.2% microscale bias, much smaller than the 12.7% radical pair yield difference, produced a 10.2% network-level effect at the critical point (sigma = 1.0). This is a 51-fold amplification. The amplification is superlinear, peaking specifically at the critical point and falling off on both sides. Below criticality, the bias is absorbed by rigid dynamics. Above criticality, it is overwhelmed by chaos. At the critical point, it cascades [B].
+We tested this computationally. A 0.2% microscale bias, much smaller than the 12.7% radical pair yield difference, produced a 10.2% network-level effect at the critical point (sigma = 1.0). That is a 51-fold amplification from molecule to network (10.2% output from 0.2% input). The more conservative comparison is critical versus subcritical: 2.8-fold, meaning the critical point specifically contributes nearly three times the amplification of a subcritical system. The amplification is superlinear, peaking specifically at the critical point and falling off on both sides. Below criticality, the bias is absorbed by rigid dynamics. Above criticality, it is overwhelmed by chaos. At the critical point, it cascades [B].
 
-The brain is precisely the kind of system where tiny systematic biases cascade into macroscopic behavioral differences. This is not a coincidence. It is the physical reason consciousness requires criticality.
+The brain is precisely the kind of system where tiny systematic biases cascade into macroscopic behavioral differences. There is a physical reason consciousness requires criticality, and this is it.
 
 ### The Transduction Chain: Do the Numbers Work?
 
@@ -516,13 +516,13 @@ The duty cycle matters. During ordinary cortical processing, local O₂⁻ spend
 
 And this points somewhere interesting. The radical pair mechanism is *activity-dependent*. Quiet neurons, with low metabolic demand and low ROS production, do not generate enough radical pair events for the quantum signal to matter. Active neurons, driving mitochondria hard, do. The mechanism tracks engagement: consciousness does not merely happen to neurons; it happens through neurons that are doing something [B].
 
-**Third, the microtubule count may be substantially higher than the conservative estimate.** The manuscript cites approximately one billion tubulin dimers per cortical neuron (Epilogue). If large pyramidal neurons with extensive dendritic arbors approach this count (roughly 77,000 microtubules), the signal is 77 times larger than the conservative estimate, well above the noise floor even at baseline ROS.
+**Third, the microtubule count may be substantially higher than the conservative estimate.** Large pyramidal neurons with extensive dendritic arbors may contain roughly 77,000 microtubules (an order-of-magnitude estimate based on dendritic volume and microtubule packing density; no direct count exists in the literature). If so, the signal is 77 times larger than the conservative estimate, well above the noise floor even at baseline ROS. This is an exploratory scenario, not an established parameter.
 
 The bottleneck is unambiguously the radical pair formation rate. The 12.7% yield difference is large enough (larger than the roughly 5% effect in avian magnetoreception, which is experimentally confirmed). The criticality amplification is strong enough. What determines whether the mechanism works is how many radical pair events occur within a neural integration window, and that is governed by local superoxide concentration at microtubule surfaces.
 
 Several quantities in this chain remain poorly constrained: the radical formation probability for O2-minus + Trp in tubulin (we used 1%; it could be 0.1% to 10%), the conformational coupling efficiency (how much shift does one differential product produce?), and the local ROS concentration near microtubules (reaction-diffusion modeling with measured SOD kinetics shows that O₂⁻ can reach microtubules within ~1 μm of a mitochondrial source, but no one has yet measured absolute O₂⁻ concentration at submicron resolution in living neurons). Each of these is experimentally accessible. The theory would be falsified if the transduction chain were shown to be suppressed by more than roughly 100 times relative to these estimates (for example, if tryptophan residues in assembled microtubules were entirely inaccessible to superoxide, or if radical pair products had no conformational effect on tubulin). It would be confirmed if activity-dependent ROS elevation at microtubule surfaces coincided with measurable changes in tubulin conformational dynamics.
 
-The numbers are tight. The mechanism is viable under favorable but not extreme parameter assumptions. The swing factor, ROS concentration, is measurable and biologically regulated in precisely the direction the theory needs. This is not the comfortable margin I would want. But it is not the death sentence the reviewers feared. The full transduction chain calculation, including sensitivity analysis across plausible parameter ranges, is reported in [Malloy, "Quantitative Viability of the Radical Pair Transduction Chain," forthcoming].
+The numbers are tight. What we have is a chain of order-of-magnitude estimates, each with its own uncertainty range, that lands within striking distance of the noise floor rather than falling catastrophically short. The mechanism is not yet ruled out, but it is not confirmed either. The swing factor is ROS concentration, which is measurable and biologically regulated in precisely the direction the theory needs. This is not the comfortable margin I would want. But it is not the death sentence the reviewers feared. The full transduction chain calculation, including sensitivity analysis across plausible parameter ranges, is reported in [Malloy, "Quantitative Viability of the Radical Pair Transduction Chain," forthcoming].
 
 ### The Feedback Loop
 
@@ -602,7 +602,7 @@ The original headline collapsed. This was the right outcome. A result that canno
 
 We rebuilt the simulation framework around four principles:
 
-**Matched training budgets.** Both quantum-adaptive and classical-adaptive controllers receive the same number of fitness evaluations during optimization. Neither side gets a hidden advantage from extra computation.
+**Matched training budgets.** Both quantum-adaptive and classical-adaptive controllers receive the same number of fitness evaluations during optimization. Neither side gets a hidden advantage from extra computation. The budget was locked before we saw results. We did not keep evolving until the quantum controller won.
 
 **Independent optimization.** Each controller is evolved for its own dynamical regime. The classical controller has its own learned state-dependent stochastic gate, not quantum parameters with the quantum dynamics stripped out.
 
@@ -626,7 +626,9 @@ On harder 3D mazes (side length 9, 6 barrier hyperplanes, 2 gaps per barrier, av
 
 In a 10-maze paired run with 100 evaluation trials per maze, the quantum-adaptive controller won on 9 mazes, tied on 1 (an exact tie: 0 advantage, 100 tied trials out of 100), and lost on none. The normalized advantage was +13.0% of path length with a standard error of 4.6%. The per-trial win rate was 52.9%: on any given run, the quantum agent barely edges out the classical agent. But the edge is systematic: it appears on 9 of 10 independent mazes.
 
-A confirmatory run across 90 mazes (30 per difficulty bin) produced these results:
+We were excited. A 90% maze win rate and +13% advantage looked like a clear signal. The confirmatory run brought the numbers back to earth, which is what confirmatory runs are for.
+
+Across 90 mazes (30 per difficulty bin), with the training budget locked and no re-evolution after seeing which mazes favored which controller, the results were:
 
 | Measure | Value | 95% CI |
 |---|---|---|
@@ -661,7 +663,7 @@ The simulation demonstrates that a learned quantum-adaptive controller, using ra
 
 The simulation does not prove that the brain implements this mechanism. It does not prove that radical pair spin states in microtubules operate on a state space with the right structure. It does not prove that the amplification from criticality is sufficient in biological tissue. These remain empirical questions.
 
-What the simulation provides is a fair test of the core claim: that evolution, given quantum resources and adaptive measurement, can build controllers that navigate better than evolution without quantum resources, under the same constraints. The answer, on this benchmark, is yes. Whether the same holds in biological tissue is the question the experimental program of Chapter 15 is designed to answer. The complete benchmark specification, including maze generation, controller architectures, optimization protocols, and statistical analysis, is reported in [Malloy, "Quantum Navigational Advantage in Evolved 3D Maze Controllers," forthcoming] [B].
+What the simulation provides is a fair test of the core claim: that evolution, given quantum resources and adaptive measurement, can build controllers that navigate better than evolution without quantum resources, under the same constraints. Both controllers received the same optimization budget, fixed in advance. Neither was re-evolved after results were inspected. The 90-maze confirmatory set was run once. The answer, on this benchmark, is yes. Whether the same holds in biological tissue is the question the experimental program of Chapter 15 is designed to answer. The complete benchmark specification, including maze generation, controller architectures, optimization protocols, and statistical analysis, is reported in [Malloy, "Quantum Navigational Advantage in Evolved 3D Maze Controllers," forthcoming] [B].
 
 **Where we are.** Take a breath. The hardest technical stretch is behind you.
 
@@ -707,13 +709,13 @@ The balance between Zeno and anti-Zeno is where things get interesting for consc
 
 Navigation at the critical balance between these regimes has maximal flexibility, stable enough for coherent experience and dynamic enough for adaptive response. The phenomenology of consciousness, the felt difference between focused concentration and relaxed exploration, maps onto the physics of measurement-dependent dynamics.
 
-This is a prediction, not a post hoc accommodation. The Zeno/anti-Zeno framework predicts specific, testable relationships between measurement rate, attention state, and navigational flexibility [B].
+No simulation backs this chapter. No data. What the Zeno/anti-Zeno framework provides is a prediction: specific, testable relationships between measurement rate, attention state, and navigational flexibility. If measurement rate correlates with attentional state in the direction this chapter describes, the framework gains weight. If it does not, the framework loses it [B].
 
 ---
 
 ## Chapter 12: Qualia as Measurement Back-Action
 
-Consciousness navigates possibility space through quantum substrate coupling. But coupling is bidirectional. This chapter proposes that the phenomenal character of experience, what it is like to hear a chord, taste coffee, feel pain, is the physical back-action of the quantum measurement interaction on the measuring apparatus.
+This chapter makes the book's most speculative claim. What it is like to hear a chord, taste coffee, feel pain. It is the physical back-action of the quantum measurement interaction on the measuring apparatus. A conjecture, but one with a physical address. And that makes it testable.
 
 ### Back-Action Is Not Optional
 
@@ -1095,7 +1097,7 @@ You are a navigator.
 
 Not metaphorically. Not as a way of talking about cognition. Physically.
 
-Your microtubule networks, one billion tubulin dimers per cortical neuron, host radical pair reactions whose spin coherence persists for microseconds at body temperature. They couple you to the landscape of what could be. Your consciousness is the process of steering through that landscape, selecting futures from the genuine indeterminacy of the quantum world. The stability of your experience is the Zeno effect. Its richness, the grain and texture of what things feel like, is the back-action. The arrow of your time points along the entropy gradient.
+Your microtubule networks, millions of tubulin dimers per neuron, host radical pair reactions whose spin coherence persists for microseconds at body temperature. They couple you to the landscape of what could be. Your consciousness is the process of steering through that landscape, selecting futures from the genuine indeterminacy of the quantum world. The stability of your experience is the Zeno effect. Its richness, the grain and texture of what things feel like, is the back-action. The arrow of your time points along the entropy gradient.
 
 The existing theories of consciousness are not wrong. They are partial. Integration makes navigation coherent. Broadcasting is how the result reaches the rest of the organism. Quantum substrate coupling makes it real.
 
