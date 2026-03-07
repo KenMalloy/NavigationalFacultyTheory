@@ -1,3 +1,5 @@
+---
+
 ## Chapter 17: The Formalization Horizon
 
 A theory without mathematics is a metaphor. This chapter sketches the mathematical framework that would make NFT fully rigorous. It is also honest about how far that program has actually progressed, which is: not far enough.
@@ -18,7 +20,7 @@ The mathematical backbone is a framework called a quantum stochastic walk (QSW).
 
 The adaptive measurement thesis adds a feedback loop: the outcome of each quantum measurement changes what gets measured next. The protein's current shape determines the quantum evolution; the quantum outcome changes the protein's shape; the new shape determines the next evolution. This cycle repeats continuously. Each individual step is standard quantum mechanics. The feedback loop is standard control theory (Wiseman and Milburn, 2009). Nothing exotic is required.
 
-> **Deep dive: the QSW formalism.** The QSW framework provides a Lindblad master equation interpolating between coherent quantum walks and classical random walks on the same graph: ρ̇ = −i[H, ρ] + Σ_k (L_k ρ L_k† − ½{L_k†L_k, ρ}). With walk Hamiltonian H_walk = γA (adjacency matrix), potential landscape H_pot = Σ_x E(x)|x⟩⟨x|, and local dephasing operators L_j = √κ Z_j. The sequential feedback process: (1) evolve the radical pair under Hamiltonian H(θ), where θ is the current conformation; (2) apply Haberkorn recombination (standard Lindblad dissipator); (3) record the singlet/triplet yield; (4) update θ based on the outcome; (5) return to step 1. Each step is a standard, linear, completely positive quantum channel. A continuous-time approximation writing L_k as a function of ρ introduces nonlinearity that breaks GKSL guarantees; NFT's physical mechanism does not require this approximation. The discrete-time formulation is well-defined.
+One thing worth noting, because it matters for whether the mechanism is physically legitimate: there is a temptation in quantum biology to write down continuous-time equations where the measurement operator depends on the system's own state. This looks elegant but breaks a foundational guarantee of quantum mechanics called complete positivity. The math stops being physically valid. NFT does not require this shortcut. The actual mechanism is a discrete cycle: evolve the radical pair, record the outcome, update the protein conformation, repeat. Each step is a standard quantum operation. The full sequence is standard quantum feedback control. The formalism is well-defined, and the computational simulations implement exactly this cycle. The formal details are developed in [Malloy 2026].
 
 ### The Negative Conditional Entropy Wedge
 

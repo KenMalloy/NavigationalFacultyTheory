@@ -1,6 +1,12 @@
+---
+
+# PART FIVE: LEVEL C — THE ONTOLOGY OF POSSIBILITY
+
+---
+
 ## Chapter 14: What Possibility Space Is
 
-If consciousness navigates, it must navigate *something*. Levels A and B can operate without answering what that something is: Level A needs only that trajectory distributions exist, and Level B needs only that quantum indeterminacy generates genuine alternatives. But Level C ventures further. It proposes that possibility space is not merely a mathematical convenience but a physically real structure from which consciousness selects definite outcomes [C].
+If consciousness navigates, it must navigate *something*. Levels A and B can operate without answering what that something is: Level A needs only that trajectory distributions exist, and Level B needs only that quantum indeterminacy generates genuine alternatives. Level C goes further. Possibility space is not a mathematical convenience. It is a physically real structure from which consciousness selects definite outcomes [C].
 
 ### The Block Universe
 
@@ -40,4 +46,4 @@ An important methodological point: the empirical program of NFT does not require
 
 Readers who reject the block universe can accept the functional and mechanistic levels as a theory of how consciousness reduces trajectory entropy via quantum substrate coupling, without committing to any particular ontology of time. Level C is offered because the question of what possibility space *is* deserves engagement, not because the answer is required for the science to proceed [C].
 
-**Where we are.** Level C proposes that possibility space is physically real, not just a mathematical convenience. The block universe provides the scaffolding; quantum mechanics provides the genuine alternatives. This is the most speculative layer, and the theory works without it. Now we close the loop: how do you test all of this, what does it mean for AI, and where does the math stand?
+**Where we are.** Possibility space is physically real, not just a mathematical convenience — that is Level C's claim. The block universe provides the scaffolding; quantum mechanics provides the genuine alternatives. This is the most speculative layer, and the theory works without it. Now we close the loop: how do you test all of this, what does it mean for AI, and where does the math stand?

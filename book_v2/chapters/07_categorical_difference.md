@@ -1,3 +1,9 @@
+---
+
+# PART THREE: LEVEL B — QUANTUM PROBABILITY SCULPTING
+
+---
+
 ## Chapter 7: The Categorical Difference
 
 This is where NFT departs from every classical theory of consciousness. The departure is not subtle.
@@ -16,11 +22,11 @@ A classical organism adjusts the weights on its dice. A quantum-coupled organism
 
 ### The Information-Theoretic Wedge
 
-The dice analogy captures the intuition. The formal machinery captures something harder to say in plain language but worth trying: entangled quantum systems can coordinate in ways that are not just difficult for classical systems but *provably impossible* for them. Two entangled subsystems can share information at costs that break the classical floor. If the microtubule substrate sustains this kind of entanglement (and the radical pair mechanism provides a candidate), the navigator has access to resources no classical system can replicate. The wedge between quantum and classical is not a matter of speed or efficiency. It is a matter of what is physically available [B].
+The dice analogy captures the intuition. The difference goes deeper.
 
-> **Deep dive: the formal wedge.** For a bipartite quantum system AB, the conditional entropy S(A|B) = S(ρ_AB) − S(ρ_B) can be negative when A and B are entangled. Classical conditional entropy is always non-negative. This negativity is a signature of entanglement without classical analogue. Operationally: in quantum state merging, negative conditional entropy means the protocol *generates* entanglement rather than consuming it. In thermodynamics of erasure, an observer with quantum memory can extract information more cheaply than any classical observer.
+In classical information theory, if you know about system B, your remaining uncertainty about system A is always positive or zero. You cannot know *more* about A than A contains. This seems like common sense because it is. But in quantum mechanics, when two systems are entangled, the conditional uncertainty can go *negative*. This sounds like nonsense until you understand what it means operationally: entangled subsystems can coordinate information transfer at costs that break the classical floor. They can share information in ways that are not just difficult for classical systems but provably impossible. If the microtubule substrate sustains this kind of entanglement (and the radical pair mechanism provides a candidate), the navigator has access to resources no classical system can replicate. The wedge is not a matter of speed or efficiency. It is a matter of what is physically available [B].
 
-> **Deep dive: which quantum effects matter.** Not all quantum effects are computationally useful. The specific resources that enable quantum advantage are contextuality (measurement results depend on what else is being measured), Wigner-function negativity (the quantum state's phase-space representation goes below zero, something impossible classically), and entanglement. The Gottesman-Knill theorem establishes that some quantum mechanics is efficiently classically simulable; only states with Wigner negativity push beyond the classical frontier. NFT's Level B is falsified specifically if the microtubule substrate's dynamics lie entirely within the classically simulable regime [B].
+Not all quantum effects create this wedge. Some quantum mechanics is, surprisingly, no more powerful than classical computation. What pushes beyond the classical frontier are three specific resources: contextuality (measurement results depend on what else is being measured at the same time), Wigner-function negativity (the quantum state's mathematical representation dips below zero, something no classical probability distribution can do), and entanglement. NFT's Level B is falsified specifically if the microtubule substrate turns out to operate entirely within the classically simulable regime, using quantum mechanics that looks exotic but computes nothing a classical system couldn't [B].
 
 ### What NFT Requires vs. What Orch OR Claims
 
@@ -29,5 +35,3 @@ This is a good place to be precise about what NFT actually needs from the quantu
 Orch OR commits to objective reduction (gravitational self-collapse of superpositions), millisecond-scale coherence windows, and quantum computation within microtubules. NFT inherits none of these commitments. What NFT requires is narrower: *continuous generation of genuine indeterminacy* at cognition-relevant intervals via radical pair spin states, plus a feedback mechanism by which measurement outcomes reshape the measurement basis.
 
 NFT is parasitic on the weakest component of Orch OR, the mere existence of quantum indeterminacy in the biological substrate, not on its most controversial claims. This makes NFT more empirically resilient while preserving the core commitment that separates both from classical accounts [B].
-
----

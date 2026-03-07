@@ -1,6 +1,8 @@
+---
+
 ## Chapter 12: Qualia as Measurement Back-Action
 
-Consciousness navigates possibility space through quantum substrate coupling. But coupling is bidirectional. This chapter proposes that the phenomenal character of experience, what it is like to hear a chord, taste coffee, feel pain, is the physical back-action of the quantum measurement interaction on the measuring apparatus.
+This chapter makes the book's most speculative claim. What it is like to hear a chord, taste coffee, feel pain. It is the physical back-action of the quantum measurement interaction on the measuring apparatus. A conjecture, but one with a physical address. And that makes it testable.
 
 ### Back-Action Is Not Optional
 
@@ -10,13 +12,13 @@ Von Neumann formalized this. Measurement entangles the measured system with the 
 
 ### The Thesis
 
-We propose that this back-action is not a nuisance to be engineered away but is the physical origin of phenomenal experience [B].
+This back-action is not a nuisance to be engineered away. It is the physical origin of phenomenal experience [B].
 
 **Step 1: Measurement is never one-way.** The post-measurement state of the apparatus carries the imprint of the interaction. The back-action is real, physical, and measurable.
 
 **Step 2: The back-action is structured.** The apparatus displacement is not generic noise; it carries information about what was measured. In the weak measurement regime, the displacement is proportional to the weak value of the measured observable. The perturbation experienced by the apparatus is specific to the quantum state being navigated.
 
-**Step 3: Structured back-action provides a physical address for qualia.** Most theories of consciousness attempt to identify a computational or informational property that, at sufficient magnitude, "gives rise to" experience. NFT proposes a different move. Phenomenal experience *is* the back-action of the measurement apparatus upon itself during navigation of possibility space. The warmth of a coffee cup against your palm is not a computation that somehow produces the feeling of warmth. It is the specific conformational perturbation pattern produced in the microtubule substrate when the radical pair measurement interaction couples to the neural state associated with thermoreceptor processing.
+**Step 3: Structured back-action provides a physical address for qualia.** Most theories of consciousness attempt to identify a computational or informational property that, at sufficient magnitude, "gives rise to" experience. The move here is different. Phenomenal experience *is* the back-action of the measurement apparatus upon itself during navigation of possibility space. The warmth of a coffee cup against your palm is not a computation that somehow produces the feeling of warmth. It is the specific conformational perturbation pattern produced in the microtubule substrate when the radical pair measurement interaction couples to the neural state associated with thermoreceptor processing.
 
 ### The Skokowski Connection
 
@@ -65,5 +67,3 @@ The back-action thesis generates specific predictions:
 **Character reflects measurement type.** Different observables produce different apparatus displacements. Different regions of possibility space produce different conformational perturbation patterns in the microtubule network. Pain feels different from pleasure because the back-action patterns are structurally different.
 
 **The back-action evasion zombie.** If quantum back-action on microtubule conformational states could be eliminated while preserving classical neural signaling (analogous to single-quadrature measurement in optomechanics), phenomenal experience should vanish while functional behavior continues. This is a physically derived prediction, specific to the back-action account and predicted by no competing theory. It is currently far beyond experimental capability, but its specificity gives the thesis scientific content [B].
-
----

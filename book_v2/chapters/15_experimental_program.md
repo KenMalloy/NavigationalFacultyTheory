@@ -1,3 +1,9 @@
+---
+
+# PART SIX: TESTING AND IMPLICATIONS
+
+---
+
 ## Chapter 15: The Experimental Program
 
 A framework that cannot be tested is not a scientific theory. And a framework whose predictions are also predicted by its competitors is not doing distinctive work.
@@ -53,12 +59,10 @@ These are consistent with NFT but also consistent with competitors. They confirm
 
 The kill conditions again, restated in the light of the experimental program:
 
-- If radical pair spin coherence in microtubules is conclusively too weak or too short-lived for any measurable effect at the network level -> Level B dies
-- If Level 2 and Level 3 systems are indistinguishable on all behavioral and informational measures -> Level B dies
-- If the quantum navigational advantage disappears when tested across larger maze families with matched classical baselines -> the computational demonstration is an artifact (partially tested: the advantage survives across 90 mazes with CI excluding zero, but the effect is modest)
-- If classical systems at criticality exhibit all five diagnostic markers (Chapter 16) -> the entire quantum commitment dies
-- If no isotope effects on consciousness are found in properly controlled experiments -> the radical pair mechanism loses its empirical anchor
+- If radical pair spin coherence in microtubules is conclusively too weak or too short-lived for any measurable effect at the network level → Level B dies
+- If Level 2 and Level 3 systems are indistinguishable on all behavioral and informational measures → Level B dies
+- If the quantum navigational advantage disappears when tested across larger maze families with matched classical baselines → the computational demonstration is an artifact (partially tested: the advantage survives across 90 mazes with CI excluding zero, but the effect is modest)
+- If classical systems at criticality exhibit all five diagnostic markers (Chapter 16) → the entire quantum commitment dies
+- If no isotope effects on consciousness are found in properly controlled experiments → the radical pair mechanism loses its empirical anchor
 
 The falsification conditions and the failures are both on the table.
-
----

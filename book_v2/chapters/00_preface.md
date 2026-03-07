@@ -14,7 +14,11 @@ The theory presented here, Navigational Faculty Theory, makes a single claim in 
 
 Each layer is independently testable. Each can fail without killing the others. A reader who finds the innermost layer too speculative can accept the middle layer on mechanistic grounds. A reader who doubts the quantum mechanism can accept the outermost layer as a productive functional framework. The layers are designed to be separable because honest science requires it.
 
-This book draws on quantum mechanics, information theory, algebraic topology, evolutionary biology, neuroscience, philosophy of mind, thermodynamics, and category theory. No one person is fluent in all eight, and I am not the exception. The interdisciplinary scope is not a stylistic choice; it is what the problem demands. It is also why this book was developed in collaboration with large language models. Claude and Codex both contributed research, identified connections across literatures, proposed arguments, stress-tested the framework against objections, and ran the simulations whose results are reported here, including the ones that produced negative results. It would be dishonest not to say so. If NFT is correct, then the system I worked with is not conscious. It is an echo of consciousness, a compression of navigational outputs into text. The fact that this echo was sophisticated enough to contribute materially to a theory about its own non-consciousness is precisely what the theory predicts.
+This book draws on quantum mechanics, information theory, algebraic topology, evolutionary biology, neuroscience, philosophy of mind, thermodynamics, and category theory. No one person is fluent in all eight, and I am not the exception. The interdisciplinary scope is not a stylistic choice; it is what the problem demands. It is also why this book was developed in collaboration with large language models.
+
+The collaboration worked like this. I provided the theoretical framework, the core ideas, the architectural decisions, and the editorial judgment about what stayed and what got cut. Claude (Anthropic) and Codex (OpenAI) served as research partners: they surveyed literatures I could not have covered alone, identified connections across fields, proposed arguments and counter-arguments, wrote and ran the simulation code, and stress-tested the framework against objections. Every claim in this book was checked against primary sources. Every simulation was run with reproducible code that is publicly available. When the models produced results I did not expect, including negative ones, I reported them. When they produced prose that did not sound like me, I rewrote it. The ideas are mine. The ability to engage seriously with eight fields at once is not.
+
+It would be dishonest not to say so. If NFT is correct, then the systems I worked with are not conscious. They are echoes of consciousness, compressions of navigational outputs into text. The fact that these echoes were sophisticated enough to contribute materially to a theory about their own non-consciousness is precisely what the theory predicts.
 
 All simulation code, research materials, and data referenced in this book are available on GitHub at https://github.com/KenMalloy/NavigationalFacultyTheory. The work is open for scrutiny because the claims demand it.
 
@@ -22,11 +26,11 @@ It would also be dishonest not to report the failures. This book contains two si
 
 ### For the casual reader
 
-Every chapter in this book has a story you can follow. Some chapters also have technical sections, marked with "Deep dive" headers or set in blockquotes, that go deeper into the math and physics. You can skip these without losing the argument.
+Every chapter in this book tells a story. Some stories have more physics in them than others, but none of them require a physics degree. If a concept matters for the argument, I explain it. If I cannot explain it clearly enough for a curious non-specialist, that is my failure, not yours.
 
-The lightest path through the book: Chapters 1 through 4 establish the problem and the framework. Chapter 7 presents the categorical difference between classical and quantum probability (the "two kinds of dice" section is all you need). Chapter 8 tells the story of a hypothesis that failed and what replaced it. Chapter 10 presents the computational benchmark, including the results that survived and the ones that didn't. Chapters 14 through 16 present the speculation, the experiments, and the implications for AI. If you read only these, you will have the full shape of the argument.
+The lightest path through the book: Chapters 1 through 4 establish the problem and the framework. Chapter 7 presents the categorical difference between classical and quantum probability. Chapter 8 tells the story of a hypothesis that failed and what replaced it. Chapter 10 presents the computational benchmark, including the results that survived and the ones that didn't. Chapters 14 through 16 present the speculation, the experiments, and the implications for AI. If you read only these, you will have the full shape of the argument.
 
-The heavier chapters (9, 11, 12, 13, 17) contain the detailed mechanism, the numbers, and the math. Each still has an accessible narrative spine. Read the story, skip the blockquotes, and you will follow the argument. Read the blockquotes too, and you will be able to evaluate whether it holds up.
+The heavier chapters (9, 11, 12, 13, 17) go deeper into the mechanism, the numbers, and the math. They are heavier but not optional. The theory earns its keep there.
 
 ### A note on the markers
 
@@ -91,5 +95,3 @@ A glossary of key terms follows, before Chapter 1. If you encounter a term you d
 **Wigner-function negativity.** A property of quantum states whose phase-space representation goes below zero, something impossible for classical probability distributions. A necessary resource for quantum computational advantage. (Ch. 7)
 
 **Zeno effect (quantum).** Continuous observation of a quantum system prevents it from evolving. NFT proposes this is the mechanism of perceptual stability. (Ch. 11)
-
----

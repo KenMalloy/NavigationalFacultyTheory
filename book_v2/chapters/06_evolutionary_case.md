@@ -1,3 +1,5 @@
+---
+
 ## Chapter 6: The Evolutionary Case
 
 Every organism that has ever survived did so by being in the right place at the right time. Which is to say, by navigating.
@@ -6,7 +8,7 @@ Every organism that has ever survived did so by being in the right place at the 
 
 The naive version of the evolutionary argument is circular: consciousness evolved because navigating possibility space provides a survival advantage. But why would natural selection build a navigator before navigation existed? NFT resolves this through what we call the dual-cause structure.
 
-**The proximate cause is physical inevitability.** Start with what we know. Quantum-biological systems at sufficient complexity exhibit collective quantum effects. Neural systems at criticality maximize their dynamical repertoire. Higher-dimensional topological structures in neural architecture enable binding across scales. These are empirical results. Taken together, they describe a substrate that is quantum-coupled, topologically complex, and poised at the critical point between order and chaos. We propose that consciousness is what such a substrate *does*, not an adaptation layered on top of neural architecture but a physical consequence of the architecture itself. Heat is not the purpose of friction; it is the physics [A].
+**The proximate cause is physical inevitability.** Start with what we know. Quantum-biological systems at sufficient complexity exhibit collective quantum effects. Neural systems at criticality maximize their dynamical repertoire. Higher-dimensional topological structures in neural architecture enable binding across scales. These are empirical results. Taken together, they describe a substrate that is quantum-coupled, topologically complex, and poised at the critical point between order and chaos. Consciousness is what such a substrate *does*. Not an adaptation layered on top of neural architecture but a physical consequence of the architecture itself. Heat is not the purpose of friction; it is the physics [A].
 
 **The ultimate cause is survival advantage.** Once consciousness exists as a physical consequence of the substrate, its utility is obvious. An organism that navigates possibility space can select futures that favor its survival. Evolution did not select for consciousness directly; evolution selected for larger, more complex, more critical neural architectures, and consciousness is what those architectures produce. The "in order to" is retrospective, just as we say eyes evolved "in order to see" even though photosensitivity is a physical consequence of certain molecular configurations [A].
 
@@ -38,8 +40,6 @@ This does not mean slime molds are conscious the way you are. It means that any 
 
 ### Edwards and the Independent Convergence
 
-Edwards (2025) came to essentially the same conclusion by a completely different route. His N-Frame model formalizes conscious observer-self agents navigating branching worldlines, integrating evolutionary game theory with QBism to show that agents making genuinely free choices along branching paths outperform deterministic agents in competitive environments. Edwards' agents are, in the language of this book, navigators, and his formal demonstration that navigation confers evolutionary advantage provides independent theoretical support for the framework developed here [A].
+Edwards (2025) came to essentially the same conclusion by a completely different route. His N-Frame model formalizes conscious observer-self agents navigating branching worldlines, integrating evolutionary game theory with QBism to show that agents making genuinely free choices along branching paths outperform deterministic agents in competitive environments. Edwards' agents are, in the language of this book, navigators [A].
 
 **Where we are.** Consciousness is a navigational faculty: it steers organisms through the landscape of what could happen next. The existing theories (IIT, GNWT, active inference) describe different subsystems of this navigation. Entropy provides the gradient; evolution provides the pressure. All of this works without quantum mechanics. Now we ask: does the navigator have access to resources that classical systems do not?
-
----

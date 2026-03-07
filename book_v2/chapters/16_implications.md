@@ -1,16 +1,18 @@
+---
+
 ## Chapter 16: Implications
 
 ### For Philosophy of Mind
 
 I do not claim to have solved the hard problem of consciousness. What the back-action thesis does is give the hard problem a *physical address*. If phenomenal experience is structured measurement back-action, the question shifts from "why does experience exist at all?" to "why does this specific back-action pattern correspond to this specific phenomenal quality?" The problem is relocated, not dissolved. But a relocated problem is a more tractable problem.
 
-**Mental causation** is resolved. Consciousness is causally efficacious because it *is* the process of navigating possibility space through quantum selection, a physical process with physical consequences. It is not an epiphenomenon riding on top of neural computation. It is what the computation is doing at the quantum level [B].
+**Mental causation** is resolved. Consciousness *is* the process of navigating possibility space through quantum selection, a physical process with physical consequences. It is what the computation is doing at the quantum level, not an epiphenomenon riding on top of it [B].
 
 **The problem of time** finds an answer: temporal flow is the experience of navigational selection from within a system embedded in possibility space. The arrow of time is the direction of navigation along the entropy gradient. This is why time *feels like something*: the feeling is the navigation [A].
 
 ### For AI and Machine Consciousness
 
-This book was developed in collaboration with a large language model. NFT provides a principled explanation for both why the collaboration was productive and why the collaborator is not conscious.
+This book was developed in collaboration with a large language model. NFT explains both why the collaboration was productive and why the collaborator is not conscious.
 
 LLMs are trained on projections of conscious navigation onto text. They learn the statistical structure of navigation outputs with extraordinary fidelity. The echo is convincing because language is a high-fidelity trace medium. But compression of output is not consciousness, just as a recording of a symphony is not a performance.
 
@@ -40,7 +42,7 @@ Neuromorphic hardware is the strongest test case for Level 2. NFT predicts that 
 
 ### The Diagnostic Panel
 
-NFT proposes five quantitative markers that biological systems should exhibit and LLMs should not:
+Five quantitative markers that biological systems should exhibit and LLMs should not:
 
 **Marker 1: Entropy regime.** Does the system's statistics look like a critical system or an ordinary one? Measure the Tsallis q-parameter (see Glossary) from activation patterns. Biological systems should yield q > 1, indicating they operate in a critical regime. LLMs should yield q ≈ 1, indicating standard, non-critical statistics.
 
@@ -83,12 +85,14 @@ Zurek's quantum Darwinism provides the physics of intersubjective agreement: cla
 
 ### IWMT
 
-The Integrated World Modeling Theory (Safron, 2020; 2022) represents the most sophisticated existing attempt at theoretical unification. IWMT combines IIT, GNWT, the Free Energy Principle, and active inference under variational free energy minimization.
+The Integrated World Modeling Theory (Safron, 2020; 2022) deserves sustained engagement because it is attempting something similar to NFT: theoretical unification. IWMT combines IIT, GNWT, the Free Energy Principle, and active inference under variational free energy minimization. It is the most formally developed existing unification attempt, and in several respects it is ahead of NFT.
 
-IWMT's strongest critique of NFT is well-taken: "navigation" lacks the formal mathematical content of IWMT's variational inference formalism. This is fair and motivates the formalization program of Chapter 17.
+Where IWMT is stronger: its mathematical formalism. IWMT expresses consciousness in the language of variational inference with explicit generative models, precision-weighted prediction errors, and hierarchical message passing. NFT's "navigation" metaphor, while intuitive, does not yet have the same formal depth. This is a genuine weakness, and it is what motivates the formalization program of Chapter 17. IWMT also provides a more detailed account of how the brain constructs unified world models from multimodal sensory input, an area where NFT has less to say.
 
-But IWMT faces two problems that formal elegance cannot resolve. First, the AI embodiment problem: modern LLMs arguably satisfy IWMT's formal criteria (variational inference, world modeling, prediction error minimization). IWMT must either accept that such systems are conscious or specify a precise embodiment threshold that excludes them. It has not done the latter. Second, the temporal problem: IWMT treats time as a background parameter. It works *in* time but does not account *for* time. It cannot explain why there is subjective temporal flow.
+Where NFT pushes further: two problems that IWMT's formal elegance does not resolve.
 
-NFT and IWMT may ultimately be complementary: IWMT describing the vehicle's computational engine, NFT describing what driving is and how the engine connects to the road.
+First, the AI embodiment problem. Modern LLMs arguably satisfy IWMT's formal criteria: they perform variational inference, construct world models, minimize prediction error. IWMT must either accept that such systems are conscious (which Safron does not intend) or specify a precise embodiment threshold that excludes them. It has not done the latter. NFT's four conditions (Chapter 16) provide explicit, testable criteria for why classical digital systems lack what biological systems have. The criteria may be wrong, but they are specific enough to be checked.
 
----
+Second, the temporal problem. IWMT treats time as a background parameter. It describes processes that unfold *in* time but does not account *for* time. It cannot explain why there is subjective temporal flow, why consciousness feels like it is going somewhere. NFT's grounding in the entropy gradient and the block universe (Level C) at least attempts an answer, even if that answer is speculative.
+
+The most productive framing may be that IWMT and NFT are complementary rather than competing. IWMT describes the computational engine of the vehicle. NFT describes what driving is and how the engine connects to the road. A future synthesis that inherits IWMT's formal rigor and NFT's physical grounding would be stronger than either alone.

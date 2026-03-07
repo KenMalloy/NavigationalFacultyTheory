@@ -20,7 +20,7 @@ The original headline collapsed. This was the right outcome. A result that canno
 
 We rebuilt the simulation framework around four principles:
 
-**Matched training budgets.** Both quantum-adaptive and classical-adaptive controllers receive the same number of fitness evaluations during optimization. Neither side gets a hidden advantage from extra computation.
+**Matched training budgets.** Both quantum-adaptive and classical-adaptive controllers receive the same number of fitness evaluations during optimization. Neither side gets a hidden advantage from extra computation. The budget was locked before we saw results. We did not keep evolving until the quantum controller won.
 
 **Independent optimization.** Each controller is evolved for its own dynamical regime. The classical controller has its own learned state-dependent stochastic gate, not quantum parameters with the quantum dynamics stripped out.
 
@@ -44,7 +44,9 @@ On harder 3D mazes (side length 9, 6 barrier hyperplanes, 2 gaps per barrier, av
 
 In a 10-maze paired run with 100 evaluation trials per maze, the quantum-adaptive controller won on 9 mazes, tied on 1 (an exact tie: 0 advantage, 100 tied trials out of 100), and lost on none. The normalized advantage was +13.0% of path length with a standard error of 4.6%. The per-trial win rate was 52.9%: on any given run, the quantum agent barely edges out the classical agent. But the edge is systematic: it appears on 9 of 10 independent mazes.
 
-A confirmatory run across 90 mazes (30 per difficulty bin) produced these results:
+We were excited. A 90% maze win rate and +13% advantage looked like a clear signal. The confirmatory run brought the numbers back to earth, which is what confirmatory runs are for.
+
+Across 90 mazes (30 per difficulty bin), with the training budget locked and no re-evolution after seeing which mazes favored which controller, the results were:
 
 | Measure | Value | 95% CI |
 |---|---|---|
@@ -79,7 +81,7 @@ The simulation demonstrates that a learned quantum-adaptive controller, using ra
 
 The simulation does not prove that the brain implements this mechanism. It does not prove that radical pair spin states in microtubules operate on a state space with the right structure. It does not prove that the amplification from criticality is sufficient in biological tissue. These remain empirical questions.
 
-What the simulation provides is a fair test of the core claim: that evolution, given quantum resources and adaptive measurement, can build controllers that navigate better than evolution without quantum resources, under the same constraints. The answer, on this benchmark, is yes. Whether the same holds in biological tissue is the question the experimental program of Chapter 15 is designed to answer [B].
+What the simulation provides is a fair test of the core claim: that evolution, given quantum resources and adaptive measurement, can build controllers that navigate better than evolution without quantum resources, under the same constraints. Both controllers received the same optimization budget, fixed in advance. Neither was re-evolved after results were inspected. The 90-maze confirmatory set was run once. The answer, on this benchmark, is yes. Whether the same holds in biological tissue is the question the experimental program of Chapter 15 is designed to answer. The complete benchmark specification, including maze generation, controller architectures, optimization protocols, and statistical analysis, is reported in [Malloy, "Quantum Navigational Advantage in Evolved 3D Maze Controllers," forthcoming] [B].
 
 **Where we are.** Take a breath. The hardest technical stretch is behind you.
 

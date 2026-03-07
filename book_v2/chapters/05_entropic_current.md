@@ -1,10 +1,12 @@
+---
+
 ## Chapter 5: The Entropic Current
 
 Navigation requires a gradient. A landscape with structure, where different directions lead to measurably different states. Entropy provides both the gradient and the arrow.
 
 ### Entropy as Terrain
 
-You know the difference between a good day and a bad one. On a good day, the world feels open. Options seem available. Your mind moves freely between thoughts, plans, memories. On a bad day, the world narrows. Thoughts loop. The same anxious scenario plays on repeat. This is not just a feeling. It is something you can measure.
+You know the difference between a good day and a bad one. On a good day, the world feels open. Options seem available. Your mind moves freely between thoughts, plans, memories. On a bad day, the world narrows. Thoughts loop. The same anxious scenario plays on repeat. You can measure this.
 
 Robin Carhart-Harris and colleagues established something striking: entropy levels in neural dynamics track conscious states quantitatively. Higher entropy corresponds to richer, more expansive conscious experience. Think of the psychedelic state, where the mind feels vast and unbound. Lower entropy corresponds to more constrained, rigid experience. Think of depression, or disorders of consciousness, where the world narrows. There are many ways to measure entropy in brain signals, and every single one of them tracks consciousness level.
 
@@ -14,9 +16,9 @@ The Perturbational Complexity Index (PCI), developed by Casali and colleagues, p
 
 The Massimini group's complementary finding, that loss of consciousness is characterized by breakdown of cortical effective connectivity and the brain's inability to sustain complex, differentiated responses to perturbation, is what NFT would predict from loss of criticality-mediated amplification. Tagliazucchi and colleagues provide direct evidence that the brain shifts away from criticality during loss of consciousness in sleep and anesthesia, grounding the criticality claim in specific empirical measurements rather than general theoretical arguments.
 
-Entropy does not just correlate with consciousness. It characterizes the landscape through which consciousness moves.
+Entropy characterizes the landscape through which consciousness moves.
 
-### A Crucial Distinction
+### Two Kinds of Entropy
 
 The word "entropy" does different work in different parts of this argument, and if I don't flag this now it will cause confusion later.
 
@@ -39,5 +41,3 @@ A conscious navigator is not a god moving freely through a block universe. It is
 This constrained-agency picture has independent support from multiple directions. Prigogine's dissipative structures demonstrated that open systems far from equilibrium maintain coherent organization precisely by dissipating entropy; they navigate along the gradient, not against it. England showed that driven systems spontaneously restructure to dissipate energy more efficiently. And Friston's free energy principle, which keeps reappearing in this story for good reason, says essentially the same thing from another angle: biological agents minimize surprise, which is to say they steer within the entropic current toward states compatible with their continued existence.
 
 NFT does not compete with Friston's framework here; it reinterprets it. Minimizing free energy *is* navigating possibility space along the entropy gradient. The distinction is that NFT grounds the navigation in quantum substrate coupling rather than in Bayesian inference on classical computation. The reinterpretation becomes substantive at Level B.
-
----

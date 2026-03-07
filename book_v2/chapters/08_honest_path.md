@@ -1,3 +1,5 @@
+---
+
 ## Chapter 8: The Honest Path to the Mechanism
 
 This chapter tells the story of a hypothesis that failed, what replaced it, and why the failure made the theory stronger.
@@ -14,15 +16,17 @@ The prediction was specific: quantum probability sculpting via excitonic transpo
 
 We tested it. The results were unambiguous.
 
-We ran three different simulation approaches: a phenomenological model, a physically-derived quantum dynamics calculation, and an evolutionary optimization over geometry parameters. The excitonic hypothesis does not work at physiological temperature. The system is simply too warm. Thermal energy drowns out the quantum coherent dynamics. The quantum advantage over classical transport was 0.18%, negligible, and it did not improve with larger networks.
+We ran three different simulation approaches: a phenomenological model, a physically-derived quantum dynamics calculation, and an evolutionary optimization over geometry parameters. The excitonic hypothesis does not work at physiological temperature.
 
-We also tested conformational tunneling as an alternative. The quantum rate was a million billion times smaller than the classical rate. Not viable.
+The ENAQT sweet spot does exist in the microtubule geometry. The problem is where it falls. The optimal noise level for quantum transport enhancement is about 1,700 times quieter than the actual operating conditions inside a living cell. The system is simply too warm. At body temperature, thermal energy is nearly four times the strength of the quantum coupling between tryptophan molecules. It is like trying to hear a whisper at a rock concert. The quantum coherent dynamics are drowned out.
 
-> **Deep dive: the numbers.** The phenomenological model showed an ENAQT peak at γ/κ ≈ 41, roughly 1700 times less noisy than the physiological operating point. The Bloch-Redfield model showed transport efficiency flat at ~62% for 8 sites across all bath strengths; no ENAQT peak. Quantum advantage was +0.18% at all network sizes tested (8, 13, 20, 26 sites). The fundamental barrier: kT ≈ 215 cm⁻¹ at body temperature, while tryptophan coupling is ~60 cm⁻¹. Thermal energy is nearly four times the coupling strength. Conformational tunneling: 10⁻¹⁵ times the classical rate.
+We tested every network size we could: 8 sites, 13, 20, 26. The quantum advantage over classical transport was 0.18% at every size. It did not scale. There was no hint that larger networks would help.
+
+We also tested conformational tunneling as an alternative mechanism. The quantum rate was a million billion times smaller than the classical rate. Not viable.
 
 ### Why This Matters
 
-The temptation after a negative result is to explain it away: adjust parameters, invoke shielding mechanisms, propose exotic environments where the effect might survive. We did not do this, because a theory that accommodates any result predicts nothing.
+The temptation after a negative result is to explain it away: adjust parameters, invoke shielding mechanisms, propose exotic environments where the effect might survive. We did not do this, because a theory that accommodates any result predicts nothing. The full simulation methodology, parameter choices, and sensitivity analyses are reported in [Malloy, "ENAQT and Radical Pair Spin Coherence in Microtubule Tryptophan Networks," forthcoming].
 
 Instead, we asked: is there a different quantum mechanism in microtubules that operates at a timescale and energy scale where thermal energy does not dominate?
 
@@ -63,5 +67,3 @@ Natural selection is exquisitely sensitive to small systematic differences. A 1%
 Two caveats. First, the 12.7% is from a minimal model (two electron spins with a single nuclear spin and idealized dephasing). Real tryptophan radical pairs in microtubules involve multiple nuclear spins, spin-orbit coupling, and molecular motion. The actual yield difference in biological microtubules is unknown and could be substantially smaller. Second, the fitness advantage is not the yield difference itself but whatever behavioral difference the yield difference produces after transduction through the full chain from radical pair to neural signal. Each step in that chain has its own noise and attenuation (see Chapter 9).
 
 But the 12.7% is the microscale effect. The macroscale effect depends on amplification. And that is where criticality enters.
-
----

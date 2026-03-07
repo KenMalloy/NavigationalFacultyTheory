@@ -1,3 +1,5 @@
+---
+
 ## Chapter 13: Binding Through Topology
 
 Your brain is spread across two hemispheres, distributed through billions of neurons, yet your experience is unified. You don't hear with one consciousness and see with another. Something binds it together. What?
@@ -38,6 +40,6 @@ Third, propofol may disrupt classical and quantum processes simultaneously rathe
 
 We do not know which explanation is correct. What we know is that the simple temporal ordering prediction failed. This weakens the topological disruption order as a discriminative prediction for NFT. It does not by itself falsify the binding hypothesis; it falsifies a specific prediction derived from it, which means the hypothesis must be refined or the prediction must be replaced with one that accounts for the data.
 
-We report this because the alternative is public relations.
+We report this because the alternative is public relations. The full TDA pipeline, dataset details, persistent homology computation, and temporal ordering statistics are reported in [Malloy, "Topological Disruption Order Under Propofol Sedation: A Negative Result," forthcoming].
 
-**Where we are.** The quantum Zeno effect is not a bug but the mechanism of perceptual stability. Qualia may be the physical back-action of measurement on the measuring apparatus. The binding problem may find its answer in higher-dimensional topology, though one topological prediction has already failed. One negative result is on the ledger; the binding hypothesis needs refinement. Now we venture into the most speculative territory: what is the stuff consciousness navigates through?
+**Where we are.** The quantum Zeno effect is not a bug but the mechanism of perceptual stability. Qualia may be the physical back-action of measurement on the measuring apparatus. The binding problem may find its answer in higher-dimensional topology, though one topological prediction has already failed. One negative result is on the ledger; the binding hypothesis needs refinement. Now the hardest question: what is the stuff consciousness navigates through?

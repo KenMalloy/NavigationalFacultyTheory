@@ -1,12 +1,18 @@
+---
+
+# PART TWO: LEVEL A — NAVIGATION AS FUNCTION
+
+---
+
 ## Chapter 4: Consciousness as Navigation
 
-Eyes evolved to transduce photons. Ears evolved to transduce pressure waves. The vestibular system evolved to transduce gravitational orientation. Each sensory faculty connects an organism to a specific domain of physical reality that matters for survival.
+Eyes evolved to transduce photons. Ears transduce pressure waves. The vestibular system tells you which way is down. Each sensory faculty connects an organism to a specific domain of physical reality that matters for survival.
 
 Consciousness is a faculty in the same sense. It evolved to navigate the landscape of what could happen next [A].
 
 ### Not a Metaphor
 
-Not "navigate" as a metaphor for thinking. Navigate the way vision navigates the electromagnetic spectrum: as a biological process that transduces a domain of physical reality into actionable information. Vision doesn't merely correlate with photons; it *is* the transduction of photons. Consciousness doesn't merely correlate with neural complexity; it *is* the navigation of possibility space — the landscape of available futures.
+Not "navigate" as a metaphor for thinking. Navigate the way vision navigates the electromagnetic spectrum: as a biological process that transduces a domain of physical reality into actionable information. Vision *is* the transduction of photons. Consciousness *is* the navigation of possibility space — the landscape of available futures.
 
 This is distinct from Hoffman's interface theory, which treats consciousness as a "desktop," a simplified representation of reality that hides its true complexity. Hoffman's consciousness is passive and representational. The navigator is active and selective. It doesn't perceive a simplified version of what could be. It selects from it, steering the organism through branching points that determine which futures get realized.
 
@@ -24,7 +30,7 @@ This is distinct from Hoffman's interface theory, which treats consciousness as 
 
 The first two components, generation and selection, are NFT's distinctive contribution. The latter two are inherited from IIT and GNWT respectively. IIT describes what the vehicle must be. GNWT describes how it communicates internally. Generation and selection describe what it is *for*.
 
-> **For readers familiar with active inference:** Generation maps to stochastic sampling in a generative model. Selection maps to policy selection under expected free energy. Integration is IIT's Φ requirement. Propagation is GNWT's broadcasting. At Level A, the four-operations framework organizes these established components under a common architecture. At Level B, it transforms them: generation becomes physical indeterminacy via radical pair spin states, and selection becomes quantum measurement with structured back-action. Level A unifies. Level B transforms.
+If you know Friston's active inference framework, you will recognize these operations wearing different clothes. Generation is stochastic sampling in a generative model. Selection is policy selection under expected free energy. Integration is IIT's Φ requirement. Propagation is GNWT's broadcasting. At Level A, the four-operations framework organizes these established components under a common architecture. At Level B, it transforms them: generation becomes physical indeterminacy via radical pair spin states, and selection becomes quantum measurement with structured back-action. Level A unifies. Level B transforms.
 
 ### A Concrete Example
 
@@ -49,5 +55,3 @@ Chen and Sanders' Consciousness as Entropy Reduction (CER) model provides an ind
 CER cleanly operationalizes what Level A claims: conscious selection collapses a scenario distribution. The language is different (entropy reduction rather than navigation) but the operation is the same. The organism faces a landscape of possibilities, and consciousness reduces it to a committed path.
 
 CER is explicitly classical. It does not require quantum mechanics. And that is exactly the point. Level A is the claim that navigation is what consciousness does, regardless of how it is implemented. The *how* is Level B's business.
-
----

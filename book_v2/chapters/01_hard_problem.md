@@ -1,3 +1,5 @@
+---
+
 # PART ONE: THE PROBLEM AND THE METHOD
 
 ---
@@ -16,7 +18,7 @@ Three decades later, the gap has not narrowed, though it has become better docum
 
 The field has not been idle. There are theories, good ones, and they cluster into families.
 
-**Integrated Information Theory** (Tononi and colleagues) says consciousness *is* integrated information — a quantity called Φ (pronounced "fee") that measures how unified and irreducible a system is. High enough Φ, you're conscious, regardless of what you're made of. IIT's strength is precision. It tries to derive what consciousness requires from the structure of experience itself, and it gets surprisingly far. Phillips and Tsuchiya showed in 2024 that all six of IIT's axioms follow from a single categorical notion (the universal mapping property), which suggests the axioms aren't arbitrary postulates but consequences of something deeper.
+**Integrated Information Theory** (Tononi and colleagues) says consciousness *is* integrated information — a quantity called Φ (pronounced "fee") that measures how unified and irreducible a system is. High enough Φ, you're conscious, regardless of what you're made of. IIT's strength is precision. It tries to derive what consciousness requires from the structure of experience itself, and it gets surprisingly far. Phillips and Tsuchiya showed in a 2024 preprint (not yet peer-reviewed, but the mathematics is explicit and verifiable) that all six of IIT's axioms follow from a single categorical notion (the universal mapping property), which suggests the axioms aren't arbitrary postulates but consequences of something deeper.
 
 **Global Neuronal Workspace Theory** (Baars, Dehaene, Changeux) says consciousness happens when information gets broadcast from specialized modules to a shared workspace that everything can access. Its strength is explaining what consciousness *does* in the cognitive architecture: coordinate specialists, handle novelty, bind information across modalities.
 
@@ -24,7 +26,7 @@ The field has not been idle. There are theories, good ones, and they cluster int
 
 **Predictive processing** (Friston and colleagues) says consciousness arises from the brain's relentless effort to minimize prediction error. Its strength is explaining how the brain generates expectations, and the computational architecture of perception.
 
-Each of these captures something real. Each has genuine evidence behind it. And each, pushed to its limits, leaves something unexplained.
+Each of these captures something real, backed by genuine evidence. And each, pushed to its limits, leaves something unexplained.
 
 ### COGITATE
 
@@ -44,8 +46,6 @@ A 2026 tractography study makes this concrete. Using diffusion MRI, researchers 
 
 COGITATE is not an anomaly. It is the clearest instance of a pattern that runs through the entire field.
 
-Every theory captures something real. Every theory fails to capture everything. Identity theory explains the correlation between brain states and mental states but not why *this* brain state produces *this* experience. Functionalism explains the functional role of consciousness but can't account for the difference between access and phenomenal consciousness. Higher-order theories explain how we become aware of our own mental states but not why higher-order representations should feel like anything. Predictive processing explains how the brain generates expectations but not why prediction error has a felt quality.
+Every theory captures something real. Every theory fails to capture everything. Identity theory nails the correlation between brain states and mental states but cannot explain why *this* brain state produces *this* experience. Functionalism captures the role consciousness plays, then stops at the border between access and phenomenal consciousness. Higher-order theories explain how we become aware of our own mental states. They do not explain why that awareness feels like anything. And predictive processing, which gets how the brain generates expectations, has nothing to say about why prediction error has a felt quality.
 
 The question is whether this pattern is temporary, fixable with better theories and better data, or structural. If it's structural, then the way forward requires a different kind of theory entirely.
-
----

@@ -1,6 +1,12 @@
+---
+
+# PART FOUR: LEVEL B — DEEPER CONSEQUENCES
+
+---
+
 ## Chapter 11: Zeno, Anti-Zeno, and the Dynamics of Attention
 
-If consciousness plays a role in quantum measurement, there is a well-known problem waiting for it. The quantum Zeno effect says continuous observation should freeze the system in place. This chapter shows why that is actually the answer, not the problem, and how it connects to something you already know: the felt difference between concentration and mind-wandering.
+If consciousness plays a role in quantum measurement, there is a problem waiting for it. The quantum Zeno effect says continuous observation should freeze the system in place. The resolution connects to something you already know: the felt difference between concentration and mind-wandering.
 
 ### The Problem
 
@@ -10,7 +16,7 @@ Chalmers and McQueen formalized this objection rigorously in 2021. They showed t
 
 ### The Resolution
 
-NFT proposes a different resolution, and it turns the objection on its head. Continuous conscious collapse does not freeze reality. It *is* stable, coherent experienced reality [B].
+Continuous conscious collapse does not freeze reality. It *is* stable, coherent experienced reality [B].
 
 The Zeno effect is the mechanism of persistence. Objects appear solid, the world appears consistent, and the laws of physics appear to hold from moment to moment because consciousness is continuously selecting a coherent path through possibility space. The "freezing" that the Zeno effect predicts is experienced as the stability of the classical world. It is not a bug. It is the mechanism by which navigation maintains trajectory coherence.
 
@@ -30,6 +36,4 @@ The balance between Zeno and anti-Zeno is where things get interesting for consc
 
 Navigation at the critical balance between these regimes has maximal flexibility, stable enough for coherent experience and dynamic enough for adaptive response. The phenomenology of consciousness, the felt difference between focused concentration and relaxed exploration, maps onto the physics of measurement-dependent dynamics.
 
-This is a prediction, not a post hoc accommodation. The Zeno/anti-Zeno framework predicts specific, testable relationships between measurement rate, attention state, and navigational flexibility [B].
-
----
+No simulation backs this chapter. No data. What the Zeno/anti-Zeno framework provides is a prediction: specific, testable relationships between measurement rate, attention state, and navigational flexibility. If measurement rate correlates with attentional state in the direction this chapter describes, the framework gains weight. If it does not, the framework loses it [B].
