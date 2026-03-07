@@ -1,3 +1,5 @@
+---
+
 ## Chapter 10: The Navigation Benchmark
 
 Theory proposes. Simulation tests. And then the simulation must survive scrutiny. This chapter tells the story of a computational demonstration that began with a dramatic headline, failed to survive fair testing, was rebuilt from scratch, and produced a more honest result that is, in some ways, more interesting than the one it replaced.
