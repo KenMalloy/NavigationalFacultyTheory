@@ -55,3 +55,5 @@ Chen and Sanders' Consciousness as Entropy Reduction (CER) model provides an ind
 CER cleanly operationalizes what Level A claims: conscious selection collapses a scenario distribution. The language is different (entropy reduction rather than navigation) but the operation is the same. The organism faces a landscape of possibilities, and consciousness reduces it to a committed path.
 
 CER is explicitly classical. It does not require quantum mechanics. And that is exactly the point. Level A is the claim that navigation is what consciousness does, regardless of how it is implemented. The *how* is Level B's business.
+
+A note on terminology, because the next two chapters use several phrases that all point at the same thing. "Navigation" is the process. "Selection among futures" is the act. "Trajectory entropy reduction" is the measure. "Active inference" is the same faculty described from the information-theoretic perspective. These are four descriptions of one operation, not four different operations. When the language shifts between them in what follows, the referent does not.

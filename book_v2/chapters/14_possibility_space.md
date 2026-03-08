@@ -22,13 +22,11 @@ This creates what Callender calls the hard problem of time: if physics describes
 
 ### Three Positions
 
-Asking what possibility space *is* drops us into one of the oldest arguments in philosophy. There are essentially three positions:
+Asking what possibility space *is* drops us into one of the oldest arguments in philosophy.
 
-**Actualism** holds that only the actual world exists; "possible" is a way of describing how the actual world could have been. On this view, possibility space is a useful fiction, a map rather than a territory. NFT at Level A is compatible with actualism: the navigator selects from a space of possible trajectories that is mathematically defined but not physically real.
+The conservative answer is actualism: only the actual world exists. "Possible" is a way of describing how the actual world could have been. On this view, possibility space is a useful fiction — a map rather than a territory. NFT at Level A is compatible with actualism: the navigator selects from a space of possible trajectories that is mathematically defined but not physically real.
 
-**Dispositional possibilism** holds that non-actual possibilities have a form of physical standing, not as concrete parallel worlds, but as dispositions, propensities, or structured potentials. The quantum state defines a real landscape of weighted alternatives; actualization selects from among them. NFT at Level B fits naturally here: the quantum substrate generates genuine indeterminacy, which means the alternatives from which consciousness selects are physically real potentials.
-
-**Modal interpretations of quantum mechanics** provide formal machinery for this. They treat the quantum state as fixing a set of physical possibilities and rules for which properties become definite. The vocabulary ("physical possibility," "actualization of definite values") is exactly what NFT needs.
+But quantum mechanics pushes toward something stronger. The quantum state defines a real landscape of weighted alternatives. Actualization selects from among them. This is dispositional possibilism — non-actual possibilities have physical standing, not as concrete parallel worlds, but as dispositions, propensities, structured potentials. NFT at Level B fits naturally here: the quantum substrate generates genuine indeterminacy, which means the alternatives from which consciousness selects are physically real potentials. Modal interpretations of quantum mechanics provide the formal machinery, treating the quantum state as fixing a set of physical possibilities and rules for which properties become definite.
 
 The critical distinction is between epistemic and physical possibility. Epistemic possibility reflects our ignorance: the coin might land heads because we don't know how it was tossed. Physical possibility reflects genuine indeterminacy: the quantum state contains real alternatives from which a definite outcome must emerge. NFT's Level B claim requires that the alternatives from which consciousness selects are genuinely available, not merely unknown. This is precisely what quantum mechanics provides and what classical physics does not.
 
@@ -46,4 +44,4 @@ An important methodological point: the empirical program of NFT does not require
 
 Readers who reject the block universe can accept the functional and mechanistic levels as a theory of how consciousness reduces trajectory entropy via quantum substrate coupling, without committing to any particular ontology of time. Level C is offered because the question of what possibility space *is* deserves engagement, not because the answer is required for the science to proceed [C].
 
-**Where we are.** Possibility space is physically real, not just a mathematical convenience — that is Level C's claim. The block universe provides the scaffolding; quantum mechanics provides the genuine alternatives. This is the most speculative layer, and the theory works without it. Now we close the loop: how do you test all of this, what does it mean for AI, and where does the math stand?
+**Where we are.** If you have stayed with the argument this far, you have crossed the most speculative territory in the book. Possibility space is physically real, not just a mathematical convenience — that is Level C's claim. The block universe provides the scaffolding; quantum mechanics provides the genuine alternatives. This is the layer most likely to be wrong, and the theory works without it. Now we close the loop: how do you test all of this, what does it mean for AI, and where does the math stand?

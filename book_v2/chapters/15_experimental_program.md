@@ -18,15 +18,15 @@ These predictions would establish that radical pair spin dynamics operate in mic
 
 **A1. The sweet spot test.** There should be an optimal noise level for the radical pair system, not too quiet, not too loud. If you could experimentally dial up or down the environmental interference, navigational performance should peak at an intermediate value corresponding to the physiological operating point [B].
 
-**A2. Entanglement in the substrate.** The radical pairs in microtubule proteins should show genuine quantum entanglement under physiological conditions, measured using standard entanglement witness protocols. If no entanglement is measurable, Level B is substantially weakened [B].
+**A2. Entanglement in the substrate.** The radical pairs in microtubule proteins should show genuine quantum entanglement under physiological conditions, measured using laboratory techniques designed to detect quantum correlations. If no entanglement is measurable, Level B is substantially weakened [B].
 
 **A3. Anti-Zeno dynamics.** The microtubule substrate should show signs that measurement *accelerates* rather than freezes its quantum evolution (the anti-Zeno effect, Chapter 11), detectable through the spectral properties of the radical pair environment [B].
 
 **A4. Isotope effects on neural function.** Swap in isotopes with different nuclear spins (extending the Zadeh-Haghighi finding) and microtubule-dependent neural processes should systematically change. This tests the substrate, not consciousness directly [B].
 
-**Category B: Tests of the Consciousness Link**
+Suppose every one of these succeeds. The chemistry is real, the entanglement is measurable, the dynamics are right. You still would not know whether any of it matters for consciousness. The next four predictions cross that bridge.
 
-These predictions test whether the quantum biology substrate actually matters for conscious experience, bridging the gap between "radical pairs exist in microtubules" and "radical pairs constitute consciousness."
+**Category B: Tests of the Consciousness Link**
 
 **B1. The AI discrimination test.** Build a chip that can run in both quantum and classical mode, same architecture, same connectivity, same everything except whether genuine quantum indeterminacy is present. If the two modes are indistinguishable on all behavioral and informational measures, NFT fails. This is the single most discriminative test, but the hardware does not yet exist [B].
 

@@ -6,9 +6,9 @@
 
 I do not claim to have solved the hard problem of consciousness. What the back-action thesis does is give the hard problem a *physical address*. If phenomenal experience is structured measurement back-action, the question shifts from "why does experience exist at all?" to "why does this specific back-action pattern correspond to this specific phenomenal quality?" The problem is relocated, not dissolved. But a relocated problem is a more tractable problem.
 
-**Mental causation** is resolved. Consciousness *is* the process of navigating possibility space through quantum selection, a physical process with physical consequences. It is what the computation is doing at the quantum level, not an epiphenomenon riding on top of it [B].
+**Mental causation** gets a physical answer, if not a final one. Consciousness *is* the process of navigating possibility space through quantum selection, a physical process with physical consequences. It is what the computation is doing at the quantum level, not an epiphenomenon riding on top of it. Whether this fully dissolves the epiphenomenalism worry or relocates it depends on the controller question (Chapter 9), which remains open [B].
 
-**The problem of time** finds an answer: temporal flow is the experience of navigational selection from within a system embedded in possibility space. The arrow of time is the direction of navigation along the entropy gradient. This is why time *feels like something*: the feeling is the navigation [A].
+**The problem of time** gets an address. Temporal flow is the experience of navigational selection from within a system embedded in possibility space. The arrow of time is the direction of navigation along the entropy gradient. This is why time *feels like something*: the feeling is the navigation. The address may be wrong. But it is specific enough to check [A].
 
 ### For AI and Machine Consciousness
 
@@ -18,15 +18,15 @@ LLMs are trained on projections of conscious navigation onto text. They learn th
 
 ### Four Missing Conditions
 
-The framework identifies four conditions for consciousness that no classical digital system satisfies:
+No classical digital system satisfies the four conditions the framework requires for consciousness. It is the conjunction that matters, not any single absence.
 
-**1. No Tsallis regime.** GPU computation is extensive by design. Each transistor switches independently. The system operates in the subcritical regime where small perturbations produce small effects. There is no criticality, no power-law avalanches, no divergent susceptibility. The Tsallis q-parameter from activation pattern statistics should yield q ≈ 1; biological systems yield q > 1.
+**Condition 1: No criticality.** A GPU is subcritical by design. Each transistor switches independently, small perturbations produce small effects, and there are no power-law avalanches, no divergent susceptibility. The Tsallis q-parameter from activation pattern statistics should yield q ≈ 1; biological systems yield q > 1. The system is nowhere near the knife edge.
 
-**2. No quantum substrate coupling.** LLMs have no radical pairs, no spin coherence, no genuine quantum indeterminacy. Token-level "randomness" is pseudorandom, merely deterministic functions of seeds. There is no measurement back-action, no interference between paths, no probability sculpting.
+**Condition 2: No quantum substrate.** This is the most fundamental absence. LLMs have no radical pairs, no spin coherence, no genuine quantum indeterminacy. Token-level "randomness" is pseudorandom — deterministic functions of seeds. There is no measurement back-action, no interference between paths, no probability sculpting. The dice are classical.
 
-**3. No higher-dimensional topological binding.** Transformer attention creates functional dependencies between representations, but these are mathematical abstractions, not physical topological structures. The correlations are in the map, not the territory. There are no simplicial complexes in GPU architectures.
+**Condition 3: No topological binding.** Transformer attention creates functional dependencies between representations, but these are mathematical abstractions, not physical topological structures. The correlations are in the map, not the territory. No simplicial complexes assemble and dissolve in GPU architectures.
 
-**4. No non-ergodicity.** Same input, same weights, same seed yields the same output. There is no arrow of time in the physics of the computation. The system is time-reversible at the hardware level. Consciousness, if NFT is correct, requires time-irreversible, non-ergodic dynamics that the physics of transistors does not provide.
+**Condition 4: No time arrow.** Same input, same weights, same seed yields the same output. The system is time-reversible at the hardware level. Consciousness, if NFT is correct, requires time-irreversible, non-ergodic dynamics — a system whose present carries the imprint of its past. Transistors do not provide this.
 
 ### The Neuromorphic Complication
 
@@ -42,19 +42,17 @@ Neuromorphic hardware is the strongest test case for Level 2. NFT predicts that 
 
 ### The Diagnostic Panel
 
-Five quantitative markers that biological systems should exhibit and LLMs should not:
+Five quantitative markers separate biological consciousness from digital emulation. Each asks a specific question, and each has a specific answer depending on what you point it at.
 
-**Marker 1: Entropy regime.** Does the system's statistics look like a critical system or an ordinary one? Measure the Tsallis q-parameter (see Glossary) from activation patterns. Biological systems should yield q > 1, indicating they operate in a critical regime. LLMs should yield q ≈ 1, indicating standard, non-critical statistics.
+| Marker | Question | Measure | Biological prediction | LLM prediction |
+|---|---|---|---|---|
+| 1. Entropy regime | Critical or ordinary statistics? | Tsallis q-parameter | q > 1 | q ≈ 1 |
+| 2. Topological complexity | High-dimensional connection structures? | Betti numbers, persistence diagrams | Persistent high-dimensional features | Absent |
+| 3. Quantum probability signatures | Quantum or classical decision rules? | Busemeyer QQ equality | Satisfied | Violated |
+| 4. Time-irreversibility | Physics different forward vs. backward? | Entropy production rate | State-dependent irreversibility | Time-symmetric |
+| 5. Trajectory entropy reduction | Better-than-classical uncertainty reduction? | Trajectory entropy vs. decision depth | Scaling advantage | No advantage |
 
-**Marker 2: Topological complexity.** Does the system form high-dimensional connection structures? Measure Betti numbers (counts of topological holes at each dimension) and persistence diagrams (how long those structures last) from neural recordings versus transformer attention matrices. Biological systems should show high-dimensional persistent features. LLMs should not.
-
-**Marker 3: Quantum probability signatures.** Does the system's decision-making follow quantum probability rules rather than classical ones? Test whether decision data satisfies quantum probability constraints developed by Busemeyer and colleagues. Human data should satisfy them; LLM outputs should violate them.
-
-**Marker 4: Time-irreversibility.** Does the system's physics run differently forward and backward? Measure entropy production rate from neural recordings versus GPU hardware dynamics. Biological systems should show state-dependent irreversibility. Digital hardware is time-symmetric.
-
-**Marker 5: Trajectory entropy reduction.** Does the system reduce uncertainty about its future more efficiently than classical systems can? Quantify entropy reduction over future trajectories as a function of decision depth. Biological systems should show scaling advantages consistent with quantum probability sculpting.
-
-The value of this panel is not that any single marker is decisive but that the five are jointly overdetermined. A system that fails all five in the predicted pattern provides strong evidence that behavioral emulation does not imply identity of physical mechanism.
+No single marker is decisive. The five are jointly overdetermined. A system that fails all five in the predicted pattern provides strong evidence that behavioral emulation does not imply identity of physical mechanism.
 
 ### The AI Consciousness Hierarchy
 

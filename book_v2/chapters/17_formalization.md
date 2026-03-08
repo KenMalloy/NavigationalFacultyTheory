@@ -28,9 +28,9 @@ The categorical difference between quantum and classical information resources w
 
 ### The Multi-Scale Synthesis
 
-The full formalization needs to connect three scales of description, like a map that works at street level, city level, and continental level simultaneously. Each scale needs its own mathematics, and the scales need to talk to each other.
+The full formalization needs to connect three scales of description — like a map that works at street level, city level, and continental level simultaneously. Each scale needs its own mathematics, and the scales need to talk to each other.
 
-At the **microscale**, quantum mechanics (Hilbert space): measurement and back-action in radical pair spin states. At the **mesoscale**, geometry (Riemannian manifolds): conscious trajectories following shortest paths on curved landscapes defined by neural connectivity. At the **macroscale**, structural mathematics (category theory): the claim that IIT, GNWT, and the quantum substrate are subsystems of one architecture translates into a precise statement about structural relationships between mathematical categories.
+At the bottom, quantum mechanics. Hilbert space, measurement operators, back-action: the language of radical pair spin states. At the middle, geometry. Conscious trajectories follow shortest paths on curved landscapes defined by neural connectivity, and the natural description is Riemannian. At the top, category theory — the claim that IIT, GNWT, and the quantum substrate are subsystems of one architecture translates into a precise statement about structural relationships between mathematical categories.
 
 Phillips and Tsuchiya's demonstration that IIT's axioms derive from a universal mapping property suggests that category theory is not an arbitrary mathematical choice but a natural language for the structural requirements of consciousness.
 

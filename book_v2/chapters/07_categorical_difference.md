@@ -2,6 +2,17 @@
 
 # PART THREE: LEVEL B — QUANTUM PROBABILITY SCULPTING
 
+### Key Terms for Part Three
+
+The next four chapters use quantum vocabulary. These six terms carry almost all of the weight:
+
+- **Amplitude**: A complex number associated with a quantum path. Unlike probabilities, amplitudes have phase (direction) and can cancel each other out.
+- **Interference**: When two paths lead to the same outcome, their amplitudes add before being squared into a probability. Aligned phases enhance; opposing phases suppress.
+- **Coherence**: The persistence of phase relationships between quantum states. While coherence lasts, interference is possible.
+- **Decoherence**: The loss of coherence through interaction with the environment. When coherence is gone, the system behaves classically.
+- **Radical pair**: A pair of molecules with unpaired electron spins in quantum superposition. The spin outcome determines which chemical product forms. This is the proposed quantum mechanism.
+- **Born rule**: The probability of a measurement outcome equals the squared amplitude. NFT never violates it.
+
 ---
 
 ## Chapter 7: The Categorical Difference
@@ -35,3 +46,5 @@ This is a good place to be precise about what NFT actually needs from the quantu
 Orch OR commits to objective reduction (gravitational self-collapse of superpositions), millisecond-scale coherence windows, and quantum computation within microtubules. NFT inherits none of these commitments. What NFT requires is narrower: *continuous generation of genuine indeterminacy* at cognition-relevant intervals via radical pair spin states, plus a feedback mechanism by which measurement outcomes reshape the measurement basis.
 
 NFT is parasitic on the weakest component of Orch OR, the mere existence of quantum indeterminacy in the biological substrate, not on its most controversial claims. This makes NFT more empirically resilient while preserving the core commitment that separates both from classical accounts [B].
+
+One question will follow us through the next three chapters, and it deserves flagging now: if the quantum substrate provides the raw material and classical neural computation selects what to measure, where does the agency actually live? The answer is not clean. Chapter 9 addresses it directly.

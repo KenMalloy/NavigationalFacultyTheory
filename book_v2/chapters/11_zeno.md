@@ -2,6 +2,8 @@
 
 # PART FOUR: LEVEL B — DEEPER CONSEQUENCES
 
+A fair warning. The chapters that follow are more speculative than what came before. Chapters 8 through 10 earned their keep with simulations, negative results, and a computational benchmark that survived fair testing. Chapters 11 through 14 ask what the mechanism, if it works, would *explain* about the experience of consciousness. The evidence here is thinner, the claims are bolder, and two of the four chapters contain no simulations or data. They are consequence-space: what the theory predicts about phenomenology, binding, and the nature of possibility. Read them as such.
+
 ---
 
 ## Chapter 11: Zeno, Anti-Zeno, and the Dynamics of Attention

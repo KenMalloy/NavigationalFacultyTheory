@@ -24,22 +24,16 @@ The functional parallel may be more than coincidence. FtsZ navigates space, movi
 
 This framing makes a testable prediction: the structural features of tubulin that differ most from FtsZ, the features evolution added when repurposing the protein, should be precisely the features relevant to quantum indeterminacy generation (aromatic residue networks, radical pair sites, lattice cooperativity) rather than mechanical force generation. This is testable by comparative structural biology.
 
-### The Cambrian Explosion
+### Two Consequences
 
-Something happened roughly 540 million years ago. Complex microtubule networks appear in animals, and the Cambrian explosion fills the world with complex animal body plans. The timing is suggestive, but we have no preserved cytoskeletons from Cambrian organisms, so this is a coincidence we can note but not test.
+Two implications follow from the FtsZ-to-tubulin story, both worth stating briefly before we move on.
 
-A related prediction can be tested in living species: behavioral flexibility should correlate with the complexity of microtubule networks. But this prediction runs into immediate trouble from comparative cognition. Cephalopods exhibit extraordinary behavioral flexibility (tool use, problem solving, observational learning) with nervous system architecture radically different from vertebrates and no demonstrated microtubule advantage. Insects, particularly hymenopterans, show remarkable behavioral flexibility with very small nervous systems. The comparative cognition literature has moved strongly toward recognizing that behavioral flexibility is multiply realized across nervous system architectures. The prediction may need to be qualified to "within a given clade" rather than across all eukaryotes, or reformulated as a partial correlation controlling for other variables.
+First, timing. Complex microtubule networks appear in animals around the Cambrian explosion, 540 million years ago. The coincidence is suggestive but untestable — we have no preserved cytoskeletons from Cambrian organisms. A related prediction, that behavioral flexibility should correlate with microtubule network complexity across species, runs into trouble from cephalopods and insects, which achieve remarkable flexibility through radically different architectures. The prediction may hold within clades but not across them. The comparative evidence is in Appendix E.
 
-### Non-Neural Navigation
-
-All eukaryotes possess microtubules. If microtubules provide quantum substrate coupling, then the navigational faculty should be present, in graded form, across the eukaryotic tree of life [B].
-
-The evidence is suggestive. *Physarum polycephalum* solves mazes, optimizes transport networks comparable to human-designed infrastructure, and anticipates periodic stimuli, all without synaptic connections, using cytoskeletal networks instead. Fungi exhibit spatial memory and pattern recognition without neurons. Plants show adaptive behavior mediated by microtubule arrays.
-
-This does not mean slime molds are conscious the way you are. It means that any eukaryotic system with sufficient microtubule network complexity possesses some degree of navigational capacity, scaling with network complexity, topological dimensionality, and proximity to criticality. Consciousness, on this view, is not a binary switch. It is a dial.
+Second, scope. All eukaryotes possess microtubules. If microtubules provide quantum substrate coupling, then consciousness is not a binary switch but a dial — present in graded form wherever microtubule networks reach sufficient complexity [B]. Slime molds solve mazes using cytoskeletal networks. Fungi exhibit spatial memory without neurons. These are not claims that *Physarum* is conscious the way you are. They are consequences of the theory that can be checked (Appendix E).
 
 ### Edwards and the Independent Convergence
 
 Edwards (2025) came to essentially the same conclusion by a completely different route. His N-Frame model formalizes conscious observer-self agents navigating branching worldlines, integrating evolutionary game theory with QBism to show that agents making genuinely free choices along branching paths outperform deterministic agents in competitive environments. Edwards' agents are, in the language of this book, navigators [A].
 
-**Where we are.** Consciousness is a navigational faculty: it steers organisms through the landscape of what could happen next. The existing theories (IIT, GNWT, active inference) describe different subsystems of this navigation. Entropy provides the gradient; evolution provides the pressure. All of this works without quantum mechanics. Now we ask: does the navigator have access to resources that classical systems do not?
+**Where we are.** Consciousness is a navigational faculty: it steers organisms through the landscape of what could happen next. The existing theories (IIT, GNWT, active inference) describe different subsystems of this navigation. Entropy provides the gradient; evolution provides the pressure. Everything so far works without quantum mechanics — and that is exactly where most theories of consciousness stop. Now we ask the question that separates NFT from the rest: does the navigator have access to resources that classical systems do not?

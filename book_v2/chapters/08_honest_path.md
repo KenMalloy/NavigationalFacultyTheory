@@ -8,7 +8,7 @@ This chapter tells the story of a hypothesis that failed, what replaced it, and 
 
 The original version of Level B proposed that consciousness exploited Environment-Assisted Quantum Transport (ENAQT) in tryptophan chromophore networks within microtubules. The argument was seductive. The FMO complex in photosynthesis achieves optimal energy transport at intermediate noise levels, microtubules contain vast tryptophan networks with similar architecture, and the ENAQT regime would explain why decoherence is a feature rather than a bug.
 
-The hopping rate γ in microtubule tryptophan networks, estimated from measured energy diffusion lengths and coupling strengths, is approximately 0.2–2 ps⁻¹. The dephasing rate κ is approximately 17–20 ps⁻¹ at physiological temperature. This gives γ/κ ≈ 0.01–0.1, the intermediate regime where ENAQT should operate.
+Two numbers determine whether ENAQT works in a given system: how fast the quantum signal hops between sites, and how fast the environment scrambles it. If hopping dominates, coherence wins and the system behaves quantum-mechanically. If scrambling dominates, decoherence wins and the system behaves classically. The ENAQT sweet spot is in between. In microtubule tryptophan networks, the hopping rate (γ ≈ 0.2–2 ps⁻¹) and the dephasing rate (κ ≈ 17–20 ps⁻¹ at physiological temperature) give γ/κ ≈ 0.01–0.1 — the intermediate regime where ENAQT should operate.
 
 The prediction was specific: quantum probability sculpting via excitonic transport through tryptophan chromophore networks at the ENAQT optimum.
 

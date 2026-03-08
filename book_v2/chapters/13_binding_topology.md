@@ -12,19 +12,15 @@ Santoro and colleagues (2024) demonstrated that interactions involving three or 
 
 ### The Three-Scale Mechanism
 
-The proposed binding mechanism operates across three scales:
+The proposed binding mechanism operates across three scales.
 
-**Microscale (quantum)**: Radical pair spin coherence creates quantum correlations between tubulin subunits. These are localized quantum effects operating at microsecond timescales.
-
-**Mesoscale (topological)**: Correlated radical pair states connect through neural cliques forming higher-dimensional simplicial complexes. Two neurons ten centimeters apart in Euclidean space may be adjacent in the seven-dimensional simplicial complex formed by their shared clique membership. Long-range correlations would be the three-dimensional projection of local interactions in higher-dimensional topology.
-
-**Macroscale (critical)**: At self-organized criticality, correlation length diverges. Information propagation becomes scale-free. The critical point connects microscale quantum effects to system-spanning dynamics.
+At the quantum scale, radical pair spin coherence creates correlations between tubulin subunits — localized effects operating at microsecond timescales. These correlations connect upward through neural cliques forming higher-dimensional simplicial complexes: two neurons ten centimeters apart in Euclidean space may be adjacent in the seven-dimensional simplicial complex formed by their shared clique membership. The long-range correlations we observe in three dimensions would be the projection of local interactions in higher-dimensional topology. And at self-organized criticality, correlation length diverges, information propagation becomes scale-free, and the critical point connects quantum effects at the bottom to system-spanning dynamics at the top.
 
 ### An Honest Negative Result
 
 NFT predicted that topological complexity would decline before classical neural activity metrics during propofol-induced anesthesia. The reasoning was straightforward: if quantum substrate coupling underlies topological binding, then disrupting consciousness should reduce topological complexity first and classical metrics second, because the substrate is upstream of the classical dynamics.
 
-We tested this using the OpenNeuro DS005620 dataset (propofol sedation in 21 subjects), computing persistent homology alongside classical metrics (Lempel-Ziv complexity and weighted phase lag index in the alpha band) across the transition from wakefulness to sedation.
+We tested this using the OpenNeuro DS005620 dataset (propofol sedation in 21 subjects), computing persistent homology (tracking how topological shapes appear and disappear over time) alongside classical metrics (Lempel-Ziv complexity and weighted phase lag index in the alpha band) across the transition from wakefulness to sedation.
 
 The prediction was not supported. Classical metrics declined first in the majority of subjects. The proportion showing topology-first decline was 0.12 for both metrics, with p-values of 0.96 and 0.998 respectively. The data show the opposite of what was predicted.
 
@@ -42,4 +38,4 @@ We do not know which explanation is correct. What we know is that the simple tem
 
 We report this because the alternative is public relations. The full TDA pipeline, dataset details, persistent homology computation, and temporal ordering statistics are reported in [Malloy, "Topological Disruption Order Under Propofol Sedation: A Negative Result," forthcoming].
 
-**Where we are.** The quantum Zeno effect is not a bug but the mechanism of perceptual stability. Qualia may be the physical back-action of measurement on the measuring apparatus. The binding problem may find its answer in higher-dimensional topology, though one topological prediction has already failed. One negative result is on the ledger; the binding hypothesis needs refinement. Now the hardest question: what is the stuff consciousness navigates through?
+**Where we are.** Three chapters of consequences, each further out on the limb. The quantum Zeno effect may be the mechanism of perceptual stability. Qualia may be the physical back-action of measurement on the measuring apparatus. The binding problem may find its answer in higher-dimensional topology — though one topological prediction has already failed, and that failure is on the ledger. Now the hardest question, the one most likely to cost us readers: what is the stuff consciousness navigates through?

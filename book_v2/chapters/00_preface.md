@@ -10,7 +10,7 @@
 
 Every morning you wake up and something happens that no theory in science can explain. The lights come on. Not the lights in your room, the lights of experience. The world appears with texture and weight and presence, and there is a *you* doing the appearing-to. This book is about what that is.
 
-The theory presented here, Navigational Faculty Theory, makes a single claim in three layers. The outermost layer says what consciousness *does*: it navigates. Not metaphorically. Consciousness is a biological faculty, like vision or proprioception, that steers organisms through the landscape of what could happen next. The middle layer says *how*: through a quantum mechanism in which living systems reshape the odds of their own futures in ways that no classical system can replicate. The innermost layer says what consciousness *navigates through*: a physically real possibility space, the full landscape of potential realities from which experience selects a coherent path.
+The theory presented here, Navigational Faculty Theory, makes a single claim in three layers. The outermost layer says what consciousness *does*: it navigates. Not metaphorically. Consciousness is a biological faculty, like vision or proprioception, that steers organisms through the landscape of what could happen next. The middle layer says *how*: through a quantum mechanism in which living systems reshape the odds of their own futures in ways that no classical system can replicate. The innermost layer says what consciousness *navigates through*: possibility space, the full landscape of potential realities from which, the theory proposes, experience selects a coherent path.
 
 Each layer is independently testable. Each can fail without killing the others. A reader who finds the innermost layer too speculative can accept the middle layer on mechanistic grounds. A reader who doubts the quantum mechanism can accept the outermost layer as a productive functional framework. The layers are designed to be separable because honest science requires it.
 
@@ -30,7 +30,7 @@ Every chapter in this book tells a story. Some stories have more physics in them
 
 The lightest path through the book: Chapters 1 through 4 establish the problem and the framework. Chapter 7 presents the categorical difference between classical and quantum probability. Chapter 8 tells the story of a hypothesis that failed and what replaced it. Chapter 10 presents the computational benchmark, including the results that survived and the ones that didn't. Chapters 14 through 16 present the speculation, the experiments, and the implications for AI. If you read only these, you will have the full shape of the argument.
 
-The heavier chapters (9, 11, 12, 13, 17) go deeper into the mechanism, the numbers, and the math. They are heavier but not optional. The theory earns its keep there.
+The heavier chapters (9, 11, 12, 13) go deeper into the mechanism and the numbers. Chapter 17 sketches the mathematical formalization program — if you want the argument without the math, you can go straight from Chapter 16 to the Epilogue. The theory earns its keep in the details, but the arc is complete without them.
 
 ### A note on the markers
 
