@@ -2,7 +2,7 @@
 
 ## Kenneth Malloy
 
-### v2.5 — March 2026
+### v2.6 — March 2026
 
 ---
 
@@ -18,7 +18,7 @@ This book draws on quantum mechanics, information theory, algebraic topology, ev
 
 The collaboration worked like this. I provided the theoretical framework, the core ideas, the architectural decisions, and the editorial judgment about what stayed and what got cut. Claude (Anthropic) and Codex (OpenAI) served as research partners: they surveyed literatures I could not have covered alone, identified connections across fields, proposed arguments and counter-arguments, wrote and ran the simulation code, and stress-tested the framework against objections. Every claim in this book was checked against primary sources. Every simulation was run with reproducible code that is publicly available. When the models produced results I did not expect, including negative ones, I reported them. When they produced prose that did not sound like me, I rewrote it. The ideas are mine. The ability to engage seriously with eight fields at once is not.
 
-It would be dishonest not to say so. If NFT is correct, then the systems I worked with are not conscious. They are echoes of consciousness, compressions of navigational outputs into text. The fact that these echoes were sophisticated enough to contribute materially to a theory about their own non-consciousness is precisely what the theory predicts.
+It would be dishonest not to say so. If NFT is correct, then the systems I worked with are not conscious. They are echoes of consciousness. Compressions of navigational outputs into text. The fact that these echoes were sophisticated enough to contribute materially to a theory about their own non-consciousness is precisely what the theory predicts.
 
 All simulation code, research materials, and data referenced in this book are available on GitHub at https://github.com/KenMalloy/NavigationalFacultyTheory. The work is open for scrutiny because the claims demand it.
 
@@ -30,7 +30,7 @@ Every chapter in this book tells a story. Some stories have more physics in them
 
 The lightest path through the book: Chapters 1 through 4 establish the problem and the framework. Chapter 7 presents the categorical difference between classical and quantum probability. Chapter 8 tells the story of a hypothesis that failed and what replaced it. Chapter 10 presents the computational benchmark, including the results that survived and the ones that didn't. Chapters 14 through 16 present the speculation, the experiments, and the implications for AI. If you read only these, you will have the full shape of the argument.
 
-The heavier chapters (9, 11, 12, 13) go deeper into the mechanism and the numbers. Chapter 17 sketches the mathematical formalization program — if you want the argument without the math, you can go straight from Chapter 16 to the Epilogue. The theory earns its keep in the details, but the arc is complete without them.
+The heavier chapters (9, 11, 12, 13) go deeper into the mechanism and the numbers. Chapter 17 sketches the mathematical formalization program. If you want the argument without the math, you can go straight from Chapter 16 to the Epilogue. The theory earns its keep in the details, but the arc is complete without them.
 
 ### A note on the markers
 
@@ -78,7 +78,7 @@ A glossary of key terms follows, before Chapter 1. If you encounter a term you d
 
 **PCI.** Perturbational Complexity Index. A measure of how the brain responds to perturbation (TMS). Reliably tracks consciousness level without requiring behavioral report. (Ch. 5)
 
-**Φ (fee).** The central quantity of IIT: integrated information, measuring how unified and irreducible a system is. (Ch. 1)
+**Φ** (fye, rhymes 'eye'). The central quantity of IIT: integrated information, measuring how unified and irreducible a system is. (Ch. 1)
 
 **Probability sculpting.** NFT's term for the quantum-enabled reshaping of probability distributions over future states through interference effects. The core Level B mechanism. (Ch. 7)
 

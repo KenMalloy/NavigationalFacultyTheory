@@ -20,11 +20,11 @@ Each level can be tested independently, and each can fail without bringing the o
 
 ### The Relationship to Active Inference
 
-Level A has a relationship to existing work worth stating clearly.
+Level A's relationship to existing work is worth stating clearly.
 
 Karl Friston's Free Energy Principle and its active inference extension frame consciousness as minimizing surprise: continuously generating models of the world, updating them when predictions fail. Action selection decomposes into epistemic terms (reduce uncertainty) and instrumental terms (fulfill preferences).
 
-Level A *is* active inference, described from the outside. "Consciousness navigates possibility space" and "consciousness minimizes expected free energy" are two descriptions of the same process: one from the navigational perspective, one from the information-theoretic perspective. This is shared ground, not contested territory.
+Level A *is* active inference, described from the outside. "Consciousness navigates possibility space" and "consciousness minimizes expected free energy" are two descriptions of the same process. One from the navigational perspective, one from the information-theoretic perspective. This is shared ground, not contested territory.
 
 So what does Level A actually contribute? Architecture, not new predictions. Active inference describes what an individual agent does. IIT describes what the substrate must be. GNWT describes how the substrate communicates. These three frameworks developed largely independently and their relationship to each other stayed unclear. The four-operations framework (Generation, Selection, Integration, Propagation) shows they are subsystems of a single navigational architecture. IIT's integration is what makes navigation coherent. GNWT's broadcasting is how the navigational output reaches the rest of the brain. Active inference's surprise minimization is what navigation accomplishes. They were never competitors. They were describing different parts of the same faculty.
 

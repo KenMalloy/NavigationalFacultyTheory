@@ -28,11 +28,13 @@ The signal falls about 10 times short. This is a problem. But it is not a fatal 
 
 **First, the gap is only 10x.** Compare this to conformational tunneling, which was suppressed by a factor of 10 to the negative 15th relative to classical activation (that is fatal), or to excitonic ENAQT, which showed 0.18% advantage (that is negligible). A 10× gap is within the range of parameter uncertainty and biological modulation.
 
-**Second, superoxide concentration is the swing factor, and it is biologically regulated.** Steady-state cytosolic O₂⁻ sits around 0.1 nM, held there by superoxide dismutase operating near the diffusion limit (k ≈ 1.6 × 10⁹ M⁻¹s⁻¹). At that baseline, the quantum channel is effectively silent. But neurons are not steady-state machines. During intense activity, bursts of reactive oxygen push local O₂⁻ into the 10–100 nM range within the microdomain between mitochondria and microtubules — from mitochondrial "superoxide flashes" lasting roughly 10 seconds, to receptor-driven enzyme activation (NOX2, xanthine oxidase) sustaining elevated levels for minutes. At 10 nM, the signal reaches the noise floor. At 100 nM, the quantum channel opens wide.
+**Second, and more important, the gap reveals the mechanism's nature.** The quantum channel is not always on. It is gated by metabolic activity.
 
-The duty cycle matters. During ordinary cortical processing, local O₂⁻ spends well under 1% of the time above the 10 nM threshold. During high-demand episodes (intense computation, metabolic stress, burst firing that drives mitochondria hard), that fraction rises to 1-10% of active time. The quantum channel is not always on. It is gated by the very metabolic activity that consciousness requires.
+Steady-state cytosolic O₂⁻ sits around 0.1 nM, held there by superoxide dismutase operating near the diffusion limit (k ≈ 1.6 × 10⁹ M⁻¹s⁻¹). At that baseline, the quantum channel is effectively silent. But neurons are not steady-state machines. During intense activity, bursts of reactive oxygen push local O₂⁻ into the 10–100 nM range within the microdomain between mitochondria and microtubules, from mitochondrial "superoxide flashes" lasting roughly 10 seconds to receptor-driven enzyme activation (NOX2, xanthine oxidase) sustaining elevated levels for minutes. At 10 nM, the signal reaches the noise floor. At 100 nM, the quantum channel opens wide.
 
-And this points somewhere interesting. The radical pair mechanism is *activity-dependent*. Quiet neurons, with low metabolic demand and low ROS production, do not generate enough radical pair events for the quantum signal to matter. Active neurons, driving mitochondria hard, do. The mechanism tracks engagement: consciousness does not merely happen to neurons; it happens through neurons that are doing something [B].
+The duty cycle matters. During ordinary cortical processing, local O₂⁻ spends well under 1% of the time above the 10 nM threshold. During high-demand episodes, intense computation, metabolic stress, burst firing that drives mitochondria hard, that fraction rises to 1–10% of active time.
+
+Quiet neurons run classical. Active neurons open the quantum channel. The mechanism tracks engagement: consciousness happens through neurons that are *doing something* [B].
 
 **Third, the microtubule count may be substantially higher than the conservative estimate.** Large pyramidal neurons with extensive dendritic arbors may contain roughly 77,000 microtubules (an order-of-magnitude estimate based on dendritic volume and microtubule packing density; no direct count exists in the literature). If so, the signal is 77 times larger than the conservative estimate, well above the noise floor even at baseline ROS. This is an exploratory scenario, not an established parameter.
 
@@ -44,33 +46,31 @@ The numbers are tight. What we have is a chain of order-of-magnitude estimates, 
 
 ### The Feedback Loop
 
-There is a second feature that gives the probability sculpting thesis its full power, and it is the piece that makes the whole thing come alive.
+You know the feeling. You walk into a crowded room and your attention catches on one conversation. The rest of the room recedes. What sharpened was not just your hearing. It was the *question* your brain was asking of the incoming signal.
 
-You know the feeling. You walk into a crowded room and your attention catches on one conversation. The rest of the room recedes. What sharpened was not just your hearing — it was the *question* your brain was asking of the incoming signal. And the question determined what you could hear. And what you heard reshaped the question.
-
-An analogy makes this precise. Walk into a room and decide to measure temperature. You learn something about the room and you can act on it: open a window, turn up the heat. Now walk into the same room and decide to measure air pressure instead. You learn something different, and the actions available to you change. The question you ask determines what answers are possible and what you can do next.
+Walk into a party and look for someone you know. The room organizes itself around faces. Walk into the same party and look for the way out. The room organizes itself around doors. Same room. Different question. Different room.
 
 Quantum measurement works the same way, except with an additional twist: asking the question physically changes the system you are asking about. In standard quantum mechanics, the experimenter chooses what to measure and the system responds. In a living neuron, nothing is fixed. The measurement interaction between the quantum substrate and its environment depends on the current state of the neural network.
 
 When you attend to a visual stimulus, the pattern of neural activity changes. This changes the electromagnetic and conformational environment of the microtubule network. This changes which quantum property is being "measured," which changes the interference pattern.
 
-The formal picture is a feedback loop:
+One step in this loop has not been measured directly, the coupling from spin outcome to protein shape. The physical logic is straightforward. Radical pair chemistry produces different products depending on the spin state. Different products carry different charge distributions and steric profiles (different shapes, different electrical footprints). The protein's conformation should depend on which product forms. This has been demonstrated in other radical pair systems but not yet in tubulin specifically. The coupling is assumed, not proven.
 
-Radical pair spin outcome → protein conformational change (back-action) → altered Hamiltonian for next radical pair event → new measurement basis → new spin outcome → new conformational change → ...
+With that caveat, the formal picture is a feedback loop:
 
-We call this adaptive measurement basis selection, and it is the heart of the theory. The organism steers itself through possibility space by choosing *what to measure*. Each measurement simultaneously extracts information (reading the quantum state) and reshapes the probability landscape (back-action on the substrate). The "choice" of measurement basis is determined by attention, intention, context, with classical neural computation selecting which quantum observable to couple to [B].
+Radical pair spin outcome → protein shape change (back-action) → new rules for the next radical pair event → new measurement basis → new spin outcome → new shape change → ...
 
-We confirmed this computationally. Chapter 10 presents a systematic benchmark in which a quantum-adaptive controller and a classical-adaptive controller are independently evolved and tested across 90 three-dimensional mazes under matched training budgets and paired evaluation seeds. The quantum-adaptive controller, whose gate function is shaped by radical pair spin dynamics with state-dependent feedback, systematically outperforms the classical controller (+3.3% normalized advantage, 95% CI [+0.9%, +5.8%]). All three ingredients are necessary: quantum dynamics, adaptive measurement, and evolved parameters. Early versions of the benchmark that lacked independent classical optimization, matched budgets, or multiple mazes produced inflated results that did not survive fair testing. The honest result is modest but systematic [B].
+The organism steers by choosing *what to measure*. Attention, intention, context determine the choice, with classical neural computation selecting which quantum observable to couple to. Each measurement reads the quantum state and reshapes the probability landscape in one gesture. We call this adaptive measurement basis selection, and it is the heart of the theory [B].
+
+If this mechanism works, evolution with quantum resources should build better navigators than evolution without them. We tested this computationally. The first version of the benchmark failed fair testing. We rebuilt it from scratch. Across 90 three-dimensional mazes with matched training budgets, the quantum-adaptive controller systematically outperforms the classical one (+3.3%, CI excludes zero). The result is modest but systematic. Chapter 10 tells the full story [B].
 
 ### Reading and Writing as One Process
 
 Here is where the two faces of quantum measurement become one thing.
 
-When you press your thumb into clay to feel its temperature, you learn something about the clay and you leave a thumbprint. The sensing and the marking happen in the same gesture. You can't feel without pressing, and you can't press without changing what you touch. Quantum measurement works the same way, except the physics is exact about it: you extract information (reading) and you produce back-action that reshapes the system's state (writing). These are not separate processes that happen to co-occur. They are two descriptions of a single physical interaction.
+A potter presses her thumb into clay to feel how wet it is. She learns something about the clay and she leaves a thumbprint. The sensing and the marking happen in the same gesture. You can't feel without pressing, and you can't press without changing what you touch. Quantum measurement works the same way, except the physics is exact about it. You extract information (reading) and you produce back-action that reshapes the system's state (writing). These are not separate processes that happen to co-occur. They are two descriptions of what a single physical interaction does.
 
-The radical pair measurement interaction does both at once:
-
-It **reads** the spin state, extracting information about which region of possibility space is currently accessible. And it **writes** to the probability distribution, reshaping which futures are more or less probable through interference-mediated back-action. The writing is not random noise. It carries information about what was read. The back-action is structured by the measurement outcome.
+The radical pair measurement interaction performs both at once: It **reads** the spin state, extracting information about which region of possibility space is currently accessible. And it **writes** to the probability distribution, reshaping which futures are more or less probable through interference-mediated back-action. The writing is not random noise. It carries information about what was read. The back-action is structured by the measurement outcome.
 
 A classical organism can sense and then act, but sensing and acting are separate processes connected by computation. A quantum-coupled organism reads-and-writes in a single measurement interaction, and the writing carries information about the reading without any intermediate computational step.
 
@@ -78,7 +78,7 @@ It is categorically different. The organism's relationship to its own probabilit
 
 ### The Controller Question
 
-There is an objection here that deserves a straight answer. If classical neural computation selects the measurement basis (as described above, with attention, intention, and context determining which quantum observable to couple to), then the agency of the navigator is classical. The quantum component provides raw material (indeterminacy, interference, back-action) but the steering is classical. And if the steering is classical, the hard problem reappears at the classical level: why is there something it is like to be the classical process that selects measurement bases?
+But wait. If classical neural computation selects the measurement basis (as described above, with attention, intention, and context determining which quantum observable to couple to), then the agency of the navigator is classical. The quantum component provides raw material (indeterminacy, interference, back-action) but the steering is classical. And if the steering is classical, the hard problem reappears at the classical level: why is there something it is like to be the classical process that selects measurement bases?
 
 NFT's response is that the classical/quantum distinction in the feedback loop is not as clean as the objection assumes. The "classical controller" is itself a neural network operating at criticality, a system whose dynamics are shaped by the aggregate of previous quantum measurement outcomes. The controller is not independent of the quantum substrate; it is constituted by its history of interactions with it. The organism is not a classical captain steering a quantum ship. It is a system in which classical and quantum dynamics are so interleaved that attributing agency to one level rather than the other may be a category error.
 
@@ -86,11 +86,9 @@ Whether this response is adequate is an open philosophical question. The back-ac
 
 ### This Does Not Violate the Born Rule
 
-Imagine being allowed to choose the questions on your exam, but not the answers. You can't guarantee you'll get any particular question right. But by choosing which questions you face, you shape the landscape of outcomes — some question sets play to your strengths in ways others do not. A lawyer can't control the verdict, but the questions she chooses for each witness determine what evidence the jury hears, and the evidence determines the verdict. The agency isn't in the answers, it's in what gets asked.
+Imagine being allowed to choose the questions on your exam, but not the answers. You can't guarantee you'll get any particular question right. But by choosing which questions you face, you shape the landscape of outcomes by focusing on what plays to your strengths. A lawyer can't control the verdict, but the questions she chooses for each witness determine what evidence the jury hears, and the evidence determines the verdict. The agency is in what gets asked.
 
-This needs to be said clearly. The probability sculpting mechanism does not require consciousness to override quantum mechanics. It does not involve choosing the outcomes of measurements. It involves choosing which measurements to perform.
-
-The Born rule (the fundamental rule of quantum mechanics: the probability of an outcome equals the squared amplitude) is never violated. Every individual measurement outcome follows the Born rule exactly. What the organism controls is the measurement basis — *what question is asked* of the quantum system, not what answer comes back.
+The probability sculpting mechanism does not require consciousness to override quantum mechanics. The Born rule (the probability of an outcome equals the squared amplitude) is never violated. Every individual measurement outcome follows it exactly. What the organism controls is the measurement basis, *what question is asked* of the quantum system. The answers are nature's business.
 
 But choosing the question determines the space of possible answers. And the back-action from each answer reshapes the conditions for the next question. Over many measurement cycles, this feedback loop sculpts the probability distribution over trajectories in ways that no sequence of classical dice rolls can replicate, even though each individual quantum outcome is perfectly lawful [B].
 

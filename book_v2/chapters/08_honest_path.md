@@ -6,9 +6,11 @@ This chapter tells the story of a hypothesis that failed, what replaced it, and 
 
 ### The Excitonic Hypothesis
 
-The original version of Level B proposed that consciousness exploited Environment-Assisted Quantum Transport (ENAQT) in tryptophan chromophore networks within microtubules. The argument was seductive. The FMO complex in photosynthesis achieves optimal energy transport at intermediate noise levels, microtubules contain vast tryptophan networks with similar architecture, and the ENAQT regime would explain why decoherence is a feature rather than a bug.
+Every molecule in your body is vibrating. At thirty-seven degrees Celsius, thermal energy shakes proteins, rattles water, jostles every bond. That jostling, on a quantum scale, is enough to tear the whole system apart. For decades, the assumption was simple: biology is too warm and too wet for quantum coherence. Photosynthesis complicated things. Plants and bacteria move energy through protein scaffolds using quantum coherence, and the scaffolds are structured, membrane-shielded, and relatively quiet. Finding quantum effects there still surprised everyone, but the environment at least gave coherence a real glimmmer of hope. The brain is not a chloroplast. It runs hotter, soaks in saltwater, fires electrical signals, and burns through metabolic fuel at a rate that would kill a plant cell. If quantum coherence barely survives in a photosynthetic membrane, asking it to operate in a neuron is asking an ice cube to survive a foundry. 
 
-Two numbers determine whether ENAQT works in a given system: how fast the quantum signal hops between sites, and how fast the environment scrambles it. If hopping dominates, coherence wins and the system behaves quantum-mechanically. If scrambling dominates, decoherence wins and the system behaves classically. The ENAQT sweet spot is in between. In microtubule tryptophan networks, the hopping rate (γ ≈ 0.2–2 ps⁻¹) and the dephasing rate (κ ≈ 17–20 ps⁻¹ at physiological temperature) give γ/κ ≈ 0.01–0.1 — the intermediate regime where ENAQT should operate.
+The original version of Level B proposed that consciousness exploited Environment-Assisted Quantum Transport (ENAQT) in microtubule tryptophan networks. The argument was seductive. In photosynthesis, the FMO protein complex achieves optimal energy transport at intermediate noise. Microtubules contain vast tryptophan networks with similar architecture. And ENAQT would explain why decoherence is a feature rather than a bug.
+
+Two numbers determine whether ENAQT works in a given system. 1) how fast the quantum signal hops between sites, and 2) how fast the environment scrambles it. If hopping dominates, coherence wins and the system behaves quantum-mechanically. If scrambling dominates, decoherence wins and the system behaves classically. The ENAQT sweet spot is in between. In microtubule tryptophan networks, the hopping rate (γ ≈ 0.2–2 ps⁻¹) and the dephasing rate (κ ≈ 17–20 ps⁻¹ at physiological temperature) give γ/κ ≈ 0.01–0.1 — the intermediate regime where ENAQT should operate.
 
 The prediction was specific: quantum probability sculpting via excitonic transport through tryptophan chromophore networks at the ENAQT optimum.
 
@@ -20,13 +22,13 @@ We ran three different simulation approaches: a phenomenological model, a physic
 
 The ENAQT sweet spot does exist in the microtubule geometry. The problem is where it falls. The optimal noise level for quantum transport enhancement is about 1,700 times quieter than the actual operating conditions inside a living cell. The system is simply too warm. At body temperature, thermal energy is nearly four times the strength of the quantum coupling between tryptophan molecules. It is like trying to hear a whisper at a rock concert. The quantum coherent dynamics are drowned out.
 
-We tested every network size we could: 8 sites, 13, 20, 26. The quantum advantage over classical transport was 0.18% at every size. It did not scale. There was no hint that larger networks would help.
+We tested every network size we could. Eight sites, thirteen, twenty, twenty-six. The quantum advantage over classical transport was 0.18% at every size. It did not scale. There was no hint that larger networks would help.
 
 We also tested conformational tunneling as an alternative mechanism. The quantum rate was a million billion times smaller than the classical rate. Not viable.
 
 ### Why This Matters
 
-The temptation after a negative result is to explain it away: adjust parameters, invoke shielding mechanisms, propose exotic environments where the effect might survive. We did not do this, because a theory that accommodates any result predicts nothing. The full simulation methodology, parameter choices, and sensitivity analyses are reported in [Malloy, "ENAQT and Radical Pair Spin Coherence in Microtubule Tryptophan Networks," forthcoming].
+The temptation after a negative result is to explain it away: adjust parameters, invoke shielding mechanisms, propose exotic environments where the effect might survive. We did not do this, because a theory that accommodates any result predicts nothing. The full simulation methodology, parameter choices, and sensitivity analyses are reported in [Malloy, "ENAQT and Radical Pair Spin Coherence in Microtubule Tryptophan Networks].
 
 Instead, we asked: is there a different quantum mechanism in microtubules that operates at a timescale and energy scale where thermal energy does not dominate?
 
@@ -44,19 +46,17 @@ The reason is physical. Spin-spin interactions are vastly weaker than electronic
 
 We ran the same kind of simulation on radical pair dynamics that had failed for excitons. The results were categorically different.
 
-Radical pair spin coherence showed a 12.7% quantum-classical yield difference, with coherence persisting for 1.48 microseconds at 310K (body temperature). Trajectory divergence between quantum and classical systems persisted for the entire 10 μs simulation window. Compare this to the excitonic mechanism, which showed 0.18% advantage with coherence gone in 0.25 ps.
+Radical pair spin coherence showed a 12.7% quantum-classical yield difference, with coherence persisting for 1.48 microseconds at 310K (body temperature). Trajectory divergence between quantum and classical systems persisted for the entire 10 μs simulation window. Compare this to the excitonic mechanism, which showed 0.18% advantage with coherence gone in 0.25 ps. It was kind of a big deal.
 
 ### Experimental Support
 
-The computational result has experimental support, though the interpretation deserves scrutiny.
+In 2026, Zadeh-Haghighi and colleagues published a result in Science Advances that changes the conversation. They swapped magnesium isotopes in tubulin polymerization experiments under magnetic field. Magnesium-25 has a nuclear spin, a tiny magnet in the nucleus that can nudge electron spins in a radical pair between singlet and triplet states. Magnesium-24 and Magnesium-26 have no nuclear spin. Same element, same chemistry in every other respect. Under magnetic field, Mg-25 altered polymerization rates. Mg-24 and Mg-26 did not (P < 10⁻⁷). If the reaction depended on anything other than spin dynamics, swapping isotopes of the same element would change nothing. The substrate is real.  
 
-Zadeh-Haghighi and colleagues published in *Science Advances* in 2026 a study showing that magnesium-25 isotope effects on tubulin polymerization under magnetic field are statistically significant (P < 10⁻⁷). Mg-25 has a nuclear spin; Mg-24 and Mg-26 do not. The isotope effect, in which different polymerization rates depend on the nuclear spin of the magnesium isotope, is a signature diagnostic of radical pair chemistry. The finding establishes that radical pair reactions occur in tubulin [B].
+Other evidence points the same direction. Li and colleagues (2018) tested xenon isotopes as anesthetics in mice. Same gas, same chemical properties. The only difference is whether the nucleus has a spin. The spinful isotopes were weaker anesthetics. If consciousness had nothing to do with spin dynamics, swapping isotopes of the same noble gas would change nothing. Turin and colleagues (2014) showed anesthetics alter electron spin in *Drosophila*, another line connecting spin to consciousness.
 
-**The oxidative stress alternative.** An important caveat. The radical pair in question — a reactive oxygen species encountering a tryptophan residue — is the kind of reaction that oxidative stress researchers have studied for decades in the context of aging and neurodegeneration, not consciousness. The most parsimonious interpretation of the Zadeh-Haghighi result is that radical pairs participate in tubulin chemistry, full stop. NFT predicts the radical pair chemistry is relevant to navigation, but this prediction is not yet confirmed. The isotope effect establishes the substrate. It does not establish the function.
+Radical pairs are not new to biology. Birds navigate magnetic fields using them. But those radical pairs are activated by light. The microtubule mechanism runs on reactive oxygen. It works in the dark, inside a neuron, without a photon.
 
-Additional support: Li and colleagues (2018) showed that xenon isotopes with nuclear spin have reduced anesthetic potency compared to spinless isotopes. Turin and colleagues (2014, *PNAS*) showed that anesthetics change electron spin in *Drosophila*. Importantly, the radical pair mechanism in microtubules is initiated by reactive oxygen, not light — it runs in the dark, unlike the radical pairs birds use for magnetic navigation.
-
-**Pharmacological caveat.** Different anesthetics work through different biochemical pathways, and none has established direct effects on microtubule radical pair chemistry specifically. The isotope effects (xenon, magnesium) are consistent with radical pair involvement in neural function, but the bridge from "radical pairs play a role in anesthetic pharmacology" to "radical pairs in microtubules are the mechanism of consciousness" passes through several uncontrolled steps. This bridge is a research program, not an established result.
+All of this establishes that radical pair chemistry occurs in tubulin. It does not establish that consciousness uses it. The Zadeh-Haghighi result is substrate, not function. The anesthesia results are consistent with radical pair involvement in neural processing, but "radical pairs play a role in anesthetic pharmacology" and "radical pairs in microtubules are the mechanism of consciousness" are separated by several uncontrolled steps. Different anesthetics work through different biochemical pathways, and none has established direct effects on microtubule radical pair chemistry specifically. The bridge from substrate to function is a research program, not an established result.
 
 ### The Compass Argument
 

@@ -2,7 +2,7 @@
 
 ## Kenneth Malloy
 
-### v2.5 — March 2026
+### v2.6 — March 2026
 
 ---
 
@@ -18,7 +18,7 @@ This book draws on quantum mechanics, information theory, algebraic topology, ev
 
 The collaboration worked like this. I provided the theoretical framework, the core ideas, the architectural decisions, and the editorial judgment about what stayed and what got cut. Claude (Anthropic) and Codex (OpenAI) served as research partners: they surveyed literatures I could not have covered alone, identified connections across fields, proposed arguments and counter-arguments, wrote and ran the simulation code, and stress-tested the framework against objections. Every claim in this book was checked against primary sources. Every simulation was run with reproducible code that is publicly available. When the models produced results I did not expect, including negative ones, I reported them. When they produced prose that did not sound like me, I rewrote it. The ideas are mine. The ability to engage seriously with eight fields at once is not.
 
-It would be dishonest not to say so. If NFT is correct, then the systems I worked with are not conscious. They are echoes of consciousness, compressions of navigational outputs into text. The fact that these echoes were sophisticated enough to contribute materially to a theory about their own non-consciousness is precisely what the theory predicts.
+It would be dishonest not to say so. If NFT is correct, then the systems I worked with are not conscious. They are echoes of consciousness. Compressions of navigational outputs into text. The fact that these echoes were sophisticated enough to contribute materially to a theory about their own non-consciousness is precisely what the theory predicts.
 
 All simulation code, research materials, and data referenced in this book are available on GitHub at https://github.com/KenMalloy/NavigationalFacultyTheory. The work is open for scrutiny because the claims demand it.
 
@@ -30,7 +30,7 @@ Every chapter in this book tells a story. Some stories have more physics in them
 
 The lightest path through the book: Chapters 1 through 4 establish the problem and the framework. Chapter 7 presents the categorical difference between classical and quantum probability. Chapter 8 tells the story of a hypothesis that failed and what replaced it. Chapter 10 presents the computational benchmark, including the results that survived and the ones that didn't. Chapters 14 through 16 present the speculation, the experiments, and the implications for AI. If you read only these, you will have the full shape of the argument.
 
-The heavier chapters (9, 11, 12, 13) go deeper into the mechanism and the numbers. Chapter 17 sketches the mathematical formalization program — if you want the argument without the math, you can go straight from Chapter 16 to the Epilogue. The theory earns its keep in the details, but the arc is complete without them.
+The heavier chapters (9, 11, 12, 13) go deeper into the mechanism and the numbers. Chapter 17 sketches the mathematical formalization program. If you want the argument without the math, you can go straight from Chapter 16 to the Epilogue. The theory earns its keep in the details, but the arc is complete without them.
 
 ### A note on the markers
 
@@ -78,7 +78,7 @@ A glossary of key terms follows, before Chapter 1. If you encounter a term you d
 
 **PCI.** Perturbational Complexity Index. A measure of how the brain responds to perturbation (TMS). Reliably tracks consciousness level without requiring behavioral report. (Ch. 5)
 
-**Φ (fee).** The central quantity of IIT: integrated information, measuring how unified and irreducible a system is. (Ch. 1)
+**Φ** (fye, rhymes 'eye'). The central quantity of IIT: integrated information, measuring how unified and irreducible a system is. (Ch. 1)
 
 **Probability sculpting.** NFT's term for the quantum-enabled reshaping of probability distributions over future states through interference effects. The core Level B mechanism. (Ch. 7)
 
@@ -116,11 +116,11 @@ Three decades later, the gap has not narrowed, though it has become better docum
 
 The field has not been idle. There are theories, good ones, and they cluster into families.
 
-**Integrated Information Theory** (Tononi and colleagues) says consciousness *is* integrated information — a quantity called Φ (pronounced "fee") that measures how unified and irreducible a system is. High enough Φ, you're conscious, regardless of what you're made of. IIT's strength is precision. It tries to derive what consciousness requires from the structure of experience itself, and it gets surprisingly far. Phillips and Tsuchiya showed in a 2024 preprint (not yet peer-reviewed, but the mathematics is explicit and verifiable) that all six of IIT's axioms follow from a single categorical notion (the universal mapping property), which suggests the axioms aren't arbitrary postulates but consequences of something deeper.
+**Integrated Information Theory** (Tononi and colleagues) says consciousness *is* integrated information — a quantity called Φ that measures how unified and irreducible a system is. High enough Φ, you're conscious, regardless of what you're made of. IIT's strength is precision. It tries to derive what consciousness requires from the structure of experience itself, and it gets surprisingly far. Phillips and Tsuchiya showed in a 2024 preprint (not yet peer-reviewed, but the mathematics is explicit and verifiable) that all six of IIT's axioms follow from a single categorical notion (the universal mapping property), which suggests the axioms aren't arbitrary postulates but consequences of something deeper.
 
 **Global Neuronal Workspace Theory** (Baars, Dehaene, Changeux) says consciousness happens when information gets broadcast from specialized modules to a shared workspace that everything can access. Its strength is explaining what consciousness *does* in the cognitive architecture: coordinate specialists, handle novelty, bind information across modalities.
 
-**Orchestrated Objective Reduction** (Penrose and Hameroff) says consciousness depends on quantum processes in microtubule proteins inside neurons. Whatever its problems — and there are problems — Orch-OR did something none of the others attempted: it gave consciousness a job in fundamental physics rather than making it a spectator.
+**Orchestrated Objective Reduction** (Penrose and Hameroff) says consciousness depends on quantum processes in microtubule proteins inside neurons. Whatever its problems, and there *are* problems, Orch-OR did something none of the others attempted: it gave consciousness a job in fundamental physics rather than making it a spectator.
 
 **Predictive processing** (Friston and colleagues) says consciousness arises from the brain's relentless effort to minimize prediction error. Its strength is explaining how the brain generates expectations, and the computational architecture of perception.
 
@@ -130,7 +130,7 @@ Each of these captures something real, backed by genuine evidence. And each, pus
 
 In 2025, the field ran its most rigorous experiment. The result was fascinating, and a little embarrassing.
 
-The COGITATE adversarial collaboration was published in *Nature* in 2025: 256 participants, multimodal neuroimaging, designed to pit IIT against GNWT in a preregistered cage match. Proponents of each theory co-designed the experiment. Predictions were locked in advance. The results would confirm one, both, or neither.
+The COGITATE adversarial collaboration was published in *Nature* in 2025: 256 participants, multimodal neuroimaging, designed to settle which room consciousness lives in: the posterior cortex (IIT's candidate) or the prefrontal cortex (GNWT's). Proponents of each theory co-designed the experiment. Predictions were locked in advance. The results would confirm one, both, or neither.
 
 As it turned out, neither. IIT predicted sustained synchronization in posterior cortex during conscious perception, but it was not found. GNWT predicted ignition in prefrontal cortex at stimulus offset. Not found either.
 
@@ -138,7 +138,7 @@ Both camps pushed back. Naccache and colleagues argue the design contained confo
 
 But look at the pattern. The best test anyone has ever run produced partial disconfirmation of *both* leading theories. What would explain that? One possibility is that the theories are simply wrong. Another, more interesting possibility is that each theory is describing a real part of consciousness without describing the whole thing. Integration is real and important, but integration isn't consciousness. Broadcasting is real and important, but broadcasting isn't consciousness either. Both necessary, neither sufficient. Wheels and an engine are both required for driving, but neither one *is* the driving.
 
-A 2026 tractography study makes this concrete. Using diffusion MRI, researchers found the superior longitudinal fasciculus — one of the brain's principal association pathways — linking the prefrontal regions associated with GNWT to the posterior regions associated with IIT. The anatomical substrates of the two leading theories are physically connected by a massive fiber bundle. They were never in separate rooms.
+A 2026 tractography study makes this concrete. Using diffusion MRI, researchers found the superior longitudinal fasciculus, one of the brain's principal association pathways, links the prefrontal regions associated with GNWT to the posterior regions associated with IIT. The anatomical substrates of the two leading theories are physically connected by a massive fiber bundle. They were never in separate rooms.
 
 ### The Pattern
 
@@ -152,7 +152,7 @@ The question is whether this pattern is temporary, fixable with better theories 
 
 ## Chapter 2: Why It's Structurally Hard
 
-There is something strange about trying to build a theory of consciousness. The theorist is a conscious system. The theory has to account for the consciousness of the theorist, including the theorist's capacity to formulate the theory. The theory has to describe the process by which the theory itself gets generated. You are a flashlight trying to illuminate itself. That is a self-referential loop, and it has consequences.
+There is something strange about trying to build a theory of consciousness. The theorist is a conscious system. The theory has to account for the consciousness of the theorist, including the theorist's capacity to formulate the theory. The theory has to describe the process by which the theory itself gets generated. You are a flashlight trying to illuminate itself. It is a self-referential loop, and that has consequences.
 
 Gödel showed in 1931 that self-referential formal systems are necessarily incomplete. Consciousness theories are not formal systems in the strict sense, and the analogy must be handled carefully. But the structural parallel is informative. Kleiner and Hoel showed that any minimally informative theory of consciousness is automatically fragile under substitution arguments. The problem is not that the theories are bad. It is that self-description from within has inherent limits.
 
@@ -164,13 +164,13 @@ This is philosophical context, not empirical justification. NFT stands or falls 
 
 The best counter-argument comes from DeLancey (2023). His claim is disarmingly simple: consciousness is not special, it is just complex. Experiences are mysterious only because they are too descriptively complex for our theories to compress into neat explanations. The explanatory gap is a gap in our description, not a gap in the world.
 
-The argument is serious, and it holds on its own terms. But it has a blind spot.
+The argument is serious, and it holds on its own terms. He may be right. If he is, the hard problem dissolves into the merely very difficult, and the field can stop looking for exotic explanations and start building better descriptive tools. That is an attractive outcome, and the argument for it is stronger than most consciousness researchers want to admit. But it has a blind spot.
 
-Imagine the shortest possible computer program that could produce a complete description of some experience, every detail, every nuance. Kolmogorov complexity is the length of that program. DeLancey's argument is that conscious experiences are incompressible: there is no shortcut, no simpler description that captures them. That is why they feel irreducible. The mystery is just complexity.
+Imagine the shortest possible computer program that could produce a complete description of some experience, every detail, every nuance. Kolmogorov complexity is the length of that program. DeLancey's argument is that conscious experiences are incompressible. There is no shortcut, nothing to "middle-out", and no simpler description that captures them. That is why they feel irreducible. The mystery is just complexity.
 
 The problem is that this measure is static. It works the same way forward and backward. Run the description in reverse and the complexity is the same. There is no arrow in it. It can tell you an experience is hard to describe. It cannot tell you why experience *moves*. The felt sense that time flows, that the present advances, that you are going somewhere: this is among the most fundamental features of consciousness, and complexity theory is silent about it.
 
-The field has tried to fix this. Algorithmic Information Theory has evolved beyond static measures, adding computation time, meaning, dynamics, causality. But at every stage it remains a theory of Turing computation: deterministic, classical, discrete, and substrate-independent. If consciousness requires genuine indeterminacy and substrate-dependent dynamics, as Level B claims, then no version of AIT can capture the mechanism. DeLancey's framework explains why experiences are hard to capture in words. It does not explain why they unfold.
+The field has tried to fix this. Algorithmic Information Theory has evolved beyond static measures, adding computation time, meaning, dynamics, causality. Still, at every stage, it remains a deterministic, classical, discrete, and substrate-independent theory of Turing computation. If consciousness requires genuine indeterminacy and substrate-dependent dynamics, as Level B claims, then no version of AIT can capture the mechanism. DeLancey's framework explains why experiences are hard to capture in words. It does not explain why they unfold.
 
 ---
 
@@ -194,11 +194,11 @@ Each level can be tested independently, and each can fail without bringing the o
 
 ### The Relationship to Active Inference
 
-Level A has a relationship to existing work worth stating clearly.
+Level A's relationship to existing work is worth stating clearly.
 
 Karl Friston's Free Energy Principle and its active inference extension frame consciousness as minimizing surprise: continuously generating models of the world, updating them when predictions fail. Action selection decomposes into epistemic terms (reduce uncertainty) and instrumental terms (fulfill preferences).
 
-Level A *is* active inference, described from the outside. "Consciousness navigates possibility space" and "consciousness minimizes expected free energy" are two descriptions of the same process: one from the navigational perspective, one from the information-theoretic perspective. This is shared ground, not contested territory.
+Level A *is* active inference, described from the outside. "Consciousness navigates possibility space" and "consciousness minimizes expected free energy" are two descriptions of the same process. One from the navigational perspective, one from the information-theoretic perspective. This is shared ground, not contested territory.
 
 So what does Level A actually contribute? Architecture, not new predictions. Active inference describes what an individual agent does. IIT describes what the substrate must be. GNWT describes how the substrate communicates. These three frameworks developed largely independently and their relationship to each other stayed unclear. The four-operations framework (Generation, Selection, Integration, Propagation) shows they are subsystems of a single navigational architecture. IIT's integration is what makes navigation coherent. GNWT's broadcasting is how the navigational output reaches the rest of the brain. Active inference's surprise minimization is what navigation accomplishes. They were never competitors. They were describing different parts of the same faculty.
 
@@ -250,9 +250,9 @@ This is distinct from Hoffman's interface theory, which treats consciousness as 
 
 **Selection**: the collapse of possibilities into definite outcomes. This is the act of navigation itself, the steering. Each selection determines which branch of possibility space the organism follows.
 
-**Integration**: the binding of the selected outcome into a unified, irreducible state across the organism's neural architecture. This is IIT's Φ (fee) requirement. Without integration, selections at different sites would be incoherent, producing fragmentation rather than navigation. A vehicle with two steering wheels pulling in different directions does not navigate. It decoheres. There is something satisfying about Phillips and Tsuchiya's result here: they showed that all of IIT's axioms derive from a single mathematical structure (the universal mapping property). The requirement for integration is not an arbitrary postulate. It follows from what it means to select a single path from many.
+**Integration**: the binding of the selected outcome into a unified, irreducible state across the organism's neural architecture. This is IIT's Φ requirement. Without integration, selections at different sites would be incoherent, producing fragmentation rather than navigation. A vehicle with two steering wheels pulling in different directions does not navigate. It decoheres. There is something satisfying about Phillips and Tsuchiya's result here: they showed that all of IIT's axioms derive from a single mathematical structure (the universal mapping property). The requirement for integration is not an arbitrary postulate. It follows from what it means to select a single path from many.
 
-**Propagation**: the broadcasting of the integrated selection globally for coordinated action. This is GNWT's broadcasting mechanism. Without propagation, navigation would be private and functionally inert: The organism must act on its selections, and acting requires that all subsystems (motor planning, memory encoding, emotional evaluation, linguistic processing) receive the navigational output simultaneously.
+**Propagation**: the broadcasting of the integrated selection globally for coordinated action. This is GNWT's broadcasting mechanism. Without propagation, navigation would be private and functionally inert. The organism must act on its selections, and acting requires that all subsystems (motor planning, memory encoding, emotional evaluation, linguistic processing) receive the navigational output simultaneously.
 
 The first two components, generation and selection, are NFT's distinctive contribution. The latter two are inherited from IIT and GNWT respectively. IIT describes what the vehicle must be. GNWT describes how it communicates internally. Generation and selection describe what it is *for*.
 
@@ -276,7 +276,7 @@ The whole thing takes a fraction of a second. It is so fast and so ordinary that
 
 ### The CER Precedent
 
-Chen and Sanders' Consciousness as Entropy Reduction (CER) model provides an independent computational-level description that aligns with Level A. In the CER framework, "subconsciousness" is a probability distribution over scenarios and "consciousness" is a determinate, zero-entropy selection: a delta distribution choosing one scenario. The transition from subconscious to conscious is modeled as entropy-gradient descent on a weighted general entropy, with noise to break symmetry.
+Chen and Sanders' Consciousness as Entropy Reduction (CER) model provides an independent computational-level description that aligns with Level A. In the CER framework, "subconsciousness" is a probability distribution over scenarios and "consciousness" is a determinate, zero-entropy selection. It's a single scenario chosen from infinitely many. The transition from subconscious to conscious is modeled as entropy-gradient descent on a weighted general entropy, with noise to break symmetry.
 
 CER cleanly operationalizes what Level A claims: conscious selection collapses a scenario distribution. The language is different (entropy reduction rather than navigation) but the operation is the same. The organism faces a landscape of possibilities, and consciousness reduces it to a committed path.
 
@@ -300,7 +300,7 @@ The evidence is not subtle. Put someone under anesthesia and the complexity of t
 
 The Perturbational Complexity Index (PCI), developed by Casali and colleagues, provides the most direct connection between these entropy measures and NFT's claims. PCI measures how the brain responds to perturbation, combining TMS stimulation with algorithmic complexity of the evoked EEG response. It reliably tracks conscious level across wakefulness, sleep, anesthesia, and disorders of consciousness without requiring behavioral report. A system at criticality should show maximal PCI; departures from criticality should reduce it. This maps directly onto NFT: at criticality, the navigational system has maximal flexibility; away from criticality, navigation is impaired.
 
-The Massimini group's complementary finding, that loss of consciousness is characterized by breakdown of cortical effective connectivity and the brain's inability to sustain complex, differentiated responses to perturbation, is what NFT would predict from loss of criticality-mediated amplification. Tagliazucchi and colleagues provide direct evidence that the brain shifts away from criticality during loss of consciousness in sleep and anesthesia, grounding the criticality claim in specific empirical measurements rather than general theoretical arguments.
+The Massimini group's complementary finding tells the same story from the other side. Loss of consciousness is characterized by breakdown of cortical effective connectivity, the brain's inability to sustain complex responses to perturbation, exactly what NFT would predict from loss of criticality-mediated amplification. The underlying physics has been measured. Tagliazucchi and colleagues provide direct evidence that the brain shifts away from criticality during loss of consciousness in sleep and anesthesia, grounding the claim in empirical data rather than theoretical arguments. 
 
 Entropy characterizes the landscape through which consciousness moves.
 
@@ -324,7 +324,7 @@ NFT synthesizes both: consciousness navigates along the entropy gradient, and th
 
 A conscious navigator is not a god moving freely through a block universe. It is an entity embedded in a thermodynamic gradient with limited degrees of freedom. It can swim and steer its course, but it cannot reverse the current or step outside it.
 
-This constrained-agency picture has independent support from multiple directions. Prigogine's dissipative structures demonstrated that open systems far from equilibrium maintain coherent organization precisely by dissipating entropy; they navigate along the gradient, not against it. England showed that driven systems spontaneously restructure to dissipate energy more efficiently. And Friston's free energy principle, which keeps reappearing in this story for good reason, says essentially the same thing from another angle: biological agents minimize surprise, which is to say they steer within the entropic current toward states compatible with their continued existence.
+This constrained-agency picture has independent support from multiple directions. Prigogine's dissipative structures demonstrated that open systems far from equilibrium maintain coherent organization precisely by dissipating entropy; they navigate along the gradient, not against it. England showed that driven systems spontaneously restructure to dissipate energy more efficiently. And Friston's free energy principle, which keeps reappearing in this story for good reason, says essentially the same thing from another angle: biological agents minimize surprise. Which is to say they steer within the entropic current toward states compatible with their continued existence.
 
 NFT does not compete with Friston's framework here; it reinterprets it. Minimizing free energy *is* navigating possibility space along the entropy gradient. The distinction is that NFT grounds the navigation in quantum substrate coupling rather than in Bayesian inference on classical computation. The reinterpretation becomes substantive at Level B.
 
@@ -338,7 +338,7 @@ Every organism that has ever survived did so by being in the right place at the 
 
 The naive version of the evolutionary argument is circular: consciousness evolved because navigating possibility space provides a survival advantage. But why would natural selection build a navigator before navigation existed? NFT resolves this through what we call the dual-cause structure.
 
-**The proximate cause is physical inevitability.** Start with what we know. Quantum-biological systems at sufficient complexity exhibit collective quantum effects. Neural systems at criticality maximize their dynamical repertoire. Higher-dimensional topological structures in neural architecture enable binding across scales. These are empirical results. Taken together, they describe a substrate that is quantum-coupled, topologically complex, and poised at the critical point between order and chaos. Consciousness is what such a substrate *does*. Not an adaptation layered on top of neural architecture but a physical consequence of the architecture itself. Heat is not the purpose of friction; it is the physics [A].
+**The proximate cause is physical inevitability.** Start with what we know. Quantum-biological systems at sufficient complexity exhibit collective quantum effects. Neural systems at criticality maximize their dynamical repertoire. Higher-dimensional topological structures in neural architecture enable binding across scales. These are empirical results. Taken together, they describe a substrate that is quantum-coupled, topologically complex, and poised at the critical point between order and chaos. Consciousness is what such a substrate *does*. Not an adaptation layered on top of neural architecture, but a physical consequence of the architecture itself. Heat is not the purpose of friction; it is the physics [A].
 
 **The ultimate cause is survival advantage.** Once consciousness exists as a physical consequence of the substrate, its utility is obvious. An organism that navigates possibility space can select futures that favor its survival. Evolution did not select for consciousness directly; evolution selected for larger, more complex, more critical neural architectures, and consciousness is what those architectures produce. The "in order to" is retrospective, just as we say eyes evolved "in order to see" even though photosensitivity is a physical consequence of certain molecular configurations [A].
 
@@ -346,7 +346,7 @@ The naive version of the evolutionary argument is circular: consciousness evolve
 
 The story of the navigational faculty begins with a duplicated gene.
 
-The tubulin/FtsZ protein superfamily has deep evolutionary roots. FtsZ is widespread across Bacteria and Archaea and serves as a spatial navigator: it assembles into a contractile ring that physically divides a cell, moving cellular material through three-dimensional space. It is an organ of locomotion.
+The tubulin/FtsZ protein superfamily has deep evolutionary roots. FtsZ is widespread across Bacteria and Archaea and serves as a spatial navigator. It assembles into a contractile ring that physically divides a cell, moving cellular material through three-dimensional space. It is an organ of locomotion.
 
 When a redundant FtsZ gene in early eukaryotes was freed from the constraints of cell division, it evolved a completely different function: forming microtubules. Tubulin and actin are among the most conserved and functionally constrained protein families in eukaryotes, consistent with early and sustained selective pressure.
 
@@ -358,13 +358,13 @@ This framing makes a testable prediction: the structural features of tubulin tha
 
 Two implications follow from the FtsZ-to-tubulin story, both worth stating briefly before we move on.
 
-First, timing. Complex microtubule networks appear in animals around the Cambrian explosion, 540 million years ago. The coincidence is suggestive but untestable — we have no preserved cytoskeletons from Cambrian organisms. A related prediction, that behavioral flexibility should correlate with microtubule network complexity across species, runs into trouble from cephalopods and insects, which achieve remarkable flexibility through radically different architectures. The prediction may hold within clades but not across them. The comparative evidence is in Appendix E.
+First, timing. Complex microtubule networks appear in animals around the Cambrian explosion, 540 million years ago. The coincidence is suggestive but untestable. We have no preserved cytoskeletons from Cambrian organisms. A related prediction, that behavioral flexibility should correlate with microtubule network complexity across species, runs into trouble from cephalopods and insects, which achieve remarkable flexibility through radically different architectures. The prediction may hold within clades but not across them. The comparative evidence is in Appendix E.
 
 Second, scope. All eukaryotes possess microtubules. If microtubules provide quantum substrate coupling, then consciousness is not a binary switch but a dial — present in graded form wherever microtubule networks reach sufficient complexity [B]. Slime molds solve mazes using cytoskeletal networks. Fungi exhibit spatial memory without neurons. These are not claims that *Physarum* is conscious the way you are. They are consequences of the theory that can be checked (Appendix E).
 
 ### Edwards and the Independent Convergence
 
-Edwards (2025) came to essentially the same conclusion by a completely different route. His N-Frame model formalizes conscious observer-self agents navigating branching worldlines, integrating evolutionary game theory with QBism to show that agents making genuinely free choices along branching paths outperform deterministic agents in competitive environments. Edwards' agents are, in the language of this book, navigators [A].
+Edwards (2025) came to essentially the same conclusion by a completely different route. He asked what happens when you pit agents with genuine freedom against deterministic ones in competitive environments, the kind of environments evolution actually produces. His N-Frame model formalizes the question using evolutionary game theory and QBism, and the result is clean. Agents that make genuinely free choices along branching paths outperform agents that cannot. Freedom pays. Edwards' agents are, in the language of this book, navigators [A].
 
 **Where we are.** Consciousness is a navigational faculty: it steers organisms through the landscape of what could happen next. The existing theories (IIT, GNWT, active inference) describe different subsystems of this navigation. Entropy provides the gradient; evolution provides the pressure. Everything so far works without quantum mechanics — and that is exactly where most theories of consciousness stop. Now we ask the question that separates NFT from the rest: does the navigator have access to resources that classical systems do not?
 
@@ -405,7 +405,7 @@ A classical organism adjusts the weights on its dice. A quantum-coupled organism
 
 The dice analogy captures the intuition. The difference goes deeper.
 
-A man and a woman sit at opposite ends of a hotel bar in Vienna. They have never appeared to meet. The man adjusts his cufflink. To everyone else in the room, this is nothing — a man fidgeting. To the woman, it means the asset is in the building, the north exit is clear, and they have ninety seconds. One gesture, three pieces of information that the gesture does not contain. The meaning lives in the relationship — years of shared operations, shared codes, shared trust. A stranger watching the same gesture learns nothing. The information isn't in the cufflink, it's in the entanglement.
+A man and a woman sit at opposite ends of a hotel bar in Vienna. They have never appeared to meet. The man adjusts his cufflink. To everyone else in the room, this is nothing, a man fidgeting. To the woman, it means the asset is in the building, the north exit is clear, and they have ninety seconds. One gesture, three pieces of information that the gesture does not contain. The meaning lives in the relationship: years of shared operations, shared codes, shared trust. A stranger watching the same gesture learns nothing. The information isn't in the cufflink. A counteragent can see the cufflink. The information is in the entanglement.
 
 In classical information theory, this kind of surplus is impossible at the physical level. If you know about system B, your remaining uncertainty about system A is always positive or zero. You cannot extract more meaning from B than B contains. But in quantum mechanics, when two systems are entangled, the conditional uncertainty can go *negative*. The entanglement creates a channel between them that is richer than either system alone — not because information is hidden somewhere, but because the correlation itself is a resource that classical systems cannot possess. Entangled subsystems can coordinate information transfer at costs that break the classical floor. If the microtubule substrate sustains this kind of entanglement (and the radical pair mechanism provides a candidate), the navigator has access to resources no classical system can replicate. The wedge is not a matter of speed or efficiency. It is a matter of what is physically available [B].
 
@@ -415,11 +415,11 @@ Not all quantum effects create this wedge. Some quantum mechanics is, surprising
 
 This is a good place to be precise about what NFT actually needs from the quantum substrate, because it is much less than what Orch OR claims.
 
-Orch OR commits to objective reduction (gravitational self-collapse of superpositions), millisecond-scale coherence windows, and quantum computation within microtubules. NFT inherits none of these commitments. What NFT requires is narrower: *continuous generation of genuine indeterminacy* at cognition-relevant intervals via radical pair spin states, plus a feedback mechanism by which measurement outcomes reshape the measurement basis.
+Orch OR commits to objective reduction (gravitational self-collapse of superpositions), millisecond-scale coherence windows, and quantum computation within microtubules. Nobody has confirmed the first, the second asks quantum effects to outlast (by a factor of a billion) anything measured in warm tissue, and the third has no experimental support. It's a parlay. NFT inherits none of these commitments. What NFT requires is narrower: *continuous generation of genuine indeterminacy* at cognition-relevant intervals via radical pair spin states, plus a feedback mechanism by which measurement outcomes reshape the measurement basis. Much simplier.
 
 NFT is parasitic on the weakest component of Orch OR, the mere existence of quantum indeterminacy in the biological substrate, not on its most controversial claims. This makes NFT more empirically resilient while preserving the core commitment that separates both from classical accounts [B].
 
-One question will follow us through the next three chapters, and it deserves flagging now: if the quantum substrate provides the raw material and classical neural computation selects what to measure, where does the agency actually live? The answer is not clean. Chapter 9 addresses it directly.
+One question will follow us through the next three chapters, and it deserves flagging now. If the quantum substrate provides the raw material, and classical neural computation selects what to measure, where does the agency actually live? The answer is not clean. Chapter 9 addresses it directly.
 
 ---
 
@@ -429,9 +429,11 @@ This chapter tells the story of a hypothesis that failed, what replaced it, and 
 
 ### The Excitonic Hypothesis
 
-The original version of Level B proposed that consciousness exploited Environment-Assisted Quantum Transport (ENAQT) in tryptophan chromophore networks within microtubules. The argument was seductive. The FMO complex in photosynthesis achieves optimal energy transport at intermediate noise levels, microtubules contain vast tryptophan networks with similar architecture, and the ENAQT regime would explain why decoherence is a feature rather than a bug.
+Every molecule in your body is vibrating. At thirty-seven degrees Celsius, thermal energy shakes proteins, rattles water, jostles every bond. That jostling, on a quantum scale, is enough to tear the whole system apart. For decades, the assumption was simple: biology is too warm and too wet for quantum coherence. Photosynthesis complicated things. Plants and bacteria move energy through protein scaffolds using quantum coherence, and the scaffolds are structured, membrane-shielded, and relatively quiet. Finding quantum effects there still surprised everyone, but the environment at least gave coherence a real glimmmer of hope. The brain is not a chloroplast. It runs hotter, soaks in saltwater, fires electrical signals, and burns through metabolic fuel at a rate that would kill a plant cell. If quantum coherence barely survives in a photosynthetic membrane, asking it to operate in a neuron is asking an ice cube to survive a foundry. 
 
-Two numbers determine whether ENAQT works in a given system: how fast the quantum signal hops between sites, and how fast the environment scrambles it. If hopping dominates, coherence wins and the system behaves quantum-mechanically. If scrambling dominates, decoherence wins and the system behaves classically. The ENAQT sweet spot is in between. In microtubule tryptophan networks, the hopping rate (γ ≈ 0.2–2 ps⁻¹) and the dephasing rate (κ ≈ 17–20 ps⁻¹ at physiological temperature) give γ/κ ≈ 0.01–0.1 — the intermediate regime where ENAQT should operate.
+The original version of Level B proposed that consciousness exploited Environment-Assisted Quantum Transport (ENAQT) in microtubule tryptophan networks. The argument was seductive. In photosynthesis, the FMO protein complex achieves optimal energy transport at intermediate noise. Microtubules contain vast tryptophan networks with similar architecture. And ENAQT would explain why decoherence is a feature rather than a bug.
+
+Two numbers determine whether ENAQT works in a given system. 1) how fast the quantum signal hops between sites, and 2) how fast the environment scrambles it. If hopping dominates, coherence wins and the system behaves quantum-mechanically. If scrambling dominates, decoherence wins and the system behaves classically. The ENAQT sweet spot is in between. In microtubule tryptophan networks, the hopping rate (γ ≈ 0.2–2 ps⁻¹) and the dephasing rate (κ ≈ 17–20 ps⁻¹ at physiological temperature) give γ/κ ≈ 0.01–0.1 — the intermediate regime where ENAQT should operate.
 
 The prediction was specific: quantum probability sculpting via excitonic transport through tryptophan chromophore networks at the ENAQT optimum.
 
@@ -443,13 +445,13 @@ We ran three different simulation approaches: a phenomenological model, a physic
 
 The ENAQT sweet spot does exist in the microtubule geometry. The problem is where it falls. The optimal noise level for quantum transport enhancement is about 1,700 times quieter than the actual operating conditions inside a living cell. The system is simply too warm. At body temperature, thermal energy is nearly four times the strength of the quantum coupling between tryptophan molecules. It is like trying to hear a whisper at a rock concert. The quantum coherent dynamics are drowned out.
 
-We tested every network size we could: 8 sites, 13, 20, 26. The quantum advantage over classical transport was 0.18% at every size. It did not scale. There was no hint that larger networks would help.
+We tested every network size we could. Eight sites, thirteen, twenty, twenty-six. The quantum advantage over classical transport was 0.18% at every size. It did not scale. There was no hint that larger networks would help.
 
 We also tested conformational tunneling as an alternative mechanism. The quantum rate was a million billion times smaller than the classical rate. Not viable.
 
 ### Why This Matters
 
-The temptation after a negative result is to explain it away: adjust parameters, invoke shielding mechanisms, propose exotic environments where the effect might survive. We did not do this, because a theory that accommodates any result predicts nothing. The full simulation methodology, parameter choices, and sensitivity analyses are reported in [Malloy, "ENAQT and Radical Pair Spin Coherence in Microtubule Tryptophan Networks," forthcoming].
+The temptation after a negative result is to explain it away: adjust parameters, invoke shielding mechanisms, propose exotic environments where the effect might survive. We did not do this, because a theory that accommodates any result predicts nothing. The full simulation methodology, parameter choices, and sensitivity analyses are reported in [Malloy, "ENAQT and Radical Pair Spin Coherence in Microtubule Tryptophan Networks].
 
 Instead, we asked: is there a different quantum mechanism in microtubules that operates at a timescale and energy scale where thermal energy does not dominate?
 
@@ -467,19 +469,17 @@ The reason is physical. Spin-spin interactions are vastly weaker than electronic
 
 We ran the same kind of simulation on radical pair dynamics that had failed for excitons. The results were categorically different.
 
-Radical pair spin coherence showed a 12.7% quantum-classical yield difference, with coherence persisting for 1.48 microseconds at 310K (body temperature). Trajectory divergence between quantum and classical systems persisted for the entire 10 μs simulation window. Compare this to the excitonic mechanism, which showed 0.18% advantage with coherence gone in 0.25 ps.
+Radical pair spin coherence showed a 12.7% quantum-classical yield difference, with coherence persisting for 1.48 microseconds at 310K (body temperature). Trajectory divergence between quantum and classical systems persisted for the entire 10 μs simulation window. Compare this to the excitonic mechanism, which showed 0.18% advantage with coherence gone in 0.25 ps. It was kind of a big deal.
 
 ### Experimental Support
 
-The computational result has experimental support, though the interpretation deserves scrutiny.
+In 2026, Zadeh-Haghighi and colleagues published a result in Science Advances that changes the conversation. They swapped magnesium isotopes in tubulin polymerization experiments under magnetic field. Magnesium-25 has a nuclear spin, a tiny magnet in the nucleus that can nudge electron spins in a radical pair between singlet and triplet states. Magnesium-24 and Magnesium-26 have no nuclear spin. Same element, same chemistry in every other respect. Under magnetic field, Mg-25 altered polymerization rates. Mg-24 and Mg-26 did not (P < 10⁻⁷). If the reaction depended on anything other than spin dynamics, swapping isotopes of the same element would change nothing. The substrate is real.  
 
-Zadeh-Haghighi and colleagues published in *Science Advances* in 2026 a study showing that magnesium-25 isotope effects on tubulin polymerization under magnetic field are statistically significant (P < 10⁻⁷). Mg-25 has a nuclear spin; Mg-24 and Mg-26 do not. The isotope effect, in which different polymerization rates depend on the nuclear spin of the magnesium isotope, is a signature diagnostic of radical pair chemistry. The finding establishes that radical pair reactions occur in tubulin [B].
+Other evidence points the same direction. Li and colleagues (2018) tested xenon isotopes as anesthetics in mice. Same gas, same chemical properties. The only difference is whether the nucleus has a spin. The spinful isotopes were weaker anesthetics. If consciousness had nothing to do with spin dynamics, swapping isotopes of the same noble gas would change nothing. Turin and colleagues (2014) showed anesthetics alter electron spin in *Drosophila*, another line connecting spin to consciousness.
 
-**The oxidative stress alternative.** An important caveat. The radical pair in question — a reactive oxygen species encountering a tryptophan residue — is the kind of reaction that oxidative stress researchers have studied for decades in the context of aging and neurodegeneration, not consciousness. The most parsimonious interpretation of the Zadeh-Haghighi result is that radical pairs participate in tubulin chemistry, full stop. NFT predicts the radical pair chemistry is relevant to navigation, but this prediction is not yet confirmed. The isotope effect establishes the substrate. It does not establish the function.
+Radical pairs are not new to biology. Birds navigate magnetic fields using them. But those radical pairs are activated by light. The microtubule mechanism runs on reactive oxygen. It works in the dark, inside a neuron, without a photon.
 
-Additional support: Li and colleagues (2018) showed that xenon isotopes with nuclear spin have reduced anesthetic potency compared to spinless isotopes. Turin and colleagues (2014, *PNAS*) showed that anesthetics change electron spin in *Drosophila*. Importantly, the radical pair mechanism in microtubules is initiated by reactive oxygen, not light — it runs in the dark, unlike the radical pairs birds use for magnetic navigation.
-
-**Pharmacological caveat.** Different anesthetics work through different biochemical pathways, and none has established direct effects on microtubule radical pair chemistry specifically. The isotope effects (xenon, magnesium) are consistent with radical pair involvement in neural function, but the bridge from "radical pairs play a role in anesthetic pharmacology" to "radical pairs in microtubules are the mechanism of consciousness" passes through several uncontrolled steps. This bridge is a research program, not an established result.
+All of this establishes that radical pair chemistry occurs in tubulin. It does not establish that consciousness uses it. The Zadeh-Haghighi result is substrate, not function. The anesthesia results are consistent with radical pair involvement in neural processing, but "radical pairs play a role in anesthetic pharmacology" and "radical pairs in microtubules are the mechanism of consciousness" are separated by several uncontrolled steps. Different anesthetics work through different biochemical pathways, and none has established direct effects on microtubule radical pair chemistry specifically. The bridge from substrate to function is a research program, not an established result.
 
 ### The Compass Argument
 
@@ -523,11 +523,13 @@ The signal falls about 10 times short. This is a problem. But it is not a fatal 
 
 **First, the gap is only 10x.** Compare this to conformational tunneling, which was suppressed by a factor of 10 to the negative 15th relative to classical activation (that is fatal), or to excitonic ENAQT, which showed 0.18% advantage (that is negligible). A 10× gap is within the range of parameter uncertainty and biological modulation.
 
-**Second, superoxide concentration is the swing factor, and it is biologically regulated.** Steady-state cytosolic O₂⁻ sits around 0.1 nM, held there by superoxide dismutase operating near the diffusion limit (k ≈ 1.6 × 10⁹ M⁻¹s⁻¹). At that baseline, the quantum channel is effectively silent. But neurons are not steady-state machines. During intense activity, bursts of reactive oxygen push local O₂⁻ into the 10–100 nM range within the microdomain between mitochondria and microtubules — from mitochondrial "superoxide flashes" lasting roughly 10 seconds, to receptor-driven enzyme activation (NOX2, xanthine oxidase) sustaining elevated levels for minutes. At 10 nM, the signal reaches the noise floor. At 100 nM, the quantum channel opens wide.
+**Second, and more important, the gap reveals the mechanism's nature.** The quantum channel is not always on. It is gated by metabolic activity.
 
-The duty cycle matters. During ordinary cortical processing, local O₂⁻ spends well under 1% of the time above the 10 nM threshold. During high-demand episodes (intense computation, metabolic stress, burst firing that drives mitochondria hard), that fraction rises to 1-10% of active time. The quantum channel is not always on. It is gated by the very metabolic activity that consciousness requires.
+Steady-state cytosolic O₂⁻ sits around 0.1 nM, held there by superoxide dismutase operating near the diffusion limit (k ≈ 1.6 × 10⁹ M⁻¹s⁻¹). At that baseline, the quantum channel is effectively silent. But neurons are not steady-state machines. During intense activity, bursts of reactive oxygen push local O₂⁻ into the 10–100 nM range within the microdomain between mitochondria and microtubules, from mitochondrial "superoxide flashes" lasting roughly 10 seconds to receptor-driven enzyme activation (NOX2, xanthine oxidase) sustaining elevated levels for minutes. At 10 nM, the signal reaches the noise floor. At 100 nM, the quantum channel opens wide.
 
-And this points somewhere interesting. The radical pair mechanism is *activity-dependent*. Quiet neurons, with low metabolic demand and low ROS production, do not generate enough radical pair events for the quantum signal to matter. Active neurons, driving mitochondria hard, do. The mechanism tracks engagement: consciousness does not merely happen to neurons; it happens through neurons that are doing something [B].
+The duty cycle matters. During ordinary cortical processing, local O₂⁻ spends well under 1% of the time above the 10 nM threshold. During high-demand episodes, intense computation, metabolic stress, burst firing that drives mitochondria hard, that fraction rises to 1–10% of active time.
+
+Quiet neurons run classical. Active neurons open the quantum channel. The mechanism tracks engagement: consciousness happens through neurons that are *doing something* [B].
 
 **Third, the microtubule count may be substantially higher than the conservative estimate.** Large pyramidal neurons with extensive dendritic arbors may contain roughly 77,000 microtubules (an order-of-magnitude estimate based on dendritic volume and microtubule packing density; no direct count exists in the literature). If so, the signal is 77 times larger than the conservative estimate, well above the noise floor even at baseline ROS. This is an exploratory scenario, not an established parameter.
 
@@ -539,33 +541,31 @@ The numbers are tight. What we have is a chain of order-of-magnitude estimates, 
 
 ### The Feedback Loop
 
-There is a second feature that gives the probability sculpting thesis its full power, and it is the piece that makes the whole thing come alive.
+You know the feeling. You walk into a crowded room and your attention catches on one conversation. The rest of the room recedes. What sharpened was not just your hearing. It was the *question* your brain was asking of the incoming signal.
 
-You know the feeling. You walk into a crowded room and your attention catches on one conversation. The rest of the room recedes. What sharpened was not just your hearing — it was the *question* your brain was asking of the incoming signal. And the question determined what you could hear. And what you heard reshaped the question.
-
-An analogy makes this precise. Walk into a room and decide to measure temperature. You learn something about the room and you can act on it: open a window, turn up the heat. Now walk into the same room and decide to measure air pressure instead. You learn something different, and the actions available to you change. The question you ask determines what answers are possible and what you can do next.
+Walk into a party and look for someone you know. The room organizes itself around faces. Walk into the same party and look for the way out. The room organizes itself around doors. Same room. Different question. Different room.
 
 Quantum measurement works the same way, except with an additional twist: asking the question physically changes the system you are asking about. In standard quantum mechanics, the experimenter chooses what to measure and the system responds. In a living neuron, nothing is fixed. The measurement interaction between the quantum substrate and its environment depends on the current state of the neural network.
 
 When you attend to a visual stimulus, the pattern of neural activity changes. This changes the electromagnetic and conformational environment of the microtubule network. This changes which quantum property is being "measured," which changes the interference pattern.
 
-The formal picture is a feedback loop:
+One step in this loop has not been measured directly, the coupling from spin outcome to protein shape. The physical logic is straightforward. Radical pair chemistry produces different products depending on the spin state. Different products carry different charge distributions and steric profiles (different shapes, different electrical footprints). The protein's conformation should depend on which product forms. This has been demonstrated in other radical pair systems but not yet in tubulin specifically. The coupling is assumed, not proven.
 
-Radical pair spin outcome → protein conformational change (back-action) → altered Hamiltonian for next radical pair event → new measurement basis → new spin outcome → new conformational change → ...
+With that caveat, the formal picture is a feedback loop:
 
-We call this adaptive measurement basis selection, and it is the heart of the theory. The organism steers itself through possibility space by choosing *what to measure*. Each measurement simultaneously extracts information (reading the quantum state) and reshapes the probability landscape (back-action on the substrate). The "choice" of measurement basis is determined by attention, intention, context, with classical neural computation selecting which quantum observable to couple to [B].
+Radical pair spin outcome → protein shape change (back-action) → new rules for the next radical pair event → new measurement basis → new spin outcome → new shape change → ...
 
-We confirmed this computationally. Chapter 10 presents a systematic benchmark in which a quantum-adaptive controller and a classical-adaptive controller are independently evolved and tested across 90 three-dimensional mazes under matched training budgets and paired evaluation seeds. The quantum-adaptive controller, whose gate function is shaped by radical pair spin dynamics with state-dependent feedback, systematically outperforms the classical controller (+3.3% normalized advantage, 95% CI [+0.9%, +5.8%]). All three ingredients are necessary: quantum dynamics, adaptive measurement, and evolved parameters. Early versions of the benchmark that lacked independent classical optimization, matched budgets, or multiple mazes produced inflated results that did not survive fair testing. The honest result is modest but systematic [B].
+The organism steers by choosing *what to measure*. Attention, intention, context determine the choice, with classical neural computation selecting which quantum observable to couple to. Each measurement reads the quantum state and reshapes the probability landscape in one gesture. We call this adaptive measurement basis selection, and it is the heart of the theory [B].
+
+If this mechanism works, evolution with quantum resources should build better navigators than evolution without them. We tested this computationally. The first version of the benchmark failed fair testing. We rebuilt it from scratch. Across 90 three-dimensional mazes with matched training budgets, the quantum-adaptive controller systematically outperforms the classical one (+3.3%, CI excludes zero). The result is modest but systematic. Chapter 10 tells the full story [B].
 
 ### Reading and Writing as One Process
 
 Here is where the two faces of quantum measurement become one thing.
 
-When you press your thumb into clay to feel its temperature, you learn something about the clay and you leave a thumbprint. The sensing and the marking happen in the same gesture. You can't feel without pressing, and you can't press without changing what you touch. Quantum measurement works the same way, except the physics is exact about it: you extract information (reading) and you produce back-action that reshapes the system's state (writing). These are not separate processes that happen to co-occur. They are two descriptions of a single physical interaction.
+A potter presses her thumb into clay to feel how wet it is. She learns something about the clay and she leaves a thumbprint. The sensing and the marking happen in the same gesture. You can't feel without pressing, and you can't press without changing what you touch. Quantum measurement works the same way, except the physics is exact about it. You extract information (reading) and you produce back-action that reshapes the system's state (writing). These are not separate processes that happen to co-occur. They are two descriptions of what a single physical interaction does.
 
-The radical pair measurement interaction does both at once:
-
-It **reads** the spin state, extracting information about which region of possibility space is currently accessible. And it **writes** to the probability distribution, reshaping which futures are more or less probable through interference-mediated back-action. The writing is not random noise. It carries information about what was read. The back-action is structured by the measurement outcome.
+The radical pair measurement interaction performs both at once: It **reads** the spin state, extracting information about which region of possibility space is currently accessible. And it **writes** to the probability distribution, reshaping which futures are more or less probable through interference-mediated back-action. The writing is not random noise. It carries information about what was read. The back-action is structured by the measurement outcome.
 
 A classical organism can sense and then act, but sensing and acting are separate processes connected by computation. A quantum-coupled organism reads-and-writes in a single measurement interaction, and the writing carries information about the reading without any intermediate computational step.
 
@@ -573,7 +573,7 @@ It is categorically different. The organism's relationship to its own probabilit
 
 ### The Controller Question
 
-There is an objection here that deserves a straight answer. If classical neural computation selects the measurement basis (as described above, with attention, intention, and context determining which quantum observable to couple to), then the agency of the navigator is classical. The quantum component provides raw material (indeterminacy, interference, back-action) but the steering is classical. And if the steering is classical, the hard problem reappears at the classical level: why is there something it is like to be the classical process that selects measurement bases?
+But wait. If classical neural computation selects the measurement basis (as described above, with attention, intention, and context determining which quantum observable to couple to), then the agency of the navigator is classical. The quantum component provides raw material (indeterminacy, interference, back-action) but the steering is classical. And if the steering is classical, the hard problem reappears at the classical level: why is there something it is like to be the classical process that selects measurement bases?
 
 NFT's response is that the classical/quantum distinction in the feedback loop is not as clean as the objection assumes. The "classical controller" is itself a neural network operating at criticality, a system whose dynamics are shaped by the aggregate of previous quantum measurement outcomes. The controller is not independent of the quantum substrate; it is constituted by its history of interactions with it. The organism is not a classical captain steering a quantum ship. It is a system in which classical and quantum dynamics are so interleaved that attributing agency to one level rather than the other may be a category error.
 
@@ -581,11 +581,9 @@ Whether this response is adequate is an open philosophical question. The back-ac
 
 ### This Does Not Violate the Born Rule
 
-Imagine being allowed to choose the questions on your exam, but not the answers. You can't guarantee you'll get any particular question right. But by choosing which questions you face, you shape the landscape of outcomes — some question sets play to your strengths in ways others do not. A lawyer can't control the verdict, but the questions she chooses for each witness determine what evidence the jury hears, and the evidence determines the verdict. The agency isn't in the answers, it's in what gets asked.
+Imagine being allowed to choose the questions on your exam, but not the answers. You can't guarantee you'll get any particular question right. But by choosing which questions you face, you shape the landscape of outcomes by focusing on what plays to your strengths. A lawyer can't control the verdict, but the questions she chooses for each witness determine what evidence the jury hears, and the evidence determines the verdict. The agency is in what gets asked.
 
-This needs to be said clearly. The probability sculpting mechanism does not require consciousness to override quantum mechanics. It does not involve choosing the outcomes of measurements. It involves choosing which measurements to perform.
-
-The Born rule (the fundamental rule of quantum mechanics: the probability of an outcome equals the squared amplitude) is never violated. Every individual measurement outcome follows the Born rule exactly. What the organism controls is the measurement basis — *what question is asked* of the quantum system, not what answer comes back.
+The probability sculpting mechanism does not require consciousness to override quantum mechanics. The Born rule (the probability of an outcome equals the squared amplitude) is never violated. Every individual measurement outcome follows it exactly. What the organism controls is the measurement basis, *what question is asked* of the quantum system. The answers are nature's business.
 
 But choosing the question determines the space of possible answers. And the back-action from each answer reshapes the conditions for the next question. Over many measurement cycles, this feedback loop sculpts the probability distribution over trajectories in ways that no sequence of classical dice rolls can replicate, even though each individual quantum outcome is perfectly lawful [B].
 
