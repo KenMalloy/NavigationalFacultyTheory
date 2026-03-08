@@ -36,7 +36,7 @@ Possibility space has a dual character, and we are going to acknowledge it rathe
 
 From within, from the perspective of the navigator, it appears epistemic. The navigator faces a landscape of subjective probabilities and makes selections. This is compatible with QBism, which treats quantum probabilities as subjective, describing the agent's relationship to possibility rather than observer-independent facts. Consciousness, on this view, is the agent doing the assigning.
 
-From without, from the perspective of physics, the ontological status resists complete axiomatization. We take this duality as a feature rather than a defect. The framework's testability depends on formalizing the navigational operations, not on settling the ontological question, which, per the constraint hypothesis of Chapter 2, may be inherently unsettleable from within [C].
+From without, from the perspective of physics, what possibility space actually *is* — physics can't answer that cleanly. We take this duality as a feature rather than a defect. The framework's testability depends on formalizing the navigational operations, not on settling what the terrain is made of — a question that, per the constraint hypothesis of Chapter 2, may be inherently unsettleable from within [C].
 
 ### Why This Is Separable
 

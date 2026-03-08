@@ -12,7 +12,9 @@ If consciousness plays a role in quantum measurement, there is a problem waiting
 
 ### The Problem
 
-The quantum Zeno effect, described by Misra and Sudarshan in 1977, shows that continuous measurement of a quantum system prevents it from evolving. Frequent observation locks the system into its current state. If consciousness continuously collapses the wavefunction (selects definite outcomes from quantum possibilities), reality should freeze.
+Stare at a word long enough and it stops meaning anything. But stare at a coffee cup and it stays a coffee cup. Your visual system is continuously observing it, and the cup does not dissolve into uncertainty. It persists. That stability needs an explanation.
+
+The quantum Zeno effect, described by Misra and Sudarshan in 1977, says it should not happen. Continuous measurement of a quantum system prevents it from evolving. Frequent observation locks the system into its current state. If consciousness continuously collapses the wavefunction (selects definite outcomes from quantum possibilities), reality should freeze.
 
 Chalmers and McQueen formalized this objection rigorously in 2021. They showed that simple consciousness-collapse models are falsified by the Zeno effect and proposed more complex versions incorporating IIT's Phi as a parameter in the collapse operator. Their fix works but adds complexity without adding insight.
 
@@ -26,9 +28,15 @@ Change and temporal flow arise because navigation is not static observation but 
 
 ### The Anti-Zeno Effect
 
-The resolution gains physical support from a deeper result. Kofman and Kurizki showed something unexpected: frequent measurement can either inhibit or *accelerate* quantum evolution, depending on the measurement rate and how the system couples to its environment. Whether a system exhibits Zeno (freezing) or anti-Zeno (acceleration) depends on the overlap between environmental spectral density and a measurement-induced filter function.
+The resolution gains physical support from a deeper result.
 
-If the spectral density of the microtubule quantum substrate falls in the anti-Zeno regime (and our simulations of tryptophan chromophore networks suggest it does for certain parameter ranges), continuous conscious measurement drives quantum evolution forward rather than halting it [B].
+Every noisy environment has a characteristic rhythm — some frequencies of vibration are louder than others. A concert hall emphasizes certain frequencies and dampens others. Physicists call this pattern the *spectral density*. A warm cellular environment vibrates at many frequencies simultaneously, but some dominate.
+
+When you measure a quantum system at a particular rate, you're effectively listening for changes at that rate. You're sensitive to fluctuations that match your measurement tempo and blind to ones that don't. That's the *filter function*.
+
+Kofman and Kurizki showed that frequent measurement can either inhibit or *accelerate* quantum evolution, and which one you get depends on the overlap between these two patterns. If the measurement listens at frequencies where the environment is quiet, the measurement dominates and locks the system in place — Zeno. If the measurement listens at frequencies where the environment is loud, the environmental noise drives the system forward, amplified by the act of observation — anti-Zeno.
+
+If the microtubule substrate's spectral density falls in the anti-Zeno regime (and our simulations suggest it does for certain parameter ranges), continuous conscious measurement drives quantum evolution forward rather than halting it [B].
 
 The balance between Zeno and anti-Zeno is where things get interesting for consciousness:
 

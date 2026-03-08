@@ -46,7 +46,9 @@ The numbers are tight. What we have is a chain of order-of-magnitude estimates, 
 
 There is a second feature that gives the probability sculpting thesis its full power, and it is the piece that makes the whole thing come alive.
 
-An analogy first. Walk into a room and decide to measure temperature. You learn something about the room and you can act on it: open a window, turn up the heat. Now walk into the same room and decide to measure air pressure instead. You learn something different, and the actions available to you change. The question you ask determines what answers are possible and what you can do next.
+You know the feeling. You walk into a crowded room and your attention catches on one conversation. The rest of the room recedes. What sharpened was not just your hearing — it was the *question* your brain was asking of the incoming signal. And the question determined what you could hear. And what you heard reshaped the question.
+
+An analogy makes this precise. Walk into a room and decide to measure temperature. You learn something about the room and you can act on it: open a window, turn up the heat. Now walk into the same room and decide to measure air pressure instead. You learn something different, and the actions available to you change. The question you ask determines what answers are possible and what you can do next.
 
 Quantum measurement works the same way, except with an additional twist: asking the question physically changes the system you are asking about. In standard quantum mechanics, the experimenter chooses what to measure and the system responds. In a living neuron, nothing is fixed. The measurement interaction between the quantum substrate and its environment depends on the current state of the neural network.
 
@@ -64,7 +66,7 @@ We confirmed this computationally. Chapter 10 presents a systematic benchmark in
 
 Here is where the two faces of quantum measurement become one thing.
 
-When you measure a quantum system, you extract information (reading) and you produce back-action that reshapes the system's state (writing). These are not separate processes that happen to co-occur. They are two descriptions of a single physical interaction.
+When you press your thumb into clay to feel its temperature, you learn something about the clay and you leave a thumbprint. The sensing and the marking happen in the same gesture. You can't feel without pressing, and you can't press without changing what you touch. Quantum measurement works the same way, except the physics is exact about it: you extract information (reading) and you produce back-action that reshapes the system's state (writing). These are not separate processes that happen to co-occur. They are two descriptions of a single physical interaction.
 
 The radical pair measurement interaction does both at once:
 
@@ -84,9 +86,11 @@ Whether this response is adequate is an open philosophical question. The back-ac
 
 ### This Does Not Violate the Born Rule
 
+Imagine being allowed to choose the questions on your exam, but not the answers. You can't guarantee you'll get any particular question right. But by choosing which questions you face, you shape the landscape of outcomes — some question sets play to your strengths in ways others do not. A lawyer can't control the verdict, but the questions she chooses for each witness determine what evidence the jury hears, and the evidence determines the verdict. The agency isn't in the answers, it's in what gets asked.
+
 This needs to be said clearly. The probability sculpting mechanism does not require consciousness to override quantum mechanics. It does not involve choosing the outcomes of measurements. It involves choosing which measurements to perform.
 
-The Born rule (the fundamental rule of quantum mechanics: the probability of an outcome equals the squared amplitude) is never violated. Every individual measurement outcome follows the Born rule exactly. What the organism controls is the measurement basis, *what question is asked* of the quantum system, not what answer comes back.
+The Born rule (the fundamental rule of quantum mechanics: the probability of an outcome equals the squared amplitude) is never violated. Every individual measurement outcome follows the Born rule exactly. What the organism controls is the measurement basis — *what question is asked* of the quantum system, not what answer comes back.
 
 But choosing the question determines the space of possible answers. And the back-action from each answer reshapes the conditions for the next question. Over many measurement cycles, this feedback loop sculpts the probability distribution over trajectories in ways that no sequence of classical dice rolls can replicate, even though each individual quantum outcome is perfectly lawful [B].
 

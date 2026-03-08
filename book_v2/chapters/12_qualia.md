@@ -6,7 +6,9 @@ This chapter makes the book's most speculative claim. What it is like to hear a 
 
 ### Back-Action Is Not Optional
 
-Every quantum measurement produces back-action on the measuring apparatus. This is not a side effect to be minimized. It is a consequence of quantum mechanics itself. An instrument sensitive enough to extract information from a quantum system is, by that sensitivity, necessarily disturbed by the interaction.
+The oldest story structure we know is the hero's journey: someone leaves home, faces something that cannot be faced without being transformed by it, and returns different. The transformation isn't a side effect of the encounter, it is the encounter. Odysseus doesn't observe the war and then, separately, get changed. The observation and the change are one event.
+
+Every quantum measurement works exactly this way. The measuring apparatus interacts with the quantum system, extracts information, and emerges altered. The alteration is not a side effect to be minimized. It is a consequence of quantum mechanics itself. An instrument sensitive enough to extract information from a quantum system is, by that sensitivity, necessarily transformed by the interaction.
 
 Von Neumann formalized this. Measurement entangles the measured system with the apparatus, and the post-measurement state of the apparatus carries the imprint of the interaction. Aharonov, Albert, and Vaidman showed that this can be graded; weak measurements extract partial information while the apparatus is displaced in proportion to measurement strength. Cripe and colleagues demonstrated quantum back-action at room temperature in the audio-frequency band. The physics operates at biological temperatures and timescales.
 
@@ -16,7 +18,7 @@ This back-action is not a nuisance to be engineered away. It is the physical ori
 
 **Step 1: Measurement is never one-way.** The post-measurement state of the apparatus carries the imprint of the interaction. The back-action is real, physical, and measurable.
 
-**Step 2: The back-action is structured.** The apparatus displacement is not generic noise; it carries information about what was measured. In the weak measurement regime, the displacement is proportional to the weak value of the measured observable. The perturbation experienced by the apparatus is specific to the quantum state being navigated.
+**Step 2: The back-action is structured.** The apparatus displacement is not generic noise; it carries specific information about what was measured. The perturbation experienced by the apparatus depends on which quantum state was being navigated — different measurements produce different disturbances, in proportion to the strength of the interaction.
 
 **Step 3: Structured back-action provides a physical address for qualia.** Most theories of consciousness attempt to identify a computational or informational property that, at sufficient magnitude, "gives rise to" experience. The move here is different. Phenomenal experience *is* the back-action of the measurement apparatus upon itself during navigation of possibility space. The warmth of a coffee cup against your palm is not a computation that somehow produces the feeling of warmth. It is the specific conformational perturbation pattern produced in the microtubule substrate when the radical pair measurement interaction couples to the neural state associated with thermoreceptor processing.
 

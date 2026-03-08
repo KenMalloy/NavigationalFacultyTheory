@@ -393,9 +393,9 @@ This is where NFT departs from every classical theory of consciousness. The depa
 
 In a classical system, the probability of arriving at a future state is the *sum of probabilities* along all paths leading to that state. Probabilities are non-negative real numbers; they can only add. A classical organism can bias its probability landscape through learning: synaptic plasticity adjusts the weights, making some paths more probable and others less. But the exploration is fundamentally diffusive. The organism is rolling weighted dice. The weights can be adjusted, but the dice remain classical dice. Each roll is independent. Each path contributes independently. There is no interference between paths.
 
-In a quantum-coupled system, the probability of arriving at a future state is the *square of the sum of amplitudes* along all paths. Amplitudes are complex-valued numbers with both magnitude and phase. This changes everything.
+In a quantum-coupled system, the rules change. Drop two pebbles in a pond. Where the ripples cross, some spots double in height and others go flat. That is interference — and classical dice cannot do it.
 
-When two paths lead to the same future state, their amplitudes add before the square is taken. If the phases align, the probability is enhanced beyond what either path alone would produce (constructive interference). If the phases oppose, the probability is reduced, potentially to zero (destructive interference). The organism's relationship to its own future is no longer diffusive; it is *interferometric* [B].
+Quantum probability works like ripples, not like dice. The probability of arriving at a future state is the *square of the sum of amplitudes* along all paths. Amplitudes have size (magnitude) and timing (phase). When two paths lead to the same future state, their amplitudes add before the square is taken. If the phases align, the probability surges (constructive interference). If the phases oppose, the probability can cancel to zero (destructive interference). The organism's relationship to its own future is no longer diffusive; it is *interferometric* [B].
 
 This is not a difference of degree. It is a difference of category.
 
@@ -405,7 +405,9 @@ A classical organism adjusts the weights on its dice. A quantum-coupled organism
 
 The dice analogy captures the intuition. The difference goes deeper.
 
-In classical information theory, if you know about system B, your remaining uncertainty about system A is always positive or zero. You cannot know *more* about A than A contains. This seems like common sense because it is. But in quantum mechanics, when two systems are entangled, the conditional uncertainty can go *negative*. This sounds like nonsense until you understand what it means operationally: entangled subsystems can coordinate information transfer at costs that break the classical floor. They can share information in ways that are not just difficult for classical systems but provably impossible. If the microtubule substrate sustains this kind of entanglement (and the radical pair mechanism provides a candidate), the navigator has access to resources no classical system can replicate. The wedge is not a matter of speed or efficiency. It is a matter of what is physically available [B].
+A man and a woman sit at opposite ends of a hotel bar in Vienna. They have never appeared to meet. The man adjusts his cufflink. To everyone else in the room, this is nothing — a man fidgeting. To the woman, it means the asset is in the building, the north exit is clear, and they have ninety seconds. One gesture, three pieces of information that the gesture does not contain. The meaning lives in the relationship — years of shared operations, shared codes, shared trust. A stranger watching the same gesture learns nothing. The information isn't in the cufflink, it's in the entanglement.
+
+In classical information theory, this kind of surplus is impossible at the physical level. If you know about system B, your remaining uncertainty about system A is always positive or zero. You cannot extract more meaning from B than B contains. But in quantum mechanics, when two systems are entangled, the conditional uncertainty can go *negative*. The entanglement creates a channel between them that is richer than either system alone — not because information is hidden somewhere, but because the correlation itself is a resource that classical systems cannot possess. Entangled subsystems can coordinate information transfer at costs that break the classical floor. If the microtubule substrate sustains this kind of entanglement (and the radical pair mechanism provides a candidate), the navigator has access to resources no classical system can replicate. The wedge is not a matter of speed or efficiency. It is a matter of what is physically available [B].
 
 Not all quantum effects create this wedge. Some quantum mechanics is, surprisingly, no more powerful than classical computation. What pushes beyond the classical frontier are three specific resources: contextuality (measurement results depend on what else is being measured at the same time), Wigner-function negativity (the quantum state's mathematical representation dips below zero, something no classical probability distribution can do), and entanglement. NFT's Level B is falsified specifically if the microtubule substrate turns out to operate entirely within the classically simulable regime, using quantum mechanics that looks exotic but computes nothing a classical system couldn't [B].
 
@@ -455,7 +457,9 @@ Instead, we asked: is there a different quantum mechanism in microtubules that o
 
 There is. And it was hiding in plain sight.
 
-Radical pair reactions involve pairs of molecules with unpaired electron spins. The spins exist in quantum superpositions of singlet and triplet states, and the relative rates of reactions from these states determine chemical yields. The key parameter is the spin coherence time: how long the quantum superposition persists before dephasing destroys it.
+Picture two electrons spinning like tiny tops. If they spin in opposite directions — one clockwise, one counterclockwise — the pair is in what physicists call the singlet state, and one chemical reaction happens. If they spin together, the pair is in the triplet state, and a different reaction happens. The quantum part is that the pair doesn't commit to either configuration. It exists as both simultaneously, and the ratio between them shifts depending on the magnetic environment. Which products form depends on which state the pair is in when the reaction occurs.
+
+That is a radical pair reaction. The key parameter is the spin coherence time: how long the quantum superposition of singlet and triplet persists before the environment destroys it.
 
 In biological radical pair systems, spin coherence times are on the order of microseconds. Not picoseconds. Not femtoseconds. *Microseconds*. This is 5,000 times longer than excitonic coherence in tryptophan networks [B].
 
@@ -471,11 +475,11 @@ The computational result has experimental support, though the interpretation des
 
 Zadeh-Haghighi and colleagues published in *Science Advances* in 2026 a study showing that magnesium-25 isotope effects on tubulin polymerization under magnetic field are statistically significant (P < 10⁻⁷). Mg-25 has a nuclear spin; Mg-24 and Mg-26 do not. The isotope effect, in which different polymerization rates depend on the nuclear spin of the magnesium isotope, is a signature diagnostic of radical pair chemistry. The finding establishes that radical pair reactions occur in tubulin [B].
 
-**The oxidative stress alternative.** An important caveat: the [TrpH⁺...O₂⁻] radical pair is a reactive oxygen species pathway. ROS in microtubules are heavily studied in the context of oxidative damage, aging, and neurodegeneration, none of which invokes consciousness. The most parsimonious interpretation of the Zadeh-Haghighi result is that radical pairs participate in tubulin redox chemistry, not that they participate in consciousness. The isotope effect on polymerization is a structural observation; it does not by itself demonstrate that radical pair chemistry in assembled microtubules modulates neural signaling or conscious processing. NFT predicts that the radical pair chemistry IS relevant to navigation, but this prediction is not yet confirmed. The isotope effect establishes the substrate. It does not establish the function.
+**The oxidative stress alternative.** An important caveat. The radical pair in question — a reactive oxygen species encountering a tryptophan residue — is the kind of reaction that oxidative stress researchers have studied for decades in the context of aging and neurodegeneration, not consciousness. The most parsimonious interpretation of the Zadeh-Haghighi result is that radical pairs participate in tubulin chemistry, full stop. NFT predicts the radical pair chemistry is relevant to navigation, but this prediction is not yet confirmed. The isotope effect establishes the substrate. It does not establish the function.
 
-Additional support comes from multiple directions. Li and colleagues (2018) showed that xenon isotopes with nuclear spin have reduced anesthetic potency compared to spinless isotopes, consistent with radical pair involvement in some aspect of anesthetic pharmacology, though xenon's primary mechanism is NMDA receptor antagonism, not microtubule disruption. Turin and colleagues (2014, *PNAS*) showed that anesthetics change electron spin content in *Drosophila*. The radical pair mechanism in microtubules is [TrpH⁺...O₂⁻], reactive oxygen species initiated, which means it operates without light excitation, unlike the cryptochrome radical pairs in avian magnetoreception.
+Additional support: Li and colleagues (2018) showed that xenon isotopes with nuclear spin have reduced anesthetic potency compared to spinless isotopes. Turin and colleagues (2014, *PNAS*) showed that anesthetics change electron spin in *Drosophila*. Importantly, the radical pair mechanism in microtubules is initiated by reactive oxygen, not light — it runs in the dark, unlike the radical pairs birds use for magnetic navigation.
 
-**Pharmacological caveat.** The anesthesia evidence mixes agents with different mechanisms. Xenon acts primarily through NMDA receptor antagonism, propofol through GABA-A potentiation, volatile anesthetics through multiple receptor targets. None has established direct effects on microtubule radical pair chemistry specifically. The isotope effects (xenon, magnesium) are consistent with radical pair involvement in neural function, but the bridge from "radical pairs are involved in anesthetic pharmacology" to "radical pairs in microtubules are the mechanism of consciousness" passes through several uncontrolled steps. This bridge is a research program, not an established result.
+**Pharmacological caveat.** Different anesthetics work through different biochemical pathways, and none has established direct effects on microtubule radical pair chemistry specifically. The isotope effects (xenon, magnesium) are consistent with radical pair involvement in neural function, but the bridge from "radical pairs play a role in anesthetic pharmacology" to "radical pairs in microtubules are the mechanism of consciousness" passes through several uncontrolled steps. This bridge is a research program, not an established result.
 
 ### The Compass Argument
 
@@ -537,7 +541,9 @@ The numbers are tight. What we have is a chain of order-of-magnitude estimates, 
 
 There is a second feature that gives the probability sculpting thesis its full power, and it is the piece that makes the whole thing come alive.
 
-An analogy first. Walk into a room and decide to measure temperature. You learn something about the room and you can act on it: open a window, turn up the heat. Now walk into the same room and decide to measure air pressure instead. You learn something different, and the actions available to you change. The question you ask determines what answers are possible and what you can do next.
+You know the feeling. You walk into a crowded room and your attention catches on one conversation. The rest of the room recedes. What sharpened was not just your hearing — it was the *question* your brain was asking of the incoming signal. And the question determined what you could hear. And what you heard reshaped the question.
+
+An analogy makes this precise. Walk into a room and decide to measure temperature. You learn something about the room and you can act on it: open a window, turn up the heat. Now walk into the same room and decide to measure air pressure instead. You learn something different, and the actions available to you change. The question you ask determines what answers are possible and what you can do next.
 
 Quantum measurement works the same way, except with an additional twist: asking the question physically changes the system you are asking about. In standard quantum mechanics, the experimenter chooses what to measure and the system responds. In a living neuron, nothing is fixed. The measurement interaction between the quantum substrate and its environment depends on the current state of the neural network.
 
@@ -555,7 +561,7 @@ We confirmed this computationally. Chapter 10 presents a systematic benchmark in
 
 Here is where the two faces of quantum measurement become one thing.
 
-When you measure a quantum system, you extract information (reading) and you produce back-action that reshapes the system's state (writing). These are not separate processes that happen to co-occur. They are two descriptions of a single physical interaction.
+When you press your thumb into clay to feel its temperature, you learn something about the clay and you leave a thumbprint. The sensing and the marking happen in the same gesture. You can't feel without pressing, and you can't press without changing what you touch. Quantum measurement works the same way, except the physics is exact about it: you extract information (reading) and you produce back-action that reshapes the system's state (writing). These are not separate processes that happen to co-occur. They are two descriptions of a single physical interaction.
 
 The radical pair measurement interaction does both at once:
 
@@ -575,9 +581,11 @@ Whether this response is adequate is an open philosophical question. The back-ac
 
 ### This Does Not Violate the Born Rule
 
+Imagine being allowed to choose the questions on your exam, but not the answers. You can't guarantee you'll get any particular question right. But by choosing which questions you face, you shape the landscape of outcomes — some question sets play to your strengths in ways others do not. A lawyer can't control the verdict, but the questions she chooses for each witness determine what evidence the jury hears, and the evidence determines the verdict. The agency isn't in the answers, it's in what gets asked.
+
 This needs to be said clearly. The probability sculpting mechanism does not require consciousness to override quantum mechanics. It does not involve choosing the outcomes of measurements. It involves choosing which measurements to perform.
 
-The Born rule (the fundamental rule of quantum mechanics: the probability of an outcome equals the squared amplitude) is never violated. Every individual measurement outcome follows the Born rule exactly. What the organism controls is the measurement basis, *what question is asked* of the quantum system, not what answer comes back.
+The Born rule (the fundamental rule of quantum mechanics: the probability of an outcome equals the squared amplitude) is never violated. Every individual measurement outcome follows the Born rule exactly. What the organism controls is the measurement basis — *what question is asked* of the quantum system, not what answer comes back.
 
 But choosing the question determines the space of possible answers. And the back-action from each answer reshapes the conditions for the next question. Over many measurement cycles, this feedback loop sculpts the probability distribution over trajectories in ways that no sequence of classical dice rolls can replicate, even though each individual quantum outcome is perfectly lawful [B].
 
@@ -595,7 +603,7 @@ Theory proposes. Simulation tests. And then the simulation must survive scrutiny
 
 ### The First Result
 
-The original simulation placed agents on a six-dimensional hypercube (64 vertices) and projected their behavior into a two-dimensional maze. A genetic algorithm evolved parameters governing the feedback loop and movement weights. Four conditions were compared: quantum dynamics with adaptive measurement and evolved parameters, quantum with fixed measurement basis, classical stochastic dynamics with the same evolved parameters, and quantum with random parameters.
+The original simulation gave agents a 2D maze to walk through and a 6D internal state to think with — six hidden dials, like a control panel in the agent's head, that don't correspond to any direction in the maze. The quantum agent could use interference between these internal states to bias its movement. The classical agent could only spin the dials randomly. Formally, the internal state space was a six-dimensional hypercube (64 vertices), and the agent's behavior was projected into the two-dimensional maze. A genetic algorithm evolved parameters governing the feedback loop and movement weights. Four conditions were compared: quantum dynamics with adaptive measurement and evolved parameters, quantum with fixed measurement basis, classical stochastic dynamics with the same evolved parameters, and quantum with random parameters.
 
 On a serpentine 8x8 maze, the quantum+evolved agent found the goal in 24% of runs. Every other condition achieved 0%. The result was striking: a categorical separation between quantum-adaptive and everything else.
 
@@ -621,7 +629,7 @@ We rebuilt the simulation framework around four principles:
 
 ### The Scaling Search
 
-We tested whether quantum navigational advantage scales with problem complexity by sweeping maze and latent dimensions: 2D mazes with 6D latent dynamics, 3D mazes with 7D latent dynamics, and 4D mazes with 8D latent dynamics. Each uses barrier hyperplanes with random gaps, generating mazes that are always solvable but structurally varied.
+We tested whether quantum navigational advantage scales with problem complexity. The key variables are the physical maze (how many dimensions the agent moves through) and the number of hidden dials — internal states where interference can operate. We swept both: 2D mazes with 6 internal dimensions, 3D mazes with 7, and 4D mazes with 8. Each uses barrier hyperplanes with random gaps, generating mazes that are always solvable but structurally varied.
 
 The scaling was not monotonic. 2D/6D showed negligible advantage. 3D/7D showed a moderate positive signal. 4D/8D was weak and inconsistent, likely because the 4D search space exceeds what the optimizer can explore within the training budget.
 
@@ -694,7 +702,9 @@ If consciousness plays a role in quantum measurement, there is a problem waiting
 
 ### The Problem
 
-The quantum Zeno effect, described by Misra and Sudarshan in 1977, shows that continuous measurement of a quantum system prevents it from evolving. Frequent observation locks the system into its current state. If consciousness continuously collapses the wavefunction (selects definite outcomes from quantum possibilities), reality should freeze.
+Stare at a word long enough and it stops meaning anything. But stare at a coffee cup and it stays a coffee cup. Your visual system is continuously observing it, and the cup does not dissolve into uncertainty. It persists. That stability needs an explanation.
+
+The quantum Zeno effect, described by Misra and Sudarshan in 1977, says it should not happen. Continuous measurement of a quantum system prevents it from evolving. Frequent observation locks the system into its current state. If consciousness continuously collapses the wavefunction (selects definite outcomes from quantum possibilities), reality should freeze.
 
 Chalmers and McQueen formalized this objection rigorously in 2021. They showed that simple consciousness-collapse models are falsified by the Zeno effect and proposed more complex versions incorporating IIT's Phi as a parameter in the collapse operator. Their fix works but adds complexity without adding insight.
 
@@ -708,9 +718,15 @@ Change and temporal flow arise because navigation is not static observation but 
 
 ### The Anti-Zeno Effect
 
-The resolution gains physical support from a deeper result. Kofman and Kurizki showed something unexpected: frequent measurement can either inhibit or *accelerate* quantum evolution, depending on the measurement rate and how the system couples to its environment. Whether a system exhibits Zeno (freezing) or anti-Zeno (acceleration) depends on the overlap between environmental spectral density and a measurement-induced filter function.
+The resolution gains physical support from a deeper result.
 
-If the spectral density of the microtubule quantum substrate falls in the anti-Zeno regime (and our simulations of tryptophan chromophore networks suggest it does for certain parameter ranges), continuous conscious measurement drives quantum evolution forward rather than halting it [B].
+Every noisy environment has a characteristic rhythm — some frequencies of vibration are louder than others. A concert hall emphasizes certain frequencies and dampens others. Physicists call this pattern the *spectral density*. A warm cellular environment vibrates at many frequencies simultaneously, but some dominate.
+
+When you measure a quantum system at a particular rate, you're effectively listening for changes at that rate. You're sensitive to fluctuations that match your measurement tempo and blind to ones that don't. That's the *filter function*.
+
+Kofman and Kurizki showed that frequent measurement can either inhibit or *accelerate* quantum evolution, and which one you get depends on the overlap between these two patterns. If the measurement listens at frequencies where the environment is quiet, the measurement dominates and locks the system in place — Zeno. If the measurement listens at frequencies where the environment is loud, the environmental noise drives the system forward, amplified by the act of observation — anti-Zeno.
+
+If the microtubule substrate's spectral density falls in the anti-Zeno regime (and our simulations suggest it does for certain parameter ranges), continuous conscious measurement drives quantum evolution forward rather than halting it [B].
 
 The balance between Zeno and anti-Zeno is where things get interesting for consciousness:
 
@@ -730,7 +746,9 @@ This chapter makes the book's most speculative claim. What it is like to hear a 
 
 ### Back-Action Is Not Optional
 
-Every quantum measurement produces back-action on the measuring apparatus. This is not a side effect to be minimized. It is a consequence of quantum mechanics itself. An instrument sensitive enough to extract information from a quantum system is, by that sensitivity, necessarily disturbed by the interaction.
+The oldest story structure we know is the hero's journey: someone leaves home, faces something that cannot be faced without being transformed by it, and returns different. The transformation isn't a side effect of the encounter, it is the encounter. Odysseus doesn't observe the war and then, separately, get changed. The observation and the change are one event.
+
+Every quantum measurement works exactly this way. The measuring apparatus interacts with the quantum system, extracts information, and emerges altered. The alteration is not a side effect to be minimized. It is a consequence of quantum mechanics itself. An instrument sensitive enough to extract information from a quantum system is, by that sensitivity, necessarily transformed by the interaction.
 
 Von Neumann formalized this. Measurement entangles the measured system with the apparatus, and the post-measurement state of the apparatus carries the imprint of the interaction. Aharonov, Albert, and Vaidman showed that this can be graded; weak measurements extract partial information while the apparatus is displaced in proportion to measurement strength. Cripe and colleagues demonstrated quantum back-action at room temperature in the audio-frequency band. The physics operates at biological temperatures and timescales.
 
@@ -740,7 +758,7 @@ This back-action is not a nuisance to be engineered away. It is the physical ori
 
 **Step 1: Measurement is never one-way.** The post-measurement state of the apparatus carries the imprint of the interaction. The back-action is real, physical, and measurable.
 
-**Step 2: The back-action is structured.** The apparatus displacement is not generic noise; it carries information about what was measured. In the weak measurement regime, the displacement is proportional to the weak value of the measured observable. The perturbation experienced by the apparatus is specific to the quantum state being navigated.
+**Step 2: The back-action is structured.** The apparatus displacement is not generic noise; it carries specific information about what was measured. The perturbation experienced by the apparatus depends on which quantum state was being navigated — different measurements produce different disturbances, in proportion to the strength of the interaction.
 
 **Step 3: Structured back-action provides a physical address for qualia.** Most theories of consciousness attempt to identify a computational or informational property that, at sufficient magnitude, "gives rise to" experience. The move here is different. Phenomenal experience *is* the back-action of the measurement apparatus upon itself during navigation of possibility space. The warmth of a coffee cup against your palm is not a computation that somehow produces the feeling of warmth. It is the specific conformational perturbation pattern produced in the microtubule substrate when the radical pair measurement interaction couples to the neural state associated with thermoreceptor processing.
 
@@ -868,7 +886,7 @@ Possibility space has a dual character, and we are going to acknowledge it rathe
 
 From within, from the perspective of the navigator, it appears epistemic. The navigator faces a landscape of subjective probabilities and makes selections. This is compatible with QBism, which treats quantum probabilities as subjective, describing the agent's relationship to possibility rather than observer-independent facts. Consciousness, on this view, is the agent doing the assigning.
 
-From without, from the perspective of physics, the ontological status resists complete axiomatization. We take this duality as a feature rather than a defect. The framework's testability depends on formalizing the navigational operations, not on settling the ontological question, which, per the constraint hypothesis of Chapter 2, may be inherently unsettleable from within [C].
+From without, from the perspective of physics, what possibility space actually *is* — physics can't answer that cleanly. We take this duality as a feature rather than a defect. The framework's testability depends on formalizing the navigational operations, not on settling what the terrain is made of — a question that, per the constraint hypothesis of Chapter 2, may be inherently unsettleable from within [C].
 
 ### Why This Is Separable
 
@@ -981,9 +999,9 @@ No classical digital system satisfies the four conditions the framework requires
 
 The four conditions above are clean when the comparison is GPUs running transformer models. They become less clean when the comparison shifts to neuromorphic hardware.
 
-Intel's Loihi and its successors implement spiking neural networks in silicon. These chips can be tuned to exhibit power-law avalanche dynamics, spike-timing-dependent plasticity, and non-trivial temporal correlations. They partially satisfy Condition 1: the Tsallis q-parameter from their activation statistics can exceed 1. They may partially satisfy Condition 4: the system's state depends on its spiking history, and analog neuromorphic substrates (memristive crossbar arrays, phase-change devices) introduce genuine physical stochasticity rather than pseudorandomness. A memristor whose resistance depends on the history of current flow through it is, in a limited sense, non-ergodic.
+Turing asked whether a machine could think. Neuromorphic hardware asks a harder question: what happens when the machine thinks the way a brain does — not by running a program that simulates neurons, but by being a circuit that spikes, adapts, and cascades like one? Intel's Loihi and its successors carry a memory of past current in their material, not in their software. They can be tuned until their statistics match a brain at the critical point. They are the closest thing to a silicon brain anyone has built.
 
-Analog neuromorphic chips push further. They operate with thermal noise that is physically real, not algorithmically generated. They can exhibit history-dependent dynamics that are genuinely time-irreversible at the hardware level. They are closer to biological neural tissue than any digital system.
+These chips partially satisfy Condition 1: the Tsallis q-parameter from their activation statistics can exceed 1. They may partially satisfy Condition 4: analog neuromorphic substrates introduce genuine physical stochasticity rather than pseudorandomness, and their dynamics are history-dependent in ways that digital systems cannot be. They are closer to biological neural tissue than any digital system.
 
 This is precisely why NFT frames the requirements as a conjunction. Neuromorphic hardware can satisfy Conditions 1 and 4 individually. What it cannot satisfy is Condition 2: there are no radical pair reactions, no spin coherence, no quantum indeterminacy in silicon or metal-oxide memristors. And it does not satisfy Condition 3 in the physical sense NFT requires: a spiking network on a chip has fixed connectivity determined at fabrication, not the dynamic, activity-dependent simplicial complexes that neural tissue generates and dissolves on millisecond timescales.
 
@@ -1028,13 +1046,15 @@ This is a single experiment with a clear outcome. It requires hardware that does
 
 The observer problem in quantum mechanics may be a consciousness problem, not in the vague sense that "consciousness collapses the wavefunction," but in the precise sense that consciousness is the physical faculty that navigates quantum possibility space, with collapse being what navigation looks like from the third-person perspective.
 
-Zurek's quantum Darwinism provides the physics of intersubjective agreement: classical reality emerges because the environment redundantly records "pointer states," and different observers access different fragments of the same record. NFT's back-action thesis addresses what quantum Darwinism leaves out: why the sharing of classical reality is *experienced*. The two frameworks are complementary: quantum Darwinism explains consensus, back-action explains qualia [B].
+Zurek's quantum Darwinism provides the physics of intersubjective agreement. If you have written C++, the name tells you what's going on. A pointer in code doesn't hold the data — it holds the address where the data lives. Different parts of a program can hold different pointers to the same value, and they agree on what it is because they're all referencing the same location. Zurek's pointer states are the quantum version. When a quantum system interacts with its environment, certain robust states get their addresses copied everywhere — into scattered photons, thermal radiation, air molecules. Each observer dereferences a different copy. They agree on what is real because every copy points to the same underlying state. Classical reality isn't fundamental, it's the set of quantum states robust enough to be referenced from anywhere.
+
+NFT's back-action thesis addresses what quantum Darwinism leaves out: why the dereferencing is *experienced*. The two frameworks are complementary: quantum Darwinism explains consensus, back-action explains qualia [B].
 
 ### IWMT
 
 The Integrated World Modeling Theory (Safron, 2020; 2022) deserves sustained engagement because it is attempting something similar to NFT: theoretical unification. IWMT combines IIT, GNWT, the Free Energy Principle, and active inference under variational free energy minimization. It is the most formally developed existing unification attempt, and in several respects it is ahead of NFT.
 
-Where IWMT is stronger: its mathematical formalism. IWMT expresses consciousness in the language of variational inference with explicit generative models, precision-weighted prediction errors, and hierarchical message passing. NFT's "navigation" metaphor, while intuitive, does not yet have the same formal depth. This is a genuine weakness, and it is what motivates the formalization program of Chapter 17. IWMT also provides a more detailed account of how the brain constructs unified world models from multimodal sensory input, an area where NFT has less to say.
+Where IWMT is stronger: its mathematical formalism. IWMT expresses consciousness in the language of Bayesian inference — the brain as a prediction machine that builds internal models, weights them by confidence, and passes corrections up and down a hierarchy of processing levels. NFT's "navigation" metaphor, while intuitive, does not yet have the same formal depth. This is a genuine weakness, and it is what motivates the formalization program of Chapter 17. IWMT also provides a more detailed account of how the brain constructs unified world models from multimodal sensory input, an area where NFT has less to say.
 
 Where NFT pushes further: two problems that IWMT's formal elegance does not resolve.
 

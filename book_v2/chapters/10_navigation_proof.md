@@ -6,7 +6,7 @@ Theory proposes. Simulation tests. And then the simulation must survive scrutiny
 
 ### The First Result
 
-The original simulation placed agents on a six-dimensional hypercube (64 vertices) and projected their behavior into a two-dimensional maze. A genetic algorithm evolved parameters governing the feedback loop and movement weights. Four conditions were compared: quantum dynamics with adaptive measurement and evolved parameters, quantum with fixed measurement basis, classical stochastic dynamics with the same evolved parameters, and quantum with random parameters.
+The original simulation gave agents a 2D maze to walk through and a 6D internal state to think with — six hidden dials, like a control panel in the agent's head, that don't correspond to any direction in the maze. The quantum agent could use interference between these internal states to bias its movement. The classical agent could only spin the dials randomly. Formally, the internal state space was a six-dimensional hypercube (64 vertices), and the agent's behavior was projected into the two-dimensional maze. A genetic algorithm evolved parameters governing the feedback loop and movement weights. Four conditions were compared: quantum dynamics with adaptive measurement and evolved parameters, quantum with fixed measurement basis, classical stochastic dynamics with the same evolved parameters, and quantum with random parameters.
 
 On a serpentine 8x8 maze, the quantum+evolved agent found the goal in 24% of runs. Every other condition achieved 0%. The result was striking: a categorical separation between quantum-adaptive and everything else.
 
@@ -32,7 +32,7 @@ We rebuilt the simulation framework around four principles:
 
 ### The Scaling Search
 
-We tested whether quantum navigational advantage scales with problem complexity by sweeping maze and latent dimensions: 2D mazes with 6D latent dynamics, 3D mazes with 7D latent dynamics, and 4D mazes with 8D latent dynamics. Each uses barrier hyperplanes with random gaps, generating mazes that are always solvable but structurally varied.
+We tested whether quantum navigational advantage scales with problem complexity. The key variables are the physical maze (how many dimensions the agent moves through) and the number of hidden dials — internal states where interference can operate. We swept both: 2D mazes with 6 internal dimensions, 3D mazes with 7, and 4D mazes with 8. Each uses barrier hyperplanes with random gaps, generating mazes that are always solvable but structurally varied.
 
 The scaling was not monotonic. 2D/6D showed negligible advantage. 3D/7D showed a moderate positive signal. 4D/8D was weak and inconsistent, likely because the 4D search space exceeds what the optimizer can explore within the training budget.
 
