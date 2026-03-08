@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Split book_draft_v2.md into individual chapter files in book_v2/chapters/.
+"""Split book_v2.md into individual chapter files in book_v2/chapters/.
 
 Delimiter-based: splits on heading patterns, not hardcoded line numbers.
 """
@@ -8,7 +8,7 @@ import os
 import re
 
 REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-MASTER = os.path.join(REPO_ROOT, "book_draft_v2.md")
+MASTER = os.path.join(REPO_ROOT, "book_v2.md")
 OUTDIR = os.path.join(REPO_ROOT, "book_v2", "chapters")
 
 # Each entry: (filename, delimiter_pattern)
