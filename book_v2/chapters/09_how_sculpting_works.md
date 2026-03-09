@@ -12,7 +12,7 @@ At the critical point, small perturbations produce large effects. A quantum bias
 
 We tested this computationally. A 0.2% microscale bias, much smaller than the 12.7% radical pair yield difference, produced a 10.2% network-level effect at the critical point (sigma = 1.0). That is a 51-fold amplification from molecule to network (10.2% output from 0.2% input). The more conservative comparison is critical versus subcritical: 2.8-fold, meaning the critical point specifically contributes nearly three times the amplification of a subcritical system. The amplification is superlinear, peaking specifically at the critical point and falling off on both sides. Below criticality, the bias is absorbed by rigid dynamics. Above criticality, it is overwhelmed by chaos. At the critical point, it cascades [B].
 
-The brain is precisely the kind of system where tiny systematic biases cascade into macroscopic behavioral differences. There is a physical reason consciousness requires criticality, and this is it.
+The brain is precisely the kind of system where tiny systematic biases cascade into macroscopic behavioral differences. There is a physical reason consciousness requires criticality, and this is it. What happens when something knocks the brain off that point is the subject of Chapter 11.
 
 ### The Transduction Chain: Do the Numbers Work?
 

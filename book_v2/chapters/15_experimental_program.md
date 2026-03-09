@@ -36,6 +36,8 @@ Suppose every one of these succeeds. The chemistry is real, the entanglement is 
 
 **B4. Within-state conscious access dissociation.** Disrupt radical pair chemistry and test whether *conscious* access to stimuli is selectively degraded while basic stimulus discrimination stays intact. This would show the mechanism specifically supports consciousness rather than neural function in general [B].
 
+**B5. The psychedelic bridge-failure test.** Administer quantum cognition tasks (QQ equality, order effects) during dose-titrated psychedelic sessions with concurrent EEG criticality measures (DFA exponents, PCI). NFT predicts a split: classical signal diversity increases with dose while quantum probability signatures weaken specifically at ego dissolution, because the criticality-dependent amplification bridge fails (Chapter 11). Carhart-Harris's entropic brain framework predicts entropy increases across the board. Preliminary support: a 2026 DMT study shows ego dissolution correlating with subcritical shift (DFA down, r ≈ −0.61), and psilocybin increases spontaneous signal diversity while leaving perturbational complexity unchanged. No quantum cognition tasks have been administered during psychedelic states. This is feasible with current methods [B].
+
 ### Predictions Already Tested
 
 Here is the ledger so far.

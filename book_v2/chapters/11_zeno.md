@@ -46,4 +46,22 @@ The balance between Zeno and anti-Zeno is where things get interesting for consc
 
 Navigation at the critical balance between these regimes has maximal flexibility, stable enough for coherent experience and dynamic enough for adaptive response. The phenomenology of consciousness, the felt difference between focused concentration and relaxed exploration, maps onto the physics of measurement-dependent dynamics.
 
+### When the Balance Breaks
+
+Chapter 9 ended with a question: what happens when something knocks the brain off the critical point? Psychedelics provide a natural experiment.
+
+People who have experienced ego death describe it consistently. The boundaries of the self dissolve. The sense of being a separate observer watching the world collapses into something undifferentiated. The experience is not unconsciousness. It is consciousness without a navigator.
+
+If the Zeno lock maintains the self, and the Zeno/anti-Zeno balance depends on criticality, then disrupting the critical point should dissolve the self. Not by producing chaos, but by removing the amplification bridge that connects quantum dynamics to neural-scale trajectory coherence. The radical pairs keep firing. The signal just can't get upstairs.
+
+Recent data supports this, and the direction is surprising. A 2026 EEG study of DMT measured long-range temporal correlations (a direct criticality marker) and found that DMT drives them *down*, away from criticality. The shift correlated with a self-dissolution measure at r ≈ −0.61 in theta and −0.56 in alpha. The direction was not supercritical, not toward chaos. It was toward subcritical, toward rigidity. The brain didn't fly apart. It lost its balance.
+
+A 2025 study of high-dose 5-MeO-DMT found something complementary at the extreme end. Broadband dynamics became more stable and low-dimensional on a steepened energy landscape. Traveling wave organization, the coordinated neural rhythms that structure normal experience, dismantled. At the highest doses, where ego dissolution is most complete, the brain settled into something simpler and more rigid, not richer and more complex.
+
+The most telling result may be the decoupling. Under psilocybin, spontaneous signal diversity (Lempel-Ziv complexity) increases, exactly as Carhart-Harris's entropic brain hypothesis predicts. But perturbational complexity (PCI, the measure of how the brain responds to a TMS pulse) does not change. Signal diversity up, causal integration unchanged. The brain is noisier but no better at propagating a perturbation across its network. That is what bridge failure looks like before you measure a single quantum marker.
+
+NFT makes a discriminative prediction here. Carhart-Harris would predict entropy increases across the board during ego dissolution, classical and quantum signatures alike. NFT predicts a split: classical signal diversity goes up (the hardware is noisier), but quantum-specific signatures, the probability sculpting markers from Chapter 16's diagnostic panel, specifically Markers 3 and 5, should weaken or disappear as the amplification bridge fails. The substrate is still there. The radical pairs are still firing. The critical point that connects them to neural-scale dynamics is gone.
+
+No one has tested this yet. No study has measured quantum cognition signatures (QQ equality, order effects, conjunction fallacy violations) during psychedelic states at any dose. The experiment is feasible: a within-subject, dose-titrated design with concurrent EEG criticality measures and a quantum cognition task battery administered at plateau. The prediction is specific enough to fail [B].
+
 No simulation backs this chapter. No data. What the Zeno/anti-Zeno framework provides is a prediction: specific, testable relationships between measurement rate, attention state, and navigational flexibility. If measurement rate correlates with attentional state in the direction this chapter describes, the framework gains weight. If it does not, the framework loses it [B].

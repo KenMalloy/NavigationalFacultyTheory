@@ -507,7 +507,7 @@ At the critical point, small perturbations produce large effects. A quantum bias
 
 We tested this computationally. A 0.2% microscale bias, much smaller than the 12.7% radical pair yield difference, produced a 10.2% network-level effect at the critical point (sigma = 1.0). That is a 51-fold amplification from molecule to network (10.2% output from 0.2% input). The more conservative comparison is critical versus subcritical: 2.8-fold, meaning the critical point specifically contributes nearly three times the amplification of a subcritical system. The amplification is superlinear, peaking specifically at the critical point and falling off on both sides. Below criticality, the bias is absorbed by rigid dynamics. Above criticality, it is overwhelmed by chaos. At the critical point, it cascades [B].
 
-The brain is precisely the kind of system where tiny systematic biases cascade into macroscopic behavioral differences. There is a physical reason consciousness requires criticality, and this is it.
+The brain is precisely the kind of system where tiny systematic biases cascade into macroscopic behavioral differences. There is a physical reason consciousness requires criticality, and this is it. What happens when something knocks the brain off that point is the subject of Chapter 11.
 
 ### The Transduction Chain: Do the Numbers Work?
 
@@ -734,6 +734,24 @@ The balance between Zeno and anti-Zeno is where things get interesting for consc
 
 Navigation at the critical balance between these regimes has maximal flexibility, stable enough for coherent experience and dynamic enough for adaptive response. The phenomenology of consciousness, the felt difference between focused concentration and relaxed exploration, maps onto the physics of measurement-dependent dynamics.
 
+### When the Balance Breaks
+
+Chapter 9 ended with a question: what happens when something knocks the brain off the critical point? Psychedelics provide a natural experiment.
+
+People who have experienced ego death describe it consistently. The boundaries of the self dissolve. The sense of being a separate observer watching the world collapses into something undifferentiated. The experience is not unconsciousness. It is consciousness without a navigator.
+
+If the Zeno lock maintains the self, and the Zeno/anti-Zeno balance depends on criticality, then disrupting the critical point should dissolve the self. Not by producing chaos, but by removing the amplification bridge that connects quantum dynamics to neural-scale trajectory coherence. The radical pairs keep firing. The signal just can't get upstairs.
+
+Recent data supports this, and the direction is surprising. A 2026 EEG study of DMT measured long-range temporal correlations (a direct criticality marker) and found that DMT drives them *down*, away from criticality. The shift correlated with a self-dissolution measure at r ≈ −0.61 in theta and −0.56 in alpha. The direction was not supercritical, not toward chaos. It was toward subcritical, toward rigidity. The brain didn't fly apart. It lost its balance.
+
+A 2025 study of high-dose 5-MeO-DMT found something complementary at the extreme end. Broadband dynamics became more stable and low-dimensional on a steepened energy landscape. Traveling wave organization, the coordinated neural rhythms that structure normal experience, dismantled. At the highest doses, where ego dissolution is most complete, the brain settled into something simpler and more rigid, not richer and more complex.
+
+The most telling result may be the decoupling. Under psilocybin, spontaneous signal diversity (Lempel-Ziv complexity) increases, exactly as Carhart-Harris's entropic brain hypothesis predicts. But perturbational complexity (PCI, the measure of how the brain responds to a TMS pulse) does not change. Signal diversity up, causal integration unchanged. The brain is noisier but no better at propagating a perturbation across its network. That is what bridge failure looks like before you measure a single quantum marker.
+
+NFT makes a discriminative prediction here. Carhart-Harris would predict entropy increases across the board during ego dissolution, classical and quantum signatures alike. NFT predicts a split: classical signal diversity goes up (the hardware is noisier), but quantum-specific signatures, the probability sculpting markers from Chapter 16's diagnostic panel, specifically Markers 3 and 5, should weaken or disappear as the amplification bridge fails. The substrate is still there. The radical pairs are still firing. The critical point that connects them to neural-scale dynamics is gone.
+
+No one has tested this yet. No study has measured quantum cognition signatures (QQ equality, order effects, conjunction fallacy violations) during psychedelic states at any dose. The experiment is feasible: a within-subject, dose-titrated design with concurrent EEG criticality measures and a quantum cognition task battery administered at plateau. The prediction is specific enough to fail [B].
+
 No simulation backs this chapter. No data. What the Zeno/anti-Zeno framework provides is a prediction: specific, testable relationships between measurement rate, attention state, and navigational flexibility. If measurement rate correlates with attentional state in the direction this chapter describes, the framework gains weight. If it does not, the framework loses it [B].
 
 ---
@@ -931,6 +949,8 @@ Suppose every one of these succeeds. The chemistry is real, the entanglement is 
 **B3. Isotope effects on consciousness specifically.** Swap isotopes at radical pair sites and look for changes not just in neural function generally, but in consciousness-level markers (PCI, conscious access thresholds) specifically. The distinction matters: an isotope effect on synaptic transmission is interesting but proves nothing about consciousness. An isotope effect that selectively impairs conscious access while leaving unconscious processing intact would be genuinely discriminative [B].
 
 **B4. Within-state conscious access dissociation.** Disrupt radical pair chemistry and test whether *conscious* access to stimuli is selectively degraded while basic stimulus discrimination stays intact. This would show the mechanism specifically supports consciousness rather than neural function in general [B].
+
+**B5. The psychedelic bridge-failure test.** Administer quantum cognition tasks (QQ equality, order effects) during dose-titrated psychedelic sessions with concurrent EEG criticality measures (DFA exponents, PCI). NFT predicts a split: classical signal diversity increases with dose while quantum probability signatures weaken specifically at ego dissolution, because the criticality-dependent amplification bridge fails (Chapter 11). Carhart-Harris's entropic brain framework predicts entropy increases across the board. Preliminary support: a 2026 DMT study shows ego dissolution correlating with subcritical shift (DFA down, r ≈ −0.61), and psilocybin increases spontaneous signal diversity while leaving perturbational complexity unchanged. No quantum cognition tasks have been administered during psychedelic states. This is feasible with current methods [B].
 
 ### Predictions Already Tested
 
