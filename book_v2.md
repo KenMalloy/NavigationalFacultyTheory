@@ -194,8 +194,6 @@ Each level can be tested independently, and each can fail without bringing the o
 
 ### The Relationship to Active Inference
 
-Level A's relationship to existing work is worth stating clearly.
-
 Karl Friston's Free Energy Principle and its active inference extension frame consciousness as minimizing surprise: continuously generating models of the world, updating them when predictions fail. Action selection decomposes into epistemic terms (reduce uncertainty) and instrumental terms (fulfill preferences).
 
 Level A *is* active inference, described from the outside. "Consciousness navigates possibility space" and "consciousness minimizes expected free energy" are two descriptions of the same process. One from the navigational perspective, one from the information-theoretic perspective. This is shared ground, not contested territory.
@@ -318,7 +316,7 @@ Two philosophical contributions sharpen the connection between entropy and consc
 
 Jha argues that consciousness is a natural consequence of how complex systems manage energy, organize information, and maintain temporary order against entropic dissolution. Hemmo and Shenker argue that the psychological arrow of time, the felt sense that time flows from past to future, is thermodynamic asymmetry experienced from within. The two accounts are complementary. Jha explains why consciousness is entangled with entropy; Hemmo and Shenker explain why entropy gives consciousness its temporal direction.
 
-NFT synthesizes both: consciousness navigates along the entropy gradient, and the arrow of time is the direction of navigation [A].
+NFT synthesizes both: consciousness navigates along the entropy gradient, and the arrow of time is the direction of navigation. This is the directionality that DeLancey's complexity framework (Chapter 2) cannot provide [A].
 
 ### Constrained Navigation
 
@@ -413,9 +411,9 @@ Not all quantum effects create this wedge. Some quantum mechanics is, surprising
 
 ### What NFT Requires vs. What Orch OR Claims
 
-This is a good place to be precise about what NFT actually needs from the quantum substrate, because it is much less than what Orch OR claims.
+NFT requires much less from the quantum substrate than Orch OR claims.
 
-Orch OR commits to objective reduction (gravitational self-collapse of superpositions), millisecond-scale coherence windows, and quantum computation within microtubules. Nobody has confirmed the first, the second asks quantum effects to outlast (by a factor of a billion) anything measured in warm tissue, and the third has no experimental support. It's a parlay. NFT inherits none of these commitments. What NFT requires is narrower: *continuous generation of genuine indeterminacy* at cognition-relevant intervals via radical pair spin states, plus a feedback mechanism by which measurement outcomes reshape the measurement basis. Much simplier.
+Orch OR commits to objective reduction (gravitational self-collapse of superpositions), millisecond-scale coherence windows, and quantum computation within microtubules. Nobody has confirmed the first, the second asks quantum effects to outlast (by a factor of a billion) anything measured in warm tissue, and the third has no experimental support. It's a parlay. NFT inherits none of these commitments. What NFT requires is narrower: *continuous generation of genuine indeterminacy* at cognition-relevant intervals via radical pair spin states, plus a feedback mechanism by which measurement outcomes reshape the measurement basis. Much simpler.
 
 NFT is parasitic on the weakest component of Orch OR, the mere existence of quantum indeterminacy in the biological substrate, not on its most controversial claims. This makes NFT more empirically resilient while preserving the core commitment that separates both from classical accounts [B].
 
@@ -429,7 +427,7 @@ This chapter tells the story of a hypothesis that failed, what replaced it, and 
 
 ### The Excitonic Hypothesis
 
-Every molecule in your body is vibrating. At thirty-seven degrees Celsius, thermal energy shakes proteins, rattles water, jostles every bond. That jostling, on a quantum scale, is enough to tear the whole system apart. For decades, the assumption was simple: biology is too warm and too wet for quantum coherence. Photosynthesis complicated things. Plants and bacteria move energy through protein scaffolds using quantum coherence, and the scaffolds are structured, membrane-shielded, and relatively quiet. Finding quantum effects there still surprised everyone, but the environment at least gave coherence a real glimmmer of hope. The brain is not a chloroplast. It runs hotter, soaks in saltwater, fires electrical signals, and burns through metabolic fuel at a rate that would kill a plant cell. If quantum coherence barely survives in a photosynthetic membrane, asking it to operate in a neuron is asking an ice cube to survive a foundry. 
+Every molecule in your body is vibrating. At thirty-seven degrees Celsius, thermal energy shakes proteins, rattles water, jostles every bond. That jostling, on a quantum scale, is enough to tear the whole system apart. For decades, the assumption was simple: biology is too warm and too wet for quantum coherence. Photosynthesis complicated things. Plants and bacteria move energy through protein scaffolds using quantum coherence, and the scaffolds are structured, membrane-shielded, and relatively quiet. Finding quantum effects there still surprised everyone, but the environment at least gave coherence a real glimmer of hope. The brain is not a chloroplast. It runs hotter, soaks in saltwater, fires electrical signals, and burns through metabolic fuel at a rate that would kill a plant cell. If quantum coherence barely survives in a photosynthetic membrane, asking it to operate in a neuron is asking an ice cube to survive a foundry. 
 
 The original version of Level B proposed that consciousness exploited Environment-Assisted Quantum Transport (ENAQT) in microtubule tryptophan networks. The argument was seductive. In photosynthesis, the FMO protein complex achieves optimal energy transport at intermediate noise. Microtubules contain vast tryptophan networks with similar architecture. And ENAQT would explain why decoherence is a feature rather than a bug.
 
@@ -525,7 +523,7 @@ The signal falls about 10 times short. This is a problem. But it is not a fatal 
 
 **Second, and more important, the gap reveals the mechanism's nature.** The quantum channel is not always on. It is gated by metabolic activity.
 
-Steady-state cytosolic O₂⁻ sits around 0.1 nM, held there by superoxide dismutase operating near the diffusion limit (k ≈ 1.6 × 10⁹ M⁻¹s⁻¹). At that baseline, the quantum channel is effectively silent. But neurons are not steady-state machines. During intense activity, bursts of reactive oxygen push local O₂⁻ into the 10–100 nM range within the microdomain between mitochondria and microtubules, from mitochondrial "superoxide flashes" lasting roughly 10 seconds to receptor-driven enzyme activation (NOX2, xanthine oxidase) sustaining elevated levels for minutes. At 10 nM, the signal reaches the noise floor. At 100 nM, the quantum channel opens wide.
+Under resting conditions, the cell keeps reactive oxygen nearly at zero. Superoxide dismutase, one of the fastest enzymes in biology, scavenges O₂⁻ almost as fast as it's produced. At that baseline, the quantum channel is effectively silent. But neurons are not steady-state machines. During intense activity, bursts of reactive oxygen push local O₂⁻ into the 10–100 nM range within the microdomain between mitochondria and microtubules, from mitochondrial "superoxide flashes" lasting roughly 10 seconds to receptor-driven enzyme activation (NOX2, xanthine oxidase) sustaining elevated levels for minutes. At 10 nM, the signal reaches the noise floor. At 100 nM, the quantum channel opens wide.
 
 The duty cycle matters. During ordinary cortical processing, local O₂⁻ spends well under 1% of the time above the 10 nM threshold. During high-demand episodes, intense computation, metabolic stress, burst firing that drives mitochondria hard, that fraction rises to 1–10% of active time.
 
@@ -597,13 +595,13 @@ The honest framing is that adaptive measurement basis selection is a *research p
 
 ## Chapter 10: The Navigation Benchmark
 
-Theory proposes. Simulation tests. And then the simulation must survive scrutiny. This chapter tells the story of a computational demonstration that began with a dramatic headline, failed to survive fair testing, was rebuilt from scratch, and produced a more honest result that is, in some ways, more interesting than the one it replaced.
+Theory proposes. Simulation tests. And then the simulation must survive scrutiny. This chapter tells the story of a computational demonstration that began with a dramatic headline, failed to survive fair testing, was rebuilt from scratch, and produced a more honest result.
 
 ### The First Result
 
 The original simulation gave agents a 2D maze to walk through and a 6D internal state to think with — six hidden dials, like a control panel in the agent's head, that don't correspond to any direction in the maze. The quantum agent could use interference between these internal states to bias its movement. The classical agent could only spin the dials randomly. Formally, the internal state space was a six-dimensional hypercube (64 vertices), and the agent's behavior was projected into the two-dimensional maze. A genetic algorithm evolved parameters governing the feedback loop and movement weights. Four conditions were compared: quantum dynamics with adaptive measurement and evolved parameters, quantum with fixed measurement basis, classical stochastic dynamics with the same evolved parameters, and quantum with random parameters.
 
-On a serpentine 8x8 maze, the quantum+evolved agent found the goal in 24% of runs. Every other condition achieved 0%. The result was striking: a categorical separation between quantum-adaptive and everything else.
+On a serpentine 8x8 maze, the quantum+evolved agent found the goal in 24% of runs. Every other condition achieved 0%. A categorical separation between quantum-adaptive and everything else.
 
 But the result had a methodological flaw. The genetic algorithm optimized parameters for the quantum+adaptive condition, and those same parameters were handed to the controls. The controls were running parameters tuned for a different dynamical regime. And no competent classical strategy (shortest-path planning, wall-following) was tested. The "classical" comparator was not classical intelligence. It was quantum-optimized parameters running without quantum dynamics.
 
@@ -641,7 +639,7 @@ On harder 3D mazes (side length 9, 6 barrier hyperplanes, 2 gaps per barrier, av
 
 In a 10-maze paired run with 100 evaluation trials per maze, the quantum-adaptive controller won on 9 mazes, tied on 1 (an exact tie: 0 advantage, 100 tied trials out of 100), and lost on none. The normalized advantage was +13.0% of path length with a standard error of 4.6%. The per-trial win rate was 52.9%: on any given run, the quantum agent barely edges out the classical agent. But the edge is systematic: it appears on 9 of 10 independent mazes.
 
-We were excited. A 90% maze win rate and +13% advantage looked like a clear signal. The confirmatory run brought the numbers back to earth, which is what confirmatory runs are for.
+A 90% maze win rate and +13% advantage looked like a clear signal. The confirmatory run brought the numbers back to earth, which is what confirmatory runs are for.
 
 Across 90 mazes (30 per difficulty bin), with the training budget locked and no re-evolution after seeing which mazes favored which controller, the results were:
 
@@ -656,7 +654,7 @@ Stratified by maze difficulty (detour ratio), the advantage trends upward: +2.68
 
 ### The Compass Pattern
 
-The most important feature of these results is not the magnitude of the advantage but its structure.
+The advantage is small. Its structure is what matters.
 
 A 3.3% survival lift is small on any single decision. A 53% trial win rate is barely above chance. If the question is "does quantum dramatically outperform classical on this maze?" the answer is no. But that is not the question evolution asks.
 
@@ -680,11 +678,11 @@ The simulation does not prove that the brain implements this mechanism. It does 
 
 What the simulation provides is a fair test of the core claim: that evolution, given quantum resources and adaptive measurement, can build controllers that navigate better than evolution without quantum resources, under the same constraints. Both controllers received the same optimization budget, fixed in advance. Neither was re-evolved after results were inspected. The 90-maze confirmatory set was run once. The answer, on this benchmark, is yes. Whether the same holds in biological tissue is the question the experimental program of Chapter 15 is designed to answer. The complete benchmark specification, including maze generation, controller architectures, optimization protocols, and statistical analysis, is reported in [Malloy, "Quantum Navigational Advantage in Evolved 3D Maze Controllers," forthcoming] [B].
 
-**Where we are.** Take a breath. The hardest technical stretch is behind you.
+**Where we are.** The hardest technical stretch is behind you.
 
-Here is what we have established so far. Quantum and classical probability are categorically different: quantum systems sculpt interference patterns, classical systems roll weighted dice. The original excitonic mechanism failed at body temperature, but radical pair spin coherence works, with a 12.7% yield difference persisting for microseconds. The transduction chain from molecule to neuron is tight but viable, gated by superoxide concentration. A computational benchmark, rebuilt from scratch after its first version failed fair testing, shows that evolution with quantum resources builds better navigators than evolution without them. The advantage is modest (+3.3%) but systematic, exactly the kind of small consistent bias that natural selection exploits.
+Quantum and classical probability are categorically different: quantum systems sculpt interference patterns, classical systems roll weighted dice. The original excitonic mechanism failed at body temperature, but radical pair spin coherence works, with a 12.7% yield difference persisting for microseconds. The transduction chain from molecule to neuron is tight but viable, gated by superoxide concentration. A computational benchmark, rebuilt from scratch after its first version failed fair testing, shows that evolution with quantum resources builds better navigators than evolution without them. The advantage is modest (+3.3%) but systematic, exactly the kind of small consistent bias that natural selection exploits.
 
-The mechanism is on the table. Now we ask: what does it explain about the *experience* of consciousness? Why does focus feel different from mind-wandering? Why does pain feel different from pleasure? How does distributed neural activity become unified experience? The next three chapters tackle these questions, and they connect physics to phenomenology in ways that are, I think, genuinely surprising.
+The mechanism is on the table. Now we ask: what does it explain about the *experience* of consciousness? Why does focus feel different from mind-wandering? Why does pain feel different from pleasure? How does distributed neural activity become unified experience? The next three chapters tackle these questions, and they connect physics to phenomenology.
 
 ---
 
@@ -752,7 +750,7 @@ NFT makes a discriminative prediction here. Carhart-Harris would predict entropy
 
 No one has tested this yet. No study has measured quantum cognition signatures (QQ equality, order effects, conjunction fallacy violations) during psychedelic states at any dose. The experiment is feasible: a within-subject, dose-titrated design with concurrent EEG criticality measures and a quantum cognition task battery administered at plateau. The prediction is specific enough to fail [B].
 
-No simulation backs this chapter. No data. What the Zeno/anti-Zeno framework provides is a prediction: specific, testable relationships between measurement rate, attention state, and navigational flexibility. If measurement rate correlates with attentional state in the direction this chapter describes, the framework gains weight. If it does not, the framework loses it [B].
+This chapter now has a minimal simulation behind it, but no direct data. The simulation shows only that, in the toy microtubule environment model, measurement-rate-dependent Zeno and anti-Zeno regimes exist and a crossover can be estimated. The phenomenological mapping remains a prediction: specific, testable relationships between measurement rate, attention state, and navigational flexibility. If measurement rate correlates with attentional state in the direction this chapter describes, the framework gains weight. If it does not, the framework loses it [B].
 
 ---
 
@@ -780,9 +778,9 @@ This back-action is not a nuisance to be engineered away. It is the physical ori
 
 ### The Skokowski Connection
 
-This proposal has classical precedent. Skokowski (2026) argues that qualia are the physical alterations of biological detectors during detection, that the mechanism enabling detection and the mechanism producing experience are the same mechanism. A photoreceptor is not merely *affected by* light. It is *changed by* it. Rhodopsin isomerization IS the detection event.
+This proposal has classical precedent. Skokowski (2026) argues that qualia are the physical alterations of biological detectors during detection, that the mechanism enabling detection and the mechanism producing experience are the same mechanism. Light does not pass through a photoreceptor and leave it untouched. It *changes* the receptor. Rhodopsin isomerization IS the detection event.
 
-The quantum extension is that consciousness does not merely register the navigation of possibility space. It is the physical signature of a quantum measurement apparatus being changed by what it navigates [B].
+The quantum extension: consciousness is the physical signature of a quantum measurement apparatus being changed by what it navigates [B].
 
 ### Necessary but Not Sufficient
 
@@ -792,7 +790,7 @@ NFT's answer is that back-action is necessary but not sufficient for phenomenal 
 
 ### The Scale-Bridging Problem
 
-We must be transparent about the most significant gap in this account. Quantum back-action operates at the radical pair level (microsecond timescales, picomechanical energy scales). Phenomenal experience operates at the neural timescale (milliseconds, millimeters, integrated across millions of microtubules).
+The most significant gap in this account is scale. Quantum back-action operates at the radical pair level (microsecond timescales, picomechanical energy scales). Phenomenal experience operates at the neural timescale (milliseconds, millimeters, integrated across millions of microtubules).
 
 The account requires a coarse-graining mechanism that aggregates distributed picomechanical perturbations across the microtubule network into integrated conformational state changes that would constitute a unified quale. This cascade (from single radical pair back-action to network-level conformational pattern to phenomenally integrated experience) is not formalized in this book. It represents the most important open theoretical problem for the back-action thesis.
 
@@ -806,7 +804,7 @@ At the critical point, a perturbation that would remain local in a subcritical s
 
 The timescale gap closes naturally. Each step in a criticality-mediated avalanche involves conformational relaxation on the nanosecond-to-microsecond timescale. A cascade spanning hundreds of neurons takes hundreds of sequential steps — a 300-step avalanche spans roughly 0.3 milliseconds, approaching the neural integration window. Multiple concurrent avalanches, triggered by the roughly 10 radical pair events per 5 ms window (Chapter 9), overlap in time, producing a sustained conformational pattern at the millisecond timescale.
 
-The mechanism is not proven — the simulation uses an idealized branching network, not a biophysically realistic microtubule lattice — but it makes a testable prediction: the richness of a quale should depend on proximity to criticality. Subcritical brains would produce fragmented experience (local avalanches), supercritical brains would produce chaotic experience (unstructured avalanches). This maps onto clinical observations: disorders of consciousness are associated with departures from criticality in both directions.
+The mechanism is not proven — the simulation uses an idealized branching network, not a biophysically realistic microtubule lattice — but it makes a testable prediction: the richness of a quale should depend on proximity to criticality. This is the same pattern again: too little criticality fragments, too much overwhelms, the mechanism lives at the balance point. Subcritical brains would produce fragmented experience (local avalanches), supercritical brains would produce chaotic experience (unstructured avalanches). This maps onto clinical observations: disorders of consciousness are associated with departures from criticality in both directions.
 
 **Candidate 3: Dark-state manifold bridging.** Certain quantum states ("dark states") are shielded from their environment and decay much more slowly than expected. If navigational dynamics preferentially occupy these long-lived states, the effective timescale of back-action may be longer than the individual radical pair timescale. This would directly bridge toward the neural timescale without requiring a cascade mechanism. This candidate is the most speculative and the least developed.
 
@@ -816,7 +814,7 @@ The scale-bridging problem remains open, but it is no longer a bare promissory n
 
 The back-action thesis generates specific predictions:
 
-**Intensity correlates with coupling strength.** Stronger coupling to the quantum substrate should produce more vivid qualia; weaker coupling should produce dimmer experience. This maps onto the phenomenology of attention: focused attention (strong measurement coupling) produces vivid percepts; peripheral awareness (weak coupling) produces dim ones.
+**Intensity correlates with coupling strength.** Stronger coupling to the quantum substrate should produce more vivid qualia; weaker coupling should produce dimmer experience. This is the metabolic gating of Chapter 9 seen from the phenomenological side: active neurons open the quantum channel, and what that opening feels like from the inside is vividness. Focused attention (strong measurement coupling) produces vivid percepts; peripheral awareness (weak coupling) produces dim ones.
 
 **Character reflects measurement type.** Different observables produce different apparatus displacements. Different regions of possibility space produce different conformational perturbation patterns in the microtubule network. Pain feels different from pleasure because the back-action patterns are structurally different.
 
@@ -937,6 +935,8 @@ These predictions would establish that radical pair spin dynamics operate in mic
 **A3. Anti-Zeno dynamics.** The microtubule substrate should show signs that measurement *accelerates* rather than freezes its quantum evolution (the anti-Zeno effect, Chapter 11), detectable through the spectral properties of the radical pair environment [B].
 
 **A4. Isotope effects on neural function.** Swap in isotopes with different nuclear spins (extending the Zadeh-Haghighi finding) and microtubule-dependent neural processes should systematically change. This tests the substrate, not consciousness directly [B].
+
+**A5. The FtsZ-to-tubulin structural prediction.** The features evolution added when repurposing FtsZ into tubulin (Chapter 6) should be precisely the features relevant to quantum indeterminacy generation, aromatic residue networks, radical pair sites, lattice cooperativity, rather than mechanical force generation. Testable by comparative structural biology [B].
 
 Suppose every one of these succeeds. The chemistry is real, the entanglement is measurable, the dynamics are right. You still would not know whether any of it matters for consciousness. The next four predictions cross that bridge.
 
@@ -1060,6 +1060,10 @@ The critical test is Level 2 versus Level 3. The fact that both are now under ac
 
 This is a single experiment with a clear outcome. It requires hardware that does not yet exist in the required configuration, but its components (quantum spiking neurons, neuromorphic criticality tuning, the diagnostic measures) are all independently under development. NFT's survival depends on the result [B].
 
+### The Recurring Pattern
+
+A structural observation before we move on. The same shape keeps appearing across the theory: too little does not help, too much does not help, the mechanism lives at an intermediate optimum. ENAQT in photosynthesis (Chapter 8). The simulation's non-monotonic scaling with latent dimensionality (Chapter 10). The Zeno/anti-Zeno balance in attention dynamics (Chapter 11). Quale richness and criticality (Chapter 12). This is not a coincidence. It is the fingerprint of a system that depends on the balance between quantum coherence and environmental noise. Every time the theory makes contact with a measurable quantity, the same intermediate optimum appears. If a future measurement produces a monotonic relationship where the theory predicts a peak, the theory is in trouble [B].
+
 ### For Physics
 
 The observer problem in quantum mechanics may be a consciousness problem, not in the vague sense that "consciousness collapses the wavefunction," but in the precise sense that consciousness is the physical faculty that navigates quantum possibility space, with collapse being what navigation looks like from the third-person perspective.
@@ -1134,9 +1138,9 @@ You are a navigator.
 
 Not metaphorically. Not as a way of talking about cognition. Physically.
 
-Your microtubule networks, millions of tubulin dimers per neuron, host radical pair reactions whose spin coherence persists for microseconds at body temperature. They couple you to the landscape of what could be. Your consciousness is the process of steering through that landscape, selecting futures from the genuine indeterminacy of the quantum world. The stability of your experience — the persistence of objects, the continuity of the room around you — is the Zeno effect, continuous observation holding a trajectory in place. What things feel like, the grain and texture of it, is the back-action of the measurement on the measurer. And the arrow of your time, the felt sense that this moment gives way to the next, points along the entropy gradient.
+Your microtubule networks, millions of tubulin dimers per neuron, host radical pair reactions whose spin coherence persists for microseconds at body temperature. They couple you to the landscape of what could be. Your consciousness is the process of steering through that landscape, selecting futures from the genuine indeterminacy of the quantum world. The stability of your experience, the persistence of objects, the continuity of the room around you, is the Zeno effect: continuous observation holding a trajectory in place. Disrupt the critical point and the trajectory dissolves. Restore it and you return. What things feel like, the grain and texture of it, is the back-action of the measurement on the measurer. And the arrow of your time, the felt sense that this moment gives way to the next, points along the entropy gradient.
 
-The existing theories of consciousness are not wrong, they are partial. Integration makes navigation coherent. Broadcasting is how the result reaches the rest of the organism. Quantum substrate coupling, if this theory is right, is what makes it real.
+The existing theories of consciousness are partial. Integration makes navigation coherent. Broadcasting is how the result reaches the rest of the organism. Quantum substrate coupling, if this theory is right, is what makes it real.
 
 This book set out to test a quantum mechanism for consciousness and found that its first hypothesis was wrong. Excitonic transport through tryptophan networks does not produce meaningful quantum advantage at body temperature. The theory could have died there. Instead, it found a different mechanism, radical pair spin coherence, that operates at the right timescale and has direct experimental support. It found that its first computational demonstration did not survive fair classical baselines, rebuilt the benchmark from scratch, and found a modest but systematic quantum navigational advantage across 90 mazes with a confidence interval excluding zero. It also found that one of its topological predictions was not supported by data.
 
@@ -1571,6 +1575,8 @@ Lori, N., & Machado, J. (2026). Gridography tractography reveals communication b
 
 Maeda, K., et al. (2012). Chemical compass model of avian magnetoreception. *Nature, 453*, 387–390.
 
+Mediano, P. A. M., et al. (2023). Effects of psilocybin on brain complexity and consciousness: a TMS-EEG study. *bioRxiv*.
+
 Nakagaki, T., Yamada, H., & Toth, A. (2000). Maze-solving by an amoeboid organism. *Nature, 407*, 470.
 
 OpenNeuro Dataset DS005620. Propofol sedation EEG, 21 subjects, BIDS format.
@@ -1579,7 +1585,17 @@ Saigusa, T., et al. (2008). Amoebae anticipate periodic events. *Physical Review
 
 Santoro, A., et al. (2024). Higher-order connectomics of human brain function reveals local topological signatures. *Nature Communications, 15*, 10244.
 
+Pallavicini, C., et al. (2023). Neural and subjective effects of inhaled N,N-dimethyltryptamine in natural settings. *Journal of Psychopharmacology, 37*(7), 689–702.
+
+Ruffini, G., et al. (2025). Time-varying whole-brain modelling of DMT reveals critical dynamics at peak subjective effects. *bioRxiv*.
+
 Schartner, M., et al. (2015). Complexity of multi-dimensional spontaneous EEG decreases during propofol induced general anaesthesia. *PLOS ONE, 10*(8), e0133532.
+
+Timmermann, C., et al. (2023). Human brain effects of DMT assessed via EEG-fMRI. *PNAS, 120*(13), e2218949120.
+
+Timmermann, C., et al. (2026). DMT reduces long-range temporal correlations in EEG: criticality shifts correlate with ego dissolution. *Psychopharmacology*.
+
+Uthaug, M. V., et al. (2025). High-dose 5-MeO-DMT: EEG dynamics and ego dissolution. *Cell Reports, 44*(3).
 
 Tero, A., et al. (2010). Rules for biologically inspired adaptive network design. *Science, 327*(5964), 439–442.
 

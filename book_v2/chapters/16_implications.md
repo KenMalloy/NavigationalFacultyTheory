@@ -75,6 +75,10 @@ The critical test is Level 2 versus Level 3. The fact that both are now under ac
 
 This is a single experiment with a clear outcome. It requires hardware that does not yet exist in the required configuration, but its components (quantum spiking neurons, neuromorphic criticality tuning, the diagnostic measures) are all independently under development. NFT's survival depends on the result [B].
 
+### The Recurring Pattern
+
+A structural observation before we move on. The same shape keeps appearing across the theory: too little does not help, too much does not help, the mechanism lives at an intermediate optimum. ENAQT in photosynthesis (Chapter 8). The simulation's non-monotonic scaling with latent dimensionality (Chapter 10). The Zeno/anti-Zeno balance in attention dynamics (Chapter 11). Quale richness and criticality (Chapter 12). This is not a coincidence. It is the fingerprint of a system that depends on the balance between quantum coherence and environmental noise. Every time the theory makes contact with a measurable quantity, the same intermediate optimum appears. If a future measurement produces a monotonic relationship where the theory predicts a peak, the theory is in trouble [B].
+
 ### For Physics
 
 The observer problem in quantum mechanics may be a consciousness problem, not in the vague sense that "consciousness collapses the wavefunction," but in the precise sense that consciousness is the physical faculty that navigates quantum possibility space, with collapse being what navigation looks like from the third-person perspective.

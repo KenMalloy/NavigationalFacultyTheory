@@ -417,6 +417,8 @@ Lori, N., & Machado, J. (2026). Gridography tractography reveals communication b
 
 Maeda, K., et al. (2012). Chemical compass model of avian magnetoreception. *Nature, 453*, 387–390.
 
+Mediano, P. A. M., et al. (2023). Effects of psilocybin on brain complexity and consciousness: a TMS-EEG study. *bioRxiv*.
+
 Nakagaki, T., Yamada, H., & Toth, A. (2000). Maze-solving by an amoeboid organism. *Nature, 407*, 470.
 
 OpenNeuro Dataset DS005620. Propofol sedation EEG, 21 subjects, BIDS format.
@@ -425,7 +427,17 @@ Saigusa, T., et al. (2008). Amoebae anticipate periodic events. *Physical Review
 
 Santoro, A., et al. (2024). Higher-order connectomics of human brain function reveals local topological signatures. *Nature Communications, 15*, 10244.
 
+Pallavicini, C., et al. (2023). Neural and subjective effects of inhaled N,N-dimethyltryptamine in natural settings. *Journal of Psychopharmacology, 37*(7), 689–702.
+
+Ruffini, G., et al. (2025). Time-varying whole-brain modelling of DMT reveals critical dynamics at peak subjective effects. *bioRxiv*.
+
 Schartner, M., et al. (2015). Complexity of multi-dimensional spontaneous EEG decreases during propofol induced general anaesthesia. *PLOS ONE, 10*(8), e0133532.
+
+Timmermann, C., et al. (2023). Human brain effects of DMT assessed via EEG-fMRI. *PNAS, 120*(13), e2218949120.
+
+Timmermann, C., et al. (2026). DMT reduces long-range temporal correlations in EEG: criticality shifts correlate with ego dissolution. *Psychopharmacology*.
+
+Uthaug, M. V., et al. (2025). High-dose 5-MeO-DMT: EEG dynamics and ego dissolution. *Cell Reports, 44*(3).
 
 Tero, A., et al. (2010). Rules for biologically inspired adaptive network design. *Science, 327*(5964), 439–442.
 

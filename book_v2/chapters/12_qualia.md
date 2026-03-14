@@ -24,9 +24,9 @@ This back-action is not a nuisance to be engineered away. It is the physical ori
 
 ### The Skokowski Connection
 
-This proposal has classical precedent. Skokowski (2026) argues that qualia are the physical alterations of biological detectors during detection, that the mechanism enabling detection and the mechanism producing experience are the same mechanism. A photoreceptor is not merely *affected by* light. It is *changed by* it. Rhodopsin isomerization IS the detection event.
+This proposal has classical precedent. Skokowski (2026) argues that qualia are the physical alterations of biological detectors during detection, that the mechanism enabling detection and the mechanism producing experience are the same mechanism. Light does not pass through a photoreceptor and leave it untouched. It *changes* the receptor. Rhodopsin isomerization IS the detection event.
 
-The quantum extension is that consciousness does not merely register the navigation of possibility space. It is the physical signature of a quantum measurement apparatus being changed by what it navigates [B].
+The quantum extension: consciousness is the physical signature of a quantum measurement apparatus being changed by what it navigates [B].
 
 ### Necessary but Not Sufficient
 
@@ -36,7 +36,7 @@ NFT's answer is that back-action is necessary but not sufficient for phenomenal 
 
 ### The Scale-Bridging Problem
 
-We must be transparent about the most significant gap in this account. Quantum back-action operates at the radical pair level (microsecond timescales, picomechanical energy scales). Phenomenal experience operates at the neural timescale (milliseconds, millimeters, integrated across millions of microtubules).
+The most significant gap in this account is scale. Quantum back-action operates at the radical pair level (microsecond timescales, picomechanical energy scales). Phenomenal experience operates at the neural timescale (milliseconds, millimeters, integrated across millions of microtubules).
 
 The account requires a coarse-graining mechanism that aggregates distributed picomechanical perturbations across the microtubule network into integrated conformational state changes that would constitute a unified quale. This cascade (from single radical pair back-action to network-level conformational pattern to phenomenally integrated experience) is not formalized in this book. It represents the most important open theoretical problem for the back-action thesis.
 
@@ -50,7 +50,7 @@ At the critical point, a perturbation that would remain local in a subcritical s
 
 The timescale gap closes naturally. Each step in a criticality-mediated avalanche involves conformational relaxation on the nanosecond-to-microsecond timescale. A cascade spanning hundreds of neurons takes hundreds of sequential steps — a 300-step avalanche spans roughly 0.3 milliseconds, approaching the neural integration window. Multiple concurrent avalanches, triggered by the roughly 10 radical pair events per 5 ms window (Chapter 9), overlap in time, producing a sustained conformational pattern at the millisecond timescale.
 
-The mechanism is not proven — the simulation uses an idealized branching network, not a biophysically realistic microtubule lattice — but it makes a testable prediction: the richness of a quale should depend on proximity to criticality. Subcritical brains would produce fragmented experience (local avalanches), supercritical brains would produce chaotic experience (unstructured avalanches). This maps onto clinical observations: disorders of consciousness are associated with departures from criticality in both directions.
+The mechanism is not proven — the simulation uses an idealized branching network, not a biophysically realistic microtubule lattice — but it makes a testable prediction: the richness of a quale should depend on proximity to criticality. This is the same pattern again: too little criticality fragments, too much overwhelms, the mechanism lives at the balance point. Subcritical brains would produce fragmented experience (local avalanches), supercritical brains would produce chaotic experience (unstructured avalanches). This maps onto clinical observations: disorders of consciousness are associated with departures from criticality in both directions.
 
 **Candidate 3: Dark-state manifold bridging.** Certain quantum states ("dark states") are shielded from their environment and decay much more slowly than expected. If navigational dynamics preferentially occupy these long-lived states, the effective timescale of back-action may be longer than the individual radical pair timescale. This would directly bridge toward the neural timescale without requiring a cascade mechanism. This candidate is the most speculative and the least developed.
 
@@ -60,7 +60,7 @@ The scale-bridging problem remains open, but it is no longer a bare promissory n
 
 The back-action thesis generates specific predictions:
 
-**Intensity correlates with coupling strength.** Stronger coupling to the quantum substrate should produce more vivid qualia; weaker coupling should produce dimmer experience. This maps onto the phenomenology of attention: focused attention (strong measurement coupling) produces vivid percepts; peripheral awareness (weak coupling) produces dim ones.
+**Intensity correlates with coupling strength.** Stronger coupling to the quantum substrate should produce more vivid qualia; weaker coupling should produce dimmer experience. This is the metabolic gating of Chapter 9 seen from the phenomenological side: active neurons open the quantum channel, and what that opening feels like from the inside is vividness. Focused attention (strong measurement coupling) produces vivid percepts; peripheral awareness (weak coupling) produces dim ones.
 
 **Character reflects measurement type.** Different observables produce different apparatus displacements. Different regions of possibility space produce different conformational perturbation patterns in the microtubule network. Pain feels different from pleasure because the back-action patterns are structurally different.
 

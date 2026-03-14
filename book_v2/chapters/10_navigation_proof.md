@@ -2,13 +2,13 @@
 
 ## Chapter 10: The Navigation Benchmark
 
-Theory proposes. Simulation tests. And then the simulation must survive scrutiny. This chapter tells the story of a computational demonstration that began with a dramatic headline, failed to survive fair testing, was rebuilt from scratch, and produced a more honest result that is, in some ways, more interesting than the one it replaced.
+Theory proposes. Simulation tests. And then the simulation must survive scrutiny. This chapter tells the story of a computational demonstration that began with a dramatic headline, failed to survive fair testing, was rebuilt from scratch, and produced a more honest result.
 
 ### The First Result
 
 The original simulation gave agents a 2D maze to walk through and a 6D internal state to think with — six hidden dials, like a control panel in the agent's head, that don't correspond to any direction in the maze. The quantum agent could use interference between these internal states to bias its movement. The classical agent could only spin the dials randomly. Formally, the internal state space was a six-dimensional hypercube (64 vertices), and the agent's behavior was projected into the two-dimensional maze. A genetic algorithm evolved parameters governing the feedback loop and movement weights. Four conditions were compared: quantum dynamics with adaptive measurement and evolved parameters, quantum with fixed measurement basis, classical stochastic dynamics with the same evolved parameters, and quantum with random parameters.
 
-On a serpentine 8x8 maze, the quantum+evolved agent found the goal in 24% of runs. Every other condition achieved 0%. The result was striking: a categorical separation between quantum-adaptive and everything else.
+On a serpentine 8x8 maze, the quantum+evolved agent found the goal in 24% of runs. Every other condition achieved 0%. A categorical separation between quantum-adaptive and everything else.
 
 But the result had a methodological flaw. The genetic algorithm optimized parameters for the quantum+adaptive condition, and those same parameters were handed to the controls. The controls were running parameters tuned for a different dynamical regime. And no competent classical strategy (shortest-path planning, wall-following) was tested. The "classical" comparator was not classical intelligence. It was quantum-optimized parameters running without quantum dynamics.
 
@@ -46,7 +46,7 @@ On harder 3D mazes (side length 9, 6 barrier hyperplanes, 2 gaps per barrier, av
 
 In a 10-maze paired run with 100 evaluation trials per maze, the quantum-adaptive controller won on 9 mazes, tied on 1 (an exact tie: 0 advantage, 100 tied trials out of 100), and lost on none. The normalized advantage was +13.0% of path length with a standard error of 4.6%. The per-trial win rate was 52.9%: on any given run, the quantum agent barely edges out the classical agent. But the edge is systematic: it appears on 9 of 10 independent mazes.
 
-We were excited. A 90% maze win rate and +13% advantage looked like a clear signal. The confirmatory run brought the numbers back to earth, which is what confirmatory runs are for.
+A 90% maze win rate and +13% advantage looked like a clear signal. The confirmatory run brought the numbers back to earth, which is what confirmatory runs are for.
 
 Across 90 mazes (30 per difficulty bin), with the training budget locked and no re-evolution after seeing which mazes favored which controller, the results were:
 
@@ -61,7 +61,7 @@ Stratified by maze difficulty (detour ratio), the advantage trends upward: +2.68
 
 ### The Compass Pattern
 
-The most important feature of these results is not the magnitude of the advantage but its structure.
+The advantage is small. Its structure is what matters.
 
 A 3.3% survival lift is small on any single decision. A 53% trial win rate is barely above chance. If the question is "does quantum dramatically outperform classical on this maze?" the answer is no. But that is not the question evolution asks.
 
@@ -85,8 +85,8 @@ The simulation does not prove that the brain implements this mechanism. It does 
 
 What the simulation provides is a fair test of the core claim: that evolution, given quantum resources and adaptive measurement, can build controllers that navigate better than evolution without quantum resources, under the same constraints. Both controllers received the same optimization budget, fixed in advance. Neither was re-evolved after results were inspected. The 90-maze confirmatory set was run once. The answer, on this benchmark, is yes. Whether the same holds in biological tissue is the question the experimental program of Chapter 15 is designed to answer. The complete benchmark specification, including maze generation, controller architectures, optimization protocols, and statistical analysis, is reported in [Malloy, "Quantum Navigational Advantage in Evolved 3D Maze Controllers," forthcoming] [B].
 
-**Where we are.** Take a breath. The hardest technical stretch is behind you.
+**Where we are.** The hardest technical stretch is behind you.
 
-Here is what we have established so far. Quantum and classical probability are categorically different: quantum systems sculpt interference patterns, classical systems roll weighted dice. The original excitonic mechanism failed at body temperature, but radical pair spin coherence works, with a 12.7% yield difference persisting for microseconds. The transduction chain from molecule to neuron is tight but viable, gated by superoxide concentration. A computational benchmark, rebuilt from scratch after its first version failed fair testing, shows that evolution with quantum resources builds better navigators than evolution without them. The advantage is modest (+3.3%) but systematic, exactly the kind of small consistent bias that natural selection exploits.
+Quantum and classical probability are categorically different: quantum systems sculpt interference patterns, classical systems roll weighted dice. The original excitonic mechanism failed at body temperature, but radical pair spin coherence works, with a 12.7% yield difference persisting for microseconds. The transduction chain from molecule to neuron is tight but viable, gated by superoxide concentration. A computational benchmark, rebuilt from scratch after its first version failed fair testing, shows that evolution with quantum resources builds better navigators than evolution without them. The advantage is modest (+3.3%) but systematic, exactly the kind of small consistent bias that natural selection exploits.
 
-The mechanism is on the table. Now we ask: what does it explain about the *experience* of consciousness? Why does focus feel different from mind-wandering? Why does pain feel different from pleasure? How does distributed neural activity become unified experience? The next three chapters tackle these questions, and they connect physics to phenomenology in ways that are, I think, genuinely surprising.
+The mechanism is on the table. Now we ask: what does it explain about the *experience* of consciousness? Why does focus feel different from mind-wandering? Why does pain feel different from pleasure? How does distributed neural activity become unified experience? The next three chapters tackle these questions, and they connect physics to phenomenology.

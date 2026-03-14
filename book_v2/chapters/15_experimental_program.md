@@ -24,6 +24,8 @@ These predictions would establish that radical pair spin dynamics operate in mic
 
 **A4. Isotope effects on neural function.** Swap in isotopes with different nuclear spins (extending the Zadeh-Haghighi finding) and microtubule-dependent neural processes should systematically change. This tests the substrate, not consciousness directly [B].
 
+**A5. The FtsZ-to-tubulin structural prediction.** The features evolution added when repurposing FtsZ into tubulin (Chapter 6) should be precisely the features relevant to quantum indeterminacy generation, aromatic residue networks, radical pair sites, lattice cooperativity, rather than mechanical force generation. Testable by comparative structural biology [B].
+
 Suppose every one of these succeeds. The chemistry is real, the entanglement is measurable, the dynamics are right. You still would not know whether any of it matters for consciousness. The next four predictions cross that bridge.
 
 **Category B: Tests of the Consciousness Link**

@@ -43,9 +43,9 @@ Not all quantum effects create this wedge. Some quantum mechanics is, surprising
 
 ### What NFT Requires vs. What Orch OR Claims
 
-This is a good place to be precise about what NFT actually needs from the quantum substrate, because it is much less than what Orch OR claims.
+NFT requires much less from the quantum substrate than Orch OR claims.
 
-Orch OR commits to objective reduction (gravitational self-collapse of superpositions), millisecond-scale coherence windows, and quantum computation within microtubules. Nobody has confirmed the first, the second asks quantum effects to outlast (by a factor of a billion) anything measured in warm tissue, and the third has no experimental support. It's a parlay. NFT inherits none of these commitments. What NFT requires is narrower: *continuous generation of genuine indeterminacy* at cognition-relevant intervals via radical pair spin states, plus a feedback mechanism by which measurement outcomes reshape the measurement basis. Much simplier.
+Orch OR commits to objective reduction (gravitational self-collapse of superpositions), millisecond-scale coherence windows, and quantum computation within microtubules. Nobody has confirmed the first, the second asks quantum effects to outlast (by a factor of a billion) anything measured in warm tissue, and the third has no experimental support. It's a parlay. NFT inherits none of these commitments. What NFT requires is narrower: *continuous generation of genuine indeterminacy* at cognition-relevant intervals via radical pair spin states, plus a feedback mechanism by which measurement outcomes reshape the measurement basis. Much simpler.
 
 NFT is parasitic on the weakest component of Orch OR, the mere existence of quantum indeterminacy in the biological substrate, not on its most controversial claims. This makes NFT more empirically resilient while preserving the core commitment that separates both from classical accounts [B].
 

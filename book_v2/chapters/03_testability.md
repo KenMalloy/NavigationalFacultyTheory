@@ -20,8 +20,6 @@ Each level can be tested independently, and each can fail without bringing the o
 
 ### The Relationship to Active Inference
 
-Level A's relationship to existing work is worth stating clearly.
-
 Karl Friston's Free Energy Principle and its active inference extension frame consciousness as minimizing surprise: continuously generating models of the world, updating them when predictions fail. Action selection decomposes into epistemic terms (reduce uncertainty) and instrumental terms (fulfill preferences).
 
 Level A *is* active inference, described from the outside. "Consciousness navigates possibility space" and "consciousness minimizes expected free energy" are two descriptions of the same process. One from the navigational perspective, one from the information-theoretic perspective. This is shared ground, not contested territory.

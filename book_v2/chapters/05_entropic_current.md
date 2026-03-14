@@ -32,7 +32,7 @@ Two philosophical contributions sharpen the connection between entropy and consc
 
 Jha argues that consciousness is a natural consequence of how complex systems manage energy, organize information, and maintain temporary order against entropic dissolution. Hemmo and Shenker argue that the psychological arrow of time, the felt sense that time flows from past to future, is thermodynamic asymmetry experienced from within. The two accounts are complementary. Jha explains why consciousness is entangled with entropy; Hemmo and Shenker explain why entropy gives consciousness its temporal direction.
 
-NFT synthesizes both: consciousness navigates along the entropy gradient, and the arrow of time is the direction of navigation [A].
+NFT synthesizes both: consciousness navigates along the entropy gradient, and the arrow of time is the direction of navigation. This is the directionality that DeLancey's complexity framework (Chapter 2) cannot provide [A].
 
 ### Constrained Navigation
 
