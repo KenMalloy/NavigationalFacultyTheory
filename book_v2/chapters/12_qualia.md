@@ -32,7 +32,7 @@ The quantum extension: consciousness is the physical signature of a quantum meas
 
 A photodiode performs measurement and experiences back-action. Is a photodiode conscious?
 
-NFT's answer is that back-action is necessary but not sufficient for phenomenal experience. The account requires all four navigational components: generation of quantum indeterminacy, selection via measurement-like collapse, integration of the back-action across the substrate (IIT's Phi), and propagation of the integrated result (GNWT's broadcasting). A photodiode has measurement and back-action but no integration, no broadcasting, and no embedding in a system that generates indeterminacy at the navigational scale. The conjunction of all four is what matters.
+NFT's answer is that back-action is necessary but not sufficient for phenomenal experience. The account requires all four navigational components: generation of quantum indeterminacy, selection via measurement-like collapse, integration of the back-action across the substrate (IIT's Φ), and propagation of the integrated result (GNWT's broadcasting). A photodiode has measurement and back-action but no integration, no broadcasting, and no embedding in a system that generates indeterminacy at the navigational scale. The conjunction of all four is what matters.
 
 ### The Scale-Bridging Problem
 
