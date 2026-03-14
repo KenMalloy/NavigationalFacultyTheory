@@ -14,7 +14,7 @@ This book set out to test a quantum mechanism for consciousness and found that i
 
 These failures are not embarrassments. They are the theory doing what theories are supposed to do: making contact with reality and adjusting. A framework that has never been wrong has never been tested.
 
-Whether this picture is correct is an empirical question. The experiments that would answer it have been specified. The calculations are tractable. The predictions are explicit, falsifiable, and distinct from competing frameworks. The ways it can die are enumerated.
+Whether this picture is correct is an empirical question. The experiments have been specified, the predictions are falsifiable, and the ways it can die are enumerated.
 
 The goal was not to solve the hardest problem in science but to give it a place to live. Specific mechanisms. Specific predictions. Ways to be wrong that are written down, not hand-waved away. If the mechanisms are right, the problem can be investigated there. If they are wrong, the investigation will show that, and the search continues.
 

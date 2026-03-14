@@ -16,7 +16,7 @@ Stare at a word long enough and it stops meaning anything. But stare at a coffee
 
 The quantum Zeno effect, described by Misra and Sudarshan in 1977, says it should not happen. Continuous measurement of a quantum system prevents it from evolving. Frequent observation locks the system into its current state. If consciousness continuously collapses the wavefunction (selects definite outcomes from quantum possibilities), reality should freeze.
 
-Chalmers and McQueen formalized this objection rigorously in 2021. They showed that simple consciousness-collapse models are falsified by the Zeno effect and proposed more complex versions incorporating IIT's Phi as a parameter in the collapse operator. Their fix works but adds complexity without adding insight.
+Chalmers and McQueen formalized this objection in 2021. They showed that simple consciousness-collapse models are falsified by the Zeno effect and proposed more complex versions incorporating IIT's Phi as a parameter in the collapse operator. Their fix works but adds complexity without adding insight.
 
 ### The Resolution
 
@@ -28,7 +28,7 @@ Change and temporal flow arise because navigation is not static observation but 
 
 ### The Anti-Zeno Effect
 
-The resolution gains physical support from a deeper result.
+The resolution has physical support.
 
 Every noisy environment has a characteristic rhythm — some frequencies of vibration are louder than others. A concert hall emphasizes certain frequencies and dampens others. Physicists call this pattern the *spectral density*. A warm cellular environment vibrates at many frequencies simultaneously, but some dominate.
 
@@ -43,6 +43,8 @@ The balance between Zeno and anti-Zeno is where things get interesting for consc
 **Zeno-dominant regimes** correspond to stability, maintaining the current trajectory. This is the mechanism of sustained attention, task persistence, and conscious effort. When you focus intensely on a problem, you are holding a navigational trajectory in place against the tendency to drift.
 
 **Anti-Zeno-dominant regimes** correspond to change, shifting to a new trajectory. This is the mechanism of mind-wandering, creative insight, and the "aha" moment. When you relax your focus and let your mind wander, you are releasing the Zeno lock and allowing the system to explore new trajectories.
+
+There is empirical traction here. VanRullen and colleagues have shown that the brain samples sensory input in discrete cycles, roughly 10 Hz for visual perception and 4-8 Hz for attentional sampling. The rate is not fixed. A 2025 study found that visible attentional cues produced faster sampling (~8 Hz) than invisible cues (~4 Hz), with cue awareness shifting frontoparietal coupling from theta toward alpha. The brain modulates not just *what* it samples but *how fast*. NFT's prediction is that this modulation maps onto the Zeno/anti-Zeno balance: faster sampling holds trajectories in place, slower sampling releases them.
 
 Navigation at the critical balance between these regimes has maximal flexibility, stable enough for coherent experience and dynamic enough for adaptive response. The phenomenology of consciousness, the felt difference between focused concentration and relaxed exploration, maps onto the physics of measurement-dependent dynamics.
 

@@ -702,7 +702,7 @@ Stare at a word long enough and it stops meaning anything. But stare at a coffee
 
 The quantum Zeno effect, described by Misra and Sudarshan in 1977, says it should not happen. Continuous measurement of a quantum system prevents it from evolving. Frequent observation locks the system into its current state. If consciousness continuously collapses the wavefunction (selects definite outcomes from quantum possibilities), reality should freeze.
 
-Chalmers and McQueen formalized this objection rigorously in 2021. They showed that simple consciousness-collapse models are falsified by the Zeno effect and proposed more complex versions incorporating IIT's Phi as a parameter in the collapse operator. Their fix works but adds complexity without adding insight.
+Chalmers and McQueen formalized this objection in 2021. They showed that simple consciousness-collapse models are falsified by the Zeno effect and proposed more complex versions incorporating IIT's Phi as a parameter in the collapse operator. Their fix works but adds complexity without adding insight.
 
 ### The Resolution
 
@@ -714,7 +714,7 @@ Change and temporal flow arise because navigation is not static observation but 
 
 ### The Anti-Zeno Effect
 
-The resolution gains physical support from a deeper result.
+The resolution has physical support.
 
 Every noisy environment has a characteristic rhythm — some frequencies of vibration are louder than others. A concert hall emphasizes certain frequencies and dampens others. Physicists call this pattern the *spectral density*. A warm cellular environment vibrates at many frequencies simultaneously, but some dominate.
 
@@ -729,6 +729,8 @@ The balance between Zeno and anti-Zeno is where things get interesting for consc
 **Zeno-dominant regimes** correspond to stability, maintaining the current trajectory. This is the mechanism of sustained attention, task persistence, and conscious effort. When you focus intensely on a problem, you are holding a navigational trajectory in place against the tendency to drift.
 
 **Anti-Zeno-dominant regimes** correspond to change, shifting to a new trajectory. This is the mechanism of mind-wandering, creative insight, and the "aha" moment. When you relax your focus and let your mind wander, you are releasing the Zeno lock and allowing the system to explore new trajectories.
+
+There is empirical traction here. VanRullen and colleagues have shown that the brain samples sensory input in discrete cycles, roughly 10 Hz for visual perception and 4-8 Hz for attentional sampling. The rate is not fixed. A 2025 study found that visible attentional cues produced faster sampling (~8 Hz) than invisible cues (~4 Hz), with cue awareness shifting frontoparietal coupling from theta toward alpha. The brain modulates not just *what* it samples but *how fast*. NFT's prediction is that this modulation maps onto the Zeno/anti-Zeno balance: faster sampling holds trajectories in place, slower sampling releases them.
 
 Navigation at the critical balance between these regimes has maximal flexibility, stable enough for coherent experience and dynamic enough for adaptive response. The phenomenology of consciousness, the felt difference between focused concentration and relaxed exploration, maps onto the physics of measurement-dependent dynamics.
 
@@ -756,7 +758,7 @@ This chapter now has a minimal simulation behind it, but no direct data. The sim
 
 ## Chapter 12: Qualia as Measurement Back-Action
 
-This chapter makes the book's most speculative claim. What it is like to hear a chord, taste coffee, feel pain. It is the physical back-action of the quantum measurement interaction on the measuring apparatus. A conjecture, but one with a physical address. And that makes it testable.
+What it is like to hear a chord, taste coffee, feel pain. It is the physical back-action of the quantum measurement interaction on the measuring apparatus. A conjecture, but one with a physical address. And that makes it testable.
 
 ### Back-Action Is Not Optional
 
@@ -770,11 +772,11 @@ Von Neumann formalized this. Measurement entangles the measured system with the 
 
 This back-action is not a nuisance to be engineered away. It is the physical origin of phenomenal experience [B].
 
-**Step 1: Measurement is never one-way.** The post-measurement state of the apparatus carries the imprint of the interaction. The back-action is real, physical, and measurable.
+A door slams. The sound wave hits your eardrum and the eardrum deforms. You cannot hear without being physically changed by what you hear.
 
-**Step 2: The back-action is structured.** The apparatus displacement is not generic noise; it carries specific information about what was measured. The perturbation experienced by the apparatus depends on which quantum state was being navigated — different measurements produce different disturbances, in proportion to the strength of the interaction.
+The deformation is not noise. A door slam bends the eardrum differently from a violin, from a whisper, from a scream. Each sound leaves a specific mechanical signature in the tissue that received it. The information about what produced the sound is carried in the pattern of the deformation.
 
-**Step 3: Structured back-action provides a physical address for qualia.** Most theories of consciousness attempt to identify a computational or informational property that, at sufficient magnitude, "gives rise to" experience. The move here is different. Phenomenal experience *is* the back-action of the measurement apparatus upon itself during navigation of possibility space. The warmth of a coffee cup against your palm is not a computation that somehow produces the feeling of warmth. It is the specific conformational perturbation pattern produced in the microtubule substrate when the radical pair measurement interaction couples to the neural state associated with thermoreceptor processing.
+Chapter 1 asked why hearing a door slam feels like something. The back-action thesis gives it a physical address. What it is *like* to hear that sharp percussive crack is the specific deformation pattern propagated through the auditory system. Pain feels different from music because the back-action patterns are structurally different. The warmth of a coffee cup against your palm is not a computation that somehow produces the feeling of warmth. It is the specific conformational perturbation pattern produced in the microtubule substrate when the radical pair measurement interaction couples to the neural state associated with thermoreceptor processing.
 
 ### The Skokowski Connection
 
@@ -792,7 +794,7 @@ NFT's answer is that back-action is necessary but not sufficient for phenomenal 
 
 The most significant gap in this account is scale. Quantum back-action operates at the radical pair level (microsecond timescales, picomechanical energy scales). Phenomenal experience operates at the neural timescale (milliseconds, millimeters, integrated across millions of microtubules).
 
-The account requires a coarse-graining mechanism that aggregates distributed picomechanical perturbations across the microtubule network into integrated conformational state changes that would constitute a unified quale. This cascade (from single radical pair back-action to network-level conformational pattern to phenomenally integrated experience) is not formalized in this book. It represents the most important open theoretical problem for the back-action thesis.
+Something has to aggregate millions of tiny perturbations into one integrated experience. That aggregation is not formalized in this book. It is the most important open theoretical problem for the back-action thesis.
 
 The gap is roughly six orders of magnitude: from the microsecond timescale of a single radical pair event to the millisecond timescale of a conscious moment. Something has to bridge it. Think of it this way: a single domino falling is a tiny event, but a line of dominoes can carry a signal across a room. The question is whether the brain's architecture provides the dominoes. We identify three candidate mechanisms. The second is the most developed and has computational support from the criticality amplification simulation reported in Chapter 9.
 
@@ -804,9 +806,9 @@ At the critical point, a perturbation that would remain local in a subcritical s
 
 The timescale gap closes naturally. Each step in a criticality-mediated avalanche involves conformational relaxation on the nanosecond-to-microsecond timescale. A cascade spanning hundreds of neurons takes hundreds of sequential steps — a 300-step avalanche spans roughly 0.3 milliseconds, approaching the neural integration window. Multiple concurrent avalanches, triggered by the roughly 10 radical pair events per 5 ms window (Chapter 9), overlap in time, producing a sustained conformational pattern at the millisecond timescale.
 
-The mechanism is not proven — the simulation uses an idealized branching network, not a biophysically realistic microtubule lattice — but it makes a testable prediction: the richness of a quale should depend on proximity to criticality. This is the same pattern again: too little criticality fragments, too much overwhelms, the mechanism lives at the balance point. Subcritical brains would produce fragmented experience (local avalanches), supercritical brains would produce chaotic experience (unstructured avalanches). This maps onto clinical observations: disorders of consciousness are associated with departures from criticality in both directions.
+The mechanism is not proven (the simulation uses an idealized branching network, not a biophysically realistic microtubule lattice), but it makes a testable prediction: the richness of a quale should depend on proximity to criticality. This is the same pattern again: too little criticality fragments, too much overwhelms, the mechanism lives at the balance point. Subcritical brains would produce fragmented experience (local avalanches), supercritical brains would produce chaotic experience (unstructured avalanches). This maps onto clinical observations: disorders of consciousness are associated with departures from criticality in both directions.
 
-**Candidate 3: Dark-state manifold bridging.** Certain quantum states ("dark states") are shielded from their environment and decay much more slowly than expected. If navigational dynamics preferentially occupy these long-lived states, the effective timescale of back-action may be longer than the individual radical pair timescale. This would directly bridge toward the neural timescale without requiring a cascade mechanism. This candidate is the most speculative and the least developed.
+**Candidate 3: Dark-state manifold bridging.** In quantum optics, a dark state is a coherent superposition that decouples from its environment and does not decay through the usual channels. The physics is well established: coherent population trapping, electromagnetically induced transparency, and STIRAP all exploit dark states in engineered systems. In radical pair theory, dark states have direct relevance. A 2016 study showed that dark-state *population*, not coherence, determines magnetic sensitivity in radical pair magnetoreception models. A 2024 study demonstrated that tightly bound cryptochrome radical pairs can recover weak-field magnetosensitivity through a quantum Zeno mechanism under asymmetric recombination. If navigational dynamics in microtubules preferentially occupy these protected subspaces, the effective timescale of back-action may be longer than the individual radical pair timescale, bridging toward the neural timescale without requiring a cascade. Whether protein-embedded radical pairs actually form dark states under physiological conditions is unknown. The physics exists. The biology has not been checked.
 
 The scale-bridging problem remains open, but it is no longer a bare promissory note. The criticality coarse-graining mechanism has a physical basis (divergent susceptibility at the critical point), computational support (the amplification simulation), a plausible timescale argument (cascaded relaxation steps), and testable predictions (criticality-dependence of qualitative richness). What it lacks is a biophysically detailed simulation of conformational avalanche propagation along real microtubule lattices. This is the single most important computational project for the back-action thesis [B].
 
@@ -826,6 +828,8 @@ The back-action thesis generates specific predictions:
 
 Your brain is spread across two hemispheres, distributed through billions of neurons, yet your experience is unified. You don't hear with one consciousness and see with another. Something binds it together. What?
 
+You taste coffee and the bitterness and the warmth and the steam and the weight of it in your hand arrive as one thing, inseparable, a single experience you have never thought to question. Now take the warmth away from the bitterness. Put the steam in one room and the weight in another. You haven't lost any of the pieces. You have lost the coffee.
+
 ### Higher-Dimensional Structure
 
 Think of three friends who all know each other. That is not just three pairs of friendships. It is a triangle, a structure with an interior, a space enclosed by the connections. Four mutual friends form a tetrahedron. Five form a shape that exists in four dimensions. The Blue Brain Project, applying algebraic topology to cortical microcircuits, discovered that neurons form these mutual-connection structures, called simplicial complexes, reaching up to seven algebraic dimensions. Neural activity generates high-dimensional topological cavities that appear, grow, and dissolve in coordinated sequences. These are not metaphorical dimensions. They are algebraically real topological features of neural connectivity.
@@ -836,7 +840,7 @@ Santoro and colleagues (2024) demonstrated that interactions involving three or 
 
 The proposed binding mechanism operates across three scales.
 
-At the quantum scale, radical pair spin coherence creates correlations between tubulin subunits — localized effects operating at microsecond timescales. These correlations connect upward through neural cliques forming higher-dimensional simplicial complexes: two neurons ten centimeters apart in Euclidean space may be adjacent in the seven-dimensional simplicial complex formed by their shared clique membership. The long-range correlations we observe in three dimensions would be the projection of local interactions in higher-dimensional topology. And at self-organized criticality, correlation length diverges, information propagation becomes scale-free, and the critical point connects quantum effects at the bottom to system-spanning dynamics at the top.
+At the quantum scale, radical pair spin coherence creates correlations between tubulin subunits, localized effects operating at microsecond timescales. These correlations connect upward through neural cliques forming higher-dimensional simplicial complexes: two neurons ten centimeters apart in Euclidean space may be adjacent in the seven-dimensional simplicial complex formed by their shared clique membership. The long-range correlations we observe in three dimensions would be the projection of local interactions in higher-dimensional topology. And at self-organized criticality, correlation length diverges, information propagation becomes scale-free, and the critical point connects quantum effects at the bottom to system-spanning dynamics at the top.
 
 ### An Honest Negative Result
 
@@ -874,7 +878,9 @@ If consciousness navigates, it must navigate *something*. Levels A and B can ope
 
 ### The Block Universe
 
-The standard physical picture treats the fourth dimension as time, a single line extending from past to future along which events unfold. But this is not what physics actually describes.
+The concept of gamebooks existed before Edward Packard, but in 1979 he threw them into the zeitgeist with *The Cave of Time*. The public's imagination was captured by the literary labyrinth Packard let readers stumble through. You would find yourself halfway through the story and meet an abrupt, often absurd end. The book is written in second person, and you really *feel* it when you ride the mammoth off a cliff or get eaten by the Loch Ness monster as a direct result of your own terrible choices. And then you would sit there, halfway through the book, but all the pages beyond still existed. You would flip back, try again, make better choices, and maybe even sail off into the sunset. But those other paths were still in the book. They could still have happened. And the reader was always left with paths not taken. Packard may not have known it, but he had built a literary model of spacetime itself.
+
+The standard physical picture treats the fourth dimension as time, a single line extending from past to future along which events unfold. Packard's book suggests otherwise, and so does physics.
 
 The block universe interpretation of general relativity, articulated by Minkowski in 1908 and developed by Putnam in 1967, holds that all events, past, present, and future, are equally real in four-dimensional spacetime. There is no privileged "now." Einstein's field equations are time-symmetric: they work identically forward and backward. The laws of physics contain no variable for the present moment.
 
@@ -886,17 +892,17 @@ This creates what Callender calls the hard problem of time: if physics describes
 
 ### Three Positions
 
-Asking what possibility space *is* drops us into one of the oldest arguments in philosophy.
+If you have ever watched a twenty-sided die bounce across a table with your character's life on the outcome, you have felt the difference between epistemic and physical possibility. Before the die stops, the twenty faces are not abstractions. They are the actual geometry of the object in your hand. After the die stops, the question is whether the other nineteen faces ceased to be real or merely ceased to be *yours*.
 
-The conservative answer is actualism: only the actual world exists. "Possible" is a way of describing how the actual world could have been. On this view, possibility space is a useful fiction — a map rather than a territory. NFT at Level A is compatible with actualism: the navigator selects from a space of possible trajectories that is mathematically defined but not physically real.
+The conservative answer is actualism: only the face that landed is real. The other nineteen are descriptions of how the roll could have gone, not things that exist. Possibility space is a useful fiction, a map rather than a territory. NFT at Level A is compatible with actualism: the navigator selects from a space of possible trajectories that is mathematically defined but not physically real.
 
-But quantum mechanics pushes toward something stronger. The quantum state defines a real landscape of weighted alternatives. Actualization selects from among them. This is dispositional possibilism — non-actual possibilities have physical standing, not as concrete parallel worlds, but as dispositions, propensities, structured potentials. NFT at Level B fits naturally here: the quantum substrate generates genuine indeterminacy, which means the alternatives from which consciousness selects are physically real potentials. Modal interpretations of quantum mechanics provide the formal machinery, treating the quantum state as fixing a set of physical possibilities and rules for which properties become definite.
+Quantum mechanics pushes toward something stronger. The quantum state defines a real landscape of weighted alternatives, and actualization selects from among them. This is dispositional possibilism. The other faces had genuine physical standing before the roll, not as concrete parallel worlds but as dispositions, propensities, structured potentials. The die's geometry is what gave them that standing. NFT at Level B fits naturally here: the quantum substrate generates genuine indeterminacy, which means the alternatives from which consciousness selects are physically real potentials. Modal interpretations of quantum mechanics provide the formal machinery, treating the quantum state as fixing a set of physical possibilities and rules for which properties become definite.
 
-The critical distinction is between epistemic and physical possibility. Epistemic possibility reflects our ignorance: the coin might land heads because we don't know how it was tossed. Physical possibility reflects genuine indeterminacy: the quantum state contains real alternatives from which a definite outcome must emerge. NFT's Level B claim requires that the alternatives from which consciousness selects are genuinely available, not merely unknown. This is precisely what quantum mechanics provides and what classical physics does not.
+The distinction that matters is between not knowing and not yet decided. Epistemic possibility reflects our ignorance: the coin might land heads because we don't know how it was tossed. Physical possibility reflects genuine indeterminacy: the quantum state contains real alternatives from which a definite outcome must emerge. NFT's Level B claim requires that the alternatives from which consciousness selects are genuinely available, not merely unknown. This is precisely what quantum mechanics provides and what classical physics does not.
 
 ### The Dual Character
 
-Possibility space has a dual character, and we are going to acknowledge it rather than pretend we can resolve it.
+Possibility space has a dual character.
 
 From within, from the perspective of the navigator, it appears epistemic. The navigator faces a landscape of subjective probabilities and makes selections. This is compatible with QBism, which treats quantum probabilities as subjective, describing the agent's relationship to possibility rather than observer-independent facts. Consciousness, on this view, is the agent doing the assigning.
 
@@ -904,7 +910,7 @@ From without, from the perspective of physics, what possibility space actually *
 
 ### Why This Is Separable
 
-An important methodological point: the empirical program of NFT does not require settling the eternalism/presentism dispute. The navigational operations, the quantum stochastic walk formalism, and the discriminative predictions all go through regardless of whether the future is "already there" or genuinely open.
+The empirical program of NFT does not require settling the eternalism/presentism dispute. The navigational operations, the quantum stochastic walk formalism, and the discriminative predictions all go through regardless of whether the future is "already there" or genuinely open.
 
 Readers who reject the block universe can accept the functional and mechanistic levels as a theory of how consciousness reduces trajectory entropy via quantum substrate coupling, without committing to any particular ontology of time. Level C is offered because the question of what possibility space *is* deserves engagement, not because the answer is required for the science to proceed [C].
 
@@ -1062,7 +1068,7 @@ This is a single experiment with a clear outcome. It requires hardware that does
 
 ### The Recurring Pattern
 
-A structural observation before we move on. The same shape keeps appearing across the theory: too little does not help, too much does not help, the mechanism lives at an intermediate optimum. ENAQT in photosynthesis (Chapter 8). The simulation's non-monotonic scaling with latent dimensionality (Chapter 10). The Zeno/anti-Zeno balance in attention dynamics (Chapter 11). Quale richness and criticality (Chapter 12). This is not a coincidence. It is the fingerprint of a system that depends on the balance between quantum coherence and environmental noise. Every time the theory makes contact with a measurable quantity, the same intermediate optimum appears. If a future measurement produces a monotonic relationship where the theory predicts a peak, the theory is in trouble [B].
+A structural observation before we move on. The same shape keeps appearing across the theory: too little does not help, too much does not help, the mechanism lives at an intermediate optimum. ENAQT in photosynthesis (Chapter 8). The simulation's non-monotonic scaling with latent dimensionality (Chapter 10). The Zeno/anti-Zeno balance in attention dynamics (Chapter 11). Quale richness and criticality (Chapter 12). This is not a coincidence. It is the fingerprint of a system that depends on the balance between quantum coherence and environmental noise. The pattern has a name outside this book: stochastic resonance, first described by Benzi and colleagues in 1982 and now demonstrated across sensory neuroscience. A nonlinear system detects a weak signal best at an intermediate noise level. Too little noise leaves the signal subthreshold. Too much noise swamps it. Every time NFT makes contact with a measurable quantity, the same intermediate optimum appears. If a future measurement produces a monotonic relationship where the theory predicts a peak, the theory is in trouble [B].
 
 ### For Physics
 
@@ -1108,7 +1114,7 @@ The mathematical backbone is a framework called a quantum stochastic walk (QSW).
 
 The adaptive measurement thesis adds a feedback loop: the outcome of each quantum measurement changes what gets measured next. The protein's current shape determines the quantum evolution; the quantum outcome changes the protein's shape; the new shape determines the next evolution. This cycle repeats continuously. Each individual step is standard quantum mechanics. The feedback loop is standard control theory (Wiseman and Milburn, 2009). Nothing exotic is required.
 
-One thing worth noting, because it matters for whether the mechanism is physically legitimate: there is a temptation in quantum biology to write down continuous-time equations where the measurement operator depends on the system's own state. This looks elegant but breaks a foundational guarantee of quantum mechanics called complete positivity. The math stops being physically valid. NFT does not require this shortcut. The actual mechanism is a discrete cycle: evolve the radical pair, record the outcome, update the protein conformation, repeat. Each step is a standard quantum operation. The full sequence is standard quantum feedback control. The formalism is well-defined, and the computational simulations implement exactly this cycle. The formal details are developed in [Malloy 2026].
+This matters for whether the mechanism is physically legitimate. There is a temptation in quantum biology to write down continuous-time equations where the measurement operator depends on the system's own state. This looks elegant but breaks a foundational guarantee of quantum mechanics called complete positivity. The math stops being physically valid. NFT does not require this shortcut. The actual mechanism is a discrete cycle: evolve the radical pair, record the outcome, update the protein conformation, repeat. Each step is a standard quantum operation. The full sequence is standard quantum feedback control. The formalism is well-defined, and the computational simulations implement exactly this cycle. The formal details are developed in [Malloy 2026].
 
 ### The Negative Conditional Entropy Wedge
 
@@ -1118,7 +1124,7 @@ The categorical difference between quantum and classical information resources w
 
 The full formalization needs to connect three scales of description — like a map that works at street level, city level, and continental level simultaneously. Each scale needs its own mathematics, and the scales need to talk to each other.
 
-At the bottom, quantum mechanics. Hilbert space, measurement operators, back-action: the language of radical pair spin states. At the middle, geometry. Conscious trajectories follow shortest paths on curved landscapes defined by neural connectivity, and the natural description is Riemannian. At the top, category theory — the claim that IIT, GNWT, and the quantum substrate are subsystems of one architecture translates into a precise statement about structural relationships between mathematical categories.
+Zoom in to a single page and you see one choice, one radical pair event, one quantum measurement with a definite outcome. The mathematics here is quantum mechanics, Hilbert space, measurement operators, back-action. Zoom out to the path through the book and you see a trajectory curving through a landscape of choices, some paths shorter than others, some more probable. The mathematics here is Riemannian geometry, conscious trajectories following shortest paths on curved surfaces defined by neural connectivity. Zoom out further to the book itself, all paths, all endings, the rules governing which choices lead where, and you see the architecture. The mathematics here is category theory, the structural relationships between IIT, GNWT, and the quantum substrate as components of a single navigational system.
 
 Phillips and Tsuchiya's demonstration that IIT's axioms derive from a universal mapping property suggests that category theory is not an arbitrary mathematical choice but a natural language for the structural requirements of consciousness.
 
@@ -1146,7 +1152,7 @@ This book set out to test a quantum mechanism for consciousness and found that i
 
 These failures are not embarrassments. They are the theory doing what theories are supposed to do: making contact with reality and adjusting. A framework that has never been wrong has never been tested.
 
-Whether this picture is correct is an empirical question. The experiments that would answer it have been specified. The calculations are tractable. The predictions are explicit, falsifiable, and distinct from competing frameworks. The ways it can die are enumerated.
+Whether this picture is correct is an empirical question. The experiments have been specified, the predictions are falsifiable, and the ways it can die are enumerated.
 
 The goal was not to solve the hardest problem in science but to give it a place to live. Specific mechanisms. Specific predictions. Ways to be wrong that are written down, not hand-waved away. If the mechanisms are right, the problem can be investigated there. If they are wrong, the investigation will show that, and the search continues.
 
@@ -1559,6 +1565,8 @@ This matters for the decoherence problem. Tegmark's calculation shows that macro
 
 Aharonov, Y., Albert, D. Z., & Vaidman, L. (1988). How the result of a measurement of a component of the spin of a spin-1/2 particle can turn out to be 100. *Physical Review Letters, 60*(14), 1351–1354.
 
+Benzi, R., Sutera, A., & Vulpiani, A. (1982). Stochastic resonance in climatic change. *Tellus, 34*(1), 10–16.
+
 Casali, A. G., et al. (2013). A theoretically based index of consciousness independent of sensory processing and behavior. *Science Translational Medicine, 5*(198), 198ra105.
 
 Cogitate Consortium. (2025). Adversarial testing of global neuronal workspace and integrated information theories of consciousness. *Nature*.
@@ -1601,6 +1609,8 @@ Tero, A., et al. (2010). Rules for biologically inspired adaptive network design
 
 Turin, L., et al. (2014). Electron spin changes during general anesthesia in *Drosophila*. *PNAS, 111*(34), E3524–E3533.
 
+VanRullen, R. (2016). Perceptual cycles. *Trends in Cognitive Sciences, 20*(10), 723–735.
+
 Zadeh-Haghighi, H., et al. (2026). Magnesium isotope effects on tubulin polymerization under magnetic field. *Science Advances*.
 
 ### Tier 2: Peer-Reviewed Theoretical, Review, and Foundational Works
@@ -1628,6 +1638,10 @@ Fahrenfort, J. J., et al. (2025). Criterion placement confounds in adversarial c
 Friston, K. (2010). The free-energy principle: A unified brain theory? *Nature Reviews Neuroscience, 11*, 127–138.
 
 Gödel, K. (1931). Über formal unentscheidbare Sätze der Principia Mathematica und verwandter Systeme I. *Monatshefte für Mathematik und Physik, 38*, 173–198.
+
+Grüning, C., & Bhatt, D. (2016). Dark state population determines magnetic sensitivity in radical pair magnetoreception model. *Scientific Reports, 6*, 22417.
+
+Hiscock, H. G., et al. (2024). Quantum Zeno recovery of tightly bound radical pair magnetosensitivity. *Nature Communications, 15*, 2045.
 
 Haberkorn, R. (1976). Density matrix description of spin-selective radical pair reactions. *Molecular Physics, 32*(5), 1491–1493.
 

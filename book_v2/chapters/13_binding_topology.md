@@ -4,6 +4,8 @@
 
 Your brain is spread across two hemispheres, distributed through billions of neurons, yet your experience is unified. You don't hear with one consciousness and see with another. Something binds it together. What?
 
+You taste coffee and the bitterness and the warmth and the steam and the weight of it in your hand arrive as one thing, inseparable, a single experience you have never thought to question. Now take the warmth away from the bitterness. Put the steam in one room and the weight in another. You haven't lost any of the pieces. You have lost the coffee.
+
 ### Higher-Dimensional Structure
 
 Think of three friends who all know each other. That is not just three pairs of friendships. It is a triangle, a structure with an interior, a space enclosed by the connections. Four mutual friends form a tetrahedron. Five form a shape that exists in four dimensions. The Blue Brain Project, applying algebraic topology to cortical microcircuits, discovered that neurons form these mutual-connection structures, called simplicial complexes, reaching up to seven algebraic dimensions. Neural activity generates high-dimensional topological cavities that appear, grow, and dissolve in coordinated sequences. These are not metaphorical dimensions. They are algebraically real topological features of neural connectivity.
@@ -14,7 +16,7 @@ Santoro and colleagues (2024) demonstrated that interactions involving three or 
 
 The proposed binding mechanism operates across three scales.
 
-At the quantum scale, radical pair spin coherence creates correlations between tubulin subunits — localized effects operating at microsecond timescales. These correlations connect upward through neural cliques forming higher-dimensional simplicial complexes: two neurons ten centimeters apart in Euclidean space may be adjacent in the seven-dimensional simplicial complex formed by their shared clique membership. The long-range correlations we observe in three dimensions would be the projection of local interactions in higher-dimensional topology. And at self-organized criticality, correlation length diverges, information propagation becomes scale-free, and the critical point connects quantum effects at the bottom to system-spanning dynamics at the top.
+At the quantum scale, radical pair spin coherence creates correlations between tubulin subunits, localized effects operating at microsecond timescales. These correlations connect upward through neural cliques forming higher-dimensional simplicial complexes: two neurons ten centimeters apart in Euclidean space may be adjacent in the seven-dimensional simplicial complex formed by their shared clique membership. The long-range correlations we observe in three dimensions would be the projection of local interactions in higher-dimensional topology. And at self-organized criticality, correlation length diverges, information propagation becomes scale-free, and the critical point connects quantum effects at the bottom to system-spanning dynamics at the top.
 
 ### An Honest Negative Result
 

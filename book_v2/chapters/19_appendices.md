@@ -401,6 +401,8 @@ This matters for the decoherence problem. Tegmark's calculation shows that macro
 
 Aharonov, Y., Albert, D. Z., & Vaidman, L. (1988). How the result of a measurement of a component of the spin of a spin-1/2 particle can turn out to be 100. *Physical Review Letters, 60*(14), 1351–1354.
 
+Benzi, R., Sutera, A., & Vulpiani, A. (1982). Stochastic resonance in climatic change. *Tellus, 34*(1), 10–16.
+
 Casali, A. G., et al. (2013). A theoretically based index of consciousness independent of sensory processing and behavior. *Science Translational Medicine, 5*(198), 198ra105.
 
 Cogitate Consortium. (2025). Adversarial testing of global neuronal workspace and integrated information theories of consciousness. *Nature*.
@@ -443,6 +445,8 @@ Tero, A., et al. (2010). Rules for biologically inspired adaptive network design
 
 Turin, L., et al. (2014). Electron spin changes during general anesthesia in *Drosophila*. *PNAS, 111*(34), E3524–E3533.
 
+VanRullen, R. (2016). Perceptual cycles. *Trends in Cognitive Sciences, 20*(10), 723–735.
+
 Zadeh-Haghighi, H., et al. (2026). Magnesium isotope effects on tubulin polymerization under magnetic field. *Science Advances*.
 
 ### Tier 2: Peer-Reviewed Theoretical, Review, and Foundational Works
@@ -470,6 +474,10 @@ Fahrenfort, J. J., et al. (2025). Criterion placement confounds in adversarial c
 Friston, K. (2010). The free-energy principle: A unified brain theory? *Nature Reviews Neuroscience, 11*, 127–138.
 
 Gödel, K. (1931). Über formal unentscheidbare Sätze der Principia Mathematica und verwandter Systeme I. *Monatshefte für Mathematik und Physik, 38*, 173–198.
+
+Grüning, C., & Bhatt, D. (2016). Dark state population determines magnetic sensitivity in radical pair magnetoreception model. *Scientific Reports, 6*, 22417.
+
+Hiscock, H. G., et al. (2024). Quantum Zeno recovery of tightly bound radical pair magnetosensitivity. *Nature Communications, 15*, 2045.
 
 Haberkorn, R. (1976). Density matrix description of spin-selective radical pair reactions. *Molecular Physics, 32*(5), 1491–1493.
 
