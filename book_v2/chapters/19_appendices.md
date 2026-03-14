@@ -32,9 +32,9 @@ For the confirmatory set, 3D mazes used side length 9, 6 barrier hyperplanes, an
 
 The **quantum-adaptive controller** operates a parameterized quantum circuit in a latent space of dimension `latent_dim`. At each time step, radical pair spin dynamics in the latent space produce a singlet yield that depends on the agent's conformational state and the local maze geometry. A state-dependent adaptive measurement basis selects which quantum observable to read. The singlet yield biases movement in the physical maze dimensions. Parameters governing the feedback loop, measurement basis selection, and movement weights are evolved via differential evolution.
 
-The **classical-adaptive controller** replaces the quantum circuit with a learned state-dependent stochastic gate operating in the same observable space. It receives identical sensory inputs and has its own independently optimized parameters. This controller is the primary comparator.
+The **classical-adaptive controller** replaces the quantum circuit with a learned state-dependent stochastic gate operating in the same observable space. It receives identical sensory inputs and its own independently optimized parameters. This controller is the primary comparator.
 
-Two reality-check baselines are also included: a shortest-path planner with full map knowledge (the classical upper bound) and wall-following heuristics (the lower bound). The planner solves every maze in every family. The benchmark question is therefore not "quantum versus optimal classical planning" but "quantum-adaptive versus matched classical-adaptive under realistic evolutionary constraints."
+Two reality-check baselines are also included: a shortest-path planner with full map knowledge (the classical upper bound) and wall-following heuristics (the lower bound). The planner solves every maze in every family. The benchmark question is therefore: can evolution build better navigators with quantum resources than without them, given the same optimization budget?
 
 ### Scaling Sweep
 
@@ -201,7 +201,7 @@ The analysis pipeline consists of four stages, all available in the project repo
 
 Against both comparators, classical metrics declined first by a wide margin. Only 11–12% of subjects showed topology-first ordering — consistent with chance. The prediction is not supported.
 
-The result is directional, not merely null. Topological features did not just fail to lead — they consistently lagged behind classical markers. A future dataset with marked induction onsets within continuous recordings could confirm or reverse this finding.
+The result is directional. Topological features did not just fail to lead — they consistently lagged behind classical markers. A future dataset with marked induction onsets within continuous recordings could confirm or reverse this finding.
 
 ---
 
@@ -261,7 +261,7 @@ Another one-parameter generalization: H_α = (1/(1−α)) log(Σ p(x)^α). Like 
 
 ### Perturbational Complexity Index (PCI)
 
-An entropy-derived consciousness measure developed by Casali and colleagues (2013). PCI combines TMS stimulation with algorithmic complexity of the evoked EEG response. It measures not how complex the brain's spontaneous activity is, but how complex its *response to perturbation* is. A system at criticality should show maximal PCI; departures from criticality should reduce it. PCI reliably tracks consciousness level across wakefulness, sleep, anesthesia, and disorders of consciousness without requiring behavioral report.
+An entropy-derived consciousness measure developed by Casali and colleagues (2013). PCI combines TMS stimulation with algorithmic complexity of the evoked EEG response. It measures how complex the brain's *response to perturbation* is. A system at criticality should show maximal PCI; departures from criticality should reduce it. PCI reliably tracks consciousness level across wakefulness, sleep, anesthesia, and disorders of consciousness without requiring behavioral report.
 
 ### Conditional Entropy (Including Negative Quantum Conditional Entropy)
 
@@ -287,7 +287,7 @@ Any theory of consciousness owes a debt to its competitors. If you can't articul
 
 NFT agrees with the math. The disagreement is about whether the fit is a coincidence. Quantum cognition treats quantum probability as a useful formalism. NFT proposes that the formalism fits because the underlying substrate is, in fact, quantum. If NFT is right, the fit should track cases where the proposed biological substrate is most active. That is a testable difference.
 
-**Recurrent Processing Theory.** Lamme's RPT holds that consciousness arises from recurrent neural processing. RPT has genuine empirical traction: recurrent processing correlates with reportable awareness in visual masking paradigms, and disrupting it disrupts conscious access. NFT does not compete with RPT. It subsumes it. Recurrent processing is the neural architecture through which navigational selection operates. RPT answers a "where in the brain" question. NFT answers a "why does recurrent processing produce experience and feedforward processing doesn't?" question.
+**Recurrent Processing Theory.** Lamme's RPT holds that consciousness arises from recurrent neural processing. RPT has genuine empirical traction: recurrent processing correlates with reportable awareness in visual masking paradigms, and disrupting it disrupts conscious access. NFT subsumes RPT. Recurrent processing is the neural architecture through which navigational selection operates. RPT answers a "where in the brain" question. NFT answers a "why does recurrent processing produce experience and feedforward processing doesn't?" question.
 
 **GNWT after COGITATE.** The COGITATE adversarial collaboration, published in *Nature* in 2025, substantially challenged key predictions of both GNWT and IIT. Neither theory was killed. Both were wounded in specific, documented ways. NFT reads this result as evidence that workspace broadcast and information integration are subsystems of something larger, not competitors for the whole explanation.
 
@@ -351,7 +351,7 @@ The tension with quantum mechanics is real and unresolved. Quantum measurement a
 
 **Mary's room and the knowledge argument.** Frank Jackson's thought experiment: Mary has learned everything physical there is to know about color vision, but she has lived in a black-and-white room. When she sees red for the first time, does she learn something new?
 
-NFT's response is specific. Mary's physical knowledge was third-person, observational, descriptive. What she gains when she sees red is the first-person disturbance that accompanies a measurement-like update of her own perceptual state. The back-action proposal from Chapter 12 suggests that qualitative character is tied to the physical disturbance intrinsic to a measurement-like process. Mary knew everything about color processing from the outside. She had never undergone the specific disturbance that constitutes seeing red from the inside. On the dissolution claim of Chapter 12, Mary's gap is not between physical knowledge and experience. It is between observing a process and undergoing it. She knew everything about color processing from the outside. She had never been the apparatus that is changed by seeing red. These are not two kinds of thing. They are one thing with two sides [C].
+NFT's response is specific. Mary's physical knowledge was third-person, observational, descriptive. What she gains when she sees red is the first-person disturbance that accompanies a measurement-like update of her own perceptual state. The back-action proposal from Chapter 12 suggests that qualitative character is tied to the physical disturbance intrinsic to a measurement-like process. Mary knew everything about color processing from the outside. She had never undergone the specific disturbance that constitutes seeing red from the inside. On the dissolution claim of Chapter 12, Mary's gap is between observing a process and undergoing it. She knew everything about color processing from the outside. She had never been the apparatus that is changed by seeing red. These are not two kinds of thing. They are one thing with two sides [C].
 
 **Causal closure and quantum indeterminacy.** Quantum indeterminacy does not provide a clean loophole for mental causation. It looks like it might: if physical law determines the probabilities but not the outcomes, there is causal slack. But filling indeterminacy with consciousness converts probabilistic physical law into deterministic psychophysical law, and now you need to explain why quantum statistics look random when they are being steered. NFT's approach is not to claim that consciousness supplements physical law. It is to claim that the measurement-like process through which definite outcomes emerge is itself the locus of conscious experience. Consciousness does not push the dice. Consciousness is the rolling.
 
@@ -363,7 +363,7 @@ NFT's response is specific. Mary's physical knowledge was third-person, observat
 
 ## Appendix J: Quantum Interpretations
 
-NFT's empirical commitments are at Levels A and B. Level C touches quantum interpretation, and different interpretations receive the theory differently. What follows is an honest compatibility assessment.
+NFT's empirical commitments are at Levels A and B. Level C touches quantum interpretation, and different interpretations receive the theory differently.
 
 **Copenhagen.** NFT fits naturally. The proposal is that biological measurement-like processes — radical pair chemistry in microtubules — constitute a physical instantiation of measurement. Consciousness is not an external observer collapsing wavefunctions from outside physics. It is the measurement process itself, instantiated in biological hardware. Copenhagen does not specify what counts as a measurement apparatus. NFT offers a candidate answer.
 

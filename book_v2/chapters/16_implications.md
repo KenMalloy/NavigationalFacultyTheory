@@ -54,7 +54,7 @@ Five quantitative markers separate biological consciousness from digital emulati
 | 4. Time-irreversibility | Physics different forward vs. backward? | Entropy production rate | State-dependent irreversibility | Time-symmetric |
 | 5. Trajectory entropy reduction | Better-than-classical uncertainty reduction? | Trajectory entropy vs. decision depth | Scaling advantage | No advantage |
 
-No single marker is decisive. The five are jointly overdetermined. A system that fails all five in the predicted pattern provides strong evidence that behavioral emulation does not imply identity of physical mechanism.
+The five are jointly overdetermined. A system that fails all five in the predicted pattern provides strong evidence that behavioral emulation does not imply identity of physical mechanism.
 
 ### The AI Consciousness Hierarchy
 
@@ -83,7 +83,7 @@ A structural observation before we move on. The same shape keeps appearing acros
 
 ### For Physics
 
-The observer problem in quantum mechanics may be a consciousness problem, not in the vague sense that "consciousness collapses the wavefunction," but in the precise sense that consciousness is the physical faculty that navigates quantum possibility space, with collapse being what navigation looks like from the third-person perspective.
+The observer problem in quantum mechanics may be a consciousness problem, in the precise sense that consciousness is the physical faculty that navigates quantum possibility space, with collapse being what navigation looks like from the third-person perspective.
 
 Zurek's quantum Darwinism provides the physics of intersubjective agreement. If you have written C++, the name tells you what's going on. A pointer in code doesn't hold the data — it holds the address where the data lives. Different parts of a program can hold different pointers to the same value, and they agree on what it is because they're all referencing the same location. Zurek's pointer states are the quantum version. When a quantum system interacts with its environment, certain robust states get their addresses copied everywhere — into scattered photons, thermal radiation, air molecules. Each observer dereferences a different copy. They agree on what is real because every copy points to the same underlying state. Classical reality isn't fundamental, it's the set of quantum states robust enough to be referenced from anywhere.
 

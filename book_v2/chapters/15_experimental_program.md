@@ -10,7 +10,7 @@ A framework that cannot be tested is not a scientific theory. A framework earns 
 
 ### Discriminative Predictions
 
-There is an important distinction here that is easy to miss. Some predictions test whether the quantum biology substrate exists in microtubules. Others test whether that substrate matters for consciousness. Both are necessary. Neither alone is sufficient. A lot of confusion in the quantum consciousness literature comes from conflating the two.
+Some predictions test whether the quantum biology substrate exists in microtubules. Others test whether that substrate matters for consciousness. You need both, and a lot of confusion in the quantum consciousness literature comes from conflating the two.
 
 **Category A: Tests of the Quantum Biology Substrate**
 
@@ -34,39 +34,44 @@ Suppose every one of these succeeds. The chemistry is real, the entanglement is 
 
 **B2. Back-action evasion zombie.** Find a way to eliminate quantum back-action on microtubule shape changes while preserving classical neural signaling. If phenomenal experience vanishes while functional behavior continues, the back-action thesis is confirmed. No competing theory predicts this. Also beyond current reach [B].
 
-**B3. Isotope effects on consciousness specifically.** Swap isotopes at radical pair sites and look for changes not just in neural function generally, but in consciousness-level markers (PCI, conscious access thresholds) specifically. The distinction matters: an isotope effect on synaptic transmission is interesting but proves nothing about consciousness. An isotope effect that selectively impairs conscious access while leaving unconscious processing intact would be genuinely discriminative [B].
+**B3. Isotope effects on consciousness specifically.** Swap isotopes at radical pair sites and look for changes not just in neural function generally, but in consciousness-level markers (PCI, conscious access thresholds) specifically. An isotope effect on synaptic transmission is interesting but proves nothing about consciousness. An isotope effect that selectively impairs conscious access while leaving unconscious processing intact would be genuinely discriminative [B].
 
 **B4. Within-state conscious access dissociation.** Disrupt radical pair chemistry and test whether *conscious* access to stimuli is selectively degraded while basic stimulus discrimination stays intact. This would show the mechanism specifically supports consciousness rather than neural function in general [B].
 
-**B5. The psychedelic bridge-failure test.** Administer quantum cognition tasks (QQ equality, order effects) during dose-titrated psychedelic sessions with concurrent EEG criticality measures (DFA exponents, PCI). NFT predicts a split: classical signal diversity increases with dose while quantum probability signatures weaken specifically at ego dissolution, because the criticality-dependent amplification bridge fails (Chapter 11). Carhart-Harris's entropic brain framework predicts entropy increases across the board. Preliminary support: a 2026 DMT study shows ego dissolution correlating with subcritical shift (DFA down, r ≈ −0.61), and psilocybin increases spontaneous signal diversity while leaving perturbational complexity unchanged. No quantum cognition tasks have been administered during psychedelic states. This is feasible with current methods [B].
+**B5. The psychedelic bridge-failure test.** Administer quantum cognition tasks (QQ equality, order effects) during dose-titrated psychedelic sessions with concurrent EEG criticality measures (DFA exponents, PCI). NFT predicts a split. Classical signal diversity increases with dose while quantum probability signatures weaken specifically at ego dissolution, because the criticality-dependent amplification bridge fails (Chapter 11). Carhart-Harris's entropic brain framework predicts entropy increases across the board. NFT predicts they come apart.
+
+Preliminary evidence leans NFT's way. A 2026 DMT study shows ego dissolution correlating with subcritical shift (DFA down, r ≈ −0.61). Psilocybin increases spontaneous signal diversity while leaving perturbational complexity unchanged. The brain gets noisier but no better at propagating a signal. That is what a bridge failure looks like before you measure a single quantum marker. No quantum cognition tasks have been administered during psychedelic states. This is feasible with current methods [B].
 
 ### Predictions Already Tested
 
-Here is the ledger so far.
+Those are the predictions still waiting. Two have already been tested, and both came back against us.
 
 **Topological disruption order: NOT SUPPORTED.** NFT predicted topological complexity declines before classical neural activity during propofol anesthesia. The TDA reanalysis showed the opposite. See Chapter 13 for full discussion.
 
 **Excitonic ENAQT: MECHANISM RULED OUT.** The original proposed quantum mechanism, excitonic transport through tryptophan chromophore networks, was computationally falsified. The 0.18% quantum advantage at physiological temperature is negligible. The revised mechanism (radical pair spin coherence) emerged from this failure. See Chapter 8.
 
-These negative results weaken specific predictions while leaving the broader framework intact. The topological disruption prediction needs refinement or replacement. The excitonic mechanism was replaced by a stronger one. Both results demonstrate that NFT responds to evidence rather than accommodating around it.
+These negative results weaken specific predictions while leaving the broader framework intact. The topological disruption prediction needs refinement or replacement. The excitonic mechanism was replaced by a stronger one.
 
 ### Supportive Predictions
 
-These are consistent with NFT but also consistent with competitors. They confirm the framework without distinguishing it:
+These are consistent with NFT but also consistent with competitors. They confirm the framework without distinguishing it.
 
-- Geodesic neural trajectories during conscious processing (also predicted by dynamical systems theories)
-- Topological complexity tracking consciousness level (also predicted by structural accounts)
-- Discrete perceptual cycles at 40-80 Hz (also predicted by classical oscillatory binding)
-- Quantum cognition signatures in decision-making (also predicted by quantum probability models without quantum substrate)
+**Geodesic neural trajectories.** During conscious processing, neural activity traces shortest paths through the brain's connectivity landscape, the way water finds the fastest route downhill. fMRI and EEG studies show that conscious perception follows geodesic-like trajectories through neural state space while unconscious processing wanders. NFT predicts this because navigation means steering, and efficient steering follows geodesics. Dynamical systems theories predict the same thing without the quantum layer.
+
+**Topological complexity tracking consciousness level.** The higher-dimensional structures described in Chapter 13 track consciousness level across wakefulness, sleep, and anesthesia. More consciousness, more topological complexity. Less consciousness, less. NFT predicts this because binding through topology is part of the navigational architecture. Structural accounts of consciousness predict the same relationship for their own reasons.
+
+**Discrete perceptual cycles.** Your visual system does not sample the world continuously. It samples in pulses, roughly 10–13 times per second for visual perception, 4–8 times per second for attentional sampling. Between pulses, the brain interpolates. NFT predicts this because each quantum measurement event is discrete. The Zeno/anti-Zeno framework of Chapter 11 naturally produces pulsed observation. Classical oscillatory binding theories predict the same discreteness from neural oscillations alone.
+
+**Quantum cognition signatures.** People violate classical probability in systematic ways. They commit the conjunction fallacy, judging "the suspect is a lawyer who plays golf" as more probable than "the suspect is a lawyer." They show order effects. Ask someone "Do you trust your doctor?" and then "Are you satisfied with your health?" and you get different answers than if you ask about health first. Same questions, different order, different answers. Busemeyer and colleagues showed that quantum probability theory accounts for these patterns better than classical probability. NFT predicts this because the underlying substrate is quantum. Quantum cognition models predict the same signatures as a mathematical formalism, without requiring a quantum brain.
 
 ### What Would Kill the Theory
 
-The kill conditions again, restated in the light of the experimental program:
+**The substrate is too noisy.** Radical pair spin coherence in microtubules might turn out to be too weak or too short-lived to produce any measurable effect at the network level. The 12.7% yield difference from Chapter 8 was measured in a minimal model. If real tubulin radical pairs show coherence times orders of magnitude shorter, or yield differences too small to survive the transduction chain even under generous assumptions, Level B loses its physical platform.
 
-- If radical pair spin coherence in microtubules is conclusively too weak or too short-lived for any measurable effect at the network level → Level B dies
-- If Level 2 and Level 3 systems are indistinguishable on all behavioral and informational measures → Level B dies
-- If the quantum navigational advantage disappears when tested across larger maze families with matched classical baselines → the computational demonstration is an artifact (partially tested: the advantage survives across 90 mazes with CI excluding zero, but the effect is modest)
-- If classical systems at criticality exhibit all five diagnostic markers (Chapter 16) → the entire quantum commitment dies
-- If no isotope effects on consciousness are found in properly controlled experiments → the radical pair mechanism loses its empirical anchor
+**The quantum-classical gap closes.** Build a neuromorphic chip that runs at criticality in both quantum and classical modes (Chapter 16's Level 2 versus Level 3 test). If the two modes are indistinguishable on all five diagnostic markers across a battery of tasks, the quantum substrate adds nothing. The whole point of Level B is that quantum resources do something classical resources cannot. If they don't, Level B is unnecessary.
 
-The falsification conditions and the failures are both on the table.
+**The navigation benchmark is an artifact.** The +3.3% quantum advantage across 90 mazes survived fair testing, but the effect is modest. Run larger maze families with tighter controls and matched classical baselines. If the advantage vanishes or fails to replicate, the computational demonstration was noise, and the claim that evolution builds better navigators with quantum resources loses its evidence.
+
+**Classical criticality is enough.** If classical systems at criticality, with no quantum substrate at all, exhibit all five diagnostic markers from Chapter 16, then criticality alone explains everything NFT attributes to quantum mechanics. The entire quantum commitment dies. This is the cleanest kill. It doesn't touch the navigational framework or the back-action thesis in their classical forms. It kills the claim that the quantum part matters.
+
+**No isotope effects on consciousness.** The Zadeh-Haghighi result showed isotope effects on tubulin polymerization. If properly controlled experiments find no isotope effects on consciousness-level markers specifically (PCI, conscious access thresholds, the signatures from the diagnostic panel) then the bridge from radical pair chemistry to conscious experience has no empirical anchor. The substrate might be real. Its relevance to consciousness would be undemonstrated.

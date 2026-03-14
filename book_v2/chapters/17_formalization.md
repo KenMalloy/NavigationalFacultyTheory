@@ -8,7 +8,7 @@ A theory without mathematics is a metaphor. This chapter sketches the mathematic
 
 A Boolean hypercube of dimension *N* is the graph whose vertices are binary strings x ∈ {0,1}^N and whose edges connect pairs differing in exactly one bit. This is the canonical state space for any system composed of N binary switches.
 
-The hypercube is not novel: it is latent in NK fitness landscapes, Boolean gene regulatory networks, and quantum information. In evolutionary biology, genotypes are explicit bitstrings and mutations are single-bit flips. In Boolean networks, the whole-cell gene expression state is an N-bit vector. In quantum information, the computational basis of N qubits indexes the hypercube vertices.
+The hypercube appears across NK fitness landscapes, Boolean gene regulatory networks, and quantum information. In evolutionary biology, genotypes are explicit bitstrings and mutations are single-bit flips. In Boolean networks, the whole-cell gene expression state is an N-bit vector. In quantum information, the computational basis of N qubits indexes the hypercube vertices.
 
 Santiago-Alarcon and colleagues (2020, *Journal of the Royal Society Interface*) explicitly defined genotypes as binary strings, neighborhoods as single-step mutations, and compared classical and quantum walks for exploring genotype networks, a direct precedent for quantum navigation on biological state spaces.
 
