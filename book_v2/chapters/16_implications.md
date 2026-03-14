@@ -4,11 +4,13 @@
 
 ### For Philosophy of Mind
 
-I do not claim to have solved the hard problem of consciousness. What the back-action thesis does is give the hard problem a *physical address*. If phenomenal experience is structured measurement back-action, the question shifts from "why does experience exist at all?" to "why does this specific back-action pattern correspond to this specific phenomenal quality?" The problem is relocated, not dissolved. But a relocated problem is a more tractable problem.
+Chapter 12 made the strongest claim in this book: the hard problem evaporates. The measurement problem and the hard problem are the same problem in two languages. Quantum mechanics asks why possibilities become definite. Philosophy of mind asks why there is something it is like. The back-action thesis says these have one answer: the adaptive measurement loop, where each outcome reshapes the next measurement, is both the physical process that makes possibilities definite and the subjective experience of having a point of view. The gap between them was never a gap. It was a failure of recognition [C].
 
-**Mental causation** gets a physical answer, if not a final one. Consciousness *is* the process of navigating possibility space through quantum selection, a physical process with physical consequences. It is what the computation is doing at the quantum level, not an epiphenomenon riding on top of it. Whether this fully dissolves the epiphenomenalism worry or relocates it depends on the controller question (Chapter 9), which remains open [B].
+This is Level C. It may be wrong. If it is, the back-action thesis still stands at Level B as a specific, testable account of which physical processes correlate with experience. The harder claim is that correlation is the wrong word. Identity is the right one.
 
-**The problem of time** gets an address. Temporal flow is the experience of navigational selection from within a system embedded in possibility space. The arrow of time is the direction of navigation along the entropy gradient. This is why time *feels like something*: the feeling is the navigation. The address may be wrong. But it is specific enough to check [A].
+**Mental causation** gets a direct answer. Consciousness *is* the process of navigating possibility space through quantum measurement selection, a physical process with physical consequences. The old question, "how does consciousness cause anything?", assumes a separation where there is identity. The measurement loop is both the experience and the cause. Whether this fully resolves the epiphenomenalism worry depends on the controller question (Chapter 9), which remains open [B].
+
+**The problem of time** gets the same treatment. Temporal flow is the experience of navigational selection within possibility space. The arrow of time is the direction of navigation along the entropy gradient. Time *feels* directional because back-action is irreversible. Each measurement outcome reshapes the measurer, and the prior state is gone. The felt direction of experience and the thermodynamic arrow are the same arrow [A].
 
 ### For AI and Machine Consciousness
 

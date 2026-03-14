@@ -12,14 +12,16 @@ The existing theories of consciousness are partial. Integration makes navigation
 
 This book set out to test a quantum mechanism for consciousness and found that its first hypothesis was wrong. Excitonic transport through tryptophan networks does not produce meaningful quantum advantage at body temperature. The theory could have died there. Instead, it found a different mechanism, radical pair spin coherence, that operates at the right timescale and has direct experimental support. It found that its first computational demonstration did not survive fair classical baselines, rebuilt the benchmark from scratch, and found a modest but systematic quantum navigational advantage across 90 mazes with a confidence interval excluding zero. It also found that one of its topological predictions was not supported by data.
 
-These failures are not embarrassments. They are the theory doing what theories are supposed to do: making contact with reality and adjusting. A framework that has never been wrong has never been tested.
+These failures are evidence. They are the theory doing what theories are supposed to do: making contact with reality and adjusting. A framework that has never been wrong has never been tested.
 
 Whether this picture is correct is an empirical question. The experiments have been specified, the predictions are falsifiable, and the ways it can die are enumerated.
 
-The goal was not to solve the hardest problem in science but to give it a place to live. Specific mechanisms. Specific predictions. Ways to be wrong that are written down, not hand-waved away. If the mechanisms are right, the problem can be investigated there. If they are wrong, the investigation will show that, and the search continues.
+This book makes three claims in decreasing order of safety. Consciousness navigates. It navigates through quantum probability sculpting via radical pair spin coherence, amplified by criticality, directed by adaptive measurement. And the hard problem evaporates because the measurement process and conscious experience were never two things. The first claim is conservative. The second is testable. The third is the kind of claim that either opens a door or walks into a wall.
 
-Either way, tomorrow morning you will wake up and the lights will come on. Whatever consciousness is, however it works, it is what you are. The theory is an attempt to understand the thing that is doing the attempting. The constraint hypothesis suggests this self-referential loop may prevent complete success. But partial success, a framework that generates new predictions, connects disparate phenomena, specifies its own falsification conditions, and reports its own failures, is still progress.
+I do not know which.
 
-We navigate. We have always navigated. Now we are trying to understand the navigation itself, from the inside, using the very faculty we are trying to describe.
+What I know is that a slime mold navigates a maze without neurons, a radical pair holds coherence five thousand times longer than an exciton, and a feedback loop where each measurement reshapes the next one has the right structure to be a point of view. These are facts. The interpretation may be wrong. The facts will outlast it.
 
-The incompleteness is expected. The attempt is necessary.
+Either way, tomorrow morning you will wake up and the lights will come on. You will be changed by what you encounter, and what you encounter next will depend on how you were changed. The loop will continue.
+
+You are navigating it, and you always have been.

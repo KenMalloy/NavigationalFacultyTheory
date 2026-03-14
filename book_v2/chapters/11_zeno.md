@@ -14,7 +14,7 @@ If consciousness plays a role in quantum measurement, there is a problem waiting
 
 Stare at a word long enough and it stops meaning anything. But stare at a coffee cup and it stays a coffee cup. Your visual system is continuously observing it, and the cup does not dissolve into uncertainty. It persists. That stability needs an explanation.
 
-The quantum Zeno effect, described by Misra and Sudarshan in 1977, says it should not happen. Or, more persicly, once it happens, nothing ever else does. Continuous measurement of a quantum system prevents it from evolving. Frequent observation locks the system into its current state. If consciousness continuously collapses the wavefunction (selects definite outcomes from quantum possibilities), reality should freeze.
+The quantum Zeno effect, described by Misra and Sudarshan in 1977, says it should not happen. Or, more precisely, once it happens, nothing else ever does. Continuous measurement of a quantum system prevents it from evolving. Frequent observation locks the system into its current state. If consciousness continuously collapses the wavefunction (selects definite outcomes from quantum possibilities), reality should freeze.
 
 Chalmers and McQueen formalized this objection in 2021. They showed that simple consciousness-collapse models are falsified by the Zeno effect and proposed more complex versions incorporating IIT's Φ as a parameter in the collapse operator. Their fix works, but adds complexity without adding insight.
 
@@ -28,11 +28,11 @@ Change and temporal flow arise because navigation is not static observation but 
 
 ### The Anti-Zeno Effect
 
-Every noisy environment has a characteristic rhythm. Some frequencies of vibration are louder than others. A concert hall is archetechted such that it emphasizes certain frequencies and dampens others. Physicists call this pattern the *spectral density*. A warm cellular environment vibrates at many frequencies simultaneously, but some dominate.
+Every noisy environment has a characteristic rhythm. Some frequencies of vibration are louder than others. A concert hall is architected such that it emphasizes certain frequencies and dampens others. Physicists call this pattern the *spectral density*. A warm cellular environment vibrates at many frequencies simultaneously, but some dominate.
 
 When you measure a quantum system at a particular rate, you're effectively listening for changes at that rate. You're sensitive to fluctuations that match your measurement tempo and blind to ones that don't. That's the *filter function*.
 
-The Zeno effect says observation freezes. Kofman and Kurizki showed the opposite can also happen. Frequent measurement can *accelerate* quantum evolution Which one you get depends on a single variable: the overlap between the environment's rhythm and the measurement's rhythm. If the measurement listens at frequencies where the environment is quiet, the measurement dominates and locks the system in place. That is Zeno. If the measurement listens at frequencies where the environment is loud, the environmental noise drives the system forward, amplified by the act of observation itself. That is anti-Zeno.
+The Zeno effect says observation freezes. Kofman and Kurizki showed the opposite can also happen. Frequent measurement can *accelerate* quantum evolution. Which one you get depends on a single variable: the overlap between the environment's rhythm and the measurement's rhythm. If the measurement listens at frequencies where the environment is quiet, the measurement dominates and locks the system in place. That is Zeno. If the measurement listens at frequencies where the environment is loud, the environmental noise drives the system forward, amplified by the act of observation itself. That is anti-Zeno.
 
 Our simulations place the microtubule environment near the Zeno/anti-Zeno crossover. If that holds, conscious observation does not freeze the quantum substrate. It drives it forward [B]. We propose:
 

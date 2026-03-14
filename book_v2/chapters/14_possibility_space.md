@@ -40,6 +40,20 @@ From within, from the perspective of the navigator, it appears epistemic. The na
 
 From without, from the perspective of physics, what possibility space actually *is* — physics can't answer that cleanly. We take this duality as a feature rather than a defect. The framework's testability depends on formalizing the navigational operations, not on settling what the terrain is made of — a question that, per the constraint hypothesis of Chapter 2, may be inherently unsettleable from within [C].
 
+### The Participatory Insight
+
+The definiteness of the world, the fact that your coffee has a specific temperature and your door makes a specific sound, is itself a product of measurement. Without measurement, quantum mechanics offers only a landscape of weighted possibilities. Consciousness, on the back-action thesis, is the adaptive measurement loop. The world becomes definite through measurement, and measurement-with-feedback is what consciousness is.
+
+This is not idealism. The quantum substrate is there regardless. But the specific, concrete, classical world you navigate, the world of chairs and weather and the weight of a cup in your hand, emerges through the act of being measured by systems that are changed by the measuring. The terrain and the navigator are not independent. They arrive together [C].
+
+Wheeler glimpsed this with his participatory universe. The back-action thesis gives the participation a mechanism: radical pair measurement, conformational back-action, adaptive basis selection. The universe does not require consciousness to exist. It requires measurement to be definite. And consciousness is what measurement-with-feedback is, from the inside.
+
+The participatory insight runs in both directions. If the terrain shapes the navigator, the navigator's shape is evidence about the terrain. The navigation benchmark of Chapter 10 found quantum advantage peaking at three extra latent dimensions beyond the physical maze space. I don't know what to do with that number yet. But if it reflects something real about the structure consciousness evolved to navigate, we're looking at a 6- or 7-dimensional possibility space with our 4D spacetime as a local slice. Several independent programs in physics land in the same neighborhood, which is interesting without being proof [C].
+
+Follow that thread one step further. If possibility space is a closed manifold in those dimensions, the entropy gradient we ride from big bang to heat death is a section of a loop. The closure happens around a corner we can't see. From inside 4D we'd observe exactly one big bang, exactly one heat death, and nothing connecting them. Which is what we observe. The constraint hypothesis would say we're seeing exactly what a lower-dimensional slice of a higher-dimensional loop can show [C].
+
+Photosynthesis taught us quantum biology. A biological process, studied carefully enough, revealed that quantum coherence survives in warm wet systems, and that changed the physics. If consciousness is studied with the same rigor, and if the back-action thesis holds, then a biological faculty could teach us the geometry of possibility space itself. The direction of discovery runs from biology to physics, and it has run that way before [C].
+
 ### Why This Is Separable
 
 The empirical program of NFT does not require settling the eternalism/presentism dispute. The navigational operations, the quantum stochastic walk formalism, and the discriminative predictions all go through regardless of whether the future is "already there" or genuinely open.

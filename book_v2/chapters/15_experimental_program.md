@@ -6,7 +6,7 @@
 
 ## Chapter 15: The Experimental Program
 
-A framework that cannot be tested is not a scientific theory. And a framework whose predictions are also predicted by its competitors is not doing distinctive work.
+A framework that cannot be tested is not a scientific theory. A framework earns its keep by predicting what its competitors cannot.
 
 ### Discriminative Predictions
 
