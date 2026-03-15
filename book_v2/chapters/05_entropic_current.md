@@ -28,11 +28,11 @@ The two are correlated. Suppressing consciousness reduces both. But they are not
 
 ### The Arrow
 
-Two philosophical contributions sharpen the connection between entropy and consciousness.
+As the candle burns down, the barn roof weathers, and your hot cup of tea cools to warm, entropy increases. Every complex system that persists does so by actively managing that increase, importing energy, shedding waste, rebuilding what burns. Jha argues that consciousness is what this management looks like from the inside. When a system gets complex enough that steering against entropy becomes a full-time job, the steering itself becomes experience. Consciousness is thermodynamic management, felt.
 
-Jha argues that consciousness is a natural consequence of how complex systems manage energy, organize information, and maintain temporary order against entropic dissolution. Hemmo and Shenker argue that the psychological arrow of time, the felt sense that time flows from past to future, is thermodynamic asymmetry experienced from within. The two accounts are complementary. Jha explains why consciousness is entangled with entropy; Hemmo and Shenker explain why entropy gives consciousness its temporal direction.
+Hemmo and Shenker come at the same territory from the other side. Why does time feel like it flows? Physics has no flow. Einstein's equations run identically in both directions. But entropy does not. Entropy increases, and increase has a direction. Hemmo and Shenker argue that the psychological arrow of time, the felt sense that this moment gives way to the next, is thermodynamic asymmetry experienced from within. You feel time flowing because entropy is increasing. The feeling and the physics point the same way.
 
-NFT synthesizes both: consciousness navigates along the entropy gradient, and the arrow of time is the direction of navigation. This is the directionality that DeLancey's complexity framework (Chapter 2) cannot provide [A].
+NFT synthesizes both. Consciousness navigates along the entropy gradient, and the arrow of time is the direction of navigation. This is the directionality that DeLancey's complexity framework (Chapter 2) cannot provide [A].
 
 ### Constrained Navigation
 

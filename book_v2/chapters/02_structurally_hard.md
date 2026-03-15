@@ -6,9 +6,7 @@ There is something strange about trying to build a theory of consciousness. The 
 
 Gödel showed in 1931 that self-referential formal systems are necessarily incomplete. Consciousness theories are not formal systems in the strict sense, and the analogy must be handled carefully. But the structural parallel is informative. Kleiner and Hoel showed that any minimally informative theory of consciousness is automatically fragile under substitution arguments. The problem is not that the theories are bad. It is that self-description from within has inherent limits.
 
-The persistent pattern of partial success in consciousness science is not just bad luck. When you are inside the system you are trying to describe, certain things will always slip through the net. We call this the *constraint hypothesis*: a self-referential limitation analogous to Gödelian incompleteness.
-
-This is philosophical context, not empirical justification. NFT stands or falls on its predictions regardless. And it is not mysterianism. Consciousness is not beyond science. But theories formulated from within the phenomenon they describe will be structurally incomplete in specific, predictable ways. The practical upshot is an architectural choice: define consciousness by its function rather than its internal mechanism, and stay at the descriptive level where self-referential constraints bite least.
+The persistent pattern of partial success in consciousness science is not just bad luck. When you are inside the system you are trying to describe, certain things will always slip through the net. We call this the *constraint hypothesis*: a self-referential limitation analogous to Gödelian incompleteness. Consciousness is not beyond science, and this is not mysterianism. But if the hard problem cannot be solved from the inside, then every claim must be testable from the outside. Every prediction in this book has a kill condition. Every failure is reported. The constraint hypothesis demands it.
 
 ### The Strongest Alternative
 

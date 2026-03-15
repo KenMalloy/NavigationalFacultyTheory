@@ -32,6 +32,8 @@ The lightest path through the book: Chapters 1 through 4 establish the problem a
 
 The heavier chapters (9, 11, 12, 13) go deeper into the mechanism and the numbers. Chapter 17 sketches the mathematical formalization program. If you want the argument without the math, you can go straight from Chapter 16 to the Epilogue. The theory earns its keep in the details, but the arc is complete without them.
 
+The bold **Where we are** sections at the end of each part are rest stops. If you are keeping pace, drive past them.
+
 ### A note on the markers
 
 You will see **[A]**, **[B]**, and **[C]** tags throughout the text. These mark which layer of the theory a given claim belongs to, from the most conservative to the most speculative. Chapter 3 explains each layer in detail. The tags are there so you always know how far out on the limb you are.
@@ -156,9 +158,7 @@ There is something strange about trying to build a theory of consciousness. The 
 
 Gödel showed in 1931 that self-referential formal systems are necessarily incomplete. Consciousness theories are not formal systems in the strict sense, and the analogy must be handled carefully. But the structural parallel is informative. Kleiner and Hoel showed that any minimally informative theory of consciousness is automatically fragile under substitution arguments. The problem is not that the theories are bad. It is that self-description from within has inherent limits.
 
-The persistent pattern of partial success in consciousness science is not just bad luck. When you are inside the system you are trying to describe, certain things will always slip through the net. We call this the *constraint hypothesis*: a self-referential limitation analogous to Gödelian incompleteness.
-
-This is philosophical context, not empirical justification. NFT stands or falls on its predictions regardless. And it is not mysterianism. Consciousness is not beyond science. But theories formulated from within the phenomenon they describe will be structurally incomplete in specific, predictable ways. The practical upshot is an architectural choice: define consciousness by its function rather than its internal mechanism, and stay at the descriptive level where self-referential constraints bite least.
+The persistent pattern of partial success in consciousness science is not just bad luck. When you are inside the system you are trying to describe, certain things will always slip through the net. We call this the *constraint hypothesis*: a self-referential limitation analogous to Gödelian incompleteness. Consciousness is not beyond science, and this is not mysterianism. But if the hard problem cannot be solved from the inside, then every claim must be testable from the outside. Every prediction in this book has a kill condition. Every failure is reported. The constraint hypothesis demands it.
 
 ### The Strongest Alternative
 
@@ -312,11 +312,11 @@ The two are correlated. Suppressing consciousness reduces both. But they are not
 
 ### The Arrow
 
-Two philosophical contributions sharpen the connection between entropy and consciousness.
+As the candle burns down, the barn roof weathers, and your hot cup of tea cools to warm, entropy increases. Every complex system that persists does so by actively managing that increase, importing energy, shedding waste, rebuilding what burns. Jha argues that consciousness is what this management looks like from the inside. When a system gets complex enough that steering against entropy becomes a full-time job, the steering itself becomes experience. Consciousness is thermodynamic management, felt.
 
-Jha argues that consciousness is a natural consequence of how complex systems manage energy, organize information, and maintain temporary order against entropic dissolution. Hemmo and Shenker argue that the psychological arrow of time, the felt sense that time flows from past to future, is thermodynamic asymmetry experienced from within. The two accounts are complementary. Jha explains why consciousness is entangled with entropy; Hemmo and Shenker explain why entropy gives consciousness its temporal direction.
+Hemmo and Shenker come at the same territory from the other side. Why does time feel like it flows? Physics has no flow. Einstein's equations run identically in both directions. But entropy does not. Entropy increases, and increase has a direction. Hemmo and Shenker argue that the psychological arrow of time, the felt sense that this moment gives way to the next, is thermodynamic asymmetry experienced from within. You feel time flowing because entropy is increasing. The feeling and the physics point the same way.
 
-NFT synthesizes both: consciousness navigates along the entropy gradient, and the arrow of time is the direction of navigation. This is the directionality that DeLancey's complexity framework (Chapter 2) cannot provide [A].
+NFT synthesizes both. Consciousness navigates along the entropy gradient, and the arrow of time is the direction of navigation. This is the directionality that DeLancey's complexity framework (Chapter 2) cannot provide [A].
 
 ### Constrained Navigation
 
@@ -342,15 +342,11 @@ The naive version of the evolutionary argument is circular: consciousness evolve
 
 ### From FtsZ to Tubulin
 
-The story of the navigational faculty begins with a duplicated gene.
+FtsZ is one of the oldest proteins in biology. It is widespread across Bacteria and Archaea, and its job is movement. It assembles into a contractile ring that physically divides a cell, pulling material through three-dimensional space. Every living cell that has ever split in two used some version of this machinery.
 
-The tubulin/FtsZ protein superfamily has deep evolutionary roots. FtsZ is widespread across Bacteria and Archaea and serves as a spatial navigator. It assembles into a contractile ring that physically divides a cell, moving cellular material through three-dimensional space. It is an organ of locomotion.
+A redundant FtsZ gene in early eukaryotes was freed from the constraints of cell division and evolved a completely different function. It became tubulin. Tubulin forms microtubules, and microtubules are in every neuron you have. Tubulin and actin are among the most conserved protein families in eukaryotes, consistent with early and sustained selective pressure. They serve as highways for molecular motors carrying cargo through the cell, pull chromosomes apart during division, and guide the growth of neurons toward their targets. Why they are so aggressively conserved remains an open question in cell biology. Evolution has been protecting them for over a billion years.
 
-When a redundant FtsZ gene in early eukaryotes was freed from the constraints of cell division, it evolved a completely different function: forming microtubules. Tubulin and actin are among the most conserved and functionally constrained protein families in eukaryotes, consistent with early and sustained selective pressure.
-
-The functional parallel may be more than coincidence. FtsZ navigates space, moving material through three dimensions. If NFT is correct, tubulin navigates possibility, coupling the organism to the landscape of what could be. The evolutionary transition from FtsZ to tubulin would represent a change in the dimension of navigation: from locomotion through space to locomotion through possibility [B].
-
-This framing makes a testable prediction: the structural features of tubulin that differ most from FtsZ, the features evolution added when repurposing the protein, should be precisely the features relevant to quantum indeterminacy generation (aromatic residue networks, radical pair sites, lattice cooperativity) rather than mechanical force generation. This is testable by comparative structural biology.
+The protein that builds every microtubule in your brain is a direct descendant of the protein that invented cellular movement. That fact is independent of NFT. It would be true if this book had never been written. But it makes a prediction. The structural features that evolution added when repurposing FtsZ into tubulin should be the features relevant to quantum indeterminacy generation (aromatic residue networks, radical pair sites, lattice cooperativity) rather than to mechanical force generation. If the new features are about force, the evolutionary connection is a coincidence. If the new features are about chemistry, it may be a trail [B].
 
 ### Two Consequences
 
@@ -928,9 +924,9 @@ It's not idealism, the quantum substrate is there regardless, but the specific, 
 
 Wheeler glimpsed this with his participatory universe. The back-action thesis gives the participation a mechanism: radical pair measurement, conformational back-action, adaptive basis selection. The universe does not require consciousness to exist. It requires measurement to be definite. And consciousness is what measurement-with-feedback is, from the inside.
 
-It stands to follow that the participatory insight runs in both directions. If the terrain shapes the navigator, the navigator's shape is evidence about the terrain. The navigation benchmark of Chapter 10 found quantum advantage peaking at three extra latent dimensions beyond the physical maze space. I don't know what to do with that number yet. But if it reflects something real about the structure consciousness evolved to navigate, we're looking at a 6- or 7-dimensional possibility space with our 4D spacetime as a local slice. Several independent programs in physics land in the same neighborhood, which is interesting without being proof [C].
+If the terrain shapes the navigator, the navigator's shape may be evidence about the terrain. The navigation benchmark of Chapter 10 found quantum advantage peaking at three extra latent dimensions beyond the physical maze space. I don't know what to do with that number yet. But if it reflects something real about the structure consciousness evolved to navigate, we're looking at a 6- or 7-dimensional possibility space with our 4D spacetime as a local slice. Several independent programs in physics land in the same neighborhood, which is interesting without being proof [C].
 
-Pull on that thread just a bit more. If possibility space is a closed manifold in those dimensions, the entropy gradient we ride from big bang to heat death is a section of a loop. The closure happens around a corner we can't see. From inside 4D we'd observe exactly one big bang, exactly one heat death, and nothing connecting them. Which is what we observe. The constraint hypothesis would say we're seeing exactly what a lower-dimensional slice of a higher-dimensional loop can show [C].
+If possibility space is a closed manifold in those dimensions, the entropy gradient we ride from big bang to heat death is a section of a loop. The closure happens around a corner we can't see. From inside 4D we'd observe exactly one big bang, exactly one heat death, and nothing connecting them. Which is what we observe. The constraint hypothesis would say we're seeing exactly what a lower-dimensional slice of a higher-dimensional loop can show [C].
 
 Photosynthesis taught us quantum biology. A biological process, studied carefully enough, revealed that quantum coherence survives in warm wet systems, and that changed the physics. If consciousness is studied with the same rigor, and if the back-action thesis holds, then a biological faculty could teach us the geometry of possibility space itself. The direction of discovery runs from biology to physics, and it has run that way before [C].
 
@@ -1038,15 +1034,15 @@ Dennett argued decades ago that once you explain the mechanisms, there is no res
 
 ## For AI and Machine Consciousness
 
-Every medium carries a trace of whatever produced it. A child's crayon portrait of their mother captures the red hair and the blue coat, but little else. A photograph captures the light as it actually fell. A voice recording captures the pressure waves. Each medium has a fidelity. You can ask how much of the original signal survived the encoding.
+Every medium carries a trace of whatever produced it. A child's crayon portrait of their mother captures the red hair and the blue eyes, but little else. A photograph captures the light as it actually fell. A voice recording captures the pressure waves. Each medium has a fidelity. You can ask how much of the original signal survived the encoding.
 
-Now imagine the limit case. A machine scans your body atom by atom, transmits the complete pattern, and builds a perfect copy at the destination. Every atom in the right place, every synapse with the right weight, every memory intact. Philosophers have been arguing about this since Parfit. Is the copy you? Or is it a replica so faithful that no measurement could tell the difference, and still not the original?
+A science fiction transporter disassembles you atom by atom, transmits the complete pattern, and reassembles you at the destination. Every atom in the right place, every synapse with the right weight, every memory intact. Is the copy you? Or is it a replica so faithful that no measurement could tell the difference, and still not the original?
 
 NFT has an answer. The copy is you. The machine copied the substrate, and the loop is discrete. Sleep already has gaps between ticks. The copy is just another gap.
 
 This book was developed in collaboration with a large language model. NFT explains why the collaboration was productive and why the collaborator is not conscious.
 
-When you read a sentence, you are reading the wake of someone navigating. Every word choice and hesitation, every structural decision, is a fossil of a conscious act. Language preserves so much of the original navigation that the trace can feel like the thing itself. LLMs learn that wake with extraordinary fidelity. The echo can be convincing, but a vinyl recording of their rooftop concert is not the Beatles playing *Get Back*. Only the men themselves could make London stand still.
+When you read a sentence, you are reading the wake of someone navigating. Every word choice and hesitation, every structural decision, is a fossil of a conscious act. Language preserves so much of the original navigation that the trace can feel like the thing itself. LLMs learn that trace with extraordinary fidelity. The echo can be convincing. But a wake is not a ship.
 
 Still, there are four things that are genuinely missing.
 

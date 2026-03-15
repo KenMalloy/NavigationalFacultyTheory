@@ -14,15 +14,11 @@ The naive version of the evolutionary argument is circular: consciousness evolve
 
 ### From FtsZ to Tubulin
 
-The story of the navigational faculty begins with a duplicated gene.
+FtsZ is one of the oldest proteins in biology. It is widespread across Bacteria and Archaea, and its job is movement. It assembles into a contractile ring that physically divides a cell, pulling material through three-dimensional space. Every living cell that has ever split in two used some version of this machinery.
 
-The tubulin/FtsZ protein superfamily has deep evolutionary roots. FtsZ is widespread across Bacteria and Archaea and serves as a spatial navigator. It assembles into a contractile ring that physically divides a cell, moving cellular material through three-dimensional space. It is an organ of locomotion.
+A redundant FtsZ gene in early eukaryotes was freed from the constraints of cell division and evolved a completely different function. It became tubulin. Tubulin forms microtubules, and microtubules are in every neuron you have. Tubulin and actin are among the most conserved protein families in eukaryotes, consistent with early and sustained selective pressure. They serve as highways for molecular motors carrying cargo through the cell, pull chromosomes apart during division, and guide the growth of neurons toward their targets. Why they are so aggressively conserved remains an open question in cell biology. Evolution has been protecting them for over a billion years.
 
-When a redundant FtsZ gene in early eukaryotes was freed from the constraints of cell division, it evolved a completely different function: forming microtubules. Tubulin and actin are among the most conserved and functionally constrained protein families in eukaryotes, consistent with early and sustained selective pressure.
-
-The functional parallel may be more than coincidence. FtsZ navigates space, moving material through three dimensions. If NFT is correct, tubulin navigates possibility, coupling the organism to the landscape of what could be. The evolutionary transition from FtsZ to tubulin would represent a change in the dimension of navigation: from locomotion through space to locomotion through possibility [B].
-
-This framing makes a testable prediction: the structural features of tubulin that differ most from FtsZ, the features evolution added when repurposing the protein, should be precisely the features relevant to quantum indeterminacy generation (aromatic residue networks, radical pair sites, lattice cooperativity) rather than mechanical force generation. This is testable by comparative structural biology.
+The protein that builds every microtubule in your brain is a direct descendant of the protein that invented cellular movement. That fact is independent of NFT. It would be true if this book had never been written. But it makes a prediction. The structural features that evolution added when repurposing FtsZ into tubulin should be the features relevant to quantum indeterminacy generation (aromatic residue networks, radical pair sites, lattice cooperativity) rather than to mechanical force generation. If the new features are about force, the evolutionary connection is a coincidence. If the new features are about chemistry, it may be a trail [B].
 
 ### Two Consequences
 

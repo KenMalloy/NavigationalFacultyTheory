@@ -32,6 +32,8 @@ The lightest path through the book: Chapters 1 through 4 establish the problem a
 
 The heavier chapters (9, 11, 12, 13) go deeper into the mechanism and the numbers. Chapter 17 sketches the mathematical formalization program. If you want the argument without the math, you can go straight from Chapter 16 to the Epilogue. The theory earns its keep in the details, but the arc is complete without them.
 
+The bold **Where we are** sections at the end of each part are rest stops. If you are keeping pace, drive past them.
+
 ### A note on the markers
 
 You will see **[A]**, **[B]**, and **[C]** tags throughout the text. These mark which layer of the theory a given claim belongs to, from the most conservative to the most speculative. Chapter 3 explains each layer in detail. The tags are there so you always know how far out on the limb you are.
