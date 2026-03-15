@@ -20,9 +20,9 @@ Entropy characterizes the landscape through which consciousness moves.
 
 ### Two Kinds of Entropy
 
-The word "entropy" does different work in different parts of this argument, and if I don't flag this now it will cause confusion later.
+The word "entropy" does different work in different parts of this argument.
 
-The empirical literature measures *signal entropy*: the Shannon or Lempel-Ziv complexity of recorded neural time series. This is entropy of the brain's current output. NFT's deeper claim concerns *trajectory entropy*: the uncertainty over distributions of future states, conditioned on the organism's goals and available actions. Signal entropy tracks consciousness state (awake versus anesthetized). Trajectory entropy is what consciousness *reduces* through navigational selection.
+*Signal entropy* is what the empirical literature measures. Shannon complexity, Lempel-Ziv complexity, the information content of recorded neural time series. It describes what the brain is doing right now. *Trajectory entropy* is what consciousness reduces. It measures uncertainty over distributions of future states, conditioned on the organism's goals and available actions. Signal entropy tracks consciousness state. Trajectory entropy is what navigation changes.
 
 The two are correlated. Suppressing consciousness reduces both. But they are not the same quantity. A classical Bayesian agent can reduce trajectory entropy through prediction and planning without any quantum resources. NFT's Level B claim requires something stronger: that the *efficiency* of trajectory-entropy reduction in conscious systems exceeds what classical stochastic processes can achieve under matched biological constraints.
 

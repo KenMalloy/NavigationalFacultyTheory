@@ -182,7 +182,7 @@ You stop trying to prove what consciousness *is* from the inside. Instead, you s
 
 ### Three Levels
 
-The framework advances three nested claims at different strengths.
+The framework advances three nested claims at different strengths. Level A says what consciousness *does*. Level B says *how*. Level C says what kind of reality that implies.
 
 **Level A (functional)** [A]: Consciousness selects among possible futures. It is a navigational faculty that reduces uncertainty over trajectory distributions. This claim is equivalent to active inference at the classical level; its contribution is architectural rather than empirical, revealing IIT, GNWT, and active inference as subsystems of a single navigational faculty. Level A is compatible with classical implementations and does not require exotic physics.
 
@@ -304,9 +304,9 @@ Entropy characterizes the landscape through which consciousness moves.
 
 ### Two Kinds of Entropy
 
-The word "entropy" does different work in different parts of this argument, and if I don't flag this now it will cause confusion later.
+The word "entropy" does different work in different parts of this argument.
 
-The empirical literature measures *signal entropy*: the Shannon or Lempel-Ziv complexity of recorded neural time series. This is entropy of the brain's current output. NFT's deeper claim concerns *trajectory entropy*: the uncertainty over distributions of future states, conditioned on the organism's goals and available actions. Signal entropy tracks consciousness state (awake versus anesthetized). Trajectory entropy is what consciousness *reduces* through navigational selection.
+*Signal entropy* is what the empirical literature measures. Shannon complexity, Lempel-Ziv complexity, the information content of recorded neural time series. It describes what the brain is doing right now. *Trajectory entropy* is what consciousness reduces. It measures uncertainty over distributions of future states, conditioned on the organism's goals and available actions. Signal entropy tracks consciousness state. Trajectory entropy is what navigation changes.
 
 The two are correlated. Suppressing consciousness reduces both. But they are not the same quantity. A classical Bayesian agent can reduce trajectory entropy through prediction and planning without any quantum resources. NFT's Level B claim requires something stronger: that the *efficiency* of trajectory-entropy reduction in conscious systems exceeds what classical stochastic processes can achieve under matched biological constraints.
 
@@ -509,11 +509,11 @@ The brain is precisely the kind of system where tiny systematic biases cascade i
 
 ### The Transduction Chain: Do the Numbers Work?
 
-The radical pair mechanism provides the quantum indeterminacy. Criticality provides the amplification. But does the signal actually survive the full chain from radical pair to neural network? This was the question fifteen peer reviewers kept asking, and they were right to ask it. We ran the calculation.
+The radical pair mechanism provides the quantum indeterminacy. Criticality provides the amplification. But does the signal survive the full chain from radical pair to neural network?
 
-The story in plain language: a reactive oxygen molecule bumps into a protein on a microtubule and creates a pair of molecules with entangled electron spins. The spin outcome biases a chemical reaction, which nudges the protein's shape, which nudges an ion channel, which nudges a neuron's firing probability. Each step is tiny. The question is whether enough of these tiny nudges accumulate, within the few milliseconds a neuron takes to decide whether to fire, to matter.
+A reactive oxygen molecule bumps into a protein on a microtubule and creates a pair of molecules with entangled electron spins. The spin outcome biases a chemical reaction, which nudges the protein's shape, which nudges an ion channel, which nudges a neuron's firing probability. Each step is tiny. The question is whether enough of them accumulate, within the few milliseconds a neuron takes to decide whether to fire, to matter.
 
-Here is where the numbers get honest. Under conservative assumptions, a typical cortical neuron has about 1,000 microtubules, each built from roughly 13,000 tubulin dimers. That is 13 million potential radical pair sites. But the encounter rate between reactive oxygen molecules and tryptophan residues is low at baseline conditions, yielding only about 10 radical pair events per neuron in the 5-millisecond window a neuron takes to decide whether to fire.
+Under conservative assumptions, a typical cortical neuron has about 1,000 microtubules, each built from roughly 13,000 tubulin dimers. That is 13 million potential radical pair sites. But the encounter rate between reactive oxygen molecules and tryptophan residues is low at baseline conditions, yielding only about 10 radical pair events per neuron in the 5-millisecond window a neuron takes to decide whether to fire.
 
 Ten events. Each one biased 12.7% by spin coherence. After you add them up, distribute the signal across roughly 10,000 ion channels, and compare to the thermal noise a neuron experiences (about 100 microvolts), the quantum signal is about 10 microvolts. One order of magnitude too small. Even with the 51-fold criticality amplification from Chapter 9, the resulting firing probability bias is about 3.4%.
 
@@ -533,7 +533,7 @@ Quiet neurons run classical. Active neurons open the quantum channel. The mechan
 
 The bottleneck is unambiguously the radical pair formation rate. The 12.7% yield difference is large enough (larger than the roughly 5% effect in avian magnetoreception, which is experimentally confirmed). The criticality amplification is strong enough. What determines whether the mechanism works is how many radical pair events occur within a neural integration window, and that is governed by local superoxide concentration at microtubule surfaces.
 
-Several quantities in this chain remain poorly constrained: the radical formation probability for O2-minus + Trp in tubulin (we used 1%; it could be 0.1% to 10%), the conformational coupling efficiency (how much shift does one differential product produce?), and the local ROS concentration near microtubules (reaction-diffusion modeling with measured SOD kinetics shows that O₂⁻ can reach microtubules within ~1 μm of a mitochondrial source, but no one has yet measured absolute O₂⁻ concentration at submicron resolution in living neurons). Each of these is experimentally accessible. The theory would be falsified if the transduction chain were shown to be suppressed by more than roughly 100 times relative to these estimates (for example, if tryptophan residues in assembled microtubules were entirely inaccessible to superoxide, or if radical pair products had no conformational effect on tubulin). It would be confirmed if activity-dependent ROS elevation at microtubule surfaces coincided with measurable changes in tubulin conformational dynamics.
+Several quantities in this chain remain poorly constrained, and the full parameter audit is in Appendix H. The theory would be falsified if the chain were shown to be suppressed by more than roughly 100 times relative to these estimates. It would be confirmed if activity-dependent ROS elevation at microtubule surfaces coincided with measurable changes in tubulin conformational dynamics.
 
 The numbers are tight. What we have is a chain of order-of-magnitude estimates, each with its own uncertainty range, that lands within striking distance of the noise floor rather than falling catastrophically short. The mechanism is not yet ruled out, but it is not confirmed either. The swing factor is ROS concentration, which is measurable and biologically regulated in precisely the direction the theory needs. This is not the comfortable margin I would want. But it is not the death sentence the reviewers feared. The full transduction chain calculation, including sensitivity analysis across plausible parameter ranges, is reported in [Malloy, "Quantitative Viability of the Radical Pair Transduction Chain," forthcoming].
 
@@ -575,7 +575,7 @@ But wait. If classical neural computation selects the measurement basis (as desc
 
 NFT's response is that the classical/quantum distinction in the feedback loop is not as clean as the objection assumes. The "classical controller" is itself a neural network operating at criticality, a system whose dynamics are shaped by the aggregate of previous quantum measurement outcomes. The controller is not independent of the quantum substrate; it is constituted by its history of interactions with it. The organism is not a classical captain steering a quantum ship. It is a system in which classical and quantum dynamics are so interleaved that attributing agency to one level rather than the other may be a category error.
 
-Whether this response is adequate is an open philosophical question. The back-action thesis (Chapter 12) proposes that phenomenal experience is the quantum component, the structured perturbation during measurement, not the classical component. But whether the classical selection process that determines *which* perturbation occurs is itself conscious remains unresolved. This is the deepest question the theory faces, and we do not pretend to have answered it.
+Whether this response is adequate is an open philosophical question. The back-action thesis (Chapter 12) proposes that phenomenal experience is the quantum component, the structured perturbation during measurement, not the classical component. But whether the classical selection process that determines *which* perturbation occurs is itself conscious remains unresolved. This is the deepest question the theory faces.
 
 ### This Does Not Violate the Born Rule
 
@@ -613,15 +613,7 @@ The original headline collapsed. This was the right outcome. A result that canno
 
 ### Rebuilding the Benchmark
 
-We rebuilt the simulation framework around four principles:
-
-**Matched training budgets.** Both quantum-adaptive and classical-adaptive controllers receive the same number of fitness evaluations during optimization. Neither side gets a hidden advantage from extra computation. The budget was locked before we saw results. We did not keep evolving until the quantum controller won.
-
-**Independent optimization.** Each controller is evolved for its own dynamical regime. The classical controller has its own learned state-dependent stochastic gate, not quantum parameters with the quantum dynamics stripped out.
-
-**Paired evaluation.** On each maze, the quantum and classical controllers face identical random trajectories (same seeds), so common noise cancels. The per-maze advantage is a paired difference, not two independent estimates.
-
-**Multiple mazes.** Results are averaged across many randomly generated mazes within a family, not cherry-picked from a single favorable instance.
+We rebuilt the simulation framework around four principles. Matched training budgets, independent optimization for each controller, paired evaluation on identical mazes, and results averaged across many randomly generated mazes rather than cherry-picked from one. The full protocol is in Appendix A.
 
 ### The Scaling Search
 

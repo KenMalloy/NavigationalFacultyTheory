@@ -20,15 +20,7 @@ The original headline collapsed. This was the right outcome. A result that canno
 
 ### Rebuilding the Benchmark
 
-We rebuilt the simulation framework around four principles:
-
-**Matched training budgets.** Both quantum-adaptive and classical-adaptive controllers receive the same number of fitness evaluations during optimization. Neither side gets a hidden advantage from extra computation. The budget was locked before we saw results. We did not keep evolving until the quantum controller won.
-
-**Independent optimization.** Each controller is evolved for its own dynamical regime. The classical controller has its own learned state-dependent stochastic gate, not quantum parameters with the quantum dynamics stripped out.
-
-**Paired evaluation.** On each maze, the quantum and classical controllers face identical random trajectories (same seeds), so common noise cancels. The per-maze advantage is a paired difference, not two independent estimates.
-
-**Multiple mazes.** Results are averaged across many randomly generated mazes within a family, not cherry-picked from a single favorable instance.
+We rebuilt the simulation framework around four principles. Matched training budgets, independent optimization for each controller, paired evaluation on identical mazes, and results averaged across many randomly generated mazes rather than cherry-picked from one. The full protocol is in Appendix A.
 
 ### The Scaling Search
 

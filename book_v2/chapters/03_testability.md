@@ -8,7 +8,7 @@ You stop trying to prove what consciousness *is* from the inside. Instead, you s
 
 ### Three Levels
 
-The framework advances three nested claims at different strengths.
+The framework advances three nested claims at different strengths. Level A says what consciousness *does*. Level B says *how*. Level C says what kind of reality that implies.
 
 **Level A (functional)** [A]: Consciousness selects among possible futures. It is a navigational faculty that reduces uncertainty over trajectory distributions. This claim is equivalent to active inference at the classical level; its contribution is architectural rather than empirical, revealing IIT, GNWT, and active inference as subsystems of a single navigational faculty. Level A is compatible with classical implementations and does not require exotic physics.
 
