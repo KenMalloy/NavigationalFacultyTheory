@@ -2,8 +2,6 @@
 
 # Appendices
 
-[Note: The following appendices would be developed from existing materials:]
-
 ## Appendix A: Simulation Code and Results
 
 ### Design Principles
