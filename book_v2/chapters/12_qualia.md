@@ -40,7 +40,7 @@ A door slam deforms the awaiting apparatus differently from a whisper. That is b
 
 Quantum measurement narrows possibility, changes the apparatus, and feeds the change back into the next question. That sentence is exactly what experience feels like from the inside. You don't have to change a word.
 
-The hard problem evaporates here. The question "why does this physical process produce experience?" assumes the process and the experience are two things requiring a bridge. If they are the same thing observed from two sides, the question is malformed. Asking why measurement back-action "produces" experience is like asking why buying "produces" selling. They were never separate [C].
+The hard problem evaporates here. The question "why does this physical process produce experience?" assumes the process and the experience are two things requiring a bridge. If they are the same thing observed from two sides, the question is malformed. Asking why measurement back-action "produces" experience is like asking why a crease has two sides. Fold the paper and the inside and outside appear together. They were never separate [C].
 
 I know this feels circular. Consciousness is the physical act of changing and being changed by the quantum substrate. The quantum measurement loop with back-action is what consciousness is. For centuries we thought it was "experience" and "physical process" casting their shadows on the cave before us. Could we turn around, we might see but a single caster. 
 

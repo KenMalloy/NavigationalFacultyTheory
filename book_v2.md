@@ -401,9 +401,9 @@ The dice analogy captures the intuition. The difference goes deeper.
 
 A man and a woman sit at opposite ends of a hotel bar in Vienna. They have never appeared to meet. The man adjusts his cufflink. To everyone else in the room, this is nothing, a man fidgeting. To the woman, it means the asset is in the building, the north exit is clear, and they have ninety seconds. One gesture, three pieces of information that the gesture does not contain. The meaning lives in the relationship: years of shared operations, shared codes, shared trust. A stranger watching the same gesture learns nothing. The information isn't in the cufflink. A counteragent can see the cufflink. The information is in the entanglement.
 
-In classical information theory, this kind of surplus is impossible at the physical level. If you know about system B, your remaining uncertainty about system A is always positive or zero. You cannot extract more meaning from B than B contains. But in quantum mechanics, when two systems are entangled, the conditional uncertainty can go *negative*. The entanglement creates a channel between them that is richer than either system alone — not because information is hidden somewhere, but because the correlation itself is a resource that classical systems cannot possess. Entangled subsystems can coordinate information transfer at costs that break the classical floor. If the microtubule substrate sustains this kind of entanglement (and the radical pair mechanism provides a candidate), the navigator has access to resources no classical system can replicate. The wedge is not a matter of speed or efficiency. It is a matter of what is physically available [B].
+In classical information theory, this kind of surplus is impossible at the physical level. If you know about system B, your remaining uncertainty about system A is always positive or zero. You cannot extract more meaning from B than B contains. But in quantum mechanics, when two systems are entangled, the conditional uncertainty can go *negative*. The entanglement creates a channel between them that is richer than either system alone. The correlation itself is a resource that classical systems cannot possess. Entangled subsystems can coordinate information transfer at costs that break the classical floor. If the microtubule substrate sustains this kind of entanglement (and the radical pair mechanism provides a candidate), the navigator has access to resources no classical system can replicate. The wedge is not a matter of speed or efficiency. It is a matter of what is physically available [B].
 
-Not all quantum effects create this wedge. Some quantum mechanics is, surprisingly, no more powerful than classical computation. What pushes beyond the classical frontier are three specific resources: contextuality (measurement results depend on what else is being measured at the same time), Wigner-function negativity (the quantum state's mathematical representation dips below zero, something no classical probability distribution can do), and entanglement. NFT's Level B is falsified specifically if the microtubule substrate turns out to operate entirely within the classically simulable regime, using quantum mechanics that looks exotic but computes nothing a classical system couldn't [B].
+Entanglement is one of the resources that makes interference possible between distant parts of a system. Some quantum mechanics is, surprisingly, no more powerful than classical computation, and entanglement alone is not enough. What pushes beyond the classical frontier are three specific resources working together: contextuality (measurement results depend on what else is being measured at the same time), Wigner-function negativity (the quantum state's mathematical representation dips below zero, something no classical probability distribution can do), and entanglement. NFT's Level B is falsified specifically if the microtubule substrate turns out to operate entirely within the classically simulable regime, using quantum mechanics that looks exotic but computes nothing a classical system couldn't [B].
 
 ### What NFT Requires vs. What Orch OR Claims
 
@@ -782,7 +782,7 @@ A door slam deforms the awaiting apparatus differently from a whisper. That is b
 
 Quantum measurement narrows possibility, changes the apparatus, and feeds the change back into the next question. That sentence is exactly what experience feels like from the inside. You don't have to change a word.
 
-The hard problem evaporates here. The question "why does this physical process produce experience?" assumes the process and the experience are two things requiring a bridge. If they are the same thing observed from two sides, the question is malformed. Asking why measurement back-action "produces" experience is like asking why buying "produces" selling. They were never separate [C].
+The hard problem evaporates here. The question "why does this physical process produce experience?" assumes the process and the experience are two things requiring a bridge. If they are the same thing observed from two sides, the question is malformed. Asking why measurement back-action "produces" experience is like asking why a crease has two sides. Fold the paper and the inside and outside appear together. They were never separate [C].
 
 I know this feels circular. Consciousness is the physical act of changing and being changed by the quantum substrate. The quantum measurement loop with back-action is what consciousness is. For centuries we thought it was "experience" and "physical process" casting their shadows on the cave before us. Could we turn around, we might see but a single caster. 
 
@@ -1142,25 +1142,19 @@ The formalization horizon is visible. Whether it can be reached is the work ahea
 
 # Epilogue: The Navigator
 
-You are a navigator.
+This book killed its first hypothesis. The excitonic mechanism failed at body temperature. The first computational benchmark did not survive fair testing. One topological prediction went the wrong direction. The theory that emerges from those failures is smaller than the one that went in, more honest, and still standing. A framework that has never been wrong has never been tested.
 
-Not metaphorically, or as a way of talking about cognition. Physically.
+What remains is a research program with specific experiments, specific predictions, and specific ways to die. The isotope swap. The neuromorphic chip running in quantum and classical modes. The psychedelic bridge-failure test. Quantum cognition tasks during seizure states. Spin state tomography on radical pairs in tubulin. Each can be done. None has been done yet.
 
-Your microtubule networks, millions of tubulin dimers per neuron, host radical pair reactions whose spin coherence persists for microseconds at body temperature. They couple you to the landscape of what could be. Your consciousness is the process of steering through that landscape, selecting futures from the genuine indeterminacy of the quantum world. The stability of your experience, the persistence of objects, the continuity of the room around you, is the Zeno effect, continuous observation holding a trajectory in place. Disrupt the critical point and the trajectory dissolves. Restore it and you return. What things feel like, the grain and texture of it, is the back-action of the measurement on the measurer. And the arrow of your time, the felt sense that this moment gives way to the next, points along the entropy gradient.
+This book is an invitation to do them.
 
-The existing theories of consciousness are partial. Integration makes navigation coherent. Broadcasting is how the result reaches the rest of the organism. Quantum substrate coupling, if this theory is right, is what makes it real.
+If the results come back against NFT, the theory dies the way it lived, in contact with evidence. If the results come back in its favor, the implications reach into physics, philosophy. They answer a bit more about what we are and question what machines can become. Either outcome is a contribution.
 
-This book set out to test a quantum mechanism for consciousness and found that its first hypothesis was wrong. Excitonic transport through tryptophan networks does not produce meaningful quantum advantage at body temperature. The theory could have died there. Instead, it found a different mechanism, radical pair spin coherence, that operates at the right timescale and has direct experimental support. It found that its first computational demonstration did not survive fair classical baselines, rebuilt the benchmark from scratch, and found a modest but systematic quantum navigational advantage across 90 mazes with a confidence interval excluding zero. It also found that one of its topological predictions was not supported by data.
+<br>
 
-These failures are evidence. A framework that has never been wrong has never been tested.
+Tomorrow morning you will wake up and the lights will come on. You will be changed by what you encounter, and what you encounter next will depend on how you were changed. Whether the loop that connects those moments runs on quantum measurement or on something we have not yet imagined is a question that can now be answered.
 
-Whether this picture is correct is an empirical question. The experiments have been specified, the predictions are falsifiable, and the ways it can die are on the table.
-
-This book makes three claims. Consciousness navigates. It navigates through quantum probability sculpting via radical pair spin coherence, amplified by criticality, directed by adaptive measurement. And the hard problem evaporates because the measurement process and conscious experience were never two things. The first claim is conservative. The second is testable. The third is NFT's gamble.
-
-Either way, tomorrow morning you will wake up and the lights will come on. You will be changed by what you encounter, and what you encounter next will depend on how you were changed, and reality in turn will be shaped by your efforts. The loop will continue.
-
-You are a navigator. You always have been.
+You are navigating, you always have been, and the world is different for your having walked it.
 
 ---
 
