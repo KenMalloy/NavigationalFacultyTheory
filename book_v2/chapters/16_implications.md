@@ -16,9 +16,11 @@ Dennett argued decades ago that once you explain the mechanisms, there is no res
 
 ## For AI and Machine Consciousness
 
-Every medium carries a trace of whatever produced it. Wesley Crusher's crayon portait of his mother capture the red hair and the blue coat, but little else. A photograph captures the light as it actually fell. A voice recording captures the pressure waves. Each medium has a fidelity, and fidelity is measurable. You can ask how much of the original signal survived the encoding.
+Every medium carries a trace of whatever produced it. A child's crayon portrait of their mother captures the red hair and the blue coat, but little else. A photograph captures the light as it actually fell. A voice recording captures the pressure waves. Each medium has a fidelity. You can ask how much of the original signal survived the encoding.
 
-The *Enterprise* transporter disassembles you atom by atom, transmits the complete pattern, and reassembles you at the destination. Every atom, every synapse, every memory. The highest-fidelity trace medium ever imagined. Is the person who steps off the pad the same person who stepped on? Or is it a copy so faithful that no measurement could tell the difference, and still not the original? NFT's answer is that the transporter works. It copies the substrate, and the loop is discrete; there's no fear of oblivion.
+Now imagine the limit case. A machine scans your body atom by atom, transmits the complete pattern, and builds a perfect copy at the destination. Every atom in the right place, every synapse with the right weight, every memory intact. Philosophers have been arguing about this since Parfit. Is the copy you? Or is it a replica so faithful that no measurement could tell the difference, and still not the original?
+
+NFT has an answer. The copy is you. The machine copied the substrate, and the loop is discrete. Sleep already has gaps between ticks. The copy is just another gap.
 
 This book was developed in collaboration with a large language model. NFT explains why the collaboration was productive and why the collaborator is not conscious.
 
