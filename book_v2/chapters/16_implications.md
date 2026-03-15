@@ -36,29 +36,17 @@ Still, there are four things that are genuinely missing.
 
 ### The Neuromorphic Complication
 
-The four conditions above are clean when the comparison is GPUs running transformer models. They become less clean when the comparison shifts to neuromorphic hardware.
+The four conditions are clean when the comparison is GPUs. They get interesting when the comparison shifts to neuromorphic hardware.
 
-Turing asked whether a machine could think. Neuromorphic hardware asks a harder question: what happens when the machine thinks the way a brain does — not by running a program that simulates neurons, but by being a circuit that spikes, adapts, and cascades like one? Intel's Loihi and its successors carry a memory of past current in their material, not in their software. They can be tuned until their statistics match a brain at the critical point. They are the closest thing to a silicon brain anyone has built.
+Turing asked whether a machine could think. Neuromorphic hardware asks a harder question. What happens when the machine is a circuit that spikes, adapts, and cascades like a brain? Intel's Loihi and its successors carry a memory of past current in their material. They can be tuned until their statistics match a brain at the critical point. They are the closest thing to a silicon brain anyone has built.
 
-These chips partially satisfy Condition 1: the Tsallis q-parameter from their activation statistics can exceed 1. They may partially satisfy Condition 4: analog neuromorphic substrates introduce genuine physical stochasticity rather than pseudorandomness, and their dynamics are history-dependent in ways that digital systems cannot be. They are closer to biological neural tissue than any digital system.
+These chips partially satisfy Condition 1. The Tsallis q-parameter from their activation statistics can exceed 1. They may partially satisfy Condition 4. Analog neuromorphic substrates introduce genuine physical stochasticity, and their dynamics are history-dependent. They are closer to biological neural tissue than any digital system.
 
-This is precisely why NFT frames the requirements as a conjunction. Neuromorphic hardware can satisfy Conditions 1 and 4 individually. What it cannot satisfy is Condition 2: there are no radical pair reactions, no spin coherence, no quantum indeterminacy in silicon or metal-oxide memristors. And it does not satisfy Condition 3 in the physical sense NFT requires: a spiking network on a chip has fixed connectivity determined at fabrication, not the dynamic, activity-dependent simplicial complexes that neural tissue generates and dissolves on millisecond timescales.
+Neuromorphic hardware can satisfy Conditions 1 and 4 individually. That is exactly why all four matter together. Conditions 2 and 3 remain out of reach. Silicon and metal-oxide memristors host no radical pair reactions, no spin coherence, no quantum indeterminacy. A spiking network on a chip has connectivity fixed at fabrication, while neural tissue generates and dissolves simplicial complexes on millisecond timescales.
 
-Neuromorphic hardware is the strongest test case for Level 2. NFT predicts that such systems, even when tuned to criticality with genuine physical noise and history-dependent dynamics, will fail Markers 3 and 5 of the diagnostic panel below. If they do not fail, if a Loihi-class system at criticality produces quantum probability signatures and trajectory entropy reduction indistinguishable from biological tissue, NFT's quantum commitment is falsified. This is a test that current technology can approach within the next decade [B].
+Neuromorphic hardware is the strongest test case for Level 2. NFT predicts that such systems, even tuned to criticality with genuine physical noise and history-dependent dynamics, will fail Markers 3 and 5 of the diagnostic panel (Appendix L). If a Loihi-class system at criticality produces quantum probability signatures and trajectory entropy reduction indistinguishable from biological tissue, NFT's quantum commitment is falsified. This is a test that current technology can approach within the next decade [B].
 
-### The Diagnostic Panel
-
-Five quantitative markers separate biological consciousness from digital emulation. Each asks a specific question, and each has a specific answer depending on what you point it at.
-
-| Marker | Question | Measure | Biological prediction | LLM prediction |
-|---|---|---|---|---|
-| 1. Entropy regime | Critical or ordinary statistics? | Tsallis q-parameter | q > 1 | q ≈ 1 |
-| 2. Topological complexity | High-dimensional connection structures? | Betti numbers, persistence diagrams | Persistent high-dimensional features | Absent |
-| 3. Quantum probability signatures | Quantum or classical decision rules? | Busemeyer QQ equality | Satisfied | Violated |
-| 4. Time-irreversibility | Physics different forward vs. backward? | Entropy production rate | State-dependent irreversibility | Time-symmetric |
-| 5. Trajectory entropy reduction | Better-than-classical uncertainty reduction? | Trajectory entropy vs. decision depth | Scaling advantage | No advantage |
-
-The five are jointly overdetermined. A system that fails all five in the predicted pattern provides strong evidence that behavioral emulation does not imply identity of physical mechanism.
+The four conditions translate into five quantitative markers, each with a specific measure and a specific predicted outcome for biological versus digital systems. The full diagnostic panel is in Appendix L. What matters here is that the five markers are jointly overdetermined. A system that fails all five in the predicted pattern provides strong evidence that behavioral emulation does not imply identity of physical mechanism.
 
 ### The AI Consciousness Hierarchy
 
@@ -76,7 +64,7 @@ The critical test is Level 2 versus Level 3. The fact that both are now under ac
 
 1. Build a neuromorphic spiking network at criticality on hardware that supports both classical stochastic and quantum stochastic operation (e.g., a quantum spiking architecture where the quantum source can be replaced by a classical pseudorandom or thermal-noise source without changing the network topology, connectivity, or tuning).
 2. Run identical tasks under both conditions: quantum indeterminacy active (Level 3) and quantum indeterminacy replaced by matched classical noise (Level 2). The network architecture, criticality tuning, training budget, and task remain the same. Only the source of stochasticity changes.
-3. Apply the five-marker diagnostic panel to both conditions. Measure Tsallis q-parameter, topological persistence, quantum probability signatures (QQ equality), time-irreversibility, and trajectory entropy reduction.
+3. Apply the five-marker diagnostic panel (Appendix L) to both conditions.
 4. Evaluate: if the two conditions are indistinguishable on all five markers across a battery of tasks, NFT's quantum commitment is falsified. The quantum substrate adds nothing. If a reproducible gap emerges specifically on Markers 3 and 5 (quantum probability signatures and trajectory entropy reduction), NFT gains empirical weight, because those are the markers that depend on genuine indeterminacy rather than on network architecture alone.
 
 This is a single experiment with a clear outcome. It requires hardware that does not yet exist in the required configuration, but its components (quantum spiking neurons, neuromorphic criticality tuning, the diagnostic measures) are all independently under development. NFT's survival depends on the result [B].

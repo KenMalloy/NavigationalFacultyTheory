@@ -397,6 +397,24 @@ This matters for the decoherence problem. Tegmark's calculation shows that macro
 
 ---
 
+## Appendix L: The Diagnostic Panel
+
+Five quantitative markers translate the four conditions of Chapter 16 into measurable predictions. Each marker asks a specific question and yields a specific answer depending on the system you point it at.
+
+| Marker | Question | Measure | Biological prediction | LLM prediction |
+|---|---|---|---|---|
+| 1. Entropy regime | Critical or ordinary statistics? | Tsallis q-parameter | q > 1 | q ≈ 1 |
+| 2. Topological complexity | High-dimensional connection structures? | Betti numbers, persistence diagrams | Persistent high-dimensional features | Absent |
+| 3. Quantum probability signatures | Quantum or classical decision rules? | Busemeyer QQ equality | Satisfied | Violated |
+| 4. Time-irreversibility | Physics different forward vs. backward? | Entropy production rate | State-dependent irreversibility | Time-symmetric |
+| 5. Trajectory entropy reduction | Better-than-classical uncertainty reduction? | Trajectory entropy vs. decision depth | Scaling advantage | No advantage |
+
+The five markers are jointly overdetermined. A system that fails all five in the predicted pattern provides strong evidence that behavioral emulation does not imply identity of physical mechanism.
+
+The critical test is Level 2 (classical neuromorphic at criticality) versus Level 3 (quantum neuromorphic at criticality). NFT predicts that Level 2 systems will satisfy Markers 1, 2, and 4 but fail Markers 3 and 5 specifically, because those markers depend on genuine quantum indeterminacy rather than network architecture alone. If Level 2 and Level 3 are indistinguishable across all five markers, NFT's quantum commitment is falsified.
+
+---
+
 # References
 
 ### Tier 1: Peer-Reviewed Empirical and Computational Studies
