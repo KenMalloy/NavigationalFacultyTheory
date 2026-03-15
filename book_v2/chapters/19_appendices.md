@@ -293,6 +293,12 @@ NFT agrees with the math. The disagreement is about whether the fit is a coincid
 
 **Hard criteria for any quantum consciousness theory.** Any serious quantum consciousness proposal must: identify a specific quantum effect in the relevant biological substrate; show that perturbing it changes something about consciousness, not just neural activity; demonstrate that the observed pattern cannot be equally well explained without the quantum mechanism. NFT currently clears the first criterion partially, the second not at all, and the third in simulation only. A framework that honestly reports where its evidence ends is more trustworthy than one that pretends the evidence is complete.
 
+**Integrated World Modeling Theory.** Safron's IWMT (2020; 2022) is the closest rival unification. It combines IIT, GNWT, the Free Energy Principle, and active inference under variational free energy minimization. Its mathematical formalism is more developed than NFT's. It expresses consciousness in the language of Bayesian inference, the brain as a prediction machine that builds internal models, weights them by confidence, and passes corrections up and down a hierarchy. NFT's formalism (Chapter 17) has not yet reached that depth.
+
+NFT pushes further on two problems IWMT's elegance leaves open. Modern LLMs arguably satisfy IWMT's formal criteria — they perform variational inference, construct world models, minimize prediction error — and IWMT has not specified a precise embodiment threshold that excludes them. NFT's four conditions do. Second, IWMT describes processes that unfold *in* time but does not account *for* time. NFT's grounding in the entropy gradient and the block universe at least attempts an answer.
+
+IWMT describes the computational engine of the vehicle. NFT describes what driving is and how the engine connects to the road. A future synthesis would be stronger than either alone.
+
 ---
 
 ## Appendix H: Microtubule-Anesthesia Complications
