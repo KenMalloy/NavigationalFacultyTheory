@@ -2,7 +2,9 @@
 
 # PART FOUR: LEVEL B — DEEPER CONSEQUENCES
 
-A fair warning. The chapters that follow are more speculative than what came before. Chapters 8 through 10 earned their keep with simulations, negative results, and a computational benchmark that survived fair testing. Chapters 11 through 14 ask what the mechanism, if it works, would *explain* about the experience of consciousness. The evidence here is thinner, the claims are bolder, and two of the four chapters contain no simulations or data. They are consequence-space: what the theory predicts about phenomenology, binding, and the nature of possibility. Read them as such.
+Everything before this line was tested. What follows is an existential bet.
+
+Chapters 11 through 14 ask what the mechanism, if it works, would *explain* about the experience of consciousness. There are no simulations and there is no data. If the experiments of Chapter 15 return against the theory, these chapters lose their foundation.
 
 ---
 
