@@ -40,7 +40,7 @@ A door slam deforms the awaiting apparatus differently from a whisper. That is b
 
 Quantum measurement narrows possibility, changes the apparatus, and feeds the change back into the next question. That sentence is exactly what experience feels like from the inside. You don't have to change a word.
 
-The hard problem evaporates here. The question "why does this physical process produce experience?" assumes the process and the experience are two things requiring a bridge. If they are the same thing observed from two sides, the question is malformed. Asking why measurement back-action "produces" experience is like asking why a crease has two sides. Fold the paper and the inside and outside appear together. They were never separate [C].
+The hard problem evaporates here. The question "why does this physical process produce experience?" assumes the process and the experience are two things requiring a bridge. If they are the same thing observed from two sides, the question is malformed. Asking why measurement back-action "produces" experience is like asking why a crease has two sides. Fold the paper and the inside and outside appear together. They were never separate. Asking why the loop feels like something is like asking why water feels wet. Wet is what water does to the thing that touches it. Experience is what a measurement loop does to the system that runs it [C].
 
 I know this feels circular. Consciousness is the physical act of changing and being changed by the quantum substrate. The quantum measurement loop with back-action is what consciousness is. For centuries we thought it was "experience" and "physical process" casting their shadows on the cave before us. Could we turn around, we might see but a single caster. 
 
@@ -49,6 +49,10 @@ But a circular definition, "consciousness is experience," stops there. The back-
 ### The Loop and the Self
 
 *Physarum polycephalum* is a single-celled organism with no neurons and no concept of self. When it encounters a food source, the encounter physically reconfigures its cytoskeletal network, its microtubule and actin scaffold. That reconfiguration changes what it senses next, where it extends, what it reaches toward. Each encounter reshapes the instrument. The instrument is the organism.
+
+Saigusa and colleagues exposed *Physarum* to periodic environmental stress and then stopped. The organism kept slowing at the intervals where the stress had been. It was anticipating a rhythm that no longer existed. Boisseau, Vogel, and Dussutour showed the slime mold habituates, and its memory traces are overwritable in light of new information. These are not reflexes. The loop carries its past forward and updates when the past stops being useful.
+
+Fungi tell the same story without a single neuron. Fukasawa, Savoury, and Boddy placed a mycelium in a fresh environment after it had discovered food in a previous one. It emerged from the same side of the starting block that had previously led to reward. Spatial memory encoded in cytoskeletal network architecture.
 
 The slime mold has a self in the only sense that matters for this argument. It is a system where measurement outcomes reshape the next measurement. It does not need to think "I." It needs to BE a loop. The "I" is what the loop feels like from inside [C].
 

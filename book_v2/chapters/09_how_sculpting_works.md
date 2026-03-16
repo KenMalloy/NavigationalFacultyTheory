@@ -38,7 +38,7 @@ Under resting conditions, the cell keeps reactive oxygen nearly at zero. Superox
 
 The duty cycle matters. During ordinary cortical processing, local O₂⁻ spends well under 1% of the time above the 10 nM threshold. During high-demand episodes, intense computation, metabolic stress, burst firing that drives mitochondria hard, that fraction rises to 1–10% of active time.
 
-Quiet neurons run classical. Active neurons open the quantum channel. The mechanism tracks engagement: consciousness happens through neurons that are *doing something* [B].
+Quiet neurons run classical. Active neurons open the quantum channel. Focused attention is vivid, peripheral awareness is dim, and autopilot is barely there. The mechanism tracks engagement, and the gradations match what experience actually feels like [B].
 
 **Third, the microtubule count may be substantially higher than the conservative estimate.** Large pyramidal neurons with extensive dendritic arbors may contain roughly 77,000 microtubules (an order-of-magnitude estimate based on dendritic volume and microtubule packing density; no direct count exists in the literature). If so, the signal is 77 times larger than the conservative estimate, well above the noise floor even at baseline ROS. This is an exploratory scenario, not an established parameter.
 
@@ -84,11 +84,9 @@ It is categorically different. The organism's relationship to its own probabilit
 
 But wait. If classical neural computation selects the measurement basis (as described above, with attention, intention, and context determining which quantum observable to couple to), then the agency of the navigator is classical. The quantum component provides raw material (indeterminacy, interference, back-action) but the steering is classical. And if the steering is classical, the hard problem reappears at the classical level: why is there something it is like to be the classical process that selects measurement bases?
 
-The objection assumes a clean split between the classical controller and the quantum substrate. Look closer and the split dissolves. The "classical controller" is a neural network operating at criticality. Its current state was shaped by the aggregate of every previous quantum measurement outcome. The weights, the connectivity, the firing thresholds — all of these carry the imprint of radical pair events that already happened. The controller is not independent of the quantum substrate. It is made of its history with it.
+The objection assumes a clean split between the classical controller and the quantum substrate. Look closer and the split dissolves. The "classical controller" is a neural network operating at criticality. Its current state was shaped by the aggregate of every previous quantum measurement outcome. The weights, the connectivity, the firing thresholds, all of these carry the imprint of radical pair events that already happened. The controller was built by the substrate. The substrate is read by the controller. Separating them is like asking which came first in a feedback loop that has been running since the organism was born.
 
-Think of a river carving a canyon. The water is the current. The canyon is the history. You can ask whether the river steers the canyon or the canyon steers the river, but the question is wrong. The canyon was made by the river and the river follows the canyon. They are one system with two descriptions.
-
-The organism is not a classical captain steering a quantum ship. It is a system in which classical and quantum dynamics are so interleaved that attributing agency to one level rather than the other may be a category error. The classical computation that selects the measurement basis was itself sculpted by the outcomes of previous measurements. The sculptor and the stone have been shaping each other since the first radical pair fired.
+The organism is not a classical captain steering a quantum ship. Classical and quantum dynamics are so interleaved that attributing agency to one level rather than the other may be a category error.
 
 Whether this response is adequate is an open question, and it is the deepest one the theory faces. The back-action thesis (Chapter 12) proposes that phenomenal experience is the structured perturbation during measurement. Whether the classical selection process that determines *which* perturbation occurs is itself conscious remains unresolved.
 
