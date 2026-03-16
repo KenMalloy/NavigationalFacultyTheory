@@ -1,5 +1,3 @@
----
-
 # PART SIX: TESTING AND IMPLICATIONS
 
 ---

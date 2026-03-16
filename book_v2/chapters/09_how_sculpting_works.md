@@ -1,5 +1,3 @@
----
-
 ## Chapter 9: How Sculpting Works
 
 Three ingredients. Radical pair spin states provide the quantum indeterminacy. Neural criticality provides the amplification. Adaptive measurement basis selection provides the steering. This chapter shows how they combine into a navigational system.

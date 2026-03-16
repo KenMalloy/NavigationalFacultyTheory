@@ -1,5 +1,3 @@
----
-
 ## Chapter 6: The Evolutionary Case
 
 Every organism that has ever survived did so by being in the right place at the right time. Which is to say, by navigating.

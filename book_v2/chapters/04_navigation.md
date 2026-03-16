@@ -1,5 +1,3 @@
----
-
 # PART TWO: LEVEL A — NAVIGATION AS FUNCTION
 
 ---

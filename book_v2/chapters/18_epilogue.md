@@ -1,5 +1,3 @@
----
-
 # Epilogue: The Navigator
 
 This book killed its first hypothesis. The excitonic mechanism failed at body temperature. The first computational benchmark did not survive fair testing. One topological prediction went the wrong direction. The theory that emerges from those failures is smaller than the one that went in, more honest, and still standing. A framework that has never been wrong has never been tested.

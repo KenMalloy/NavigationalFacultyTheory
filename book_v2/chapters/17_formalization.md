@@ -1,5 +1,3 @@
----
-
 ## Chapter 17: The Formalization Horizon
 
 A tungsten filament lightbulb can be on or off. Two states, one or the other, and nothing in between. Now add a second bulb. Both off, first on, second on, both on. The four combinations act as the corners of a square. Flip one bulb and you move to the next corner. Add a third bulb and the square becomes a cube. A fourth bulb and the cube becomes something you can't picture anymore, but you can still walk it. One flip, one step, corner to neighboring corner. Mathematicians call this a Boolean hypercube, and a walk along its edges is a journey through possibility.

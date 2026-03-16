@@ -1,5 +1,3 @@
----
-
 ## Chapter 13: Binding Through Topology
 
 Your brain is spread across two hemispheres distributed through billions of neurons yet your experience is unified. You don't hear with one consciousness and see with another. Something binds it together. What? You taste coffee and the bitterness and the warmth and the steam and the weight of it in your hand arrive as one thing, inseparable, a single experience you have never thought to question. Now take the warmth away from the bitterness. Put the steam in one room and the weight in another. You haven't lost any of the pieces. You have lost the coffee.

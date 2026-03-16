@@ -1,5 +1,3 @@
----
-
 ## Chapter 16: Implications
 
 ### For Philosophy of Mind

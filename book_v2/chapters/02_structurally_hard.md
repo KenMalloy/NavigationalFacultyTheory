@@ -1,5 +1,3 @@
----
-
 ## Chapter 2: Why It's Structurally Hard
 
 There is something strange about trying to build a theory of consciousness. The theorist is a conscious system. The theory has to account for the consciousness of the theorist, including the theorist's capacity to formulate the theory. The theory has to describe the process by which the theory itself gets generated. You are a flashlight trying to illuminate itself. It is a self-referential loop, and that has consequences.

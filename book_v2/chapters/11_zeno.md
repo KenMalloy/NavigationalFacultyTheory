@@ -1,5 +1,3 @@
----
-
 # PART FOUR: LEVEL B — DEEPER CONSEQUENCES
 
 Everything before this line was tested. What follows is an existential bet.

@@ -1,5 +1,3 @@
----
-
 ## Chapter 5: The Entropic Current
 
 Navigation requires a gradient. A landscape with structure, where different directions lead to measurably different states. Entropy provides both the gradient and the arrow.

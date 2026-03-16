@@ -1,5 +1,3 @@
----
-
 # PART THREE: LEVEL B — QUANTUM PROBABILITY SCULPTING
 
 ### Key Terms for Part Three

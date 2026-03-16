@@ -84,6 +84,8 @@ def split():
             end = len(lines)
 
         chunk = "\n".join(lines[start:end]).strip() + "\n"
+        # Strip leading --- so GitHub doesn't misparse as YAML frontmatter
+        chunk = re.sub(r"^---\n+", "", chunk)
         path = os.path.join(OUTDIR, fname)
         with open(path, "w") as out:
             out.write(chunk)

@@ -1,5 +1,3 @@
----
-
 ## Chapter 12: Qualia as Measurement Back-Action
 
 The oldest story structure we know is the hero's journey. The hero leaves home, faces something that transforms them in the facing, and returns different. The transformation is the encounter. Odysseus goes to war and comes back someone else. The war changed him in the act of being fought. The observation and the change are one event.

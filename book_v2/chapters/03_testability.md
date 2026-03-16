@@ -1,5 +1,3 @@
----
-
 ## Chapter 3: Testability as Method
 
 If internal theories of consciousness face inherent limits, what do you do?

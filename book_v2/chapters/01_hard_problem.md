@@ -1,5 +1,3 @@
----
-
 # PART ONE: THE PROBLEM AND THE METHOD
 
 ---

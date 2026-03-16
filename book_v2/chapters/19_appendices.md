@@ -1,5 +1,3 @@
----
-
 # Appendices
 
 ## Appendix A: Simulation Code and Results

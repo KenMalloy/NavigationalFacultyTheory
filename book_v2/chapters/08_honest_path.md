@@ -1,5 +1,3 @@
----
-
 ## Chapter 8: The Honest Path to the Mechanism
 
 This chapter tells the story of a hypothesis that failed, what replaced it, and why the failure made the theory stronger.
