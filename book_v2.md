@@ -509,7 +509,11 @@ The radical pair mechanism provides the quantum indeterminacy. Criticality provi
 
 A reactive oxygen molecule bumps into a protein on a microtubule and creates a pair of molecules with entangled electron spins. The spin outcome biases a chemical reaction, which nudges the protein's shape, which nudges an ion channel, which nudges a neuron's firing probability. Each step is tiny. The question is whether enough of them accumulate, within the few milliseconds a neuron takes to decide whether to fire, to matter.
 
-Under conservative assumptions, a typical cortical neuron has about 1,000 microtubules, each built from roughly 13,000 tubulin dimers. That is 13 million potential radical pair sites. But the encounter rate between reactive oxygen molecules and tryptophan residues is low at baseline conditions, yielding only about 10 radical pair events per neuron in the 5-millisecond window a neuron takes to decide whether to fire.
+How many microtubules a neuron contains determines how many amplifiers are in play. The local concentration of superoxide, the reactive oxygen molecule that triggers the radical pair reaction, determines how often those amplifiers fire. And the probability that a superoxide molecule actually produces a radical pair when it reaches a tryptophan residue, rather than bouncing off, determines how much signal each encounter contributes.
+
+None of these are precisely known. Each spans at least an order of magnitude in the literature. We used the bottom of every range. The lowest microtubule count (1,000 per neuron, when large pyramidal cells may have 77,000). Baseline superoxide concentration (sub-nanomolar, when active neurons drive it 10 to 100 times higher for minutes at a time). The lowest radical formation probability consistent with the chemistry (1%, when it could be 10%).
+
+Under these assumptions, a typical cortical neuron has about 1,000 microtubules, each built from roughly 13,000 tubulin dimers. That is 13 million potential radical pair sites. But the encounter rate between reactive oxygen molecules and tryptophan residues is low at baseline conditions, yielding only about 10 radical pair events per neuron in the 5-millisecond window a neuron takes to decide whether to fire.
 
 Ten events. Each one biased 12.7% by spin coherence. After you add them up, distribute the signal across roughly 10,000 ion channels, and compare to the thermal noise a neuron experiences (about 100 microvolts), the quantum signal is about 10 microvolts. One order of magnitude too small. Even with the 51-fold criticality amplification from Chapter 9, the resulting firing probability bias is about 3.4%.
 
@@ -569,9 +573,13 @@ It is categorically different. The organism's relationship to its own probabilit
 
 But wait. If classical neural computation selects the measurement basis (as described above, with attention, intention, and context determining which quantum observable to couple to), then the agency of the navigator is classical. The quantum component provides raw material (indeterminacy, interference, back-action) but the steering is classical. And if the steering is classical, the hard problem reappears at the classical level: why is there something it is like to be the classical process that selects measurement bases?
 
-NFT's response is that the classical/quantum distinction in the feedback loop is not as clean as the objection assumes. The "classical controller" is itself a neural network operating at criticality, a system whose dynamics are shaped by the aggregate of previous quantum measurement outcomes. The controller is not independent of the quantum substrate; it is constituted by its history of interactions with it. The organism is not a classical captain steering a quantum ship. It is a system in which classical and quantum dynamics are so interleaved that attributing agency to one level rather than the other may be a category error.
+The objection assumes a clean split between the classical controller and the quantum substrate. Look closer and the split dissolves. The "classical controller" is a neural network operating at criticality. Its current state was shaped by the aggregate of every previous quantum measurement outcome. The weights, the connectivity, the firing thresholds — all of these carry the imprint of radical pair events that already happened. The controller is not independent of the quantum substrate. It is made of its history with it.
 
-Whether this response is adequate is an open philosophical question. The back-action thesis (Chapter 12) proposes that phenomenal experience is the quantum component, the structured perturbation during measurement, not the classical component. But whether the classical selection process that determines *which* perturbation occurs is itself conscious remains unresolved. This is the deepest question the theory faces.
+Think of a river carving a canyon. The water is the current. The canyon is the history. You can ask whether the river steers the canyon or the canyon steers the river, but the question is wrong. The canyon was made by the river and the river follows the canyon. They are one system with two descriptions.
+
+The organism is not a classical captain steering a quantum ship. It is a system in which classical and quantum dynamics are so interleaved that attributing agency to one level rather than the other may be a category error. The classical computation that selects the measurement basis was itself sculpted by the outcomes of previous measurements. The sculptor and the stone have been shaping each other since the first radical pair fired.
+
+Whether this response is adequate is an open question, and it is the deepest one the theory faces. The back-action thesis (Chapter 12) proposes that phenomenal experience is the structured perturbation during measurement. Whether the classical selection process that determines *which* perturbation occurs is itself conscious remains unresolved.
 
 ### This Does Not Violate the Born Rule
 
@@ -838,7 +846,7 @@ Your brain is spread across two hemispheres distributed through billions of neur
 
 The neuroscience is clear about what processes what. Color in V4. Motion in V5. Shape in the inferotemporal cortex. Sound in auditory cortex. Touch in somatosensory cortex. Each area fires when its specialty arrives. None of them fires for coffee. There is no coffee neuron, no coffee region, no place in the brain where bitterness and warmth and weight converge into a single representation. The pieces are processed in different places, at slightly different times, by neurons that have no direct knowledge of each other's outputs. And yet the coffee is one thing. That is the binding problem.
 
-Criticality gets partway there. At the critical point a perturbation anywhere can cascade everywhere, and NFT leans on this hard. But propagation is not binding. If everything reaches everything with no structure, you get noise, not coffee. The signal has to arrive *organized*. Topology is what organizes it.
+Criticality gets partway there. At the critical point a perturbation anywhere can cascade everywhere, and NFT leans on this hard. But binding requires more than propagation. If everything reaches everything with no structure, you get noise, not coffee. The signal has to arrive *organized*. Topology is what organizes it.
 
 ### Higher-Dimensional Structure
 
@@ -848,9 +856,13 @@ Santoro and colleagues (2024) showed that interactions among three or more brain
 
 ### The Three-Scale Mechanism
 
-The proposed binding mechanism operates across three scales.
+Start at the bottom. Inside a single neuron, radical pair spin coherence creates correlations between tubulin subunits. These are tiny, local, and fast. Microsecond events in a protein lattice. By themselves they bind nothing.
 
-At the quantum scale, radical pair spin coherence creates correlations between tubulin subunits, localized effects operating at microsecond timescales. These correlations connect upward through neural cliques forming higher-dimensional simplicial complexes: two neurons ten centimeters apart in Euclidean space may be adjacent in the seven-dimensional simplicial complex formed by their shared clique membership. The long-range correlations we observe in three dimensions would be the projection of local interactions in higher-dimensional topology. And at self-organized criticality, correlation length diverges, information propagation becomes scale-free, and the critical point connects quantum effects at the bottom to system-spanning dynamics at the top.
+Now zoom out. That neuron belongs to a clique, a group of neurons that all connect to each other. The clique forms a simplex, a higher-dimensional shape with an interior. Two neurons ten centimeters apart in your skull may be neighbors in the seven-dimensional simplicial complex formed by their shared clique membership. The back-action from a radical pair event in one neuron does not need to cross ten centimeters of brain tissue. It reaches the other neuron through algebraic proximity, through the interior of a shared shape. What looks like long-range correlation in three dimensions is local interaction in seven.
+
+Now zoom out further. At the critical point, correlation length diverges. A perturbation in one simplicial complex can cascade into the next, and the next, and the cascade spans the whole network. Criticality is what connects the quantum scale at the bottom to the system-spanning dynamics at the top. The radical pair event is local. The simplex makes it reach. Criticality makes it matter.
+
+That is how the coffee becomes one experience. The bitterness in gustatory cortex and the warmth in somatosensory cortex and the weight in motor cortex are processed separately in three-dimensional space. In the higher-dimensional topology of their shared simplicial structure, they are neighbors. They share an interior. That is the binding.
 
 ### An Honest Negative Result
 
@@ -920,13 +932,13 @@ From without, from the perspective of physics, what possibility space actually *
 
 The definiteness of the world, the fact that rain is cold on your skin and thunder has a specific pitch, is itself a product of measurement. Without measurement, quantum mechanics offers only a landscape of weighted possibilities. Consciousness, on the back-action thesis, is the adaptive measurement loop. The world becomes definite through measurement, and measurement-with-feedback is what consciousness is.
 
-It's not idealism, the quantum substrate is there regardless, but the specific, concrete, classical world you navigate, the world of chairs and weather and the pressure of a handshake, emerges through the act of being measured by systems that are changed by the measuring. The terrain and the navigator are not independent. They arrive together [C].
+It's not idealism, the quantum substrate is there regardless, but the specific, concrete, classical world you navigate, the world of chairs and weather and the pressure of a handshake, emerges through the act of being measured by systems that are changed by the measuring. The terrain and the navigator co-emerge [C].
 
-Wheeler glimpsed this with his participatory universe. The back-action thesis gives the participation a mechanism: radical pair measurement, conformational back-action, adaptive basis selection. The universe does not require consciousness to exist. It requires measurement to be definite. And consciousness is what measurement-with-feedback is, from the inside.
+Wheeler glimpsed this with his participatory universe. The back-action thesis gives the participation a mechanism: radical pair measurement, conformational back-action, adaptive basis selection. The universe exists with or without us. What requires measurement is definiteness. And consciousness is what measurement-with-feedback is, from the inside.
 
-If the terrain shapes the navigator, the navigator's shape may be evidence about the terrain. The navigation benchmark of Chapter 10 found quantum advantage peaking at three extra latent dimensions beyond the physical maze space. I don't know what to do with that number yet. But if it reflects something real about the structure consciousness evolved to navigate, we're looking at a 6- or 7-dimensional possibility space with our 4D spacetime as a local slice. Several independent programs in physics land in the same neighborhood, which is interesting without being proof [C].
+If the terrain shapes the navigator, the navigator's shape may be evidence about the terrain. The navigation benchmark of Chapter 10 found quantum advantage peaking at three extra latent dimensions beyond the physical maze space. I don't know what to do with that number yet. Does it reflect something about the structure consciousness evolved to navigate? Would that imply a 6- or 7-dimensional possibility space with our 4D spacetime as a local slice? Several independent programs in physics land in the same neighborhood [C].
 
-If possibility space is a closed manifold in those dimensions, the entropy gradient we ride from big bang to heat death is a section of a loop. The closure happens around a corner we can't see. From inside 4D we'd observe exactly one big bang, exactly one heat death, and nothing connecting them. Which is what we observe. The constraint hypothesis would say we're seeing exactly what a lower-dimensional slice of a higher-dimensional loop can show [C].
+And if possibility space were a closed manifold in those dimensions, what would we see from inside? The entropy gradient we ride from big bang to heat death would be a section of a loop whose closure happens around a corner we can't observe. From inside 4D we'd see exactly one big bang, exactly one heat death, and nothing connecting them. Which is what we see [C].
 
 Photosynthesis taught us quantum biology. A biological process, studied carefully enough, revealed that quantum coherence survives in warm wet systems, and that changed the physics. If consciousness is studied with the same rigor, and if the back-action thesis holds, then a biological faculty could teach us the geometry of possibility space itself. The direction of discovery runs from biology to physics, and it has run that way before [C].
 
@@ -1379,7 +1391,7 @@ Mycelial networks present a different test case. Cord-forming wood-decay fungi h
 
 ### Plants
 
-Plant cells are among the most microtubule-rich eukaryotic cells. Their cortical microtubule arrays reorganize dynamically in response to environmental stimuli — light, gravity, mechanical stress. The "plant neurobiology" movement, documented by Calvo and colleagues (2020), has identified electrical signaling, adaptive behavior, and forms of learning in organisms with no neural tissue. The movement remains controversial, and some of the stronger claims have been challenged on methodological grounds. The microtubule density, however, is not in dispute.
+Plant cells are among the most microtubule-rich eukaryotic cells. Their cortical microtubule arrays reorganize dynamically in response to environmental stimuli — light, gravity, mechanical stress. The "plant neurobiology" movement, documented by Calvo and colleagues (2017), has identified electrical signaling, adaptive behavior, and forms of learning in organisms with no neural tissue. The movement remains controversial, and some of the stronger claims have been challenged on methodological grounds. The microtubule density, however, is not in dispute.
 
 ### The Comparative Cognition Challenge
 
@@ -1585,11 +1597,19 @@ Aharonov, Y., Albert, D. Z., & Vaidman, L. (1988). How the result of a measureme
 
 Benzi, R., Sutera, A., & Vulpiani, A. (1982). Stochastic resonance in climatic change. *Tellus, 34*(1), 10–16.
 
+Blackburne, G., et al. (2025). Complex slow waves in the human brain under 5-MeO-DMT. *Cell Reports, 44*(8), 116040.
+
+Boisseau, R. P., Vogel, D., & Dussutour, A. (2016). Habituation in non-neural organisms: evidence from slime moulds. *Proceedings of the Royal Society B: Biological Sciences, 283*(1829), 20160446.
+
 Casali, A. G., et al. (2013). A theoretically based index of consciousness independent of sensory processing and behavior. *Science Translational Medicine, 5*(198), 198ra105.
 
-Cogitate Consortium. (2025). Adversarial testing of global neuronal workspace and integrated information theories of consciousness. *Nature*.
+Cogitate Consortium. (2025). Adversarial testing of global neuronal workspace and integrated information theories of consciousness. *Nature, 642*(8066), 133–142.
 
 Cripe, J., et al. (2019). Measurement of quantum back action in the audio band at room temperature. *Nature, 568*, 364–367.
+
+Fukasawa, Y., Savoury, M., & Boddy, L. (2020). Ecological memory and relocation decisions in fungal mycelial networks: responses to quantity and location of new resources. *ISME Journal, 14*(2), 380–388.
+
+Irrmischer, M., et al. (2025). DMT-induced shifts in criticality correlate with self-dissolution. *Journal of Neuroscience, 46*(2), e0344252025.
 
 Itano, W. M., et al. (1990). Quantum Zeno effect. *Physical Review A, 41*(5), 2295–2300.
 
@@ -1599,37 +1619,41 @@ Li, N., et al. (2025). Microtubule-modulating drugs alter sensitivity to isoflur
 
 Lori, N., & Machado, J. (2026). Gridography tractography reveals communication between key areas from global workspace and integrated information theories of consciousness. *Scientific Reports, 16*, 1617.
 
-Maeda, K., et al. (2012). Chemical compass model of avian magnetoreception. *Nature, 453*, 387–390.
+Maeda, K., et al. (2012). Magnetically sensitive light-induced reactions in cryptochrome are consistent with its proposed role as a magnetoreceptor. *Proceedings of the National Academy of Sciences, 109*(13), 4774–4779.
 
-Mediano, P. A. M., et al. (2023). Effects of psilocybin on brain complexity and consciousness: a TMS-EEG study. *bioRxiv*.
+Mohseni, M., Rebentrost, P., Lloyd, S., & Aspuru-Guzik, A. (2008). Environment-assisted quantum walks in photosynthetic energy transfer. *Journal of Chemical Physics, 129*(17), 174106.
 
-Nakagaki, T., Yamada, H., & Toth, A. (2000). Maze-solving by an amoeboid organism. *Nature, 407*, 470.
+Nakagaki, T., Yamada, H., & Tóth, Á. (2000). Maze-solving by an amoeboid organism. *Nature, 407*, 470.
 
-OpenNeuro Dataset DS005620. Propofol sedation EEG, 21 subjects, BIDS format.
+OpenNeuro. (2024). *A repeated awakening study exploring the capacity of complexity measures to capture dreaming during propofol sedation* (Version 1.0.0) [Data set]. OpenNeuro. DOI: 10.18112/openneuro.ds005620.v1.0.0.
 
-Saigusa, T., et al. (2008). Amoebae anticipate periodic events. *Physical Review Letters, 100*, 018101.
-
-Santoro, A., et al. (2024). Higher-order connectomics of human brain function reveals local topological signatures. *Nature Communications, 15*, 10244.
+Ort, A., et al. (2023). TMS-EEG and resting-state EEG applied to altered states of consciousness: oscillations, complexity, and phenomenology. *iScience, 26*(5), 106589.
 
 Pallavicini, C., et al. (2023). Neural and subjective effects of inhaled N,N-dimethyltryptamine in natural settings. *Journal of Psychopharmacology, 37*(7), 689–702.
 
-Ruffini, G., et al. (2025). Time-varying whole-brain modelling of DMT reveals critical dynamics at peak subjective effects. *bioRxiv*.
+Panitchayangkoon, G., Hayes, D., Fransted, K. A., et al. (2010). Long-lived quantum coherence in photosynthetic complexes at physiological temperature. *Proceedings of the National Academy of Sciences, 107*(29), 12766–12770.
+
+Piccinini, J. I., et al. (2025). Transient destabilization of whole brain dynamics induced by N,N-dimethyltryptamine (DMT). *Communications Biology, 8*(1), 409.
+
+Saigusa, T., et al. (2008). Amoebae anticipate periodic events. *Physical Review Letters, 100*, 018101.
+
+Santiago-Alarcon, D., et al. (2020). Quantum aspects of evolution: a contribution towards evolutionary explorations of genotype networks via quantum walks. *Journal of the Royal Society Interface, 17*(172), 20200567.
+
+Santoro, A., et al. (2024). Higher-order connectomics of human brain function reveals local topological signatures. *Nature Communications, 15*, 10244.
 
 Schartner, M., et al. (2015). Complexity of multi-dimensional spontaneous EEG decreases during propofol induced general anaesthesia. *PLOS ONE, 10*(8), e0133532.
 
-Timmermann, C., et al. (2023). Human brain effects of DMT assessed via EEG-fMRI. *PNAS, 120*(13), e2218949120.
-
-Timmermann, C., et al. (2026). DMT reduces long-range temporal correlations in EEG: criticality shifts correlate with ego dissolution. *Psychopharmacology*.
-
-Uthaug, M. V., et al. (2025). High-dose 5-MeO-DMT: EEG dynamics and ego dissolution. *Cell Reports, 44*(3).
-
 Tero, A., et al. (2010). Rules for biologically inspired adaptive network design. *Science, 327*(5964), 439–442.
+
+Timmermann, C., et al. (2023). Human brain effects of DMT assessed via EEG-fMRI. *PNAS, 120*(13), e2218949120.
 
 Turin, L., et al. (2014). Electron spin changes during general anesthesia in *Drosophila*. *PNAS, 111*(34), E3524–E3533.
 
 VanRullen, R. (2016). Perceptual cycles. *Trends in Cognitive Sciences, 20*(10), 723–735.
 
-Zadeh-Haghighi, H., et al. (2026). Magnesium isotope effects on tubulin polymerization under magnetic field. *Science Advances*.
+Vinck, M., Oostenveld, R., van Wingerden, M., et al. (2011). An improved index of phase-synchronization for electrophysiological data in the presence of volume-conduction, noise and sample-size bias. *NeuroImage, 55*(4), 1548–1565.
+
+Zadeh-Haghighi, H., et al. (2026). Tubulin polymerization dynamics are influenced by magnetic isotope effects consistent with the radical pair mechanism. *Science Advances, 12*(7), eady8317.
 
 ### Tier 2: Peer-Reviewed Theoretical, Review, and Foundational Works
 
@@ -1638,6 +1662,8 @@ Baars, B. J. (1988). *A Cognitive Theory of Consciousness.* Cambridge University
 Busemeyer, J. R., & Bruza, P. (2012). *Quantum Models of Cognition and Decision.* Cambridge University Press.
 
 Callender, C. (2017). *What Makes Time Special?* Oxford University Press.
+
+Calvo, P., Sahi, V. P., & Trewavas, A. (2017). Are plants sentient? *Plant, Cell & Environment, 40*(11), 2858–2869.
 
 Carhart-Harris, R. L., et al. (2014). The entropic brain: A theory of conscious states informed by neuroimaging research with psychedelic drugs. *Frontiers in Human Neuroscience, 8*, 20.
 
@@ -1649,7 +1675,7 @@ Dehaene, S., & Changeux, J.-P. (2011). Experimental and theoretical approaches t
 
 DeLancey, C. (2023). *Consciousness as Complex Event.* Routledge.
 
-Edwards, J. (2025). N-Frame networking dynamics of conscious observer-self agents. *Frontiers in Computational Neuroscience*.
+Edwards, D. J. (2025). Further N-Frame networking dynamics of conscious observer-self agents via a functional contextual interface: predictive coding, double-slit quantum mechanical experiment, and decision-making fallacy modeling as applied to the measurement problem in humans and AI. *Frontiers in Computational Neuroscience, 19*, 1551960.
 
 Fahrenfort, J. J., et al. (2025). Criterion placement confounds in adversarial collaborations on consciousness. *Neuroscience of Consciousness, 2025*(1), niae048.
 
@@ -1679,6 +1705,8 @@ Minkowski, H. (1908). Raum und Zeit. *Physikalische Zeitschrift, 10*, 75–88.
 
 Misra, B., & Sudarshan, E. C. G. (1977). The Zeno's paradox in quantum theory. *Journal of Mathematical Physics, 18*(4), 756–763.
 
+Money, N. P. (2021). Hyphal and mycelial consciousness: the concept of the fungal mind. *Fungal Biology, 125*(4), 257–259.
+
 Naccache, L., et al. (2025). The global neuronal workspace theory of consciousness after COGITATE. *Neuroscience of Consciousness, 2025*(1), niae046.
 
 Penrose, R., & Hameroff, S. (1996). Orchestrated reduction of quantum coherence in brain microtubules. *Mathematics and Computers in Simulation, 40*, 453–480.
@@ -1691,7 +1719,7 @@ Putnam, H. (1967). Time and physical geometry. *Journal of Philosophy, 64*(8), 2
 
 Reimann, M. W., et al. (2017). Cliques of neurons bound into cavities provide a missing link between structure and function. *Frontiers in Computational Neuroscience, 11*, 48.
 
-Safron, A. (2020). An Integrated World Modeling Theory (IWMT) of consciousness. *Frontiers in Artificial Intelligence*.
+Safron, A. (2020). An Integrated World Modeling Theory (IWMT) of consciousness: combining Integrated Information and Global Neuronal Workspace theories with the Free Energy Principle and active inference framework; toward solving the hard problem and characterizing agentic causation. *Frontiers in Artificial Intelligence, 3*, 30.
 
 Skokowski, P. (2026). *Sensing Qualia: Solving the Hard Problem of Consciousness.* University of Chicago Press.
 
@@ -1704,6 +1732,8 @@ Tononi, G. (2004). An information integration theory of consciousness. *BMC Neur
 Tononi, G., et al. (2016). Integrated information theory: From consciousness to its physical substrate. *Nature Reviews Neuroscience, 17*(7), 450–461.
 
 Von Neumann, J. (1932). *Mathematische Grundlagen der Quantenmechanik.* Springer.
+
+Whitfield, J. D., Rodríguez-Rosario, C. A., & Aspuru-Guzik, A. (2010). Quantum stochastic walks: A generalization of classical random walks and quantum walks. *Physical Review A, 81*(2), 022323.
 
 Wiseman, H. M., & Milburn, G. J. (2009). *Quantum Measurement and Control.* Cambridge University Press.
 

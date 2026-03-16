@@ -221,7 +221,7 @@ Mycelial networks present a different test case. Cord-forming wood-decay fungi h
 
 ### Plants
 
-Plant cells are among the most microtubule-rich eukaryotic cells. Their cortical microtubule arrays reorganize dynamically in response to environmental stimuli — light, gravity, mechanical stress. The "plant neurobiology" movement, documented by Calvo and colleagues (2020), has identified electrical signaling, adaptive behavior, and forms of learning in organisms with no neural tissue. The movement remains controversial, and some of the stronger claims have been challenged on methodological grounds. The microtubule density, however, is not in dispute.
+Plant cells are among the most microtubule-rich eukaryotic cells. Their cortical microtubule arrays reorganize dynamically in response to environmental stimuli — light, gravity, mechanical stress. The "plant neurobiology" movement, documented by Calvo and colleagues (2017), has identified electrical signaling, adaptive behavior, and forms of learning in organisms with no neural tissue. The movement remains controversial, and some of the stronger claims have been challenged on methodological grounds. The microtubule density, however, is not in dispute.
 
 ### The Comparative Cognition Challenge
 
@@ -427,11 +427,19 @@ Aharonov, Y., Albert, D. Z., & Vaidman, L. (1988). How the result of a measureme
 
 Benzi, R., Sutera, A., & Vulpiani, A. (1982). Stochastic resonance in climatic change. *Tellus, 34*(1), 10–16.
 
+Blackburne, G., et al. (2025). Complex slow waves in the human brain under 5-MeO-DMT. *Cell Reports, 44*(8), 116040.
+
+Boisseau, R. P., Vogel, D., & Dussutour, A. (2016). Habituation in non-neural organisms: evidence from slime moulds. *Proceedings of the Royal Society B: Biological Sciences, 283*(1829), 20160446.
+
 Casali, A. G., et al. (2013). A theoretically based index of consciousness independent of sensory processing and behavior. *Science Translational Medicine, 5*(198), 198ra105.
 
-Cogitate Consortium. (2025). Adversarial testing of global neuronal workspace and integrated information theories of consciousness. *Nature*.
+Cogitate Consortium. (2025). Adversarial testing of global neuronal workspace and integrated information theories of consciousness. *Nature, 642*(8066), 133–142.
 
 Cripe, J., et al. (2019). Measurement of quantum back action in the audio band at room temperature. *Nature, 568*, 364–367.
+
+Fukasawa, Y., Savoury, M., & Boddy, L. (2020). Ecological memory and relocation decisions in fungal mycelial networks: responses to quantity and location of new resources. *ISME Journal, 14*(2), 380–388.
+
+Irrmischer, M., et al. (2025). DMT-induced shifts in criticality correlate with self-dissolution. *Journal of Neuroscience, 46*(2), e0344252025.
 
 Itano, W. M., et al. (1990). Quantum Zeno effect. *Physical Review A, 41*(5), 2295–2300.
 
@@ -441,37 +449,41 @@ Li, N., et al. (2025). Microtubule-modulating drugs alter sensitivity to isoflur
 
 Lori, N., & Machado, J. (2026). Gridography tractography reveals communication between key areas from global workspace and integrated information theories of consciousness. *Scientific Reports, 16*, 1617.
 
-Maeda, K., et al. (2012). Chemical compass model of avian magnetoreception. *Nature, 453*, 387–390.
+Maeda, K., et al. (2012). Magnetically sensitive light-induced reactions in cryptochrome are consistent with its proposed role as a magnetoreceptor. *Proceedings of the National Academy of Sciences, 109*(13), 4774–4779.
 
-Mediano, P. A. M., et al. (2023). Effects of psilocybin on brain complexity and consciousness: a TMS-EEG study. *bioRxiv*.
+Mohseni, M., Rebentrost, P., Lloyd, S., & Aspuru-Guzik, A. (2008). Environment-assisted quantum walks in photosynthetic energy transfer. *Journal of Chemical Physics, 129*(17), 174106.
 
-Nakagaki, T., Yamada, H., & Toth, A. (2000). Maze-solving by an amoeboid organism. *Nature, 407*, 470.
+Nakagaki, T., Yamada, H., & Tóth, Á. (2000). Maze-solving by an amoeboid organism. *Nature, 407*, 470.
 
-OpenNeuro Dataset DS005620. Propofol sedation EEG, 21 subjects, BIDS format.
+OpenNeuro. (2024). *A repeated awakening study exploring the capacity of complexity measures to capture dreaming during propofol sedation* (Version 1.0.0) [Data set]. OpenNeuro. DOI: 10.18112/openneuro.ds005620.v1.0.0.
 
-Saigusa, T., et al. (2008). Amoebae anticipate periodic events. *Physical Review Letters, 100*, 018101.
-
-Santoro, A., et al. (2024). Higher-order connectomics of human brain function reveals local topological signatures. *Nature Communications, 15*, 10244.
+Ort, A., et al. (2023). TMS-EEG and resting-state EEG applied to altered states of consciousness: oscillations, complexity, and phenomenology. *iScience, 26*(5), 106589.
 
 Pallavicini, C., et al. (2023). Neural and subjective effects of inhaled N,N-dimethyltryptamine in natural settings. *Journal of Psychopharmacology, 37*(7), 689–702.
 
-Ruffini, G., et al. (2025). Time-varying whole-brain modelling of DMT reveals critical dynamics at peak subjective effects. *bioRxiv*.
+Panitchayangkoon, G., Hayes, D., Fransted, K. A., et al. (2010). Long-lived quantum coherence in photosynthetic complexes at physiological temperature. *Proceedings of the National Academy of Sciences, 107*(29), 12766–12770.
+
+Piccinini, J. I., et al. (2025). Transient destabilization of whole brain dynamics induced by N,N-dimethyltryptamine (DMT). *Communications Biology, 8*(1), 409.
+
+Saigusa, T., et al. (2008). Amoebae anticipate periodic events. *Physical Review Letters, 100*, 018101.
+
+Santiago-Alarcon, D., et al. (2020). Quantum aspects of evolution: a contribution towards evolutionary explorations of genotype networks via quantum walks. *Journal of the Royal Society Interface, 17*(172), 20200567.
+
+Santoro, A., et al. (2024). Higher-order connectomics of human brain function reveals local topological signatures. *Nature Communications, 15*, 10244.
 
 Schartner, M., et al. (2015). Complexity of multi-dimensional spontaneous EEG decreases during propofol induced general anaesthesia. *PLOS ONE, 10*(8), e0133532.
 
-Timmermann, C., et al. (2023). Human brain effects of DMT assessed via EEG-fMRI. *PNAS, 120*(13), e2218949120.
-
-Timmermann, C., et al. (2026). DMT reduces long-range temporal correlations in EEG: criticality shifts correlate with ego dissolution. *Psychopharmacology*.
-
-Uthaug, M. V., et al. (2025). High-dose 5-MeO-DMT: EEG dynamics and ego dissolution. *Cell Reports, 44*(3).
-
 Tero, A., et al. (2010). Rules for biologically inspired adaptive network design. *Science, 327*(5964), 439–442.
+
+Timmermann, C., et al. (2023). Human brain effects of DMT assessed via EEG-fMRI. *PNAS, 120*(13), e2218949120.
 
 Turin, L., et al. (2014). Electron spin changes during general anesthesia in *Drosophila*. *PNAS, 111*(34), E3524–E3533.
 
 VanRullen, R. (2016). Perceptual cycles. *Trends in Cognitive Sciences, 20*(10), 723–735.
 
-Zadeh-Haghighi, H., et al. (2026). Magnesium isotope effects on tubulin polymerization under magnetic field. *Science Advances*.
+Vinck, M., Oostenveld, R., van Wingerden, M., et al. (2011). An improved index of phase-synchronization for electrophysiological data in the presence of volume-conduction, noise and sample-size bias. *NeuroImage, 55*(4), 1548–1565.
+
+Zadeh-Haghighi, H., et al. (2026). Tubulin polymerization dynamics are influenced by magnetic isotope effects consistent with the radical pair mechanism. *Science Advances, 12*(7), eady8317.
 
 ### Tier 2: Peer-Reviewed Theoretical, Review, and Foundational Works
 
@@ -480,6 +492,8 @@ Baars, B. J. (1988). *A Cognitive Theory of Consciousness.* Cambridge University
 Busemeyer, J. R., & Bruza, P. (2012). *Quantum Models of Cognition and Decision.* Cambridge University Press.
 
 Callender, C. (2017). *What Makes Time Special?* Oxford University Press.
+
+Calvo, P., Sahi, V. P., & Trewavas, A. (2017). Are plants sentient? *Plant, Cell & Environment, 40*(11), 2858–2869.
 
 Carhart-Harris, R. L., et al. (2014). The entropic brain: A theory of conscious states informed by neuroimaging research with psychedelic drugs. *Frontiers in Human Neuroscience, 8*, 20.
 
@@ -491,7 +505,7 @@ Dehaene, S., & Changeux, J.-P. (2011). Experimental and theoretical approaches t
 
 DeLancey, C. (2023). *Consciousness as Complex Event.* Routledge.
 
-Edwards, J. (2025). N-Frame networking dynamics of conscious observer-self agents. *Frontiers in Computational Neuroscience*.
+Edwards, D. J. (2025). Further N-Frame networking dynamics of conscious observer-self agents via a functional contextual interface: predictive coding, double-slit quantum mechanical experiment, and decision-making fallacy modeling as applied to the measurement problem in humans and AI. *Frontiers in Computational Neuroscience, 19*, 1551960.
 
 Fahrenfort, J. J., et al. (2025). Criterion placement confounds in adversarial collaborations on consciousness. *Neuroscience of Consciousness, 2025*(1), niae048.
 
@@ -521,6 +535,8 @@ Minkowski, H. (1908). Raum und Zeit. *Physikalische Zeitschrift, 10*, 75–88.
 
 Misra, B., & Sudarshan, E. C. G. (1977). The Zeno's paradox in quantum theory. *Journal of Mathematical Physics, 18*(4), 756–763.
 
+Money, N. P. (2021). Hyphal and mycelial consciousness: the concept of the fungal mind. *Fungal Biology, 125*(4), 257–259.
+
 Naccache, L., et al. (2025). The global neuronal workspace theory of consciousness after COGITATE. *Neuroscience of Consciousness, 2025*(1), niae046.
 
 Penrose, R., & Hameroff, S. (1996). Orchestrated reduction of quantum coherence in brain microtubules. *Mathematics and Computers in Simulation, 40*, 453–480.
@@ -533,7 +549,7 @@ Putnam, H. (1967). Time and physical geometry. *Journal of Philosophy, 64*(8), 2
 
 Reimann, M. W., et al. (2017). Cliques of neurons bound into cavities provide a missing link between structure and function. *Frontiers in Computational Neuroscience, 11*, 48.
 
-Safron, A. (2020). An Integrated World Modeling Theory (IWMT) of consciousness. *Frontiers in Artificial Intelligence*.
+Safron, A. (2020). An Integrated World Modeling Theory (IWMT) of consciousness: combining Integrated Information and Global Neuronal Workspace theories with the Free Energy Principle and active inference framework; toward solving the hard problem and characterizing agentic causation. *Frontiers in Artificial Intelligence, 3*, 30.
 
 Skokowski, P. (2026). *Sensing Qualia: Solving the Hard Problem of Consciousness.* University of Chicago Press.
 
@@ -546,6 +562,8 @@ Tononi, G. (2004). An information integration theory of consciousness. *BMC Neur
 Tononi, G., et al. (2016). Integrated information theory: From consciousness to its physical substrate. *Nature Reviews Neuroscience, 17*(7), 450–461.
 
 Von Neumann, J. (1932). *Mathematische Grundlagen der Quantenmechanik.* Springer.
+
+Whitfield, J. D., Rodríguez-Rosario, C. A., & Aspuru-Guzik, A. (2010). Quantum stochastic walks: A generalization of classical random walks and quantum walks. *Physical Review A, 81*(2), 022323.
 
 Wiseman, H. M., & Milburn, G. J. (2009). *Quantum Measurement and Control.* Cambridge University Press.
 

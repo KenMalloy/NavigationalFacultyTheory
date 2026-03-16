@@ -6,7 +6,7 @@ Your brain is spread across two hemispheres distributed through billions of neur
 
 The neuroscience is clear about what processes what. Color in V4. Motion in V5. Shape in the inferotemporal cortex. Sound in auditory cortex. Touch in somatosensory cortex. Each area fires when its specialty arrives. None of them fires for coffee. There is no coffee neuron, no coffee region, no place in the brain where bitterness and warmth and weight converge into a single representation. The pieces are processed in different places, at slightly different times, by neurons that have no direct knowledge of each other's outputs. And yet the coffee is one thing. That is the binding problem.
 
-Criticality gets partway there. At the critical point a perturbation anywhere can cascade everywhere, and NFT leans on this hard. But propagation is not binding. If everything reaches everything with no structure, you get noise, not coffee. The signal has to arrive *organized*. Topology is what organizes it.
+Criticality gets partway there. At the critical point a perturbation anywhere can cascade everywhere, and NFT leans on this hard. But binding requires more than propagation. If everything reaches everything with no structure, you get noise, not coffee. The signal has to arrive *organized*. Topology is what organizes it.
 
 ### Higher-Dimensional Structure
 
@@ -16,9 +16,13 @@ Santoro and colleagues (2024) showed that interactions among three or more brain
 
 ### The Three-Scale Mechanism
 
-The proposed binding mechanism operates across three scales.
+Start at the bottom. Inside a single neuron, radical pair spin coherence creates correlations between tubulin subunits. These are tiny, local, and fast. Microsecond events in a protein lattice. By themselves they bind nothing.
 
-At the quantum scale, radical pair spin coherence creates correlations between tubulin subunits, localized effects operating at microsecond timescales. These correlations connect upward through neural cliques forming higher-dimensional simplicial complexes: two neurons ten centimeters apart in Euclidean space may be adjacent in the seven-dimensional simplicial complex formed by their shared clique membership. The long-range correlations we observe in three dimensions would be the projection of local interactions in higher-dimensional topology. And at self-organized criticality, correlation length diverges, information propagation becomes scale-free, and the critical point connects quantum effects at the bottom to system-spanning dynamics at the top.
+Now zoom out. That neuron belongs to a clique, a group of neurons that all connect to each other. The clique forms a simplex, a higher-dimensional shape with an interior. Two neurons ten centimeters apart in your skull may be neighbors in the seven-dimensional simplicial complex formed by their shared clique membership. The back-action from a radical pair event in one neuron does not need to cross ten centimeters of brain tissue. It reaches the other neuron through algebraic proximity, through the interior of a shared shape. What looks like long-range correlation in three dimensions is local interaction in seven.
+
+Now zoom out further. At the critical point, correlation length diverges. A perturbation in one simplicial complex can cascade into the next, and the next, and the cascade spans the whole network. Criticality is what connects the quantum scale at the bottom to the system-spanning dynamics at the top. The radical pair event is local. The simplex makes it reach. Criticality makes it matter.
+
+That is how the coffee becomes one experience. The bitterness in gustatory cortex and the warmth in somatosensory cortex and the weight in motor cortex are processed separately in three-dimensional space. In the higher-dimensional topology of their shared simplicial structure, they are neighbors. They share an interior. That is the binding.
 
 ### An Honest Negative Result
 
