@@ -1,6 +1,6 @@
 # The Navigational Faculty: A New Theory of Consciousness
 
-**Kenneth Malloy** | v2.5 — March 2026
+**Kenneth Malloy** | v2.75 — March 2026
 
 ---
 
