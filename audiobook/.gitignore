@@ -1,0 +1,8 @@
+__pycache__/
+build/chunks/
+build/chunks.json
+audio/.DS_Store
+audio/concat.txt
+audio/synthesis_settings.json
+audio/*.wav
+audio/*/

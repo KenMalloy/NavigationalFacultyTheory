@@ -1,0 +1,30 @@
+{
+  "ENAQT": {
+    "spoken": "E N A Q T"
+  },
+  "GNWT": {
+    "spoken": "G N W T"
+  },
+  "IIT": {
+    "spoken": "I I T"
+  },
+  "PCI": {
+    "spoken": "P C I"
+  },
+  "Phi": {
+    "spoken": "fye",
+    "first_use_note": "Term note: Phi is pronounced fye in this book."
+  },
+  "Rényi": {
+    "spoken": "RAY-nee",
+    "first_use_note": "Term note: Rényi is pronounced RAY-nee."
+  },
+  "Tsallis": {
+    "spoken": "tsa-lis",
+    "first_use_note": "Term note: Tsallis is pronounced tsa-lis."
+  },
+  "Φ": {
+    "spoken": "fye",
+    "first_use_note": "Term note: Phi is pronounced fye in this book."
+  }
+}
