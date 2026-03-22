@@ -45,6 +45,10 @@ Synthesize audio with OpenAI using the prepared chunks:
 OPENAI_API_KEY=... python3 audiobook/synthesize_openai.py
 ```
 
+If the delivery MP3 sounds too hot, the encoder now applies `2 dB` of headroom
+by default before MP3 conversion. You can tune that with
+`--mp3-headroom-db 3` (more conservative) or `--mp3-headroom-db 0` (disable).
+
 The default synthesis flow now:
 
 1. renders chunk WAV files under `audiobook/audio/`,

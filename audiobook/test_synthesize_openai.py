@@ -3,7 +3,11 @@ import unittest
 import wave
 from pathlib import Path
 
-from audiobook.synthesize_openai import merge_audio_files
+from audiobook.synthesize_openai import (
+    build_mp3_transcode_command,
+    format_headroom_filter,
+    merge_audio_files,
+)
 
 
 def write_silent_wav(path: Path, frame_count: int = 8000) -> None:
@@ -15,6 +19,40 @@ def write_silent_wav(path: Path, frame_count: int = 8000) -> None:
 
 
 class SynthesizeOpenAITests(unittest.TestCase):
+    def test_format_headroom_filter_builds_volume_filter(self) -> None:
+        self.assertEqual(format_headroom_filter(2.0), "volume=-2dB")
+        self.assertEqual(format_headroom_filter(1.5), "volume=-1.5dB")
+        self.assertIsNone(format_headroom_filter(0))
+
+    def test_format_headroom_filter_rejects_negative_values(self) -> None:
+        with self.assertRaises(ValueError):
+            format_headroom_filter(-0.5)
+
+    def test_build_mp3_transcode_command_applies_headroom(self) -> None:
+        command = build_mp3_transcode_command(
+            ffmpeg_path="ffmpeg",
+            master_path=Path("/tmp/master.wav"),
+            mp3_path=Path("/tmp/final.mp3"),
+            headroom_db=2.0,
+        )
+
+        self.assertEqual(
+            command,
+            [
+                "ffmpeg",
+                "-y",
+                "-i",
+                "/tmp/master.wav",
+                "-af",
+                "volume=-2dB",
+                "-codec:a",
+                "libmp3lame",
+                "-q:a",
+                "2",
+                "/tmp/final.mp3",
+            ],
+        )
+
     def test_merge_audio_files_builds_master_and_mp3(self) -> None:
         with tempfile.TemporaryDirectory() as tmp_dir:
             output_dir = Path(tmp_dir)
@@ -30,6 +68,7 @@ class SynthesizeOpenAITests(unittest.TestCase):
                 response_format="wav",
                 final_basename="test_final",
                 create_mp3=True,
+                mp3_headroom_db=2.0,
             )
 
             self.assertTrue(Path(outputs["master"]).exists())

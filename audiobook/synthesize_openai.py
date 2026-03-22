@@ -18,6 +18,7 @@ SCRIPT_DIR = Path(__file__).resolve().parent
 DEFAULT_BUILD_DIR = SCRIPT_DIR / "build"
 DEFAULT_AUDIO_DIR = SCRIPT_DIR / "audio"
 API_URL = "https://api.openai.com/v1/audio/speech"
+DEFAULT_MP3_HEADROOM_DB = 2.0
 
 
 def parse_args() -> argparse.Namespace:
@@ -46,6 +47,15 @@ def parse_args() -> argparse.Namespace:
         "--final-basename",
         default="final_audiobook",
         help="Base filename for the stitched master and delivery files.",
+    )
+    parser.add_argument(
+        "--mp3-headroom-db",
+        type=float,
+        default=DEFAULT_MP3_HEADROOM_DB,
+        help=(
+            "Reduce the stitched master by this many dB before MP3 encoding. "
+            "This leaves codec headroom and helps avoid delivery clipping."
+        ),
     )
     parser.add_argument(
         "--limit",
@@ -135,11 +145,48 @@ def run_ffmpeg(command: list[str]) -> None:
         )
 
 
+def format_headroom_filter(headroom_db: float) -> str | None:
+    if headroom_db < 0:
+        raise ValueError("MP3 headroom must be zero or positive.")
+    if headroom_db == 0:
+        return None
+    return f"volume=-{headroom_db:g}dB"
+
+
+def build_mp3_transcode_command(
+    *,
+    ffmpeg_path: str,
+    master_path: Path,
+    mp3_path: Path,
+    headroom_db: float,
+) -> list[str]:
+    command = [
+        ffmpeg_path,
+        "-y",
+        "-i",
+        str(master_path),
+    ]
+    headroom_filter = format_headroom_filter(headroom_db)
+    if headroom_filter:
+        command.extend(["-af", headroom_filter])
+    command.extend(
+        [
+            "-codec:a",
+            "libmp3lame",
+            "-q:a",
+            "2",
+            str(mp3_path),
+        ]
+    )
+    return command
+
+
 def merge_audio_files(
     output_dir: Path,
     response_format: str,
     final_basename: str,
     create_mp3: bool,
+    mp3_headroom_db: float,
 ) -> dict[str, str]:
     ffmpeg_path = require_ffmpeg()
     concat_path = output_dir / "concat.txt"
@@ -166,17 +213,12 @@ def merge_audio_files(
     if create_mp3 and response_format != "mp3":
         mp3_path = output_dir / f"{final_basename}.mp3"
         run_ffmpeg(
-            [
-                ffmpeg_path,
-                "-y",
-                "-i",
-                str(master_path),
-                "-codec:a",
-                "libmp3lame",
-                "-q:a",
-                "2",
-                str(mp3_path),
-            ]
+            build_mp3_transcode_command(
+                ffmpeg_path=ffmpeg_path,
+                master_path=master_path,
+                mp3_path=mp3_path,
+                headroom_db=mp3_headroom_db,
+            )
         )
         outputs["mp3"] = str(mp3_path)
 
@@ -230,6 +272,7 @@ def main() -> int:
             response_format=settings["response_format"],
             final_basename=args.final_basename,
             create_mp3=not args.skip_mp3,
+            mp3_headroom_db=args.mp3_headroom_db,
         )
 
     print(f"Wrote audio chunks to {args.output_dir}")
